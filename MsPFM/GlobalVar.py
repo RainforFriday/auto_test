@@ -1,7 +1,7 @@
 import os
 import sys
 
-global gx
+global GX
 
 
 class GlobalVar:
@@ -18,6 +18,6 @@ class GlobalVar:
             print("Error: Get {} value error!!!".format(key))
 
 
-def gol_create():
-    global gx
-    gx = GlobalVar()
+def global_create():
+    global GX
+    GX = GlobalVar()

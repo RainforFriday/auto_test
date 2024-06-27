@@ -5,8 +5,8 @@ import openpyxl
 from icbasic.aicinstr.rs.cmp180 import *
 from icbasic.aicintf.uart import *
 from MsPFM.csv import *
-import MsPFM.GlobalVar as Glox
-Glox.gol_create()
+from MsPFM.GlobalVar import *
+global_create()
 from MsPFM.wf_ms import *
 
 
@@ -26,9 +26,9 @@ def MS_AIC8822():
     CMPX = CMP180()
     CMPX.open_tcp(host, port)
 
-    Glox.gx.set_value("UARTX", UARTX)
-    Glox.gx.set_value("CSVX", CSVX)
-    Glox.gx.set_value("CMPX", CMPX)
+    GX.set_value("UARTX", UARTX)
+    GX.set_value("CSVX", CSVX)
+    GX.set_value("CMPX", CMPX)
 
     MS = WF_MS(xlsx_path)
     MS.wf_ms_table()

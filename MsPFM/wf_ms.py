@@ -5,7 +5,7 @@ import openpyxl
 from icbasic.aicinstr.rs.cmp180 import *
 from icbasic.aicintf.uart import *
 from MsPFM.csv import *
-import MsPFM.GlobalVar as Glox
+from MsPFM.GlobalVar import *
 
 
 class WF_MS_TABLE:
@@ -107,14 +107,12 @@ class WF_MS_LINE:
 
 
 class WF_MS:
-
-
     def __init__(self, xlsx_path):
         self.db_table = WF_MS_TABLE(xlsx_path)
         self.l_test_lines = self.db_table.read()
-        self.UARTX = Glox.gx.get_value("UARTX")
-        self.CMPX = Glox.gx.get_value("CMPX")
-        self.CSVX = Glox.gx.get_value("CSVX")
+        self.UARTX = GX.get_value("UARTX")
+        self.CMPX = GX.get_value("CMPX")
+        self.CSVX = GX.get_value("CSVX")
 
     def wf_ms_table(self):
         for linex in self.l_test_lines:
