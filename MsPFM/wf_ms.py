@@ -4,20 +4,8 @@ import openpyxl
 
 from icbasic.aicinstr.rs.cmp180 import *
 from icbasic.aicintf.uart import *
-from aic8822.performance.csv import *
-
-global UARTc
-
-
-def uart_open(comport):
-    global UARTc
-    UARTc = Uart(comport)
-    UARTc.open()
-    return UARTc
-
-
-def uart_close():
-    UARTc.close()
+from MsPFM.csv import *
+import MsPFM.GlobalVar as Glox
 
 
 class WF_MS_TABLE:
@@ -119,9 +107,14 @@ class WF_MS_LINE:
 
 
 class WF_MS:
+
+
     def __init__(self, xlsx_path):
         self.db_table = WF_MS_TABLE(xlsx_path)
         self.l_test_lines = self.db_table.read()
+        self.UARTX = Glox.gx.get_value("UARTX")
+        self.CMPX = Glox.gx.get_value("CMPX")
+        self.CSVX = Glox.gx.get_value("CSVX")
 
     def wf_ms_table(self):
         for linex in self.l_test_lines:
@@ -130,47 +123,48 @@ class WF_MS:
             # print(db_line.l_setpwr_ucmd())
             # print(db_line.setbw_ucmd())
             # print(db_line.setrate_ucmd())
-            UARTc.sendcmd("settx 1")
-            UARTc.sendcmd(db_line.setrate_ucmd())
-            UARTc.sendcmd(db_line.setbw_ucmd())
-            UARTc.sendcmd(db_line.setlen_ucmd())
+            self.UARTX.sendcmd("settx 1")
+            self.UARTX.sendcmd(db_line.setrate_ucmd())
+            self.UARTX.sendcmd(db_line.setbw_ucmd())
+            self.UARTX.sendcmd(db_line.setlen_ucmd())
             rate = " ".join(db_line.setrate_ucmd().strip().split(" ")[1:])
             bw = " ".join(db_line.setbw_ucmd().strip().split(" ")[1:])
             len = " ".join(db_line.setlen_ucmd().strip().split(" ")[1:])
 
             if rate.strip().split(" ")[0] == "5":
-                CMPX.wlan_set_standard("11ax")
+                self.CMPX.wlan_set_standard("11ax")
             elif rate.strip().split(" ")[0] == "4":
-                CMPX.wlan_set_standard("11ac")
+                self.CMPX.wlan_set_standard("11ac")
             elif rate.strip().split(" ")[0] == "2":
-                CMPX.wlan_set_standard("11n")
+                self.CMPX.wlan_set_standard("11n")
 
             # print(bw)
             if "0 0" in bw:
-                CMPX.wlan_set_bandwidth("20")
+                self.CMPX.wlan_set_bandwidth("20")
             elif "1 1" in bw:
-                CMPX.wlan_set_bandwidth("40")
+                self.CMPX.wlan_set_bandwidth("40")
             elif "2 2" in bw:
-                CMPX.wlan_set_bandwidth("80")
+                self.CMPX.wlan_set_bandwidth("80")
 
             for setchx in db_line.l_setch_ucmd():
                 ch = setchx.strip().split(" ")[1]
-                CMPX.wlan_set_freq_by_ch(ch)
-                UARTc.sendcmd(setchx)
+                self.CMPX.wlan_set_freq_by_ch(ch)
+                self.UARTX.sendcmd(setchx)
                 time.sleep(2)
                 for setpwrx in db_line.l_setpwr_ucmd():
                     pwr = " ".join(setpwrx.strip().split(" ")[1:])
-                    UARTc.sendcmd(setpwrx)
-                    CMPX.wlan_auto_peak_pwr()
+                    self.UARTX.sendcmd(setpwrx)
+                    reg = self.UARTX.read_reg("403422c8")
+                    self.CMPX.wlan_auto_peak_pwr()
 
-                    CMPX.wlan_meas_start()
+                    self.CMPX.wlan_meas_start()
                     time.sleep(2)
-                    ms_pwr = CMPX.wlan_meas_pwr()
-                    ms_evm = CMPX.wlan_meas_evm()
-                    CMPX.wlan_meas_abort()
+                    ms_pwr = self.CMPX.wlan_meas_pwr()
+                    ms_evm = self.CMPX.wlan_meas_evm()
+                    self.CMPX.wlan_meas_abort()
 
-                    results = "{},{},{},{},{},{},{}".format(ch, rate, bw, len, pwr, ms_pwr, ms_evm )
-                    CSVX.write_append_line(results)
+                    results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, pwr, ms_pwr, ms_evm,reg )
+                    self.CSVX.write_append_line(results)
                     print(results)
 
 
@@ -182,9 +176,7 @@ if __name__ == "__main__":
     csv_header = "Channel, Rate, BandWidth, Length, SetPwr, MsPwrAvg, MsEvmAvg\n"
     CSVX.write_append_line(csv_header)
 
-    global UARTc
-
-    UARTc = uart_open(8)
+    UARTc = Uart(8)
     UARTc.open()
 
     host = "10.21.10.200"
