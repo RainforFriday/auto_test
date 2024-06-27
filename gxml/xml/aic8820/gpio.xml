@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="gpio" category="Periph">
+		<reg name="GPIODATA">
+			<bits name="GPIODATA" pos="15:0" access="rw" rst="0x0" >
+				<comment> GPIO bits data input </comment>
+			</bits>
+		</reg>
+		<reg name="GPIODMSK">
+			<bits name="GPIODMSK" pos="15:0" access="rw" rst="0x0" >
+				<comment> GPIODATA register can be read/write if GPIO DMSK  set "1" </comment>
+			</bits>
+		</reg>
+		<reg name="GPIODIR">
+			<bits name="GPIODIR" pos="15:0" access="rw" rst="0x0" >
+				<comment> "1" configure gpio bits to be  output
+  "0" configure gpio bits to be  input </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOIS">
+			<bits name="GPIOIS" pos="15:0" access="rw" rst="0xffff" >
+				<comment> "1" detect signals level
+  "0" detect signals edge </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOIBE">
+			<bits name="GPIOIBE" pos="15:0" access="rw" rst="0x0" >
+				<comment> "1" both edges trigger an interrupt,
+  "0" interrupt generation event is controlled by  GPIOIEV </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOIEV">
+			<bits name="GPIOIEV" pos="15:0" access="rw" rst="0xffff" >
+				<comment> GPIO bits interrupt event register:
+  "1" high levels trigger interrupts,
+  "0" low levels trigger interrupts. </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOIE">
+			<bits name="GPIOIE" pos="15:0" access="rw" rst="0x0" >
+				<comment> GPIO bits interrupt enable register:
+  "1" corresponding bit interrupt is enabled.
+  "0" corresponding bit interrupt isn't enabled </comment>
+			</bits>
+		</reg>
+		<reg name="GPIORIS">
+			<bits name="GPIORIS" pos="15:0" access="ro" rst="0x0" >
+				<comment> GPIO bits raw interrupt status register:
+  "1" interrupt condition met
+  "0" condition not met </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOMIS">
+			<bits name="GPIOMIS" pos="15:0" access="ro" rst="0x0" >
+				<comment> GPIO bits masked interrupt status register:
+  "1" Interrupt active
+  "0" interrupt not active </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOIC">
+			<bits name="GPIOIC" pos="15:0" access="wo" rst="0x0" >
+				<comment> GPIO bits interrupt clear register:
+  "1" clears detected interrupt.
+  "0" has no effect. </comment>
+			</bits>
+		</reg>
+		<reg name="GPIOINEN">
+			<bits name="GPIOINEN" pos="15:0" access="rw" rst="0x0" >
+				<comment> GPIO input enable register:
+  "1" input enable.
+  "0" input disable. </comment>
+			</bits>
+		</reg>
+		<reg name="GPIO_FILTER_NUM">
+			<bits name="GPIO_FILTER_NUM" pos="15:0" access="rw" rst="0x3333" >
+				<comment> </comment>
+			</bits>
+		</reg>
+		<reg name="GPIO_FILTER_DIV_L">
+			<bits name="GPIO_FILTER_DIV_L" pos="15:0" access="rw" rst="0x0" >
+				<comment> </comment>
+			</bits>
+		</reg>
+		<reg name="GPIO_FILTER_DIV_H">
+			<bits name="GPIO_FILTER_DIV_H" pos="15:0" access="rw" rst="0x0" >
+				<comment> </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

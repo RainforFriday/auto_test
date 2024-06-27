@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="pwr_ctrl" category="pwr_ctrl">
+		<reg name="cpu_sys_pwr_ctrl">
+			<bits name="cpu_sys_awake_src_en" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_slp_src_en" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_slp_soft_req" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_slp_req_vld_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_hwen_cpu_sys" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_hwen_cpu_sys" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_cpu_sys" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_cpu_sys" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="timer_poff_pwr_sys_by_cpu_sys_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_by_cpu_sys_en" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_poff_by_cpu_sys_en" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_soft_wakeup_req" pos="22" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_awake_req_vld_clr" pos="23" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_sys_slp_req_mask" pos="26:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_wifi_core_slep_cpu_sys_en" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_bt_core_slep_cpu_sys_en" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sys_slp_cpu_sys_soft_req" pos="29" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_sys_slp_cpu_sys_soft_req" pos="30" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_awake_mode" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_core_pwr_ctrl">
+			<bits name="bt_core_awake_src_en" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_slp_src_en" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_slp_soft_req" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_slp_req_vld_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_hwen_bt_core" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_hwen_bt_core" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_bt_core" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_bt_core" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="timer_poff_pwr_sys_by_bt_core_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_by_bt_core_en" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_poff_by_bt_core_en" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_soft_wakeup_req" pos="22" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_awake_req_vld_clr" pos="23" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_soft_wakeup_req_to_bt" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_hw_clr_cpu_sys_slp_en" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sys_awake_mode" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wifi_core_pwr_ctrl">
+			<bits name="wifi_core_awake_src_en" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_slp_src_en" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_slp_soft_req" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_slp_req_vld_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_hwen_wifi_core" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_hwen_wifi_core" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_wifi_core" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_wifi_core" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="timer_poff_pwr_sys_by_wifi_core_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_by_wifi_core_en" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_poff_by_wifi_core_en" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_soft_wakeup_req" pos="22" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_awake_req_vld_clr" pos="23" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_soft_wakeup_req_to_wifi" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_hw_clr_cpu_sys_slp_en" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_sys_awake_mode" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wlan_core_timer_poff_pwr_sys_sel" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="pwr_sys_ctrl">
+			<bits name="dejitter" pos="15:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_soft" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_soft_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_pll_soft" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_pll_soft_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chip_slp_soft" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chip_slp_soft_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cg_pll_soft" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cg_pll_soft_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_32k_52m_sel_soft" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_32k_52m_sel_soft_en" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_32k_52m_sw_en" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_poff_hw_en" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="xtal_pd_en" pos="28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_xtal_soft" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_xtal_soft_en" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chip_sleep_hw_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_off_timmer_th1">
+			<bits name="bt_core_timer_th" pos="31:0" access="rw" rst="0x80000000" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_off_timmer_th2">
+			<bits name="wifi_core_timer_th" pos="31:0" access="rw" rst="0x80000000" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_delay1">
+			<bits name="pwr_ctrl_pre_delay" pos="15:0" access="rw" rst="0x100" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_ctrl_delay" pos="31:16" access="rw" rst="0x400" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_delay2">
+			<bits name="pwr_ctrl_state_delay" pos="7:0" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_xtal_close_delay" pos="15:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_xtal_open_delay" pos="23:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pupd_xtal_delay" pos="31:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_sys_delay1">
+			<bits name="pwr_sys_dp_open_delay" pos="7:0" access="rw" rst="0xa0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_dp_close_delay" pos="15:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_cg_open_delay" pos="23:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_cg_close_delay" pos="31:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_sys_delay2">
+			<bits name="pwr_sys_pwr_open_delay" pos="7:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pwr_close_delay" pos="15:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pll_open_delay" pos="23:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pll_close_delay" pos="31:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="pwr_ctrl_state1">
+			<bits name="pon_stab_wifi_core" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_stab_bt_core" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_stab_cpu_sys" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_stab_wifi_core" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_stab_bt_core" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_stab_cpu_sys" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="state_wifi_core" pos="11:8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="state_bt_core" pos="15:12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="state_cpu_sys" pos="19:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_cur_state" pos="21:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_cur_state" pos="23:22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_cur_state" pos="25:24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_cur_state" pos="29:26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_cur_state" pos="31:30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_state2">
+			<bits name="pon_stab_vcore_sys" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_stab_mm_sys" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_stab_vcore_sys" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_stab_mm_sys" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="state_mm_sys" pos="19:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="state_vcore_sys" pos="23:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_pll_o" pos="24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cg_pll_o" pos="25" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chip_slp_o" pos="26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_ctrl_pu_xtal" pos="27" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="sys_clk_slow_sel" pos="28" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slow_clk_slow_sel" pos="29" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon" pos="30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_soft_mode1">
+			<bits name="cpu_sys_pwr_ctrl_soft" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_pwr_ctrl_soft" pos="11:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_pwr_ctrl_soft" pos="17:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_ctrl_clk_32k_div_th" pos="31:24" access="rw" rst="0x98" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="pwr_ctrl_irq_ctrl">
+			<bits name="awake_state_clr" pos="9:0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_state_clr" pos="13:10" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_state_mask" pos="25:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_state_mask" pos="29:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_ctrl_irq_en" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_irq_status">
+			<bits name="awake_pos_pulse_raw_state" pos="9:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_pos_pulse_raw_state" pos="13:10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_awake_raw_status" pos="14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_awake_raw_status" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_pos_pulse_state_masked" pos="25:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_pos_pulse_state_masked" pos="29:26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_core_awake_raw_status" pos="30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wifi_core_awake_raw_status" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="mm_sys_pwr_ctrl">
+			<bits name="pon_mm_sys" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_mm_sys" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_soft_mode2">
+			<bits name="mm_sys_pwr_ctrl_soft" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_pwr_ctrl_soft" pos="11:6" access="rw" rst="0x36" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_mode_sel_bt_core" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_mode_sel_cpu_sys" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_mode_sel_mm_sys" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_mode_sel_vcore_sys" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_mode_sel_wifi_core" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_sys_slp_req_mask_d" pos="21:19" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_io_mmsys_en_soft" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_io_mmsys_en" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_io_cpusys_en_soft" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_io_cpusys_en" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_slp_out_done_mode_en" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="vcore_sys_pwr_ctrl">
+			<bits name="vcore_sys_awake_src_en" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_slp_src_en" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_slp_soft_req" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_slp_req_vld_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_hwen_vcore_sys" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_hwen_vcore_sys" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pon_vcore_sys" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="poff_vcore_sys" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="timer_poff_pwr_sys_by_vcore_sys_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_pon_by_vcore_sys_en" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_sys_poff_by_vcore_sys_en" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_soft_wakeup_req" pos="22" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_awake_req_vld_clr" pos="23" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vcore_sys_awake_mode" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="pwr_ctrl_mode">
+			<bits name="pwr_ctrl_mode" pos="30:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwr_ctrl_mode_update" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ret_ram_ctrl">
+			<bits name="cfg_ret_ctrl_cpu_sys_ram" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pwr_mux_cpu_sys_lram" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pwr_mux_cpu_sys_hram" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ret_ctrl_wifi_core_ram" pos="15:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pwr_mux_wifi_core_ram" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ret_ctrl_bt_core_ram" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pwr_mux_bt_core_ram" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_monitor">
+			<bits name="pwr_ctrl_dbg_mux" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slp_req_sel" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_req_mask" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_req_raw_clr" pos="15:12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_vld_state_masked" pos="19:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="awake_req_sel" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_soft_mode3">
+			<bits name="bt_coreon_soft" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_hold_soft" pos="3:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_coreon_soft" pos="5:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hold_soft" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_coreon_soft" pos="9:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cpu_hold_soft" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mm_coreon_soft" pos="13:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mm_hold_soft" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="top_coreon_soft" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="top_hold_soft" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_coreon_soft" pos="22:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_rg_irq_timer2_h_awake_en" pos="26:23" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_rg_irq_others_awake_en" pos="30:27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_ctrl_soft_mode4">
+			<bits name="cfg_awake_inv_en" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_off_timmer_th3">
+			<bits name="cpu_sys_timer_th" pos="31:0" access="rw" rst="0x80000000" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pwr_off_timmer_th4">
+			<bits name="vcore_sys_timer_th" pos="31:0" access="rw" rst="0x80000000" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_core_timer_cnt_ro">
+			<bits name="bt_core_timer_cnt_ro" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wifi_core_timer_cnt_ro">
+			<bits name="wifi_core_timer_cnt_ro" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

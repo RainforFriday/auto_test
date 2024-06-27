@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="analog_reg1_rf" category="System">
+		<reg name="gpioa_cfg">
+			<bits name="cfg_ana_gpioa_ibit" pos="2:0" access="rw" rst="0x7" >
+				<comment> GPIOA drive strength </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_pull_up_sel" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_slew_rate" pos="11:6" access="rw" rst="0x3f" >
+				<comment> GPIOA slew rate selection </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_ie" pos="12" access="rw" rst="0x1" >
+				<comment> GPIOA IE </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_mux_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_mux_enb" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpioa_wakeup_polarity" pos="31:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gpiob_cfg1">
+			<bits name="cfg_ana_gpiob_ibit" pos="1:0" access="rw" rst="0x3" >
+				<comment> GPIOB drive strength </comment>
+			</bits>
+			<bits name="cfg_ana_gpiob_pull_up_sel" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpiob_mux_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpiob_mux_enb" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_gpiob_func_mux_sel" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpiob_wakeup_polarity" pos="19:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_gpiob_pull_up_int" pos="31:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gpiob_cfg2">
+			<bits name="cfg_ana_gpiob_slew_rate" pos="3:0" access="rw" rst="0xf" >
+				<comment> GPIOB slew rate selection </comment>
+			</bits>
+			<bits name="cfg_ana_gpiob_ie" pos="5:4" access="rw" rst="0x3" >
+				<comment> GPIOB IE </comment>
+			</bits>
+			<bits name="cfg_gpiob_pull_dn_int" pos="17:6" access="rw" rst="0xffc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="ana_port_ctrl">
+			<bits name="cfg_ana_test_enable_usb" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_pcie" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi" pos="4:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_pu_iref_io" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_iref_io_start_enb" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_test_mode" pos="8:7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_pcie_pll" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_gpio_vio13_sleep_mode" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_io_test_bit" pos="14:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_test_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="misc_reg">
+			<bits name="cfg_ana_io_rsvd_bit" pos="15:0" access="rw" rst="0xff00" >
+				<comment> analog reserved bits </comment>
+			</bits>
+			<bits name="pmu_psi_slv_rdata_wait_timeout_err" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_mst_sig_event" pos="24:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_rsvd_bit_core" pos="28:25" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_bt_bbpll_auto_pu" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_opi_hold" pos="30" access="rw" rst="0x0" >
+				<comment> OPI pad hold. </comment>
+			</bits>
+		</reg>
+		<reg name="flash_ctrl">
+			<bits name="cfg_ana_fls_ie" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_fls_ibit" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_fls_pull_up_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_fls_slew_rate" pos="4:3" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_fls_ms_reg" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_ana_fls_ms_dr" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ana_bit_rd_back">
+			<bits name="pmu_rsvd_read_bit_rtc1" pos="3:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pmu_rsvd_read_bit_core" pos="7:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="io_rsvd_read_bit" pos="11:8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pcie_gpio_cfg">
+			<bits name="cfg_pcie_wake_mux_sel" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pcie_wake_val" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pcie_clkreq_mux_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_pcie_clkreq_val" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

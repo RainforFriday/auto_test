@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+  <module name="spiflash" category="System">
+    <reg32 name="tx_cmd_addr" protect="RW" >
+      <bits name="tx_cmd" pos="7:0" access="RW" rst="0x0" >
+        <comment>Transmit command.
+        </comment>
+      </bits>
+      <bits name="tx_addr" pos="31:8" access="RW" rst="0x0" >
+        <comment>Transmit address.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="tx_block_size" protect="RW" >
+      <bits name="tx_mode" pos="7:0" access="RW" rst="0x0" >
+        <comment>Transmit mode bits.
+        </comment>
+      </bits>
+      <bits name="tx_block_size" pos="16:8" access="RW" rst="0x1" >
+        <comment>Transmit block size.
+        </comment>
+      </bits>
+      <bits name="tx_cont_mode" pos="24" access="RW" rst="0x0" >
+        <comment>Transmit continuous mode enable.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="tx_fifo_data" protect="WO" >
+      <bits name="tx_data" pos="7:0" access="WO" rst="0x0" >
+        <comment>Transmit FIFO data.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="status" protect="RO" >
+      <bits name="busy_stat" pos="0" access="RO" rst="0x0" >
+        <comment>Busy status.
+        </comment>
+      </bits>
+      <bits name="tx_fifo_empty" pos="1" access="RO" rst="0x1" >
+        <comment>Transmit FIFO empty.
+        </comment>
+      </bits>
+      <bits name="tx_fifo_full" pos="2" access="RO" rst="0x0" >
+        <comment>Transmit FIFO full.
+        </comment>
+      </bits>
+      <bits name="rx_fifo_empty" pos="3" access="RO" rst="0x1" >
+        <comment>Receive FIFO empty.
+        </comment>
+      </bits>
+      <bits name="rx_fifo_cnt" pos="8:4" access="RO" rst="0x0" >
+        <comment>Receive FIFO count.
+        </comment>
+      </bits>
+      <bits name="read_state_busy" pos="9" access="RO" rst="0x0" >
+        <comment>Read state busy.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="rx_fifo_data" protect="RO" >
+      <bits name="rx_data" pos="31:0" access="RO" rst="0x0" >
+        <comment>
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="flash_config" protect="RW" >
+      <bits name="quad_mode" pos="0" access="RW" rst="0x0" >
+        <comment>Quad mode.
+        </comment>
+      </bits>
+      <bits name="wproctect_pin" pos="1" access="RW" rst="0x0" >
+        <comment>Set wproctect pin active.
+        </comment>
+      </bits>
+      <bits name="hold_pin" pos="2" access="RW" rst="0x0" >
+        <comment>Set hold pin active.
+        </comment>
+      </bits>
+      <bits name="dual_mode" pos="3" access="RW" rst="0x0" >
+        <comment>Dual mode.
+        </comment>
+      </bits>
+      <bits name="sample_delay" pos="6:4" access="RW" rst="0x2" >
+        <comment>Sample delay.
+        </comment>
+      </bits>
+      <bits name="din_cap_edge" pos="7" access="RW" rst="0x0" >
+          <comment>sample clock edge selector,
+                   0: posedge of clk spiflash
+                   1: negedge of clk spiflash
+        </comment>
+      </bits>
+      <bits name="clk_divider" pos="15:8" access="RW" rst="0x8" >
+        <comment>Clock divider.
+        </comment>
+      </bits>
+      <bits name="cmd_quad" pos="16" access="RW" rst="0x0" >
+        <comment>Quad Command Enable. Hardware will regard current command as quad command if this bit is active.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="fifo_ctrl" protect="RW" >
+      <bits name="rx_fifo_clr" pos="0" access="RW" rst="0x0" >
+        <comment>Write 1 to clear rx FIFO.
+        </comment>
+      </bits>
+      <bits name="tx_fifo_clr" pos="1" access="RW" rst="0x0" >
+        <comment>Write 1 to clear tx FIFO.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="dual_spi" protect="RW" >
+      <bits name="spi_cs_num" pos="0" access="RW" rst="0x0" >
+        <comment>SPI cs number. 1'b0: One cs; 1'b1: Two cs.
+        </comment>
+      </bits>
+      <bits name="spi_size" pos="2:1" access="RW" rst="0x0" >
+        <comment>SPI flash size. 2'b00: 32M bits flash; 2'b01: 64M bits flash; 2'b10: 16M bits flash; 2'b11: 8M bits flash.
+        </comment>
+      </bits>
+      <bits name="spi_128m" pos="3" access="RW" rst="0x0" >
+        <comment>128M bits flash.
+        </comment>
+      </bits>
+      <bits name="ahb_read_disable" pos="4" access="RW" rst="0x0" >
+        <comment>
+        </comment>
+      </bits>
+      <bits name="spi_cs1_sel" pos="5" access="RW" rst="0x0" >
+        <comment>
+        </comment>
+      </bits>
+      <bits name="spi_cs1_sel1" pos="6" access="RW" rst="0x0" >
+        <comment>
+        </comment>
+      </bits>
+      <bits name="diff_128m_diff_cmd_en" pos="7" access="RW" rst="0x0" >
+        <comment>
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="read_cmd" protect="RW" >
+      <bits name="qread_cmd" pos="7:0" access="RW" rst="0xeb" >
+        <comment>Quad read command.
+        </comment>
+      </bits>
+      <bits name="fread_cmd" pos="15:8" access="RW" rst="0x0b" >
+        <comment>Fast read command.
+        </comment>
+      </bits>
+      <bits name="read_cmd" pos="23:16" access="RW" rst="0x03" >
+        <comment>Read command.
+        </comment>
+      </bits>
+      <bits name="dread_cmd" pos="31:24" access="RW" rst="0x3b" >
+        <comment>Dual read command.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="nand_cfg1" protect="RW" >
+      <bits name="nand_sel" pos="0" access="RW" rst="0x0" >
+        <comment>Internal nand flash selection. Nand flash also can be selected from pin. 1'b0: Nor FLASH; 1'b1: Nand flash.
+        </comment>
+      </bits>
+      <bits name="nand_addr_26_25" pos="2:1" access="RW" rst="0x0" >
+        <comment>Bit 26 to 25 of nand_address.
+        </comment>
+      </bits>
+      <bits name="page_read_cmd" pos="15:8" access="RW" rst="0x13" >
+        <comment>Page read command.
+        </comment>
+      </bits>
+      <bits name="get_sts_cmd" pos="23:16" access="RW" rst="0x0f" >
+        <comment>Get status command.
+        </comment>
+      </bits>
+      <bits name="ram_read_cmd" pos="31:24" access="RW" rst="0x03" >
+        <comment>RAM read command.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="nand_cfg2" protect="RW" >
+      <bits name="get_sts_addr" pos="7:0" access="RW" rst="0xc0" >
+        <comment>Get status address.
+        </comment>
+      </bits>
+      <bits name="program_exe_cmd" pos="15:8" access="RW" rst="0x10" >
+        <comment>Program execute command.
+        </comment>
+      </bits>
+      <bits name="stst_qip" pos="23:16" access="RW" rst="0x01" >
+        <comment>
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="dummy_cycle_cfg" protect="RW" >
+      <bits name="four_byte_addr" pos="0" access="RW" rst="0x0" >
+        <comment>Four bytes address. 1'b0: 3 bytes address; 1'b1: 4 bytes address.
+        </comment>
+      </bits>
+      <bits name="dummy_cycle_en" pos="1" access="RW" rst="0x0" >
+        <comment>Dummy cycle enable.
+        </comment>
+      </bits>
+      <bits name="dummy_cycle" pos="11:8" access="RW" rst="0x8" >
+        <comment>Dummy cycle count.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="diff_128m_cmd" protect="RO" >
+      <bits name="first_128m_cmd" pos="7:0" access="RO" rst="0x8c" >
+        <comment>1st 128M flash command.
+        </comment>
+      </bits>
+      <bits name="second_128m_cmd" pos="15:8" access="RO" rst="0x8d" >
+        <comment>2nd 128M flash command.
+        </comment>
+      </bits>
+      <bits name="third_128m_cmd" pos="23:16" access="RO" rst="0x0" >
+        <comment>3rd 128M flash command.
+        </comment>
+      </bits>
+      <bits name="fourth_128m_cmd" pos="31:24" access="RO" rst="0x0" >
+        <comment>4th 128M flash command.
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="aesKey0" protect="RW" >
+      <bits name="aesKey0" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 255 to 224
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey1" protect="RW" >        
+      <bits name="aesKey1" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 223 to 192
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey2" protect="RW" >        
+      <bits name="aesKey2" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 191 to 160
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey3" protect="RW" >        
+      <bits name="aesKey3" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 159 to 128
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey4" protect="RW" >        
+      <bits name="aesKey4" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 127 to 96
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey5" protect="RW" >        
+      <bits name="aesKey5" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 95 to 64
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey6" protect="RW" >        
+      <bits name="aesKey6" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 63 to 32
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="aesKey7" protect="RW" >        
+      <bits name="aesKey7" pos="31:0" access="RW" rst="0x0" >
+        <comment>aesKey bit 31 to 0 
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="initCtrNonce0" protect="RW" >
+      <bits name="initCtrNonce0" pos="31:0" access="RW" rst="0x0" >
+        <comment>ctr bit 127 to 96 of 128 bit
+        </comment>
+      </bits>    
+    </reg32>
+    <reg32 name="initCtrNonce1" protect="RW" >        
+      <bits name="initCtrNonce1" pos="31:0" access="RW" rst="0x0" >
+        <comment>ctr bit 95 to 64 of 128 bit
+        </comment>                                                                                                                                                                                                                           
+      </bits>    
+    </reg32>
+    <reg32 name="initCtrNonce2" protect="RW" >
+      <bits name="initCtrNonce2" pos="31:0" access="RW" rst="0x0" >
+        <comment>ctr bit 63 to 32 of 128 bit
+        </comment>
+      </bits>    
+    </reg32>
+    <reg32 name="encStartAddr" protect="RW" >
+      <bits name="encStartAddr" pos="23:0" access="RW" rst="0x0" >
+        <comment>data encryption start addr
+        </comment>
+      </bits>    
+    </reg32>
+    <reg32 name="encEndAddr" protect="RW" >
+      <bits name="encEndAddr" pos="23:0" access="RW" rst="0xFFFFFF" >
+        <comment>data encryption end addr
+        </comment>
+      </bits>    
+    </reg32>
+    <reg32 name="flash_decrypt_ctrl" protect="RW" >
+      <bits name="flashDecrEn" pos="0" access="RW" rst="0x0" >
+        <comment>flash data decryption enable
+        </comment>
+      </bits>
+      <bits name="aesKeyValid" pos="1" access="RW" rst="0x0" >
+        <comment>aes key valid set this bit when aes key write done  
+        </comment>
+      </bits>
+      <bits name="ce_clear" pos="2" access="WO" rst="0x0" >
+        <comment>decryptor rst and clear
+        </comment>
+      </bits>
+      <bits name="debug_mode" pos="31" access="WO" rst="0x0" >
+        <comment>key and nonce can be read when this bit set
+        </comment>
+      </bits>
+    </reg32>
+    <reg32 name="sw_rx_size" protect="RW" >
+      <bits name="cfg_sw_rx_size" pos="1:0" access="RW" rst="0x0" >
+      </bits>
+    </reg32>
+  </module>
+</archive>

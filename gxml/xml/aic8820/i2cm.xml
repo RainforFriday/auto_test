@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="i2cm" category="Periph">
+		<reg name="IC_CON">
+			<bits name="master_mode" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="speed" pos="2:1" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ic_10bitaddr_slave" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ic_restart_en" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ic_slave_disable" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="stop_det_ifaddressed" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_empty_ctrl" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_TAR">
+			<bits name="ic_tar" pos="9:0" access="rw" rst="0x55" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gc_or_start" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="special" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ic_10bitaddr_master" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_SAR">
+			<bits name="ic_sar" pos="9:0" access="rw" rst="0x55" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_HS_MADDR">
+			<bits name="ic_hs_mar" pos="2:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_DATA_CMD">
+			<bits name="dat" pos="7:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cmd" pos="8" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_SS_SCL_HCNT">
+			<bits name="ic_ss_scl_hcnt" pos="15:0" access="rw" rst="0x320" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_SS_SCL_LCNT">
+			<bits name="ic_ss_scl_lcnt" pos="15:0" access="rw" rst="0x3ac" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_FS_SCL_HCNT">
+			<bits name="ic_fs_scl_hcnt" pos="15:0" access="rw" rst="0x78" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_FS_SCL_LCNT">
+			<bits name="ic_fs_scl_lcnt" pos="15:0" access="rw" rst="0x104" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_HS_SCl_HCNT">
+			<bits name="ic_hs_scl_hcnt" pos="15:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_HS_SCL_LCNT">
+			<bits name="ic_hs_scl_lcnt" pos="15:0" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_INTR_STAT">
+			<bits name="r_rx_under" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_rx_over" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_rx_full" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_tx_over" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_tx_empty" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_rd_req" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_tx_abrt" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_rx_done" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_activity" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_stop_det" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_start_det" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_gen_call" pos="11" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_restart_det" pos="12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="r_master_on_hold" pos="13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_INTR_MASK">
+			<bits name="m_rx_under" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_rx_over" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_rx_full" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_tx_over" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_tx_empty" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_rd_req" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_tx_abrt" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_rx_done" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_activity" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_stop_det" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_start_det" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_gen_call" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_restart_det" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="m_master_on_hold" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_RAW_INTR_STAT">
+			<bits name="rx_under" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_over" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_full" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_over" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_empty" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rd_req" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_abrt" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_done" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="activity" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="stop_det" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="start_det" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gen_call" pos="11" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="restart_det" pos="12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="master_on_hold" pos="13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_RX_TL">
+			<bits name="rx_tl" pos="7:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_TX_TL">
+			<bits name="tx_tl" pos="7:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_INTR">
+			<bits name="clr_intr" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_RX_UNDER">
+			<bits name="clr_rx_under" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_RX_OVER">
+			<bits name="clr_rx_over" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_TX_OVER">
+			<bits name="clr_tx_over" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_RD_REQ">
+			<bits name="clr_rd_req" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_TX_ABRT">
+			<bits name="clr_tx_abrt" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_RX_DONE">
+			<bits name="clr_tx_done" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_ACTIVITY">
+			<bits name="clr_activity" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_STOP_DET">
+			<bits name="clr_stop_det" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_START_DET">
+			<bits name="clr_start_det" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_GEN_CALL">
+			<bits name="clr_gen_call" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_ENABLE">
+			<bits name="enable" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abort" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_cmd_block" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_STATUS">
+			<bits name="activity" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tfnf" pos="1" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tfe" pos="2" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfne" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rff" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mat_activity" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slv_activity" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_TXFLR">
+			<bits name="txflr" pos="4:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_RXFLR">
+			<bits name="rxflr" pos="4:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_SDA_HOLD">
+			<bits name="ic_sda_tx_hold" pos="15:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ic_sda_rx_hold" pos="23:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_TX_ABRT_SOURCE">
+			<bits name="abrt_7b_addr_noack" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_10addr1_noack" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_10addr2_noack" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_txdata_noack" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_gcall_noack" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_gcall_read" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_hs_ackdet" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_sbyte_ackdet" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_hs_norstrt" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_sbyte_norstrt" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_10b_rd_norstrt" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_master_dis" pos="11" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="arb_lost" pos="12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_slvflush_txfifo" pos="13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_slv_arblost" pos="14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_slvrd_intx" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="abrt_user_abrt" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_flush_cnt" pos="31:23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="IC_DMA_CR">
+			<bits name="rdmae" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tdmae" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_DMA_TDLR">
+			<bits name="dmatdl" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_DMA_RDLR">
+			<bits name="dmardl" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_SDA_SETUP">
+			<bits name="sda_setup" pos="7:0" access="rw" rst="0x64" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_ACK_GENERAL_CALL">
+			<bits name="ack_gen_call" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_ENABLE_STATUS">
+			<bits name="ic_en" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slv_disabled_while_busy" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="slv_rx_data_lost" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_FS_SPKLEN">
+			<bits name="ic_fs_spklen" pos="7:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_HS_SPKLEN">
+			<bits name="ic_hs_spklen" pos="7:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_CLR_RESTART_DET">
+			<bits name="clr_restart_det" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="72*8"/>
+
+		<reg name="IC_COMP_PARAM_1">
+			<bits name="apb_data_width" pos="1:0" access="ro" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="max_speed_mode" pos="3:2" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hc_count_values" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="intr_io" pos="5" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="has_dma" pos="6" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="add_encoded_params" pos="7" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_buffer_depth" pos="15:8" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_buffer_depth" pos="23:16" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_COMP_VERSION">
+			<bits name="ic_comp_version" pos="31:0" access="ro" rst="0x3230322a" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="IC_COMP_TYPE">
+			<bits name="ic_comp_type" pos="31:0" access="ro" rst="0x44570140" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

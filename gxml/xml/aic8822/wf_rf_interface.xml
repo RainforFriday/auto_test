@@ -1,0 +1,5286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="wf_rf_interface" category="wf_rf_interface">
+		<reg name="reg_00">
+			<bits name="wf_pu_hb0_iref_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_iref_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_phase_mux_rstn_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_phase_mux_rstn_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_ph8_en_reg" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_ph8_en_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_dll_rstn_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_dll_rstn_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_txlo_en_reg" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_txlo_en_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_rxlo_en_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_rxlo_en_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lo_psw_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lo_psw_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_gain_en_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_gain_en_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_avdd_trxsw_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_avdd_trxsw_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_pa_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_pa_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_padrv_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_padrv_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_tmx_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_tmx_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_rstn_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_rstn_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia0_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia0_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_rmx_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_rmx_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lna_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lna_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_04">
+			<bits name="wf_lb0_logen_ph8_en_reg" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_ph8_en_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_dll_rstn_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_dll_rstn_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_txlo_en_reg" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_txlo_en_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_rxlo_en_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_rxlo_en_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lo_psw_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lo_psw_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_wf2bt_rx_en_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_wf2bt_rx_en_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_gain_en_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_gain_en_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_avdd_trxsw_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_avdd_trxsw_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_pa_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_pa_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bt_mode_en_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bt_mode_en_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_wf_mode_en_reg" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_wf_mode_en_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_padrv_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_padrv_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_tmx_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_tmx_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_rmx_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_rmx_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lna_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lna_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_iref_cg_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_iref_cg_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_08">
+			<bits name="wf_hb1_logen_dll_rstn_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_dll_rstn_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_txlo_en_reg" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_txlo_en_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_rxlo_en_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_rxlo_en_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_lo_psw_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_lo_psw_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_gain_en_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_gain_en_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_avdd_trxsw_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_avdd_trxsw_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_pa_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_pa_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_padrv_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_padrv_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_tmx_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_tmx_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_rstn_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_rstn_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia1_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia1_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_rmx_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_rmx_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_lna_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_lna_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_iref_cg_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_iref_cg_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_iref_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_iref_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_phase_mux_rstn_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_phase_mux_rstn_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_0C">
+			<bits name="wf_lb1_logen_dll_rstn_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_dll_rstn_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_txlo_en_reg" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_txlo_en_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_rxlo_en_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_rxlo_en_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_lo_psw_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_lo_psw_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_gain_en_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_gain_en_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_avdd_trxsw_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_avdd_trxsw_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_pa_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_pa_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_wf_mode_en_reg" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_wf_mode_en_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_padrv_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_padrv_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_tmx_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_tmx_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_rmx_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_rmx_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_lna_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_lna_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_iref_cg_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_iref_cg_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_iref_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_iref_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_phase_mux_rstn_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_phase_mux_rstn_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_ph8_en_reg" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_ph8_en_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_10">
+			<bits name="wf_pu_tia_aux1_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia_aux1_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_rstn_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_rstn_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_rxflt0_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_rxflt0_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_rstn_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_rstn_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia_aux0_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_tia_aux0_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_tx_iref_cg_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_tx_iref_cg_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_tx_iref_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_tx_iref_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_clk_en_reg" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_clk_en_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_clk2dig_en_reg" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_clk2dig_en_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_bbpll_dac_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_bbpll_dac_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac1_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac1_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac0_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac0_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_iref_cg_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_iref_cg_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_iref_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_iref_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_phase_mux_rstn_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_phase_mux_rstn_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_ph8_en_reg" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_ph8_en_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_14">
+			<bits name="wf_pu_abb_rx_iref_cg_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_rx_iref_cg_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_rx_iref_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_abb_rx_iref_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_rstn_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_rstn_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_ts_hub1_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_ts_hub1_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_rstn_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_rstn_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_ts_hub0_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_ts_hub0_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_pulse_smpl_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_pulse_smpl_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_mon_adc_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_mon_adc_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_mon_adc_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_mon_adc_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc1_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc1_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc1_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc1_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc0_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc0_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc0_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc0_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_rstn_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_rstn_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_rxflt1_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_rxflt1_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_rstn_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_rstn_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_18">
+			<bits name="wf_bbpll_dac_refclk_en_reg" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_refclk_en_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_ref_img_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_ref_img_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_psw_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_psw_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_psw_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_psw_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_psw_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_psw_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_en_reg" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_en_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc_clk_buf_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc_clk_buf_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_vctrl_det_en_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_vctrl_det_en_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_adc_clk_en_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_adc_clk_en_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_rfpll_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_rfpll_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_vctrl_det_en_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_vctrl_det_en_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_adc_clk_en_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_adc_clk_en_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_rfpll_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_rfpll_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_1C">
+			<bits name="wf_lb1_lna_pu_bit" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lo_psw_pu_bit" pos="3:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_pu_bit_avdd13" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_pu_bit_avdd33" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_pu_bit" pos="9:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_pu_bit" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lo_psw_pu_bit" pos="13:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_pu_bit_avdd13" pos="15:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_pu_bit_avdd33" pos="17:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_pu_bit" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lo_psw_pu_bit" pos="21:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_pu_bit_avdd13" pos="23:22" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_pu_bit_avdd33" pos="25:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_pu_bit" pos="27:26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_pu_bit" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lo_iref_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lo_iref_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_20">
+			<bits name="wf_vcobus_psw_pu_bit" pos="1:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_psw_pu_bit" pos="3:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_psw_pu_bit" pos="5:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_pu_bit" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_pu_bit" pos="9:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_pu_bit" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_pu_bit" pos="13:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_pu_bit" pos="15:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_pu_bit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_pu_bit" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_pu_bit" pos="21:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_pu_bit_avdd13" pos="23:22" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_pu_bit_avdd13" pos="25:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lo_psw_pu_bit" pos="27:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_pu_bit_avdd13" pos="29:28" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_pu_bit_avdd33" pos="31:30" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_24">
+			<bits name="wf_test_enable_lb1_logen" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_pa" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_padrv" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_tmx" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_rmx" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_lna" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_iref_cg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_iref" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_logen" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_pa" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_padrv" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_tmx" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_tia1" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_rmx" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb1_lna" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_iref_cg" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_iref" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_logen" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_pa" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_padrv" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_tmx" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_rmx" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb0_lna" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_iref_cg" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_iref" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_logen" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_pa" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_padrv" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_tmx" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_tia0" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_rmx" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb0_lna" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_28">
+			<bits name="wf_test_enable_lb_vco" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb_vco" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb_rfpll" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_hb_rfpll" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_test_sel_xtal" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_test_sel_mdll" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_test_sel_bt" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_test_sel_wf" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_test2gpio_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_test2gpio_en" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_abb_rx_iref_cg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_abb_rx_iref" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_ts_hub1" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_ts_hub0" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_mon_adc" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_adc1" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_adc0" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_rxflt1" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_rxflt0" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_tia_aux1" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_tia_aux0" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_abb_tx_iref_cg" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_abb_tx_iref" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_bbpll_dac" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_dac1" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_dac0" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_high_test_mode" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_low_test_mode" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_pll_test_en" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_pll_test_en" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_iref_cg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lb1_iref" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_2C">
+			<bits name="wf_pu_lb1_lo_psw_td2" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lo_psw_td2" pos="3:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_ref_img_td1" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_reg_td2" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_vcobus_psw_td2" pos="9:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_rfpll_td3" pos="12:10" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_rfpll_td3" pos="15:13" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_td2" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_td2" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb_vco_psw_td2" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb_vco_psw_td2" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_rstn_td3" pos="26:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_rstn_td2" pos="28:27" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_pu_mdll_td2" pos="30:29" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_test_enable_lo_iref" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_30">
+			<bits name="wf_pu_hb1_lna_td1" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lna_td1" pos="3:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_lna_td1" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_lna_td1" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_adc_clk_en_td1" pos="9:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_adc_clk_en_td1" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_dll_rstn_td2" pos="13:12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_dll_rstn_td2" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_dll_rstn_td2" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_dll_rstn_td2" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_phase_mux_rstn_td2" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_phase_mux_rstn_td2" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_phase_mux_rstn_td2" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_phase_mux_rstn_td2" pos="27:26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_lo_psw_td2" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_lo_psw_td2" pos="31:30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_34">
+			<bits name="wf_pu_lb0_tmx_td1" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac1_td1" pos="3:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dac0_td1" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_bbpll_dac_td2" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc1_td1" pos="9:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_adc0_td1" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_rstn_td1" pos="13:12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_rstn_td1" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_rstn_td1" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_rstn_td1" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_rmx_td1" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_rmx_td1" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_rmx_td1" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_rmx_td1" pos="27:26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_rstn_td1" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_rstn_td1" pos="31:30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_38">
+			<bits name="wf_pu_lb0_pa_td2" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_pa_td1" pos="3:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_pa_td1" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_pa_td1" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_pa_td1" pos="9:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc1_td1" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_dly_adc0_td1" pos="13:12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_rstn_td1" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_rstn_td1" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_padrv_td1" pos="19:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_padrv_td1" pos="21:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_padrv_td1" pos="23:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb0_padrv_td1" pos="25:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_tmx_td1" pos="27:26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_tmx_td1" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_tmx_td1" pos="31:30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_3C">
+			<bits name="wf_rfpll_vctrl_THL" pos="5:0" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rfpll_vctrl_THH" pos="11:6" access="rw" rst="0x30" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rfpll_temp_comp_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tx_temp_sense_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_pulse_smpl_off_td1" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_vctrl_det_en_off_td2" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_vctrl_det_en_off_td2" pos="19:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_out_off_td1" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_clk_off_td1" pos="23:22" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_clk_off_td4" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb1_pa_td2" pos="27:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_hb0_pa_td2" pos="29:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pu_lb1_pa_td2" pos="31:30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_40">
+			<bits name="wf_hb0_lna_cap_bit" pos="4:0" access="ro" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_reg_vbit" pos="7:5" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_bias_en" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_aux_en" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_bypass_en" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_main_en" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_aux_atten_bit" pos="16:12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_balun_gbit" pos="19:17" access="ro" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_gbit" pos="20" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pd_td0" pos="22:21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_step_scale" pos="24:23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_en1" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_dcc_en0" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wfcm_mdll_auto_rst_en" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_avg_cnt" pos="29:28" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_44">
+			<bits name="wf_hb0_lna_vl_ibbg_bit" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_ibvtr_bit" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_it_mode" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_it_bit" pos="12:8" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_itcgm_bit" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_itbg_bit" pos="18:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vm_mode" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vm_ibit" pos="22:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_cgm_ibit" pos="26:23" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vtr_tc_bit" pos="29:27" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_48">
+			<bits name="wf_tia0_gbit_reg" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_gbit_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_op_czbit" pos="6:4" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_op_cmbit" pos="9:7" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_ibias_sel" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_reg_vbit" pos="12:11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_rmx_dpd_att_bit" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rmx_cload0_bit" pos="18:16" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_rmx_lobias_vbit" pos="21:19" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_rmx_img_input_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_rmx_dpd_input_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_ib_mode" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_ib_bit" pos="31:26" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_4C">
+			<bits name="wf_tia0_i_calbit_reg" pos="7:0" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_i_calbit_dr" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_dc_cal_ibit_reg" pos="11:9" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_dc_cal_ibit_dr" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_vcm_vbit" pos="15:13" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_bw_cbit" pos="20:16" access="ro" rst="0x1c" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_bw_rbit" pos="23:21" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_op_ibit" pos="28:24" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_50">
+			<bits name="wf_hb0_tmx_vreg3_bypass_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vlo_vbit" pos="3:1" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vh_vbit" pos="6:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_cbit" pos="11:7" access="ro" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_bias_opam_ibit" pos="13:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vbg_b_vbit" pos="15:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vbg_tc_bit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_path_bit" pos="19:18" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_ms" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_loft_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_auto_rst_en" pos="22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_q_calbit_reg" pos="30:23" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia0_q_calbit_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_54">
+			<bits name="wf_hb0_padrv_vh_vbit" pos="3:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vh_opam_bypass_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vbg_vbit" pos="6:5" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vbg_tc_bit" pos="8:7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_input_cbit" pos="12:9" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_cbit" pos="17:13" access="ro" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_gbit" pos="21:18" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_bias2_en" pos="22" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_bias1_en" pos="23" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_ms" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vreg3_vbit" pos="27:25" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vreg3_ibit" pos="31:28" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_58">
+			<bits name="wf_hb0_padrv_vl_i_itbg_bit" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_itvtr_bit" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_cgm_ibit" pos="9:6" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_vtr_tc_bit" pos="13:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vm_vtr_ibit" pos="17:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vm_ref_bit" pos="20:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vm_bg_ibit" pos="24:21" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vm_cgm_ibit" pos="28:25" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_bias_opam_ibit" pos="30:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vm_opam_bypass_en" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_5C">
+			<bits name="wf_hb0_padrv_vl_opam_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_sel_imode" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_iv_ib_mode" pos="4:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_ib_v_rbit" pos="10:5" access="ro" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_ibcgm_bit" pos="13:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_ibbg_v_tc_mode" pos="16:14" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_ibvtr_v_diode_en" pos="19:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_iv_it_mode" pos="22:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_iv_it_bit" pos="28:23" access="ro" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_itcgm_bit" pos="31:29" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_60">
+			<bits name="wf_hb0_pa_vh_vbit" pos="2:0" access="ro" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vh_ref_sel_bg" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vbg_vbit" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vbg_tc_bit" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_gbit" pos="11:8" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_input_cbit" pos="15:12" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_ms" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vtap_sel13_en" pos="17" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_isense_sel_p1" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vsw_bg_ibit" pos="22:19" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vsw_cgm_ibit" pos="26:23" access="rw" rst="0xb" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vsw_ref_bit" pos="29:27" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_64">
+			<bits name="wf_hb0_pa_vm_rfdyn_vthbit" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_rfdyn_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_vbit2" pos="9:4" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_vbit1" pos="13:10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_ref_bit" pos="17:14" access="ro" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_op_ibit" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_ref_sel_v13" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vh_bg_bit" pos="23:20" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vh_cgm_bit" pos="27:24" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vh_track_bit" pos="30:28" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_68">
+			<bits name="wf_hb0_pa_vl_i_itbg_bit" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_itvtr_bit" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_cgm_ibit" pos="9:6" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_vtr_tc_bit" pos="13:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_dc_cal_ibit" pos="19:14" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_vtr_ibit" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_track_bit" pos="26:24" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_cgm_ibit" pos="30:27" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_6C">
+			<bits name="wf_hb0_pa_vl_opam_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_sel_imode" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_iv_ib_mode" pos="4:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_ib_v_rbit" pos="10:5" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_ibcgm_bit" pos="13:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_ibbg_v_tc_mode" pos="16:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_ibvtr_v_diode_en" pos="19:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_iv_it_mode" pos="22:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_iv_it_bit" pos="28:23" access="ro" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_itcgm_bit" pos="31:29" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_70">
+			<bits name="wf_hb0_trxsw_swbit" pos="4:0" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_vi_cbit" pos="7:5" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_vi_mode" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_lpf_mode" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_rbit" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_gbit" pos="13:11" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_loft_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_isense_sel_padrv" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_isense_sel_pa" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_isense_sel_5u" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_isense_rbit" pos="20:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_isense_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_dpd_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vsw_ref_bit" pos="25:23" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vcscd_opam_ibit" pos="27:26" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_opam_ibit" pos="29:28" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_74">
+			<bits name="wf_hb0_iref_start_enb" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_ph8_force_on" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_phase_mux_reg_bit" pos="4:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_dll_freq_bit" pos="6:5" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_logen_dll_pd_out_bit" pos="9:7" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_ph8_en" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_rxlo_dpd_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lobuf_reg_bit" pos="15:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lo_psw_sf_avdd_sw_bit" pos="22:16" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lo_psw_vref_sel_self_bias" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lo_psw_sf_mode" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lo_psw_mode" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_avdd_trxsw_vbit" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vtap_cbit" pos="30:27" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_78">
+			<bits name="wf_hb0_agc_rsvd" pos="8:0" access="ro" rst="0x1f0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_rsvd_bit" pos="24:9" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_iref_cg_ibit" pos="28:25" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_7C">
+			<bits name="wf_lb0_lna_vtr_tc_bit" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_reg_vbit" pos="5:3" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_trx_sw_bit" pos="9:6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_bias_en" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_aux_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_bypass_en" pos="12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_main_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_aux_atten_bit" pos="18:14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_balun_gbit" pos="21:19" access="ro" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_gbit" pos="22" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_apc_rsvd" pos="28:23" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_80">
+			<bits name="wf_lb0_lna_vl_ibbg_bit" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_ibvtr_bit" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_it_mode" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_it_bit" pos="12:8" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_itcgm_bit" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_itbg_bit" pos="18:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vm_mode" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vm_ibit" pos="22:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_cgm_ibit" pos="26:23" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_84">
+			<bits name="wf_lb0_tmx_vh_vbit" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_cbit" pos="6:3" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vbg_b_vbit" pos="8:7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vbg_tc_bit" pos="10:9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_path_bit" pos="12:11" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_ms" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_rmx_dpd_att_bit" pos="16:14" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_rmx_lobias_vbit" pos="19:17" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_rmx_img_input_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_rmx_dpd_input_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_ib_mode" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_ib_bit" pos="29:24" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_88">
+			<bits name="wf_lb0_padrv_vh_opam_bypass_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vbg_vbit" pos="2:1" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vbg_tc_bit" pos="4:3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_input_cbit" pos="7:5" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_cbit" pos="11:8" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_gbit" pos="15:12" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bias2_en" pos="16" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bias1_en" pos="17" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_ms" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_bias_opam_ibit" pos="20:19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vreg3_vbit" pos="23:21" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vreg3_ibit" pos="27:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vreg3_bypass_en" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vlo_vbit" pos="31:29" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_8C">
+			<bits name="wf_lb0_padrv_vm_cgm_ibit_coant" pos="3:0" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_cgm_ibit_wf" pos="7:4" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_ref_bit_coant" pos="10:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_ref_bit_wf" pos="13:11" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_vtr_ibit_coant" pos="17:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_vtr_ibit_wf" pos="21:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_opam_bypass_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vh_vbit_coant" pos="26:23" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vh_vbit_wf" pos="30:27" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_90">
+			<bits name="wf_lb0_padrv_vl_iv_it_bit" pos="5:0" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_itcgm_bit" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_itbg_bit" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_itvtr_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_cgm_ibit" pos="18:15" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_vtr_tc_bit" pos="22:19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_bg_ibit_coant" pos="26:23" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vm_bg_ibit_wf" pos="30:27" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_94">
+			<bits name="wf_lb0_padrv_vsw_cgm_ibit" pos="3:0" access="rw" rst="0xb" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vsw_ref_bit" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_opam_en" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_sel_imode" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_iv_ib_mode" pos="11:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_ib_v_rbit" pos="17:12" access="ro" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_ibcgm_bit" pos="20:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_ibbg_v_tc_mode" pos="23:21" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_ibvtr_v_diode_en" pos="26:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_iv_it_mode" pos="29:27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_98">
+			<bits name="wf_lb0_pa_vh_bg_bit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vh_cgm_bit" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vh_vbit" pos="10:8" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vh_ref_sel_bg" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vbg_vbit" pos="13:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vbg_tc_bit" pos="15:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_gbit" pos="19:16" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_input_cbit" pos="22:20" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_ms" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bias_opam_ibit" pos="25:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vtap_sel13_en" pos="26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_isense_sel_p1" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vsw_bg_ibit" pos="31:28" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_9C">
+			<bits name="wf_lb0_pa_vm_vtr_ibit" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_cgm_ibit" pos="7:4" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_rfdyn_vthbit" pos="10:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_rfdyn_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_vbit2" pos="17:12" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_vbit1" pos="21:18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_ref_bit" pos="25:22" access="ro" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_op_ibit" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_ref_sel_v13" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_A0">
+			<bits name="wf_lb0_pa_vl_iv_it_mode" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_iv_it_bit" pos="8:3" access="ro" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_itcgm_bit" pos="11:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_itbg_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_itvtr_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_cgm_ibit" pos="21:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_vtr_tc_bit" pos="25:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_dc_cal_ibit" pos="31:26" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_A4">
+			<bits name="wf_lb0_pa_isense_sel_pa" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_isense_sel_5u" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_isense_rbit" pos="4:2" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_isense_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_dpd_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vsw_ref_bit" pos="9:7" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_opam_ibit" pos="11:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_opam_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_sel_imode" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_iv_ib_mode" pos="16:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_ib_v_rbit" pos="22:17" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_ibcgm_bit" pos="25:23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_ibbg_v_tc_mode" pos="28:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_i_ibvtr_v_diode_en" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_A8">
+			<bits name="wf_lb0_trxsw_rxcap_en" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_decap_en_rx" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_decap_en_tx" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_rfop_hd2_cbit_rx" pos="6:3" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_rfop_hd2_cbit_tx" pos="10:7" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_vi_cbit" pos="13:11" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_vi_mode" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_lpf_mode" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_rbit" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_gbit" pos="19:17" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_loft_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_isense_sel_padrv" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_AC">
+			<bits name="wf_lb0_iref_cg_ibit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_iref_start_enb" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_ph8_force_on" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_phase_mux_reg_bit" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_logen_dll_reg_bit" pos="12:9" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_ph8_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_rxlo_dpd_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lobuf_reg_bit" pos="18:15" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_avdd_trxsw_vbit" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vcscd_opam_ibit" pos="21:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_B0">
+			<bits name="wf_hb1_lna_gbit" pos="0" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_apc_rsvd" pos="5:1" access="ro" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_agc_rsvd" pos="13:6" access="ro" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_rsvd_bit" pos="29:14" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_B4">
+			<bits name="wf_hb1_lna_vm_mode" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vm_ibit" pos="3:1" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_cgm_ibit" pos="7:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vtr_tc_bit" pos="10:8" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_cap_bit" pos="15:11" access="ro" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_reg_vbit" pos="18:16" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_bias_en" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_aux_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_bypass_en" pos="21" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_main_en" pos="22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_aux_atten_bit" pos="27:23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_balun_gbit" pos="30:28" access="ro" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_B8">
+			<bits name="wf_hb1_rmx_lobias_vbit" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_rmx_img_input_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_rmx_dpd_input_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_ib_mode" pos="6:5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_ib_bit" pos="12:7" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_ibbg_bit" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_ibvtr_bit" pos="18:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_it_mode" pos="20:19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_it_bit" pos="25:21" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_itcgm_bit" pos="28:26" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_itbg_bit" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_BC">
+			<bits name="wf_tia1_bw_cbit" pos="4:0" access="ro" rst="0x1c" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_bw_rbit" pos="7:5" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_op_ibit" pos="12:8" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_gbit_reg" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_gbit_dr" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_op_czbit" pos="19:17" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_op_cmbit" pos="22:20" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_ibias_sel" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_reg_vbit" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_rmx_dpd_att_bit" pos="28:26" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rmx_cload1_bit" pos="31:29" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_C0">
+			<bits name="wf_hb1_tmx_vbg_tc_bit" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_path_bit" pos="3:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_ms" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_loft_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_auto_rst_en" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_q_calbit_reg" pos="14:7" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_q_calbit_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_i_calbit_reg" pos="23:16" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_i_calbit_dr" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_dc_cal_ibit_reg" pos="27:25" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_dc_cal_ibit_dr" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia1_vcm_vbit" pos="31:29" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_C4">
+			<bits name="wf_hb1_padrv_gbit" pos="3:0" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_bias2_en" pos="4" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_bias1_en" pos="5" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_ms" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vreg3_vbit" pos="9:7" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vreg3_ibit" pos="13:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vreg3_bypass_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vlo_vbit" pos="17:15" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vh_vbit" pos="20:18" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_cbit" pos="25:21" access="ro" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_bias_opam_ibit" pos="27:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vbg_b_vbit" pos="29:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_C8">
+			<bits name="wf_hb1_padrv_vm_ref_bit" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vm_bg_ibit" pos="6:3" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vm_cgm_ibit" pos="10:7" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_bias_opam_ibit" pos="12:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vm_opam_bypass_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vh_vbit" pos="17:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vh_opam_bypass_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vbg_vbit" pos="20:19" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vbg_tc_bit" pos="22:21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_input_cbit" pos="26:23" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_cbit" pos="31:27" access="ro" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_CC">
+			<bits name="wf_hb1_padrv_vl_iv_it_mode" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_iv_it_bit" pos="8:3" access="ro" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_itcgm_bit" pos="11:9" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_itbg_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_itvtr_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_cgm_ibit" pos="21:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_vtr_tc_bit" pos="25:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vm_vtr_ibit" pos="29:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_D0">
+			<bits name="wf_hb1_padrv_isense_sel_p1" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vsw_bg_ibit" pos="4:1" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vsw_cgm_ibit" pos="8:5" access="rw" rst="0xb" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vsw_ref_bit" pos="11:9" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_opam_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_sel_imode" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_iv_ib_mode" pos="16:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_ib_v_rbit" pos="22:17" access="ro" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_ibcgm_bit" pos="25:23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_ibbg_v_tc_mode" pos="28:26" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_ibvtr_v_diode_en" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_D4">
+			<bits name="wf_hb1_pa_vm_op_ibit" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_ref_sel_v13" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_bg_bit" pos="5:2" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_cgm_bit" pos="9:6" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_track_bit" pos="12:10" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_vbit" pos="15:13" access="ro" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_ref_sel_bg" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vbg_vbit" pos="18:17" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vbg_tc_bit" pos="20:19" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_gbit" pos="24:21" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_input_cbit" pos="28:25" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_ms" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vtap_sel13_en" pos="30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_D8">
+			<bits name="wf_hb1_pa_vm_vtr_ibit" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_track_bit" pos="6:4" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_cgm_ibit" pos="10:7" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_rfdyn_vthbit" pos="13:11" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_rfdyn_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_vbit2" pos="20:15" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_vbit1" pos="24:21" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_ref_bit" pos="28:25" access="ro" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_DC">
+			<bits name="wf_hb1_pa_vl_iv_it_mode" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_iv_it_bit" pos="8:3" access="ro" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_itcgm_bit" pos="11:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_itbg_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_itvtr_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_cgm_ibit" pos="21:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_vtr_tc_bit" pos="25:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_dc_cal_ibit" pos="31:26" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_E0">
+			<bits name="wf_hb1_pa_isense_rbit" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_isense_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_dpd_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vsw_ref_bit" pos="7:5" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vcscd_opam_ibit" pos="9:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_opam_ibit" pos="11:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_opam_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_sel_imode" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_iv_ib_mode" pos="16:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_ib_v_rbit" pos="22:17" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_ibcgm_bit" pos="25:23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_ibbg_v_tc_mode" pos="28:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_i_ibvtr_v_diode_en" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_E4">
+			<bits name="wf_hb1_lo_psw_vref_sel_self_bias" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lo_psw_sf_mode" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lo_psw_mode" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_avdd_trxsw_vbit" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vtap_cbit" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_trxsw_swbit" pos="12:8" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_vi_cbit" pos="15:13" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_vi_mode" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_lpf_mode" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_rbit" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_gbit" pos="21:19" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_loft_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_isense_sel_padrv" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_isense_sel_pa" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_isense_sel_5u" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_E8">
+			<bits name="wf_hb1_iref_cg_ibit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_iref_start_enb" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_ph8_force_on" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_phase_mux_reg_bit" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_dll_freq_bit" pos="10:9" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_logen_dll_pd_out_bit" pos="13:11" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_ph8_en" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_rxlo_dpd_en" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lobuf_reg_bit" pos="19:16" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lo_psw_sf_avdd_sw_bit" pos="26:20" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_EC">
+			<bits name="wf_lb1_lna_gbit" pos="0" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_apc_rsvd" pos="6:1" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_agc_rsvd" pos="15:7" access="ro" rst="0x1f0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_rsvd_bit" pos="31:16" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_F0">
+			<bits name="wf_lb1_lna_vm_mode" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vm_ibit" pos="3:1" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_cgm_ibit" pos="7:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vtr_tc_bit" pos="10:8" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_reg_vbit" pos="13:11" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_trx_sw_bit" pos="17:14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_bias_en" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_aux_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_bypass_en" pos="20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_main_en" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_aux_atten_bit" pos="26:22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_balun_gbit" pos="29:27" access="ro" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_F4">
+			<bits name="wf_lb1_rmx_lobias_vbit" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_rmx_img_input_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_rmx_dpd_input_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_ib_mode" pos="6:5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_ib_bit" pos="12:7" access="ro" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_ibbg_bit" pos="15:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_ibvtr_bit" pos="18:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_it_mode" pos="20:19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_it_bit" pos="25:21" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_itcgm_bit" pos="28:26" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_itbg_bit" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_F8">
+			<bits name="wf_lb1_padrv_bias1_en" pos="0" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_ms" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_bias_opam_ibit" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vreg3_vbit" pos="6:4" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vreg3_ibit" pos="10:7" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vreg3_bypass_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vlo_vbit" pos="14:12" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vh_vbit" pos="17:15" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_cbit" pos="21:18" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vbg_b_vbit" pos="23:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vbg_tc_bit" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_path_bit" pos="27:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_ms" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_rmx_dpd_att_bit" pos="31:29" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_FC">
+			<bits name="wf_lb1_padrv_vm_opam_bypass_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vm_vtr_ibit" pos="4:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vm_cgm_ibit" pos="8:5" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vh_vbit" pos="12:9" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vh_opam_bypass_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vbg_vbit" pos="15:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vbg_tc_bit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_input_cbit" pos="20:18" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_cbit" pos="24:21" access="ro" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_gbit" pos="28:25" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_bias2_en" pos="29" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_100">
+			<bits name="wf_lb1_padrv_vl_iv_it_bit" pos="5:0" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_itcgm_bit" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_itbg_bit" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_itvtr_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_cgm_ibit" pos="18:15" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_vtr_tc_bit" pos="22:19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vm_ref_bit" pos="25:23" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vm_bg_ibit" pos="29:26" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_104">
+			<bits name="wf_lb1_padrv_vsw_bg_ibit" pos="3:0" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vsw_ref_bit" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_opam_en" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_sel_imode" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_iv_ib_mode" pos="11:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_ib_v_rbit" pos="17:12" access="ro" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_ibcgm_bit" pos="20:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_ibbg_v_tc_mode" pos="23:21" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_ibvtr_v_diode_en" pos="26:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_iv_it_mode" pos="29:27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_108">
+			<bits name="wf_lb1_pa_vh_bg_bit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vh_vbit" pos="6:4" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vh_ref_sel_bg" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vbg_vbit" pos="9:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vbg_tc_bit" pos="11:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_gbit" pos="15:12" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_input_cbit" pos="18:16" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_ms" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_bias_opam_ibit" pos="21:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_bt_mode_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vtap_sel13_en" pos="23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_isense_sel_p1" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vsw_cgm_ibit" pos="28:25" access="rw" rst="0xb" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_10C">
+			<bits name="wf_lb1_pa_vm_vtr_ibit" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_cgm_ibit" pos="7:4" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_rfdyn_vthbit" pos="10:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_rfdyn_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_vbit2" pos="17:12" access="ro" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_vbit1" pos="21:18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_ref_bit" pos="25:22" access="ro" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_op_ibit" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_ref_sel_v13" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vh_cgm_bit" pos="31:28" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_110">
+			<bits name="wf_lb1_pa_vl_iv_it_mode" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_iv_it_bit" pos="8:3" access="ro" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_itcgm_bit" pos="11:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_itbg_bit" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_itvtr_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_cgm_ibit" pos="21:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_vtr_tc_bit" pos="25:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_dc_cal_ibit" pos="31:26" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_114">
+			<bits name="wf_lb1_pa_isense_sel_pa" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_isense_sel_5u" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_isense_rbit" pos="4:2" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_isense_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_dpd_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vsw_ref_bit" pos="9:7" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_opam_ibit" pos="11:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_opam_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_sel_imode" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_iv_ib_mode" pos="16:14" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_ib_v_rbit" pos="22:17" access="ro" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_ibcgm_bit" pos="25:23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_ibbg_v_tc_mode" pos="28:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_ibvtr_v_diode_en" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_118">
+			<bits name="wf_lb1_pa_decap_en_rx" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_decap_en_tx" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_rfop_hd2_cbit_rx" pos="5:2" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_rfop_hd2_cbit_tx" pos="9:6" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_vi_cbit" pos="12:10" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_vi_mode" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_lpf_mode" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_rbit" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_gbit" pos="18:16" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_loft_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_isense_sel_padrv" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_11C">
+			<bits name="wf_lb1_iref_cg_ibit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_iref_start_enb" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_ph8_force_on" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_phase_mux_reg_bit" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_logen_dll_reg_bit" pos="12:9" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_ph8_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_rxlo_dpd_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lobuf_reg_bit" pos="18:15" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_avdd_trxsw_vbit" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_trxsw_rxcap_en" pos="20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vcscd_opam_ibit" pos="22:21" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_120">
+			<bits name="wf_dac0_dvdd_vbit" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_apc_rsvd" pos="7:3" access="ro" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_agc_rsvd" pos="15:8" access="ro" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_rsvd_bit" pos="31:16" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_124">
+			<bits name="wf_dac0_vl_it_mode" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_it_bit" pos="7:3" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_itcgm_bit" pos="10:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_itbg_bit" pos="13:11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_itvtr_bit" pos="16:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_cgm_ibit" pos="20:17" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vtr_tc_bit" pos="23:21" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vb_opam_en" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vbcscd_vbit" pos="27:25" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vbcscd_opam_en" pos="28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_path450_sel_bit" pos="30:29" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_bias_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_128">
+			<bits name="wf_dac1_vbcscd_opam_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_path450_sel_bit" pos="2:1" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_bias_en" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_dvdd_vbit" pos="6:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_offset_bits" pos="11:7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_din0_mode_sel" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_clk_path0_path45_dly_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_ib_mode" pos="16:14" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_ib_bit" pos="21:17" access="ro" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_ibcgm_bit" pos="24:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_ibbg_bit" pos="27:25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_vl_ibvtr_bit" pos="30:28" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_12C">
+			<bits name="wf_dac1_vl_ibvtr_bit" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_it_mode" pos="5:3" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_it_bit" pos="10:6" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_itcgm_bit" pos="13:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_itbg_bit" pos="16:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_itvtr_bit" pos="19:17" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_cgm_ibit" pos="23:20" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vtr_tc_bit" pos="26:24" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vb_opam_en" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vbcscd_vbit" pos="30:28" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_130">
+			<bits name="wf_bbpll_dac_vco_band_bit" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_pfd_range_ext_en" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_pfd_rst_dly_bit" pos="3:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_cp_ibit" pos="6:4" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_reg_vbit" pos="10:7" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_offset_bits" pos="15:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_din0_mode_sel" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_clk_path0_path45_dly_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_ib_mode" pos="20:18" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_ib_bit" pos="25:21" access="ro" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_ibcgm_bit" pos="28:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_vl_ibbg_bit" pos="31:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_134">
+			<bits name="wf_abb_tx_iref_cg_ibit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_abb_tx_iref_start_enb" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac1_clk_sel_posedge" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac0_clk_sel_posedge" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_dac_clk_sel_bbpll" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_freq_low_flag" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_freq_high_flag" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_lock_out" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_auto_rst_en" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_lpf_rst_bypass" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_clk2dig_ph_sel" pos="14:13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_freq_low" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_freq_high" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_vco_band_cal_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_138">
+			<bits name="wf_tia_aux0_gbit" pos="2:0" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_vcm_vbit" pos="5:3" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_op_ibit" pos="10:6" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_auto_rst_en" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_ibias_sel" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_input_sel" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_abb_tx_rsvd_bit" pos="29:14" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_13C">
+			<bits name="wf_rxflt0_bw_cbit1" pos="5:0" access="ro" rst="0x11" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_bw_rbit" pos="8:6" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_iq_swap" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_notch_mode" pos="11:10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_cal_mode" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_pwres_bit" pos="14:13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_auto_rst_en" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_op_q_rbit" pos="19:16" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_op_mil_rbit" pos="23:20" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_op_mil_cbit" pos="26:24" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux0_bw_bit" pos="31:27" access="ro" rst="0x1d" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_140">
+			<bits name="wf_rxflt0_q_calbit" pos="4:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_i_calbit" pos="9:5" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_vcm_bit" pos="12:10" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_gbit2_reg" pos="15:13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_gbit2_dr" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_gbit1_reg" pos="21:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_gbit1_dr" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_bw_cbit2" pos="28:23" access="ro" rst="0x11" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_144">
+			<bits name="wf_tia_aux1_auto_rst_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_ibias_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_input_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_insel" pos="6:3" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_ibias_sel_cgm" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_cz_bit0" pos="10:8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_cm_bit0" pos="13:11" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_rq_bit1" pos="17:14" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_rm_bit1" pos="21:18" access="ro" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_cm_bit1" pos="24:22" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt0_op_ibit" pos="30:25" access="ro" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_148">
+			<bits name="wf_rxflt1_cal_mode" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_pwres_bit" pos="2:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_auto_rst_en" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_op_q_rbit" pos="7:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_op_mil_rbit" pos="11:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_op_mil_cbit" pos="14:12" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_bw_bit" pos="19:15" access="ro" rst="0x1d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_gbit" pos="22:20" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_vcm_vbit" pos="25:23" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_tia_aux1_op_ibit" pos="30:26" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_14C">
+			<bits name="wf_rxflt1_vcm_bit" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_gbit2_reg" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_gbit2_dr" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_gbit1_reg" pos="11:7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_gbit1_dr" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_bw_cbit2" pos="18:13" access="ro" rst="0x11" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_bw_cbit1" pos="24:19" access="ro" rst="0x11" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_bw_rbit" pos="27:25" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_iq_swap" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_notch_mode" pos="30:29" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_150">
+			<bits name="wf_rxflt1_op_cm_bit0" pos="2:0" access="ro" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_op_rq_bit1" pos="6:3" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_op_rm_bit1" pos="10:7" access="ro" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_op_cm_bit1" pos="13:11" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_op_ibit" pos="19:14" access="ro" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_q_calbit" pos="24:20" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_i_calbit" pos="29:25" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_154">
+			<bits name="wf_adc0_reg_vbit" pos="3:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_dly_bit" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_clk_edge_sel" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_vref_tc_mode" pos="10:9" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_ti_mode" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_slice_sel" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_cmp_ibit" pos="16:13" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_clk_sel" pos="18:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_aux_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_core_en" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_insel" pos="24:21" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_ibias_sel_cgm" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxflt1_op_cz_bit0" pos="28:26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_158">
+			<bits name="wf_adc1_ti_mode" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_slice_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_cmp_ibit" pos="5:2" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_clk_sel" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_aux_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_core_en" pos="9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_clk_cbit" pos="13:10" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_dac_lp_mode" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_vref_vbit" pos="19:15" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_vref_ibit" pos="24:20" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_vcm_vbit" pos="27:25" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc0_reg_ibit" pos="31:28" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_15C">
+			<bits name="wf_adc1_dac_lp_mode" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_vref_vbit" pos="5:1" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_vref_ibit" pos="10:6" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_vcm_vbit" pos="13:11" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_reg_ibit" pos="17:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_reg_vbit" pos="21:18" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_dly_bit" pos="25:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_clk_edge_sel" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_vref_tc_mode" pos="28:27" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_160">
+			<bits name="wf_ts_hub1_chn_sel" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_clk_div" pos="3:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_cal_mode" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_chop_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_gbit" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_iref_ibit" pos="11:8" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_chn_sel" pos="13:12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub0_clk_div" pos="15:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_vreg_ibit" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_vreg_vbit" pos="21:18" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_dly_bit" pos="25:22" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_clk_edge_sel" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_mon_adc_oneshot_mode" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc1_clk_cbit" pos="31:28" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_164">
+			<bits name="wf_abb2gpio_en" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_abb_rx_iref_cg_ibit" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_abb_rx_iref_start_enb" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_cal_mode" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_chop_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_gbit" pos="12:11" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_ts_hub1_iref_ibit" pos="16:13" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_168">
+			<bits name="wf_hb_rfpll_loop_mode" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_frefx2_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_fref_sel" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_presc_reg_vbit" pos="6:3" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_dvdd_ldo_vbit" pos="8:7" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_pdt_reg_vbit" pos="12:9" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_presc_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_loop_en" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_sel_avdd_sw" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_abb_rx_rsvd_bit" pos="31:16" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_16C">
+			<bits name="wf_hb_rfpll_vco_cal_sel" pos="1:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_cal_bit" pos="3:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_cal_en" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_cal_clk_edge_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_fbc_sel" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_sdm_clk_sel" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_pdt_rbit" pos="13:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_lpf_gbit" pos="15:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_lpf_rbit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_cp_ibit" pos="21:18" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_cp_rbit" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_vco_gbit" pos="27:24" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_lpf_notch_bypass" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_sinc_mode" pos="30:29" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_170">
+			<bits name="wf_lb_rfpll_frefx2_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_fref_sel" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_presc_reg_vbit" pos="5:2" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_dvdd_ldo_vbit" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_pdt_reg_vbit" pos="11:8" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_presc_en" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_loop_en" pos="13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_sel_avdd_sw" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_lock_out" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_adc_clk_edge_sel" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_adc_clk_div" pos="25:17" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_notch_sel_4p2G" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_notch_bypass" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_sinc_clk_sel" pos="29:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_rfpll_sinc_clk_div" pos="31:30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_174">
+			<bits name="wf_lb_rfpll_vco_cal_sel" pos="1:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_cal_bit" pos="3:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_cal_en" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_cal_clk_edge_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_fbc_sel" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_sdm_clk_sel" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_pdt_rbit" pos="13:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_lpf_gbit" pos="15:14" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_lpf_rbit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_cp_ibit" pos="21:18" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_cp_rbit" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_vco_gbit" pos="27:24" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_lpf_notch_bypass" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_sinc_mode" pos="30:29" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_loop_mode" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_178">
+			<bits name="wf_hb_vco_psw_vref_sel_self_bias" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_psw_sf_mode" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_psw_mode" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_sel_bbpll" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf2dig_edge_sel" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_band_sel" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_clk_buf_reg_vbit" pos="9:6" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_lock_out" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_notch_bypass" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_sinc_clk_sel" pos="13:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_sinc_clk_div" pos="15:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_adc_clk_edge_sel" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_adc_clk_div" pos="25:17" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_rfpll_notch_sel_4p2G" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_17C">
+			<bits name="wf_hb_vco_band_aux_bit" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_bit" pos="16:3" access="ro" rst="0x1fff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_avdd18_reg_en" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_avdd18_reg_bit" pos="20:18" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_avdd18_reg_bypass" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_psw_sf_avdd_sw_bit" pos="28:22" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_180">
+			<bits name="wf_hb_vco_div5_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_div4_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_div2_en" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_presclo_en" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_vctrln_bias_bit" pos="8:4" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_vctrlp_bias_bit" pos="13:9" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_buf_reg_bit" pos="17:14" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_core_reg_bit" pos="21:18" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_tail_bit" pos="27:22" access="rw" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_temp_bit" pos="31:28" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_184">
+			<bits name="wf_lb_vco_band_bit" pos="13:0" access="ro" rst="0x1fff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_avdd18_reg_en" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_avdd18_reg_bit" pos="17:15" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_avdd18_reg_bypass" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_psw_sf_avdd_sw_bit" pos="25:19" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_psw_vref_sel_self_bias" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_psw_sf_mode" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_psw_mode" pos="28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_core_sw_on" pos="29" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco1_en" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco0_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_188">
+			<bits name="wf_lb_vco_presclo_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_vctrln_bias_bit" pos="5:1" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_vctrlp_bias_bit" pos="10:6" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_buf_reg_bit" pos="14:11" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_core_reg_bit" pos="18:15" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_band_tail_bit" pos="24:19" access="rw" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_band_temp_bit" pos="28:25" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_band_aux_bit" pos="31:29" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_18C">
+			<bits name="wf_vcobus_lb_vco_div5_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_lb_vco_div2_en" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_lb_img_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_hb_vco_div5_en" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_hb_img_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_hb_vco_div2_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_img_buf_gbit" pos="7:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_reg_lobus_ref_img_bit" pos="11:8" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_reg_bit" pos="15:12" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_psw_sf_avdd_sw_bit" pos="22:16" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_psw_vref_sel_self_bias" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_psw_sf_mode" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_psw_mode" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_core_sw_on" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco1_en" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco0_en" pos="28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_div5_en" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_div1p5_en" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_div2_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_190">
+			<bits name="wf_lo_rsvd_bit" pos="15:0" access="rw" rst="0xff00" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lo_iref_start_enb" pos="16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_wifi6e_en" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_bbpll_dac_refclk_div_mode" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_en1" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_en0" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_vcobus_uhb_img_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_soft_reset_reg">
+			<bits name="soft_reset" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_ant_band_reg">
+			<bits name="ant0_trxband_sel" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_trxband_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_vcoband_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_vcoband_sel" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txoff_evenodd_ant_sel" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txoff_evenodd_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txoff_evenodd_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_misc_crtl1_reg">
+			<bits name="ant0_rxgain_page" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_mem_sw_req" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_mem_sw_ack" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_adj_dc_page" pos="7:5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_adj_dc_update_table" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_adj_dc_info_mask_clear" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_page" pos="12:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_mem_sw_req" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_mem_sw_ack" pos="14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_adj_dc_page" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_adj_dc_update_table" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_adj_dc_info_mask_clear" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_pllon_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_pllon_trx" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_pllon_ant_sel" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_pllon_reg" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_pllon_trx" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_pllon_ant_sel" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_pllon_sleep_en" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_working" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rfpll_select" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_misc_crtl2_reg">
+			<bits name="init_mdll_dcc_duty_bit" pos="7:0" access="rw" rst="0x80" >
+				<comment>  </comment>
+			</bits>
+			<bits name="reset_mdll_dcc" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_out_polar" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="temp_bit_adj_dir" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="temp_bit_update_en" pos="13:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="reset_rfpll_temp" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mon_adc_clk_freq_sel" pos="16:15" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ts_hub_clk_freq_sel" pos="18:17" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_no_sim_rx_coant_tx" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_no_sim_tx_coant_rx" pos="20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_no_sim_rx_coant_tx" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_no_sim_tx_coant_rx" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_man_ctrl_reg">
+			<bits name="ant0_tx_gain_reg" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_tx_gain_dr" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_tx_gain_dr_pulse" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rx_gain_reg" pos="16:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rx_gain_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rx_gain_dr_pulse" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxon_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxon_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txon_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txon_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_bton_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_bton_dr" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_bttws_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_bttws_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_co_ant_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_co_ant_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_co_ant_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_co_ant_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_man_ctrl_reg">
+			<bits name="ant1_tx_gain_reg" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_tx_gain_dr" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_tx_gain_dr_pulse" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rx_gain_reg" pos="16:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rx_gain_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rx_gain_dr_pulse" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxon_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxon_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txon_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txon_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_bton_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_bton_dr" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_bttws_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_bttws_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_calclk_reg">
+			<bits name="cal_clk_div_num" pos="9:0" access="rw" rst="0x4f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_div_num_p1" pos="16:11" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_div_num_p2" pos="22:17" access="rw" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vco_loen_ctrl" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_ext_trxon_ctrl_reg">
+			<bits name="lb_ext_fem_idle_ctrl_reg" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_ext_fem_tx_ctrl_reg" pos="6:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_ext_fem_rx_ctrl_reg" pos="10:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_ext_fem_idle_ctrl_reg" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_ext_fem_tx_ctrl_reg" pos="18:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_ext_fem_rx_ctrl_reg" pos="22:20" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_ext_fem_lna_por" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_ext_fem_lna_por" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ext_fem_coant" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_ext_trxon_delay_reg">
+			<bits name="ext_txon_delay" pos="8:0" access="rw" rst="0x41" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ext_rxon_delay" pos="20:12" access="rw" rst="0x87" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_gain_mem_ctrl_reg">
+			<bits name="ant0_txgain_clk_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_clk_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_mem_cfg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_clk_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_clk_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_mem_cfg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoantgain_clk_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoantgain_clk_sel" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoantgain_mem_cfg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoantgain_clk_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_gain_mem_fetch_reg">
+			<bits name="ant0_txgain_mem_fetch_addr" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_mem_fetch_p" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_mem_fetch_addr" pos="22:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxgain_mem_fetch_p" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_gain_mem_ctrl_reg">
+			<bits name="ant1_txgain_clk_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txgain_clk_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txgain_mem_cfg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_clk_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_clk_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_mem_cfg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_gain_mem_fetch_reg">
+			<bits name="ant1_txgain_mem_fetch_addr" pos="5:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txgain_mem_fetch_p" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_mem_fetch_addr" pos="22:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_mem_fetch_p" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coant_gain_ctrl_reg">
+			<bits name="txcoant_gain_reg" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoant_gain_dr" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoant_gain_dr_pulse" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoant_gain_reg" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoant_gain_dr" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoant_gain_dr_pulse" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coant_gain_mem_fetch_reg">
+			<bits name="rxcoantgain_mem_fetch_addr" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxcoantgain_mem_fetch_p" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="txcoantgain_mem_ctrl_reg">
+			<bits name="ant0_txgain_mem_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_mem_clk_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_mem_coant_mode" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoantgain_halt" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoantgain_halted" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gain_to_ana_reg1">
+			<bits name="ant0_rxgain_to_ana" pos="6:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txgain_to_ana" pos="12:7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxgain_to_ana" pos="19:13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txgain_to_ana" pos="25:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gain_to_ana_reg2">
+			<bits name="rxcoantgain_to_ana" pos="3:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txcoantgain_to_ana" pos="7:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_debug1_reg">
+			<bits name="debug_sel0" pos="4:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_sel1" pos="12:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_sel2" pos="20:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_sel3" pos="28:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_debug2_reg">
+			<bits name="wf_lb_mon_adc_data_cmp" pos="5:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_mon_adc_dout_read_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_mon_adc_dout_read_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_mon_adc_data_cmp" pos="13:8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_mon_adc_dout_read_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_mon_adc_dout_read_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_aux_dump_data_sel" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_aux_dump_clk_sel" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rf_dump_sel" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rf_dump_inv" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rf_dump_start" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_adc_bbpll_clk_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_clk_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_intr_ctrl_reg">
+			<bits name="wf_lb_vco_band_temp_intr_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_temp_intr_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_adc_data_intr_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_adc_data_intr_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_band_temp_intr_clr" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_temp_intr_clr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_adc_data_intr_clr" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_adc_data_intr_clr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_mon_adc_data_th0" pos="13:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_mon_adc_data_th1" pos="19:14" access="rw" rst="0x3f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_mon_adc_data_th0" pos="25:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_mon_adc_data_th1" pos="31:26" access="rw" rst="0x3f" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_intr_flag_reg">
+			<bits name="wf_lb_vco_band_temp_intr_flag" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_band_temp_intr_flag" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb_vco_adc_data_intr_flag" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb_vco_adc_data_intr_flag" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_only_reg">
+			<bits name="bt_write_only_word" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_only_reg">
+			<bits name="wf_write_only_word" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="fem_iomux_reg1">
+			<bits name="fem_io_sel0" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel1" pos="7:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel2" pos="11:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel3" pos="15:12" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel4" pos="19:16" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel5" pos="23:20" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel6" pos="27:24" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel7" pos="31:28" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="fem_iomux_reg2">
+			<bits name="fem_io_sel8" pos="3:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel9" pos="7:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel10" pos="11:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel11" pos="15:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel12" pos="19:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel13" pos="23:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel14" pos="27:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel15" pos="31:28" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="fem_iomux_reg3">
+			<bits name="fem_io_sel16" pos="3:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel17" pos="7:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel18" pos="11:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel19" pos="15:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel20" pos="19:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel21" pos="23:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel22" pos="27:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel23" pos="31:28" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="fem_iomux_reg4">
+			<bits name="fem_io_sel24" pos="3:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fem_io_sel25" pos="7:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pu_done_reg">
+			<bits name="txon_co_ant_done" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_co_ant_done" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_txon_done" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_rxon_done" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_txon_done" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_rxon_done" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lb_pllon_done" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="hb_pllon_done" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_agc_table_out_reg0">
+			<bits name="ant0_agc_table_out_0" pos="31:0" access="ro" rst="0x9e5b8080" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_agc_table_out_reg1">
+			<bits name="ant0_agc_table_out_1" pos="31:0" access="ro" rst="0xa30eb7c9" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_agc_table_out_reg2">
+			<bits name="ant0_agc_table_out_2" pos="31:0" access="ro" rst="0x30000008" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_agc_table_out_reg3">
+			<bits name="ant0_agc_table_out_3" pos="31:0" access="ro" rst="0x3ff04fc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_agc_table_out_reg4">
+			<bits name="ant0_agc_table_out_4" pos="31:0" access="ro" rst="0x7c28e08a" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coant_agc_table_out_reg0">
+			<bits name="coant_agc_table_out_0" pos="31:0" access="ro" rst="0xe08f" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_apc_table_out_reg0">
+			<bits name="ant0_apc_table_out_0" pos="31:0" access="ro" rst="0x827203ef" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_apc_table_out_reg1">
+			<bits name="ant0_apc_table_out_1" pos="31:0" access="ro" rst="0x65f0a354" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant0_apc_table_out_reg2">
+			<bits name="ant0_apc_table_out_2" pos="31:0" access="ro" rst="0xe2d8590" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coant_apc_table_out_reg0">
+			<bits name="coant_apc_table_out_0" pos="31:0" access="ro" rst="0xb214fe20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coant_apc_table_out_reg1">
+			<bits name="coant_apc_table_out_1" pos="15:0" access="ro" rst="0x3db0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_agc_table_out_reg0">
+			<bits name="ant1_agc_table_out_0" pos="31:0" access="ro" rst="0x9e5b8080" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_agc_table_out_reg1">
+			<bits name="ant1_agc_table_out_1" pos="31:0" access="ro" rst="0xa30eb7c9" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_agc_table_out_reg2">
+			<bits name="ant1_agc_table_out_2" pos="31:0" access="ro" rst="0x30000008" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_agc_table_out_reg3">
+			<bits name="ant1_agc_table_out_3" pos="31:0" access="ro" rst="0x3ff04fc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_agc_table_out_reg4">
+			<bits name="ant1_agc_table_out_4" pos="31:0" access="ro" rst="0x7c28e08a" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_apc_table_out_reg0">
+			<bits name="ant1_apc_table_out_0" pos="31:0" access="ro" rst="0x827203ef" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_apc_table_out_reg1">
+			<bits name="ant1_apc_table_out_1" pos="31:0" access="ro" rst="0x65f0a354" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ant1_apc_table_out_reg2">
+			<bits name="ant1_apc_table_out_2" pos="31:0" access="ro" rst="0xe2d8590" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_0">
+			<bits name="wf_hb0_lna_gbit_when_lb" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_cap_bit_when_lb" pos="5:1" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_bypass_en_when_lb" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_balun_gbit_when_lb" pos="9:7" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_aux_atten_bit_when_lb" pos="14:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_ext_lna_en_when_lb" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_apc_rsvd_when_lb" pos="21:16" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_agc_rsvd_when_lb" pos="30:22" access="rw" rst="0x1f0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_1">
+			<bits name="ant1_apc_band_sel" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant1_agc_band_sel" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_apc_band_sel" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ant0_agc_band_sel" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_i_ib_v_rbit_when_lb" pos="9:4" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vh_vbit_when_lb" pos="12:10" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_input_cbit_when_lb" pos="16:13" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_gbit_when_lb" pos="20:17" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_it_bit_when_lb" pos="25:21" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_lna_vl_ib_bit_when_lb" pos="31:26" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_2">
+			<bits name="wf_hb0_padrv_gbit_when_lb" pos="3:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_cbit_when_lb" pos="8:4" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_bias2_en_when_lb" pos="9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_bias1_en_when_lb" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_vbit2_when_lb" pos="16:11" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_vbit1_when_lb" pos="20:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vm_ref_bit_when_lb" pos="24:21" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_pa_vl_iv_it_bit_when_lb" pos="30:25" access="rw" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_3">
+			<bits name="wf_hb0_trxsw_swbit_when_lb" pos="4:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_vlo_vbit_when_lb" pos="7:5" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_tmx_cbit_when_lb" pos="12:8" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vtap_sel13_en_when_lb" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_iv_it_bit_when_lb" pos="19:14" access="rw" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_vl_i_ib_v_rbit_when_lb" pos="25:20" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb0_padrv_input_cbit_when_lb" pos="29:26" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_4">
+			<bits name="wf_hb1_lna_gbit_when_lb" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_cap_bit_when_lb" pos="5:1" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_bypass_en_when_lb" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_balun_gbit_when_lb" pos="9:7" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_aux_atten_bit_when_lb" pos="14:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_ext_lna_en_when_lb" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_apc_rsvd_when_lb" pos="21:16" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_agc_rsvd_when_lb" pos="30:22" access="rw" rst="0x1f0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_5">
+			<bits name="wf_hb1_pa_vl_i_ib_v_rbit_when_lb" pos="5:0" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vh_vbit_when_lb" pos="8:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_input_cbit_when_lb" pos="12:9" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_gbit_when_lb" pos="16:13" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_it_bit_when_lb" pos="21:17" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_lna_vl_ib_bit_when_lb" pos="27:22" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_6">
+			<bits name="wf_hb1_padrv_gbit_when_lb" pos="3:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_cbit_when_lb" pos="8:4" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_bias2_en_when_lb" pos="9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_bias1_en_when_lb" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_vbit2_when_lb" pos="16:11" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_vbit1_when_lb" pos="20:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vm_ref_bit_when_lb" pos="24:21" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_pa_vl_iv_it_bit_when_lb" pos="30:25" access="rw" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_7">
+			<bits name="wf_hb1_trxsw_swbit_when_lb" pos="4:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_vlo_vbit_when_lb" pos="7:5" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_tmx_cbit_when_lb" pos="12:8" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vtap_sel13_en_when_lb" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_iv_it_bit_when_lb" pos="19:14" access="rw" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_vl_i_ib_v_rbit_when_lb" pos="25:20" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_hb1_padrv_input_cbit_when_lb" pos="29:26" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_8">
+			<bits name="wf_lb0_lna_trx_sw_bit_when_hb" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_gbit_when_hb" pos="4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_bypass_en_when_hb" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_balun_gbit_when_hb" pos="8:6" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_aux_atten_bit_when_hb" pos="13:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_ext_lna_en_when_hb" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_apc_rsvd_when_hb" pos="19:15" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_agc_rsvd_when_hb" pos="27:20" access="rw" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_9">
+			<bits name="wf_lb0_pa_vl_i_ib_v_rbit_when_hb" pos="5:0" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vh_vbit_when_hb" pos="8:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_input_cbit_when_hb" pos="11:9" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_gbit_when_hb" pos="15:12" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_it_bit_when_hb" pos="20:16" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_lna_vl_ib_bit_when_hb" pos="26:21" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_10">
+			<bits name="wf_lb0_padrv_gbit_when_hb" pos="3:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_cbit_when_hb" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bias2_en_when_hb" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_bias1_en_when_hb" pos="9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_vbit2_when_hb" pos="15:10" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_vbit1_when_hb" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vm_ref_bit_when_hb" pos="23:20" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_pa_vl_iv_it_bit_when_hb" pos="29:24" access="rw" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_11">
+			<bits name="wf_lb1_agc_rsvd_when_hb" pos="7:0" access="rw" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_trxsw_rxcap_en_when_hb" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_vlo_vbit_when_hb" pos="11:9" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_tmx_cbit_when_hb" pos="15:12" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vtap_sel13_en_when_hb" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_iv_it_bit_when_hb" pos="22:17" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_vl_i_ib_v_rbit_when_hb" pos="28:23" access="rw" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb0_padrv_input_cbit_when_hb" pos="31:29" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_12">
+			<bits name="wf_lb1_lna_vl_it_bit_when_hb" pos="4:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_vl_ib_bit_when_hb" pos="10:5" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_trx_sw_bit_when_hb" pos="14:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_gbit_when_hb" pos="15" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_bypass_en_when_hb" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_balun_gbit_when_hb" pos="19:17" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_lna_aux_atten_bit_when_hb" pos="24:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_ext_lna_en_when_hb" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_apc_rsvd_when_hb" pos="30:26" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_13">
+			<bits name="wf_lb1_pa_vm_vbit1_when_hb" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_ref_bit_when_hb" pos="7:4" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_iv_it_bit_when_hb" pos="13:8" access="rw" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vl_i_ib_v_rbit_when_hb" pos="19:14" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vh_vbit_when_hb" pos="22:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_input_cbit_when_hb" pos="25:23" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_gbit_when_hb" pos="29:26" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_14">
+			<bits name="wf_lb1_padrv_vtap_sel13_en_when_hb" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_iv_it_bit_when_hb" pos="6:1" access="rw" rst="0x2d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_vl_i_ib_v_rbit_when_hb" pos="12:7" access="rw" rst="0x35" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_input_cbit_when_hb" pos="15:13" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_gbit_when_hb" pos="19:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_cbit_when_hb" pos="23:20" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_bias2_en_when_hb" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_padrv_bias1_en_when_hb" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_pa_vm_vbit2_when_hb" pos="31:26" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_apc_register_15">
+			<bits name="wf_lb1_trxsw_rxcap_en_when_hb" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_vlo_vbit_when_hb" pos="3:1" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_lb1_tmx_cbit_when_hb" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agpc_reserved_reg">
+			<bits name="wf_lb0_agc_rsvd_coant_reg" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dig_reserved_reg">
+		</reg>
+	</module>
+</archive>

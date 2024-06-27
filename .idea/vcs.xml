@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/ATP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ICTEST_GUI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PyQt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gds2hfss" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hpchip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/icdlab_icverify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mass_production" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyproc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pyverify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/ATP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/ICTEST_GUI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/PyQt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/examples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/gds2hfss" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/hpchip" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/icdlab_icverify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/mass_production" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/pyproc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test_proj/pyverify" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="pmu_rtc0" category="pmu_rtc0">
+		<reg name="pmu_rtc0_cfg0">
+			<bits name="pmu_rtc0_rg_update" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pb_int_debc_seq_pd_bypass0" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pb_int_debc_seq_pd_bypass1" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpio_debc_seq_pd_bypass0" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpio_debc_seq_pd_bypass1" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bg_pd_seq_num" pos="7:5" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_force_pbint_neg_pwroff" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_cm_co_xtal_det_out" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_cm_co_xtal_det_clr_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_cm_co_xtal_det_hw_en" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_cm_co_xtal_det_sw_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_cm_co_xtal_det_th" pos="14:13" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pmu_ms_vio_rtc0" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pmu_ms_ldo33_rtc0" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pmu_ms_avdd33usb_rtc0" pos="17" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_gpio_clr" pos="18" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pb_int_debc_clr" pos="19" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pmu_soft_rstn" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg1">
+			<bits name="rtc_rg_ldo_rf_pu_seq_num" pos="4:0" access="rw" rst="0xb" >
+				<comment>    </comment>
+			</bits>
+			<bits name="rtc_rg_ldo_vrtc08_pu_seq_num" pos="9:5" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_vbat_rstn_th" pos="17:10" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pbint_long_rst_repower_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pbint_long_rst_pd_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_repower_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_pwroff_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_high_deglitch_th" pos="29:22" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_high_deglitch_en" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_en" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg2">
+			<bits name="rtc_rg_ldo_rf_vbit" pos="3:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pbint_por_trig_cnt_low_th" pos="11:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pbint_por_trig_cnt_high_th" pos="19:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpio_cfg" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_charger_on_en" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_charger_on_inv_sel" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pu_clk_32k_rc_sw" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pwr_on_rdy_sw" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_dbg_mux" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg3">
+			<bits name="rtc_rg_gpio_por_trig_cnt_low_th" pos="7:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpio_por_trig_cnt_high_th" pos="15:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_wdg_rstn_repower_en" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_wdg_rstn_pd_en" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pu_dcdc_ldo_mode_sel" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_alm_power_on_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_aon_gpio_pwr_on_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_aon_gpio_pwr_off_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_power_off_pmu_rtc0_en" pos="22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpio_power_off_rtc0_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_wdg_rstn_power_off_rtc0_en" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_long_pbint_power_off_en" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pb_int_long_rst_power_off_rtc0_en" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_device_set" pos="27" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_resetn_rtc_cnt" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_presetn_rtc_cnt" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_wdg_rst_rtc_rf_en" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_aon_gpio_neg_clr_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg4">
+			<bits name="rtc_rg_int_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_cnt_int_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_mask" pos="6:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_cnt_irq_mask" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_clr1" pos="8" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_clr2" pos="9" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_clr3" pos="10" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_clr4" pos="11" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_clr5" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_cnt_irq_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_raw_status" pos="18:14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_cnt_irq_raw_status" pos="19" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_int_mask_status" pos="24:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_cnt_irq_mask_status" pos="25" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpioa_hold" pos="28:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_gpiob_hold" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_agpio_hold" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_fls_hold" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg5">
+			<bits name="rtc_rg_rtc_cnt_ld_value" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg6">
+			<bits name="rtc_cnt_value" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_cfg7">
+			<bits name="rtc_rg_rtc_cnt_enable" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_cnt_ld_vld" pos="1" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_rtc_cnt_mode" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_low_deglitch_th" pos="6:3" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_low_deglitch_en" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_xtal_40m_26m_soft_sel" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_xtal_40m_26m_hw_detect_high_latch_clr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="xtal_40m_26m_hw_detect_high_latch" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pb_int_long_por_set_clr" pos="11" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_alm_int_set_clr" pos="12" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_wdg_pwr_on_set_clr" pos="13" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_bor_pwr_on_set_clr" pos="14" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_por_chip_vbat_flag" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pwr_on_src_status" pos="23:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rtc_rg_pbint_debc_cnt_th" pos="31:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_rtc0_wdg4_cnt_ini">
+			<bits name="rtc_rg_wdg4_cnt_ini" pos="31:0" access="rw" rst="0x2625a00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rtc_rg_reserved0">
+		</reg>
+		<reg name="rtc_rg_reserved1">
+		</reg>
+	</module>
+</archive>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="analog_reg0_rf" category="System">
+		<reg name="flash_pad_pull">
+			<bits name="cfg_ana_fls_sio_pull_dn" pos="3:0" access="rw" rst="0xc" >
+				<comment> FLASH SIO pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_sio_pull_up" pos="7:4" access="rw" rst="0x3" >
+				<comment> FLASH SIO pull up </comment>
+			</bits>
+			<bits name="cfg_ana_fls_cs_pull_dn" pos="8" access="rw" rst="0x0" >
+				<comment> FLASH CS pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_cs_pull_up" pos="9" access="rw" rst="0x1" >
+				<comment> FLASH CS pull up </comment>
+			</bits>
+			<bits name="cfg_ana_fls_clk_pull_dn" pos="10" access="rw" rst="0x0" >
+				<comment> FLASH clock pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_clk_pull_up" pos="11" access="rw" rst="0x0" >
+				<comment> FLASH clock pull up </comment>
+			</bits>
+			<bits name="cfg_ana_set_fls_pads_highz" pos="12" access="rw" rst="0x0" >
+				<comment> Set flash 6 PADs high impedance </comment>
+			</bits>
+		</reg>
+		<reg name="opi_pad_reg">
+			<bits name="cfg_ana_opi_dq_ie" pos="7:0" access="rw" rst="0xff" >
+				<comment> OPI DQ input enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_dqs_ie" pos="8" access="rw" rst="0x1" >
+				<comment> OPI DQS input enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_dm_ie" pos="9" access="rw" rst="0x0" >
+				<comment> OPI DM input enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_ce_ie" pos="10" access="rw" rst="0x0" >
+				<comment> OPI CE input enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_clk_ie" pos="11" access="rw" rst="0x0" >
+				<comment> OPI clock input enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_drv" pos="16:12" access="rw" rst="0x1f" >
+				<comment> OPI DQ drive strength </comment>
+			</bits>
+			<bits name="cfg_ana_opi_pd" pos="17" access="rw" rst="0x1" >
+				<comment> OPI DQ pull down </comment>
+			</bits>
+			<bits name="cfg_ana_opi_pu" pos="18" access="rw" rst="0x0" >
+				<comment> OPI DQ pull up </comment>
+			</bits>
+			<bits name="cfg_ana_opi_pu_rx" pos="19" access="rw" rst="0x0" >
+				<comment> OPI rx enable </comment>
+			</bits>
+			<bits name="cfg_ana_opi_ce_pd" pos="20" access="rw" rst="0x0" >
+				<comment> OPI CE pull down </comment>
+			</bits>
+			<bits name="cfg_ana_opi_ce_pu" pos="21" access="rw" rst="0x0" >
+				<comment> OPI CE pull up </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="misc_reg">
+			<bits name="cfg_ana_test_enable_opi_dq_i" pos="7:0" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_dq_c" pos="15:8" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_dqs_i" pos="16" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_dqs_c" pos="17" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_dm_i" pos="18" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_dm_c" pos="19" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_ce_i" pos="20" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_ce_c" pos="21" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_clk_i" pos="22" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_clk_c" pos="23" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_opi_ac" pos="25:24" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+			<bits name="cfg_ana_test_enable_io_iref" pos="26" access="rw" rst="0x0" >
+				<comment> test enable </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

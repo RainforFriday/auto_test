@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="analog_reg0_rf" category="System">
+		<reg name="flash_pad_pull">
+			<bits name="cfg_ana_fls_sio_pull_dn" pos="3:0" access="rw" rst="0xc" >
+				<comment> FLASH SIO pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_sio_pull_up" pos="7:4" access="rw" rst="0x3" >
+				<comment> FLASH SIO pull up </comment>
+			</bits>
+			<bits name="cfg_ana_fls_cs_pull_dn" pos="8" access="rw" rst="0x0" >
+				<comment> FLASH CS pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_cs_pull_up" pos="9" access="rw" rst="0x1" >
+				<comment> FLASH CS pull up </comment>
+			</bits>
+			<bits name="cfg_ana_fls_clk_pull_dn" pos="10" access="rw" rst="0x0" >
+				<comment> FLASH clock pull down </comment>
+			</bits>
+			<bits name="cfg_ana_fls_clk_pull_up" pos="11" access="rw" rst="0x0" >
+				<comment> FLASH clock pull up </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

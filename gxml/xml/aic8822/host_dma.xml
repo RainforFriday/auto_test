@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="host_dma" category="Periph">
+		<reg name="CH_LLI_ROOT0">
+			<bits name="CH_LLI_ROOT0" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CH_LLI_ROOT1">
+			<bits name="CH_LLI_ROOT1" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CH_LLI_ROOT2">
+			<bits name="CH_LLI_ROOT2" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CH_LLI_ROOT3">
+			<bits name="CH_LLI_ROOT3" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="DMA_STATUS">
+			<bits name="OFT_FREE" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_STOPPED" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_STOPPED" pos="17" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_STOPPED" pos="18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_STOPPED" pos="19" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="REQUEST_STATE" pos="22:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ARB_A0_VALID" pos="23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ARB_A1_VALID" pos="24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ARB_A2_VALID" pos="25" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ARB_A3_VALID" pos="26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ARB_A4_VALID" pos="27" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="UP_STREAM_BSY" pos="28" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DOWN_STREAM_BSY" pos="29" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="MID_STREAM_BSY" pos="30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_STOPPED" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="INT_RAWSTATUS">
+			<bits name="LLI_IRQ_RAWSTATUS" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ERROR_RAWSTATUS" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_EOT_RAWSTATUS" pos="20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_EOT_RAWSTATUS" pos="21" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_EOT_RAWSTATUS" pos="22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_EOT_RAWSTATUS" pos="23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_EOT_RAWSTATUS" pos="24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="INT_UNMASK_SET">
+			<bits name="LLI_IRQ_UNMASK_SET" pos="15:0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ERROR_UNMASK_SET" pos="16" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_EOT_UNMASK_SET" pos="20" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_EOT_UNMASK_SET" pos="21" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_EOT_UNMASK_SET" pos="22" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_EOT_UNMASK_SET" pos="23" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_EOT_UNMASK_SET" pos="24" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="INT_UNMASK_CLEAR">
+			<bits name="LLI_IRQ_UNMASK_CLEAR" pos="15:0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ERROR_UNMASK_CLEAR" pos="16" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_EOT_UNMASK_CLEAR" pos="20" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_EOT_UNMASK_CLEAR" pos="21" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_EOT_UNMASK_CLEAR" pos="22" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_EOT_UNMASK_CLEAR" pos="23" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_EOT_UNMASK_CLEAR" pos="24" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="INT_ACK">
+			<bits name="LLI_IRQ_ACK" pos="15:0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ERROR_ACK" pos="16" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_EOT_ACK" pos="20" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_EOT_ACK" pos="21" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_EOT_ACK" pos="22" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_EOT_ACK" pos="23" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_EOT_ACK" pos="24" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="INT_STATUS">
+			<bits name="LLI_IRQ_STATUS" pos="15:0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ERROR_STATUS" pos="16" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH0_EOT_STATUS" pos="20" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_EOT_STATUS" pos="21" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_EOT_STATUS" pos="22" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_EOT_STATUS" pos="23" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_EOT_STATUS" pos="24" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="DMA_REVISION">
+			<bits name="REVISION" pos="31:0" access="ro" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ARBITRATION">
+			<bits name="DOWNSTREAM_TAG_USAGE" pos="3:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CHANNEL_MUTEX_SET">
+			<bits name="CH0_MUTEX_SET" pos="0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_MUTEX_SET" pos="1" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_MUTEX_SET" pos="2" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_MUTEX_SET" pos="3" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_MUTEX_SET" pos="4" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CHANNEL_MUTEX_CLEAR">
+			<bits name="CH0_MUTEX_CLEAR" pos="0" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH1_MUTEX_CLEAR" pos="1" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH2_MUTEX_CLEAR" pos="2" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH3_MUTEX_CLEAR" pos="3" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CH4_MUTEX_CLEAR" pos="4" access="wo" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CH_LLI_ROOT4">
+			<bits name="CH_LLI_ROOT4" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="AXI_BURST_LENGTH_LIMIT">
+			<bits name="AXI_BURST_LENGTH_LIMIT" pos="3:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="56*8"/>
+
+		<reg name="LLI_COUNTER0">
+			<bits name="LLI_COUNTER0" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER1">
+			<bits name="LLI_COUNTER1" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER2">
+			<bits name="LLI_COUNTER2" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER3">
+			<bits name="LLI_COUNTER3" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER4">
+			<bits name="LLI_COUNTER4" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER5">
+			<bits name="LLI_COUNTER5" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER6">
+			<bits name="LLI_COUNTER6" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER7">
+			<bits name="LLI_COUNTER7" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER8">
+			<bits name="LLI_COUNTER8" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER9">
+			<bits name="LLI_COUNTER9" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER10">
+			<bits name="LLI_COUNTER10" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER11">
+			<bits name="LLI_COUNTER11" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER12">
+			<bits name="LLI_COUNTER12" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER13">
+			<bits name="LLI_COUNTER13" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER14">
+			<bits name="LLI_COUNTER14" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="LLI_COUNTER15">
+			<bits name="LLI_COUNTER15" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="32*8"/>
+
+		<reg name="CONVERSION_CONFIG0">
+			<bits name="CONV_OFFSET0" pos="10:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_LLC_LEN_EN0" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_DATA_LENGTH0" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_CONFIG1">
+			<bits name="CONV_OFFSET1" pos="10:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_LLC_LEN_EN1" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_DATA_LENGTH1" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_CONFIG2">
+			<bits name="CONV_OFFSET2" pos="10:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_LLC_LEN_EN2" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_DATA_LENGTH2" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_CONFIG3">
+			<bits name="CONV_OFFSET3" pos="10:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_LLC_LEN_EN3" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="CONV_DATA_LENGTH3" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="16*8"/>
+
+		<reg name="CONVERSION_DATA00">
+			<bits name="CONVERSION_DATA00" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_DATA01">
+			<bits name="CONVERSION_DATA01" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="CONVERSION_DATA10">
+			<bits name="CONVERSION_DATA10" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_DATA11">
+			<bits name="CONVERSION_DATA11" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="CONVERSION_DATA20">
+			<bits name="CONVERSION_DATA20" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_DATA21">
+			<bits name="CONVERSION_DATA21" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="CONVERSION_DATA30">
+			<bits name="CONVERSION_DATA30" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="CONVERSION_DATA31">
+			<bits name="CONVERSION_DATA31" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

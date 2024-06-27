@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+setenv TOOLSCR /project/tools/AIC_internal/eda_scripts/xml
+
+setenv PATH ${TOOLSCR}:$PATH

@@ -1,0 +1,81 @@
+Function,SUB-TOP,BLOCK,msadc_mux_regname,msadc_mux_regvalue,test_enable_regname,test_enable_regvalue,test_mode_regname,test_mode_regvalue,test_bits_regname,test_bits_regvalue,test_case,test_band
+lna regulator output,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b000,RX_ON,WF_LB
+cascode pmos bias voltage,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_LB
+cascode nmos bias voltage,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_LB
+vcm half regularot output,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b011,RX_ON,WF_LB
+lna rfop dc,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b100,RX_ON,WF_LB
+Power detector op dc,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b101,RX_ON,WF_LB
+lna rfon dc,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b110,RX_ON,WF_LB
+Power detector on dc,WF,LNA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b111,RX_ON,WF_LB
+rmx regulator output,WF,RMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rmx,1'b1,,,wf_test_bit,2'b00,RX_ON,WF_LB
+rmx switch bias voltage,WF,RMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rmx,1'b1,,,wf_test_bit,2'b01,RX_ON,WF_LB
+ibias diode voltage,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b000,RX_ON,WF_LB
+opamp vcm threshold,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b001,RX_ON,WF_LB
+vcm,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b010,RX_ON,WF_LB
+dc cal regulator output,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b011,RX_ON,WF_LB
+Qp input dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b100,RX_ON,WF_LB
+Qn input dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b101,RX_ON,WF_LB
+Ip input dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b110,RX_ON,WF_LB
+In input dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b01,,,wf_test_bit,3'b111,RX_ON,WF_LB
+Qn output dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b10,,,wf_test_bit,3'b100,RX_ON,WF_LB
+Qp output dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b10,,,wf_test_bit,3'b101,RX_ON,WF_LB
+In output dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b10,,,wf_test_bit,3'b110,RX_ON,WF_LB
+Ip output dc,WF,TIA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_tia,2'b10,,,wf_test_bit,3'b111,RX_ON,WF_LB
+avdda of internal vdd,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b000,RX_ON,WF_LB
+ic5u,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_LB
+vpbias,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_LB
+vpcas,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b011,RX_ON,WF_LB
+start_g1,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b100,RX_ON,WF_LB
+start_d1,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b101,RX_ON,WF_LB
+start,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b110,RX_ON,WF_LB
+start_g2,WF,IREF,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_iref,1'b1,,,wf_test_bit,3'b111,RX_ON,WF_LB
+q_vip_amp2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b000,RX_ON,WF_LB
+q_vin_amp2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b001,RX_ON,WF_LB
+i_vip_amp2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b010,RX_ON,WF_LB
+i_vin_amp2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b011,RX_ON,WF_LB
+q_vin_amp1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b100,RX_ON,WF_LB
+q_vip_amp1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b101,RX_ON,WF_LB
+i_vin_amp1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b110,RX_ON,WF_LB
+i_vip_amp1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b01,,,wf_test_bit,3'b111,RX_ON,WF_LB
+q_vop2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b000,RX_ON,WF_LB
+q_von2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b001,RX_ON,WF_LB
+i_vop2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b010,RX_ON,WF_LB
+i_von2,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b011,RX_ON,WF_LB
+q_vop1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b100,RX_ON,WF_LB
+q_von1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b101,RX_ON,WF_LB
+i_vop1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b110,RX_ON,WF_LB
+i_von1,WF,RXFLT,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rxflt,2'b10,,,wf_test_bit,3'b111,RX_ON,WF_LB
+dvddi,WF,SARADC,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_adc,1'b1,,,wf_test_bit,2'b00,RX_ON,WF_LB
+vref,WF,SARADC,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_adc,1'b1,,,wf_test_bit,2'b01,RX_ON,WF_LB
+vcm,WF,SARADC,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_adc,1'b1,,,wf_test_bit,2'b10,RX_ON,WF_LB
+avss,WF,SARADC,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_adc,1'b1,,,wf_test_bit,2'b11,RX_ON,WF_LB
+vco_reg_buf,WF,VCO,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_vco,1'b1,,,wf_test_bit,3'b000,RX_ON,WF_LB
+vco_reg,WF,VCO,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_vco,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_LB
+vco_vctrl_biasp,WF,VCO,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_vco,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_LB
+vco_vctrl_biasn,WF,VCO,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_vco,1'b1,,,wf_test_bit,3'b011,RX_ON,WF_LB
+rfpll_regulator,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b000,RX_ON,WF_LB
+rfpll_dvdd_regulator,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_LB
+cp_outn,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_LB
+cp_outp,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b101,RX_ON,WF_LB
+pa_avdd1v,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB
+pa_bg_v1v_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
+pa_bias_vl,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b010,TX_ON,WF_LB
+pa_bias_vm_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b011,TX_ON,WF_LB
+pa_bias_vh_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b100,TX_ON,WF_LB
+dtmx_avdd_lo,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB
+dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
+dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
+dtmx_dac_dvdd,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b110,TX_ON,WF_LB
+dtmx_dac_bias,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b111,TX_ON,WF_LB
+lp mode bias voltage,CM,XTAL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xtal,1'b1,,,cm_test_bit,3'b011,TX_ON,WF_LB
+cascode bias voltage,CM,XTAL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xtal,1'b1,,,cm_test_bit,3'b101,TX_ON,WF_LB
+hp mode bias voltage,CM,XTAL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xtal,1'b1,,,cm_test_bit,3'b110,TX_ON,WF_LB
+clk buf regulator,CM,XTAL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xtal,1'b1,,,cm_test_bit,3'b111,TX_ON,WF_LB
+pmos bias,CM,Doubler,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xdblr,1'b1,,,cm_test_bit,2'b00,TX_ON,WF_LB
+nmos bias,CM,Doubler,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xdblr,1'b1,,,cm_test_bit,2'b01,TX_ON,WF_LB
+vcore,CM,Doubler,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xdblr,1'b1,,,cm_test_bit,2'b10,TX_ON,WF_LB
+mdll_avdd_logic_dig,CM,MDLL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_mdll,1'b1,,,cm_test_bit,3'b000,TX_ON,WF_LB
+mdll_avdd_logic,CM,MDLL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_mdll,1'b1,,,cm_test_bit,3'b001,TX_ON,WF_LB
+mdll_cp_out,CM,MDLL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_mdll,1'b1,,,cm_test_bit,3'b010,TX_ON,WF_LB
+mdll_dcc_cp_out,CM,MDLL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_mdll,1'b1,,,cm_test_bit,3'b011,TX_ON,WF_LB
+mdll_dcc_out,CM,MDLL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_mdll,1'b1,,,cm_test_bit,3'b100,TX_ON,WF_LB

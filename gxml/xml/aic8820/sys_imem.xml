@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+<var    name="INT_ROM0_SIZE"                value="384*1024" />
+<var    name="INT_SRAM0_SIZE"               value="128*1024" />
+<var    name="INT_SRAM1_SIZE"               value="128*1024" />
+<var    name="INT_SRAM2_SIZE"               value="128*1024" />
+<var    name="INT_SRAM3_SIZE"               value="128*1024" />
+<var    name="INT_SRAM4_SIZE"               value="128*1024" />
+<var    name="INT_SRAM5_SIZE"               value="128*1024" />
+<var    name="INT_SRAM6_SIZE"               value="128*1024" />
+<var    name="INT_SHARED_CACHE_SRAM_SIZE"   value="32*1024" />
+<var    name="INT_BTROM_SIZE"               value="512*1024" />
+<var    name="INT_BTRAM_SIZE"               value="64*1024" />
+
+<module name="int_rom" category="Memory">
+    <memory name="boot rom" size="INT_ROM0_SIZE">
+        <comment>Internal Bootrom Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram0" category="Memory">
+    <memory name="int sram0" size="INT_SRAM0_SIZE">
+        <comment>Internal SRam 0 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram1" category="Memory">
+    <memory name="int sram1" size="INT_SRAM1_SIZE">
+        <comment>Internal SRam 1 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram2" category="Memory">
+    <memory name="int sram2" size="INT_SRAM2_SIZE">
+        <comment>Internal SRam 2 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram3" category="Memory">
+    <memory name="int sram3" size="INT_SRAM3_SIZE">
+        <comment>Internal SRam 3 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram4" category="Memory">
+    <memory name="int sram4" size="INT_SRAM4_SIZE">
+        <comment>Internal SRam 4 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram5" category="Memory">
+    <memory name="int sram5" size="INT_SRAM5_SIZE">
+        <comment>Internal SRam 5 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_sram6" category="Memory">
+    <memory name="int sram6" size="INT_SRAM6_SIZE">
+        <comment>Internal SRam 6 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_shared_cache_sram" category="Memory">
+    <memory name="int shared_cache_sram" size="INT_SHARED_CACHE_SRAM_SIZE">
+        <comment>Internal Shared cache SRam 6 Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_btrom" category="Memory">
+    <memory name="bt rom" size="INT_BTROM_SIZE">
+        <comment>Internal Bootrom Space
+        </comment>
+    </memory>
+</module>
+
+<module name="int_btram" category="Memory">
+    <memory name="bt ram" size="INT_BTRAM_SIZE">
+        <comment>Internal BT ram Space
+        </comment>
+    </memory>
+</module>
+
+
+</archive>

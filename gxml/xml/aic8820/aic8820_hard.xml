@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+
+  <!-- Common modules includes -->
+  <include file="globals.xml"/>
+  <include file="global_macros.xml"/>
+  <include file="aic8820_generic_config.xml"/>
+
+  <include file="aon_mem.xml"/>
+  <include file="sys_imem.xml"/>
+  <include file="flash_mem.xml"/>
+
+  <!-- AHB0 modules-->
+  <include file="cache.xml"/>
+  <include file="dma_cx.xml"/>
+  <include file="trap.xml"/>
+  <include file="uart.xml"/>
+  <include file="mailbox.xml"/>
+  <include file="sd_host.xml"/>
+  <include file="aud_proc.xml"/>
+  <include file="spiflash.xml"/>
+
+  <!-- AHB2 modules-->
+  <include file="usbc.xml"/>
+  <!--include file="sdio.xml"/-->
+  <include file="mm_sys_ctrl.xml"/>
+  <include file="host_dma.xml"/>
+  <include file="pcie_top_ctrl.xml"/>
+  <include file="pcie_ep.xml"/>
+
+  <!-- APB0 modules-->
+  <include file="cpu_sys_ctrl.xml"/>
+  <include file="pwm.xml"/>
+  <include file="i2cm.xml"/>
+  <include file="wdg.xml"/>
+  <include file="DW_apb_spi.xml"/>
+  <include file="timer.xml"/>
+  <include file="trng.xml"/>
+  <include file="analog_reg0_rf.xml"/>
+  <include file="process_mon.xml"/>
+  <include file="gpio.xml"/>
+  <include file="efuse_ctrl.xml"/>
+  <include file="msadc_reg.xml"/>
+
+  <!-- APB1 modules-->
+  <include file="sys_ctrl.xml"/>
+  <include file="timer_us.xml"/>
+  <include file="analog_reg1_rf.xml"/>
+  <include file="dual_dcdc_common.xml"/>
+  <include file="dual_dcdc_rf_ctrl.xml"/>
+  <include file="dual_dcdc_core_ctrl.xml"/>
+  <include file="iomux.xml"/>
+  <include file="pwr_ctrl.xml"/>
+  <include file="cm_rf_interface.xml"/>
+  <include file="pmu_rtc0.xml"/>
+  <include file="pmu_rtc1.xml"/>
+  <include file="psi_mst.xml"/>
+
+  <!-- BT SYS modules-->
+  <include file="bt_sys_ctrl.xml"/>
+  <include file="bt_dma.xml"/>
+
+  <!-- COMMON RF modules-->
+  <include file="bt_rf_interface.xml"/>
+  <include file="wf_rf_interface.xml"/>
+  <include file="dfe_reg_bank.xml"/>
+  <include file="bt_dfe_cfg.xml"/>
+  <include file="bt_mdm_cfg.xml"/>
+
+
+  <!-- memory modules -->
+  <instance address="0x00000000" type="int_rom"                 name="INT_ROM" />
+  <instance address="0x00080000" type="int_btrom"               name="INT_BTROM" />
+
+  <instance address="0x00200000" type="int_btram"               name="INT_BTRAM" />
+  <instance address="0x00100000" type="int_sram0"               name="INT_SRAM0" />
+  <instance address="0x00120000" type="int_sram1"               name="INT_SRAM1" />
+  <instance address="0x00140000" type="int_sram2"               name="INT_SRAM2" />
+  <instance address="0x00160000" type="int_sram3"               name="INT_SRAM3" />
+  <instance address="0x00180000" type="int_sram4"               name="INT_SRAM4" />
+  <instance address="0x001a0000" type="int_sram5"               name="INT_SRAM5" />
+  <instance address="0x001c0000" type="int_sram6"               name="INT_SRAM6" />
+  <instance address="0x001e0000" type="int_shared_cache_sram"   name="INT_SHARED_CACHE_SRAM" />
+  <instance address="0x00300000" type="int_aon_sram"            name="INT_AON_SRAM" />
+
+  <instance address="0x04000000" type="flash_mem"               name="FLASH_MEM"/>
+  <instance address="0x08000000" type="flash_cache_mem"         name="FLASH_CACHE_MEM"/>
+
+  <!-- AHB0 module -->
+  <instance address="0x40000000" type="cache"                   name="cache" />
+  <instance address="0x40020000" type="dma_cx"                  name="dma_cx" />
+  <instance address="0x40030000" type="trap"                    name="cpu_p_trap" />
+  <instance address="0x40031000" type="trap"                    name="cpu_s0_trap" />
+  <instance address="0x40032000" type="uart"                    name="uart0" />
+  <instance address="0x40033000" type="uart"                    name="uart1" />
+  <instance address="0x40034000" type="uart"                    name="uart2" />
+  <instance address="0x40035000" type="mailbox"                 name="mailbox" />
+  <instance address="0x40036000" type="sd_host"                 name="sd_host"/>
+  <instance address="0x40037000" type="aud_proc"                name="aud_proc"/>
+  <instance address="0x40038000" type="spiflash"                name="spiflash" />
+
+  <!-- AHB2 module-->
+  <instance address="0x40200000" type="usbc"                    name="usbc" />
+  <instance address="0x40241000" type="mm_sys_ctrl"             name="mm_sys_ctrl" />
+  <instance address="0x40242000" type="host_dma"                name="host_dma" />
+  <instance address="0x40700000" type="pcie_ep"                 name="pcie_ep" />
+  <instance address="0x40701000" type="pcie_ep"                 name="pcie_ep_dbi2" />
+  <instance address="0x40780000" type="pcie_top_ctrl"           name="pcie_top_ctrl" />
+
+  <!-- APB0 module -->
+  <instance address="0x40100000" type="cpu_sys_ctrl"            name="cpu_sysctrl" />
+  <instance address="0x40101000" type="pwm"                     name="pwm" />
+  <instance address="0x40102000" type="i2cm"                    name="i2cm" />
+  <instance address="0x40103000" type="wdg"                     name="wdg0" />
+  <instance address="0x40104000" type="wdg"                     name="wdg1" />
+  <instance address="0x40105000" type="DW_apb_spi"              name="spi" />
+  <instance address="0x40106000" type="timer"                   name="timer0" />
+  <instance address="0x40107000" type="timer"                   name="timer1" />
+  <instance address="0x40108000" type="trng"                    name="trng" />
+  <instance address="0x40109000" type="analog_reg0_rf"          name="ana_reg0" />
+  <instance address="0x4010a000" type="process_mon"             name="proc_mon" />
+  <instance address="0x4010b000" type="gpio"                    name="gpioa" />
+  <instance address="0x4010c000" type="efuse_ctrl"              name="efuse" />
+  <instance address="0x4010d000" type="msadc_reg"               name="msadc" />
+
+  <!-- APB1 module -->
+  <instance address="0x40500000" type="sys_ctrl"                name="sys_ctrl" />
+  <instance address="0x40501000" type="timer_us"                name="timer2" />
+  <instance address="0x40502000" type="analog_reg1_rf"          name="ana_reg1" />
+  <instance address="0x40503000" type="psi_mst"                 name="psi_mst" />
+  <instance address="0x40504000" type="iomux"                   name="iomux" />
+  <instance address="0x40505000" type="gpio"                    name="gpiob" />
+  <instance address="0x40506000" type="pwr_ctrl"                name="pwr_ctrl" />
+  <instance address="0x40507000" type="pwm"                     name="aon_pwm" />
+  <instance address="0x40508000" type="wdg"                     name="wdg2" />
+  <instance address="0x40509000" type="cm_rf_interface"         name="cm_rf_interface" />
+
+  <!-- BT SYS modules-->
+  <instance address="0x40680000" type="bt_sys_ctrl"             name="bt_sys_ctrl" />
+  <instance address="0x40681000" type="timer"                   name="bt_timer" />
+  <instance address="0x40682000" type="wdg"                     name="bt_wdg" />
+  <instance address="0x40690000" type="trap"                    name="cpu_s1_trap" />
+  <instance address="0x406a0000" type="DW_ahb_dma"              name="bt_dma" />
+  <instance address="0x406b0000" type="uart"                    name="bt_uart" />
+  
+  <!-- COMMON & RF modules-->
+  <instance address="0x40622000"             type="bt_rf_interface"      name="bt_rf_interface" />
+  <instance address="0x40344000"             type="wf_rf_interface"      name="wf_rf_interface" />
+  <instance address="0x40342000"             type="dfe_reg_bank"         name="dfe_reg_bank" />
+  <instance address="0x40620000"             type="bt_dfe_cfg"           name="bt_dfe_cfg" />
+  <instance address="0x40621000"             type="bt_mdm_cfg"           name="bt_mdm_cfg" />
+  
+  <!--pmu top modules-->
+  <instance address="0x70000000" type="pmu_rtc0"                name="pmu_rtc0" />
+  <instance address="0x70001000" type="pmu_rtc1"                name="pmu_rtc1" />
+  <instance address="0x70001400" type="wdg"                     name="wdg4" />
+  <instance address="0x70002000" type="dual_dcdc_common"        name="dcdc_common" />
+  <instance address="0x70002100" type="dual_dcdc_rf_ctrl"       name="dcdc_rf_ctrl" />
+  <instance address="0x70002200" type="dual_dcdc_core_ctrl"     name="dcdc_core_ctrl" />
+
+</archive>

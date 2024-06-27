@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="psi_mst" category="psi_mst">
+		<reg name="ip_revision">
+			<bits name="ip_revision" pos="15:0" access="ro" rst="0x200" >
+				<comment> revision id </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_ctrl">
+			<bits name="write_bit" pos="0" access="rw" rst="0x0" >
+				<comment> write bit flag configure </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_pri00">
+			<bits name="chnl0_pri" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl1_pri" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl2_pri" pos="8:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl3_pri" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl4_pri" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl5_pri" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_pri10">
+			<bits name="chnl10_pri" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl11_pri" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl12_pri" pos="8:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl13_pri" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_pri20">
+			<bits name="chnl20_pri" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl21_pri" pos="5:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl22_pri" pos="8:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl23_pri" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl24_pri" pos="14:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl25_pri" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl26_pri" pos="20:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl27_pri" pos="23:21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_pri30">
+		</reg>
+		<reg name="psi_mst_int_en">
+			<bits name="evt0_fifo_ovf_int_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_ovf_int_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_ovf_int_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_ovf_int_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ssc_timeout_err_int_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_fifo_ovf_int_en" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_raw_status">
+			<bits name="evt0_fifo_ovf_raw_sts" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_ovf_raw_sts" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_ovf_raw_sts" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_ovf_raw_sts" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ssc_timeout_err_raw_sts" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_fifo_ovf_raw_sts" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_mask_status">
+			<bits name="evt0_fifo_ovf_mask_sts" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_ovf_mask_sts" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_ovf_mask_sts" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_ovf_mask_sts" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ssc_timeout_err_mask_sts" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_fifo_ovf_mask_sts" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_mst_int_clr">
+			<bits name="evt0_fifo_ovf_int_clr" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_ovf_int_clr" pos="1" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_ovf_int_clr" pos="2" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_ovf_int_clr" pos="3" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ssc_timeout_err_int_clr" pos="4" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_fifo_ovf_int_clr" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_gssi_cfg0">
+			<bits name="rf_gssi_frame_len" pos="6:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_cmd_len" pos="12:7" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_data_len" pos="18:13" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_wr_pos" pos="24:19" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_wr_pol" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_sck_rev" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_oe_cfg" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_ie_cfg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_dummy_clk_en" pos="29" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_fast_mode" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_sck_all_on" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_gssi_cfg1">
+			<bits name="rf_gssi_ng_tx" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_ng_rx" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_clk_div" pos="9:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_wbp_len" pos="15:10" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_dummy_len" pos="19:16" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_sample_dly" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_wr_disable" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_gssi_rx_ssc_mode" pos="22" access="rw" rst="0x1" >
+				<comment> 1: wait rx sync mode , 0: wait fix ssc len mode </comment>
+			</bits>
+			<bits name="rf_gssi_rbp_len" pos="25:23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_arm_rd_cmd_addr">
+			<bits name="psi_busy" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_arm_rd_cmd_addr" pos="30:1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_arm_rd_req" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_arm_rd_cmd_data">
+			<bits name="psi_arm_rd_cmd_data" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_arm_debug0">
+			<bits name="fifo_wptr" pos="2:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fifo_rptr" pos="6:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fifo_empty_r" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fifo_full_w" pos="11" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_arm_debug1">
+			<bits name="psi_sel" pos="5:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="psi_trans_req_pending" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="current_state" pos="11:9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="st_gssi" pos="16:13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_arm_debug2">
+			<bits name="evt0_fifo_ovf_req" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt0_fifo_empty" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt0_fifo_rptr" pos="3:2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt0_fifo_wptr" pos="5:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_ovf_req" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_empty" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_rptr" pos="11:10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_wptr" pos="13:12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_ovf_req" pos="16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_empty" pos="17" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_rptr" pos="19:18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_wptr" pos="21:20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_ovf_req" pos="24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_empty" pos="25" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_rptr" pos="27:26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_wptr" pos="29:28" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_cmd_status">
+			<bits name="arm_wr_req" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="arm_rd_req" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl2_req" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl3_req" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl4_req" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl5_req" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl10_req" pos="10" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl11_req" pos="11" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl12_req" pos="12" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl13_req" pos="13" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl20_req" pos="20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl21_req" pos="21" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl22_req" pos="22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl23_req" pos="23" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl24_req" pos="24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl25_req" pos="25" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl26_req" pos="26" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl27_req" pos="27" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_chnl_en">
+			<bits name="chnl2_trans_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl3_trans_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl4_trans_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl5_trans_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl10_trans_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl11_trans_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl12_trans_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl13_trans_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl20_trans_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl21_trans_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl22_trans_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl23_trans_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl24_trans_en" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl25_trans_en" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl26_trans_en" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="chnl27_trans_en" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl2_wr_addr">
+			<bits name="chnl2_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl3_wr_addr">
+			<bits name="chnl3_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl4_wr_addr">
+			<bits name="chnl4_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl5_wr_addr">
+			<bits name="chnl5_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="16*8"/>
+
+		<reg name="chnl10_wr_addr">
+			<bits name="chnl10_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl11_wr_addr">
+			<bits name="chnl11_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl12_wr_addr">
+			<bits name="chnl12_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl13_wr_addr">
+			<bits name="chnl13_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="24*8"/>
+
+		<reg name="chnl20_wr_addr">
+			<bits name="chnl20_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl21_wr_addr">
+			<bits name="chnl21_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl22_wr_addr">
+			<bits name="chnl22_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl23_wr_addr">
+			<bits name="chnl23_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl24_wr_addr">
+			<bits name="chnl24_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl25_wr_addr">
+			<bits name="chnl25_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl26_wr_addr">
+			<bits name="chnl26_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl27_wr_addr">
+			<bits name="chnl27_waddr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="140*8"/>
+
+		<reg name="chnl2_wr_low_data">
+			<bits name="chnl2_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl2_wr_high_data">
+			<bits name="chnl2_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl3_wr_low_data">
+			<bits name="chnl3_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl3_wr_high_data">
+			<bits name="chnl3_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl4_wr_low_data">
+			<bits name="chnl4_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl4_wr_high_data">
+			<bits name="chnl4_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl5_wr_low_data">
+			<bits name="chnl5_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl5_wr_high_data">
+			<bits name="chnl5_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="32*8"/>
+
+		<reg name="chnl10_wr_low_data">
+			<bits name="chnl10_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl10_wr_high_data">
+			<bits name="chnl10_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl11_wr_low_data">
+			<bits name="chnl11_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl11_wr_high_data">
+			<bits name="chnl11_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl12_wr_low_data">
+			<bits name="chnl12_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl12_wr_high_data">
+			<bits name="chnl12_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl13_wr_low_data">
+			<bits name="chnl13_wr_low_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="chnl13_wr_high_data">
+			<bits name="chnl13_wr_high_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="32*8"/>
+
+		<reg name="evt_trg_cfg00">
+			<bits name="evt0_fifo_trg_cfg" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt1_fifo_trg_cfg" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt2_fifo_trg_cfg" pos="5:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt3_fifo_trg_cfg" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="evt_trg_cfg10">
+			<bits name="evt10_nofifo_trg_cfg" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt11_nofifo_trg_cfg" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt12_nofifo_trg_cfg" pos="5:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="evt13_nofifo_trg_cfg" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="56*8"/>
+
+		<reg name="psi_rd_cmd_addr">
+			<bits name="psi_rd_cmd_addr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_wr_cmd_addr">
+			<bits name="psi_wr_cmd_addr" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_wr_cmd_data">
+			<bits name="psi_wr_cmd_data" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="psi_timeout_cfg">
+			<bits name="rx_ssc_timeout_th" pos="15:0" access="rw" rst="0x40" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_psi_slv_cfg0">
+			<bits name="pmu_psi_addr_ll_th" pos="29:0" access="rw" rst="0x1c000000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pmu_psi_auto_det_en" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pmu_psi_force_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pmu_psi_slv_cfg1">
+			<bits name="pmu_psi_addr_hh_th" pos="29:0" access="rw" rst="0x1c003fff" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

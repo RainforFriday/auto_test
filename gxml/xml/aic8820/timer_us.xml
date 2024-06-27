@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="timer_us" category="Periph">
+		<reg name="TIMER0_CTL">
+			<bits name="timer0_en" pos="0" access="rw" rst="0x0" >
+				<comment> timer0 enable </comment>
+			</bits>
+			<bits name="timer0_reset" pos="1" access="rw" rst="0x0" >
+                <comment> timer0 reset, active high, cleared automatically.
+                    When one, the Timer Counter is synchronously reset on the next positive edge of PCLK. 
+                </comment>
+			</bits>
+			<bits name="timer0_tick_div_bypass" pos="3" access="ro" rst="0x0" >
+                <comment> 1, bypass tick divider, TIMER0_TICK_DIV register does not exist.
+                          0, tick divider exists.
+                </comment>
+			</bits>
+			<bits name="timer0_tc_hi_dis" pos="7:4" access="rw" rst="0x0" >
+                <comment> 1, the High 16bit of TC and MR is ignored when generating match/wrap interrupt.
+                          0, this feature is ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_tick_freq" pos="9:8" access="rw" rst="0x1" >
+                <comment> timer0 tick frequency, used to select TC and adjust counter increment value.
+                    2'b00: tick is 64KHz
+                    2'b01: tick is 64KHz
+                    2'b10: tick is 32KHz
+                    2'b11: tick is 16KHz
+                </comment>
+			</bits>
+			<bits name="timer0_match0_en" pos="12" access="rw" rst="0x0" >
+                <comment> 1, match0 enable.
+                          0, match0 disable.
+                </comment>
+			</bits>
+			<bits name="timer0_match1_en" pos="13" access="rw" rst="0x0" >
+                <comment> 1, match1 enable.
+                          0, match1 disable.
+                </comment>
+			</bits>
+			<bits name="timer0_match2_en" pos="14" access="rw" rst="0x0" >
+                <comment> 1, match2 enable.
+                          0, match2 disable.
+                </comment>
+			</bits>
+			<bits name="timer0_match3_en" pos="15" access="rw" rst="0x0" >
+                <comment> 1, match3 enable.
+                          0, match3 disable.
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_TICK_DIV">
+			<bits name="timer0_tick_div" pos="1:0" access="rw" rst="0x1" >
+                <comment> timer0 tick div value
+                    2'b00: disable tick
+                    2'b01: tick is div2 from rtc clock
+                    2'b10: tick is div4 from rtc clock
+                    2'b11: tick is div8 from rtc clock
+                </comment>
+			</bits>
+			<bits name="timer0_tick_div_up" pos="4" access="wo" rst="0x0" >
+				<comment> timer0 tick div value update, cleared automatically </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_INT_CTRL">
+			<bits name="timer0_match0_int_en_set" pos="0" access="rw" rst="0x0" >
+                <comment> Write: timer0 match0 interrupt enable set
+                          1: Set Enable. An interrupt is generated when MR0 matches the value in the TC.
+                          0: Ignored.
+                          Read: timer0 match0 interrupt enabled
+                          1: Enalbed. An interrupt is generated when MR0 matches the value in the TC.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_match1_int_en_set" pos="1" access="rw" rst="0x0" >
+                <comment> Write: timer0 match1 interrupt enable set
+                          1: Set Enable. An interrupt is generated when MR1 matches the value in the TC.
+                          0: Ignored.
+                          Read: timer0 match1 interrupt enabled
+                          1: Enalbed. An interrupt is generated when MR1 matches the value in the TC.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_match2_int_en_set" pos="2" access="rw" rst="0x0" >
+                <comment> Write: timer0 match2 interrupt enable set
+                          1: Set Enable. An interrupt is generated when MR2 matches the value in the TC.
+                          0: Ignored.
+                          Read: timer0 match2 interrupt enabled
+                          1: Enalbed. An interrupt is generated when MR2 matches the value in the TC.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_match3_int_en_set" pos="3" access="rw" rst="0x0" >
+                <comment> Write: timer0 match3 interrupt enable set
+                          1: Set Enable. An interrupt is generated when MR3 matches the value in the TC.
+                          0: Ignored.
+                          Read: timer0 match3 interrupt enabled
+                          1: Enalbed. An interrupt is generated when MR3 matches the value in the TC.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap0_int_en_set" pos="4" access="rw" rst="0x0" >
+                <comment> Write: timer0 wrap0 interrupt enable set
+                          1: Set Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                          Read: timer0 wrap0 interrupt enabled
+                          1: Enalbed. An interrupt is generated when TC count from all1 to 0x0.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap1_int_en_set" pos="5" access="rw" rst="0x0" >
+                <comment> Write: timer0 wrap1 interrupt enable set
+                          1: Set Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                          Read: timer0 wrap1 interrupt enabled
+                          1: Enalbed. An interrupt is generated when TC count from all1 to 0x0.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap2_int_en_set" pos="6" access="rw" rst="0x0" >
+                <comment> Write: timer0 wrap2 interrupt enable set
+                          1: Set Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                          Read: timer0 wrap2 interrupt enabled
+                          1: Enalbed. An interrupt is generated when TC count from all1 to 0x0.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap3_int_en_set" pos="7" access="rw" rst="0x0" >
+                <comment> Write: timer0 wrap3 interrupt enable set
+                          1: Set Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                          Read: timer0 wrap3 interrupt enabled
+                          1: Enalbed. An interrupt is generated when TC count from all1 to 0x0.
+                          0: not Enabled.
+                </comment>
+			</bits>
+			<bits name="timer0_match0_int_en_clr" pos="8" access="wo" rst="0x0" >
+                <comment> Timer0 match0 interrupt enable clear
+                          1: Clear Enable. 
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_match1_int_en_clr" pos="9" access="wo" rst="0x0" >
+                <comment> Timer0 match1 interrupt enable clear
+                          1: Clear Enable. 
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_match2_int_en_clr" pos="10" access="wo" rst="0x0" >
+                <comment> Timer0 match2 interrupt enable clear
+                          1: Clear Enable. 
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_match3_int_en_clr" pos="11" access="wo" rst="0x0" >
+                <comment> Timer0 match3 interrupt enable clear
+                          1: Clear Enable. 
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap0_int_en_clr" pos="12" access="wo" rst="0x0" >
+                <comment> Timer0 wrap0 interrupt enable clear
+                          1: Clear Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap1_int_en_clr" pos="13" access="wo" rst="0x0" >
+                <comment> Timer0 wrap1 interrupt enable clear
+                          1: Clear Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap2_int_en_clr" pos="14" access="wo" rst="0x0" >
+                <comment> Timer0 wrap2 interrupt enable clear
+                          1: Clear Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_wrap3_int_en_clr" pos="15" access="wo" rst="0x0" >
+                <comment> Timer0 wrap3 interrupt enable clear
+                          1: Clear Enable. An interrupt is generated when TC count from all1 to 0x0.
+                          0: Ignored.
+                </comment>
+			</bits>
+			<bits name="timer0_match0_int_clr" pos="16" access="wo" rst="0x0" >
+				<comment> timer0 match0 interrupt clear, active high </comment>
+			</bits>
+			<bits name="timer0_match1_int_clr" pos="17" access="wo" rst="0x0" >
+				<comment> timer0 match1 interrupt clear, active high </comment>
+			</bits>
+			<bits name="timer0_match2_int_clr" pos="18" access="wo" rst="0x0" >
+				<comment> timer0 match2 interrupt clear, active high </comment>
+			</bits>
+			<bits name="timer0_match3_int_clr" pos="19" access="wo" rst="0x0" >
+				<comment> timer0 match3 interrupt clear, active high </comment>
+			</bits>
+			<bits name="timer0_wrap0_int_clr" pos="20" access="wo" rst="0x0" >
+				<comment> timer0 wrap0 interrupt clear </comment>
+			</bits>
+			<bits name="timer0_wrap1_int_clr" pos="21" access="wo" rst="0x0" >
+				<comment> timer0 wrap1 interrupt clear </comment>
+			</bits>
+			<bits name="timer0_wrap2_int_clr" pos="22" access="wo" rst="0x0" >
+				<comment> timer0 wrap2 interrupt clear </comment>
+			</bits>
+			<bits name="timer0_wrap3_int_clr" pos="23" access="wo" rst="0x0" >
+				<comment> timer0 wrap3 interrupt clear </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_INT_STATUS">
+			<bits name="timer0_match0_int_raw_status" pos="0" access="ro" rst="0x0" >
+				<comment> timer0 match0 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_match1_int_raw_status" pos="1" access="ro" rst="0x0" >
+				<comment> timer0 match1 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_match2_int_raw_status" pos="2" access="ro" rst="0x0" >
+				<comment> timer0 match2 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_match3_int_raw_status" pos="3" access="ro" rst="0x0" >
+				<comment> timer0 match3 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_wrap0_int_raw_status" pos="4" access="ro" rst="0x0" >
+				<comment> timer0 wrap0 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_wrap1_int_raw_status" pos="5" access="ro" rst="0x0" >
+				<comment> timer0 wrap1 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_wrap2_int_raw_status" pos="6" access="ro" rst="0x0" >
+				<comment> timer0 wrap2 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_wrap3_int_raw_status" pos="7" access="ro" rst="0x0" >
+				<comment> timer0 wrap3 interrupt raw status</comment>
+			</bits>
+			<bits name="timer0_match0_int_masked_status" pos="8" access="ro" rst="0x0" >
+				<comment> timer0 match0 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_match1_int_masked_status" pos="9" access="ro" rst="0x0" >
+				<comment> timer0 match1 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_match2_int_masked_status" pos="10" access="ro" rst="0x0" >
+				<comment> timer0 match2 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_match3_int_masked_status" pos="11" access="ro" rst="0x0" >
+				<comment> timer0 match3 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_wrap0_int_masked_status" pos="12" access="ro" rst="0x0" >
+				<comment> timer0 wrap0 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_wrap1_int_masked_status" pos="13" access="ro" rst="0x0" >
+				<comment> timer0 wrap1 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_wrap2_int_masked_status" pos="14" access="ro" rst="0x0" >
+				<comment> timer0 wrap2 interrupt masked status </comment>
+			</bits>
+			<bits name="timer0_wrap3_int_masked_status" pos="15" access="ro" rst="0x0" >
+				<comment> timer0 wrap3 interrupt masked status </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_TC_LO">
+			<bits name="timer0_tc_lo" pos="31:0" access="rw" rst="0x0" >
+                <comment> timer0 counter low 32bit
+                The 48-bit TC, unit is 1us.
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_TC_HI">
+			<bits name="timer0_tc_hi" pos="15:0" access="rw" rst="0x0" >
+                <comment> timer0 counter high 16bit
+                The 48-bit TC, unit is 1us.
+                Make sure that this high 16bit written before the low 16bit if initialized.
+                </comment>
+			</bits>
+		</reg>
+        <hole size="64" />
+		<reg name="TIMER0_MR0_LO">
+			<bits name="timer0_mr0_lo" pos="31:0" access="rw" rst="0xffffffff" >
+                <comment> timer0 match0 register, low 32bit 
+                    MR0 can be enabled ot generate an interrupt
+every time MR0 matches the TC
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR0_HI">
+			<bits name="timer0_mr0_hi" pos="15:0" access="rw" rst="0x0" >
+                <comment> timer0 match0 register, high 16bit 
+                    MR0 can be enabled to generate an interrupt
+every time MR0 matches the TC
+                    Make sure that this high 16bit configured before the low 16bit.
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR1_LO">
+			<bits name="timer0_mr1_lo" pos="31:0" access="rw" rst="0xffffffff" >
+                <comment> timer0 match1 register, low 32bit 
+                    MR1 can be enabled ot generate an interrupt
+every time MR1 matches the TC
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR1_HI">
+			<bits name="timer0_mr1_hi" pos="15:0" access="rw" rst="0x0" >
+                <comment> timer0 match1 register, high 16bit 
+                    MR1 can be enabled to generate an interrupt
+every time MR1 matches the TC
+                    Make sure that this high 16bit configured before the low 16bit.
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR2_LO">
+			<bits name="timer0_mr2_lo" pos="31:0" access="rw" rst="0xffffffff" >
+                <comment> timer0 match2 register, low 32bit 
+                    MR2 can be enabled ot generate an interrupt
+every time MR2 matches the TC
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR2_HI">
+			<bits name="timer0_mr2_hi" pos="15:0" access="rw" rst="0x0" >
+                <comment> timer0 match2 register, high 16bit 
+                    MR2 can be enabled to generate an interrupt
+every time MR2 matches the TC
+                    Make sure that this high 16bit configured before the low 16bit.
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR3_LO">
+			<bits name="timer0_mr3_lo" pos="31:0" access="rw" rst="0xffffffff" >
+                <comment> timer0 match3 register, low 32bit 
+                    MR3 can be enabled ot generate an interrupt
+every time MR3 matches the TC
+                </comment>
+			</bits>
+		</reg>
+		<reg name="TIMER0_MR3_HI">
+			<bits name="timer0_mr3_hi" pos="15:0" access="rw" rst="0x0" >
+                <comment> timer0 match3 register, high 16bit 
+                    MR3 can be enabled to generate an interrupt
+every time MR3 matches the TC
+                    Make sure that this high 16bit configured before the low 16bit.
+                </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="bt_dfe_cfg" category="bt_dfe_cfg">
+		<reg name="a0x000">
+			<bits name="rxon_val" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_for" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dm_sync_val" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dm_sync_fix" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fix_rxm" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_le_mode" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_rate" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mrx_rstn" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_rxon_val" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_rxon_for" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_val" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_for" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_tone" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_pwr_fix" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fix_txm" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_le_mode" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_rate" pos="23:22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mtx_rstn" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_txon_val" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rf_txon_for" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x004">
+			<bits name="cfg_fix_rstn" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_fix_clk" pos="27:16" access="rw" rst="0xf00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x008">
+			<bits name="mslb_idx" pos="3:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_clk_mdm" pos="16:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dpll_cgen_00c">
+			<bits name="dpll_cgen_val" pos="15:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cgen_fix" pos="31:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="16*8"/>
+
+		<reg name="gll_ctrl">
+			<bits name="gll_rxon_val" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_rxon_fix" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_txon_val" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_txon_fix" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_btle_val" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_btle_fix" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_tedr_val" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_tedr_fix" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_rate_val" pos="9:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_sync_fix" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_rate_fix" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_ifsl_val" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_ifsl_fix" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_trmp_val" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_trmp_fix" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_freq_val" pos="22:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_freq_fix" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_tpwr_val" pos="31:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gll_ctrl2">
+			<bits name="gll_tpwr_fix" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gll_rfcoef_hld" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="plrsn_ctrl">
+			<bits name="plrsn_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="plrsn_dc_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="plrsn_ai_en" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="plrsn_aq_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="plrsn_dly_a" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="plrsn_dly_v" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="68*8"/>
+
+		<reg name="txdc0">
+			<bits name="tx_dac_i_dc0" pos="12:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_dac_q_dc0" pos="28:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="txdc1">
+			<bits name="tx_dac_i_dc1" pos="12:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_dac_q_dc1" pos="28:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="txim0">
+			<bits name="tx_iqim_phi0" pos="11:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_iqim_amp0" pos="27:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="txim1">
+			<bits name="tx_iqim_phi1" pos="11:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_iqim_amp1" pos="27:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="tx_loft">
+			<bits name="tx_loft_thd0" pos="3:0" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_loft_thd1" pos="7:4" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_iqim_bps" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_iqim_bps" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iqim_est_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iqim_est_sel" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iqim_est_done" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iqim_est_num" pos="27:16" access="rw" rst="0xfc0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rxim">
+			<bits name="rx_iqim_phi" pos="11:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_iqim_amp" pos="27:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="iqim_est">
+			<bits name="iqim_est_rsel" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iqim_est_rslt" pos="31:2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="a0x090">
+			<bits name="fref_52m_fix" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_52m_rx" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_52m_rx_twsm" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_52m_tx_gfsk" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_52m_tx_edr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="txdfe_rtcv0">
+			<bits name="txdfe_rtcv_val" pos="27:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txdfe_rtcv_fix" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="txdfe_rtcv1">
+			<bits name="txdfe_rtcv_thdr" pos="3:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txdfe_rtcv_coef_adj" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txdfe_rtcv_thdr_min" pos="11:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txdfe_rtcv_thdr_max" pos="15:12" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rxdfe_rtcv0">
+			<bits name="rxdfe_rtcv_val" pos="27:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxdfe_rtcv_fix" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rxdfe_rtcv1">
+			<bits name="rxdfe_rtcv_thdr" pos="3:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxdfe_rtcv_coef_adj" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxdfe_rtcv_thdr_min" pos="11:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxdfe_rtcv_thdr_max" pos="15:12" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_rc_lpf_bypass" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_rc_lpf_fir" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_mode" pos="19:18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="lpf_opwr_norm_en" pos="21:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="rciir_coef0">
+			<bits name="rciir_b11" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_g1i" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rciir_coef1">
+			<bits name="rciir_a12" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_a11" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rciir_coef2">
+			<bits name="rciir_b21" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_g2i" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rciir_coef3">
+			<bits name="rciir_a22" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_a21" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="rciir_coef4">
+			<bits name="rciir_a31" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rciir_g3i" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dump_dpd_ctrl">
+			<bits name="dump_dpd_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dump_dpd_en_s" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dump_dpd_done" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dump_dpd_cyc" pos="6:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dump_dpd_num" pos="15:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="40*8"/>
+
+		<reg name="a0x0f0">
+			<bits name="dbg_sel_top0" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dbg_sel_top1" pos="6:4" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dbg_sel_top2" pos="10:8" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dbg_sel_top3" pos="14:12" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dbg_sel_mdm" pos="23:16" access="rw" rst="0xff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_dpll" pos="27:24" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_fpga" pos="31:28" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="a0x100">
+			<bits name="gdb_sel_bit00" pos="4:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit01" pos="12:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit02" pos="20:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit03" pos="28:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x104">
+			<bits name="gdb_sel_bit04" pos="4:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit05" pos="12:8" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit06" pos="20:16" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit07" pos="28:24" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x108">
+			<bits name="gdb_sel_bit08" pos="4:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit09" pos="12:8" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit10" pos="20:16" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit11" pos="28:24" access="rw" rst="0xb" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x10c">
+			<bits name="gdb_sel_bit12" pos="4:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit13" pos="12:8" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit14" pos="20:16" access="rw" rst="0xe" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit15" pos="28:24" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x110">
+			<bits name="gdb_sel_bit16" pos="4:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit17" pos="12:8" access="rw" rst="0x11" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit18" pos="20:16" access="rw" rst="0x12" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit19" pos="28:24" access="rw" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x114">
+			<bits name="gdb_sel_bit20" pos="4:0" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit21" pos="12:8" access="rw" rst="0x15" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit22" pos="20:16" access="rw" rst="0x16" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit23" pos="28:24" access="rw" rst="0x17" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x118">
+			<bits name="gdb_sel_bit24" pos="4:0" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit25" pos="12:8" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit26" pos="20:16" access="rw" rst="0x1a" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit27" pos="28:24" access="rw" rst="0x1b" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x11c">
+			<bits name="gdb_sel_bit28" pos="4:0" access="rw" rst="0x1c" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit29" pos="12:8" access="rw" rst="0x1d" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit30" pos="20:16" access="rw" rst="0x1e" >
+				<comment>  </comment>
+			</bits>
+			<bits name="gdb_sel_bit31" pos="28:24" access="rw" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x120">
+			<bits name="gdb_out_dat" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="220*8"/>
+
+		<reg name="a0x200">
+			<bits name="cgen_val0" pos="15:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cgen_fix0" pos="31:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x204">
+			<bits name="cgen_val1" pos="15:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cgen_fix1" pos="31:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x208">
+			<bits name="cgen_val2" pos="15:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cgen_fix2" pos="31:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x20c">
+			<bits name="cgen_val3" pos="7:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cgen_fix3" pos="23:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cgen_free" pos="31:24" access="rw" rst="0xff" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x210">
+			<bits name="rxmdm_lp" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ghdr_fec_en" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="748*8"/>
+
+		<reg name="a0x500">
+			<bits name="adc_i_clkedge_sel" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_q_clkedge_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_iq_format" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_iq_swap" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_i_negate" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_q_negate" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_i_dly" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="adc_q_dly" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bypass_srrc" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bypass_mixer" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x504">
+			<bits name="corsrrc_dphi_1m" pos="12:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="corsrrc_dphi_2m" pos="28:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x508">
+			<bits name="agc_fix_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfpwr_frm_sel" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_rx_comb" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfpwr_frm_clr" pos="3" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="idx_ini" pos="6:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="idx_min" pos="10:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="idx_max" pos="14:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="step_norm" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="step_thlg" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="step_upfl" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="step_dnfl" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="flg_thlg_fix" pos="25:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="en_lg_stp" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_ramp_sel" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x50c">
+			<bits name="time_init" pos="6:4" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="time_pcal0" pos="14:8" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="time_pcal1" pos="22:16" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+			<bits name="time_tran_dig" pos="30:24" access="rw" rst="0x38" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x510">
+			<bits name="time_lpfrst" pos="5:0" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thpup_val" pos="19:16" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thpdn_val" pos="23:20" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="time_digtr" pos="29:24" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_din_sel" pos="31:30" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x514">
+			<bits name="dagc_pth_ovr" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dagc_pth_ovr_lr" pos="7:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dagc_fix_en" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dagc_fix_en_lr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tim_notch" pos="15:12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x518">
+			<bits name="vitb_pin_tar" pos="6:0" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thpup_val_vitb" pos="11:8" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thpdn_val_vitb" pos="15:12" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_din_sht" pos="18:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rsten_srrc" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rsten_notch" pos="25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rsten_lpf" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tim_rcdly" pos="31:27" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dc_ctrl">
+			<bits name="dc_sub_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_upd_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_trig" pos="2" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_rdc_ok" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_rdc" pos="4" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_rclr" pos="5" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_mode" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_idx" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_idx_fix" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_auto_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_val_fix" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_wait" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_alp_bw0" pos="22:20" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_alp_sel" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_upd_alp" pos="26:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_upd_mode" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_len" pos="30:28" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_clr" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dc_estw">
+			<bits name="dc_est_wdci" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_wdcq" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_wdc" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dc_estr">
+			<bits name="dc_est_rdci" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dc_est_rdcq" pos="31:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x528">
+			<bits name="notch_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="notch_a" pos="7:4" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="notch_b" pos="21:8" access="rw" rst="0x3bf3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="a0x530">
+			<bits name="rfdb_idx0" pos="5:0" access="rw" rst="0x2e" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfdb_idx1" pos="13:8" access="rw" rst="0x12" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfdb_idx2" pos="21:16" access="rw" rst="0x17" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfdb_idx3" pos="29:24" access="rw" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x534">
+			<bits name="time_tran_ana" pos="13:8" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="104*8"/>
+
+		<reg name="a0x5a0">
+			<bits name="thmax_val0" pos="6:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_val1" pos="14:8" access="rw" rst="0x18" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_val2" pos="22:16" access="rw" rst="0x21" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_val3" pos="30:24" access="rw" rst="0x20" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5a4">
+			<bits name="thmin_val0" pos="6:0" access="rw" rst="0x30" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmin_val1" pos="14:8" access="rw" rst="0x42" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmin_val2" pos="22:16" access="rw" rst="0x39" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmin_val3" pos="30:24" access="rw" rst="0x42" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5a8">
+			<bits name="agc_alp_a1" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_b1" pos="6:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_a2" pos="10:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_b2" pos="14:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_a3" pos="18:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_b3" pos="22:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_c" pos="26:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_alt" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_infrm" pos="29" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5ac">
+			<bits name="thmin_dlt" pos="3:0" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_dlt" pos="7:4" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmin_mrg" pos="10:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_mrg" pos="14:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmin_too" pos="22:16" access="rw" rst="0x7f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_too" pos="30:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5b0">
+			<bits name="prt_num_bt" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="prt_num_le1m" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="prt_num_le2m" pos="10:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="prt_num_lelr" pos="14:12" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5b4">
+			<bits name="corlpf_dphi_1m" pos="14:0" access="rw" rst="0x4a4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="corlpf_dphi_fix" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="corlpf_dphi_2m" pos="30:16" access="rw" rst="0x3de" >
+				<comment>  </comment>
+			</bits>
+			<bits name="corlpf_bps" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5b8">
+			<bits name="thmin_wb" pos="6:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_wb" pos="14:8" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="agc_alp_wb" pos="18:16" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x5bc">
+			<bits name="thmin_sb" pos="6:0" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="thmax_sb" pos="14:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dgc_bagc_tar" pos="21:16" access="rw" rst="0x24" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dgc_bagc_en" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dgc_bagc_thd" pos="27:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="48*8"/>
+
+		<reg name="a0x5f0">
+			<bits name="idx_tws" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="idx_nul" pos="6:4" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="frm_en_ll" pos="15:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="frm_en_mrx" pos="23:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wbagc_5f4">
+			<bits name="wbagc_en" pos="1:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wbagc_win" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wbagc_thr" pos="13:8" access="rw" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wbagc_tran_tim" pos="21:16" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="300*8"/>
+
+		<reg name="a0x724">
+			<bits name="timer_dpll_sdm_resetn_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="timer_dpll_sdm_resetn_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_resetn_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_resetn_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_sdm_resetn_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_sdm_resetn_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_sdm_clk_sel_reg" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="reset_dpll_sdm_delay" pos="11:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_opt" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_manual" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_eachbit_time" pos="15:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_lock_delay" pos="20:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_init_delay" pos="26:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_wait_time" pos="30:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x728">
+			<bits name="dpll_cal_en_reg" pos="0" access="rw" rst="0x0" >
+				<comment> write 1: reg value invert </comment>
+			</bits>
+			<bits name="dpll_cal_en_dr" pos="1" access="rw" rst="0x0" >
+				<comment> WT Regs. (normal regs, do not use this addr) </comment>
+			</bits>
+			<bits name="dpll_cal_cnt_up" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_cnt_en_sel" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_vco_band_dr" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_vco_band_reg" pos="19:8" access="rw" rst="0x400" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="44*8"/>
+
+		<reg name="a0x758">
+			<bits name="rfpll_sdm_dither_bypass" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="16*8"/>
+
+		<reg name="a0x76c">
+			<bits name="num_clkrst_sdm" pos="23:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dacintf_770">
+			<bits name="dacintf_delay_0p25_tlo_mode" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_delay_0p25_tlo_bypass" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_delay_0p5_tdac_bypass" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_scale" pos="5:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_rnd_sw" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_filter_mode" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_dac_clk_low_mode" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_lo_mode" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_dac_iq_swap" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_dac_iq_format" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_dac_q_dly_sel" pos="13:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dacintf_dac_i_dly_sel" pos="15:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="100*8"/>
+
+		<reg name="band_ctrl">
+			<bits name="band_map" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_rstn_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_rstn_dly" pos="9:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="52*8"/>
+
+		<reg name="a0x810">
+			<bits name="StopDelayReg" pos="9:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DumpSize" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DumpStartWrAddr" pos="15:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DumpDataSel" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="StopTrigSel" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x814">
+			<bits name="DumpEnable" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dump_clken" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ReStopTrigMode" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ManualStopReg" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DumpWrapModeN" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="PhyDumpMuxSel" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="DumpSamplRateSel" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="PhyDumpRamEn" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dump_clksel" pos="16:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dump_clkinv" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="24*8"/>
+
+		<reg name="a0x830">
+			<bits name="rfpll_sdm_freq_reg" pos="30:0" access="rw" rst="0x0" >
+				<comment> x*(1-v>>(11)) </comment>
+			</bits>
+			<bits name="rfpll_sdm_freq_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x834">
+			<bits name="fif_tx2m" pos="3:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fif_tx1m" pos="7:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fif_rx2m" pos="11:8" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fif_rx1m" pos="15:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="freq_flo_val" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="freq_flo_fix" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ppm_838">
+			<bits name="flo_shnk" pos="27:16" access="rw" rst="0xa00" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="fref_tx">
+			<bits name="fref_den_tx" pos="15:8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_num_tx" pos="30:16" access="rw" rst="0x15e" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="fref_rx">
+			<bits name="dpll_cal_eachbit_cnt" pos="7:0" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_den_rx" pos="15:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="fref_num_rx" pos="30:16" access="rw" rst="0x1180" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coef_rfbt">
+			<bits name="rfbt_rx_den" pos="9:0" access="rw" rst="0x24e" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfbt_tx_num" pos="25:16" access="rw" rst="0x190" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="coef_rfwf">
+			<bits name="rfwf_rx_den" pos="9:0" access="rw" rst="0x1d8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rfwf_tx_num" pos="25:16" access="rw" rst="0x280" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dco_div_ctrl">
+			<bits name="dco_div_rx0" pos="1:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dco_div_rx3" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dco_div_tx0" pos="9:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dco_div_tx3" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dco_div_fix" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="28*8"/>
+
+		<reg name="rsvd_wc_870">
+			<bits name="rsvd_wc" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="a0x880">
+			<bits name="bt_mdm_st0" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x884">
+			<bits name="bt_mdm_st1" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x888">
+			<bits name="bt_mdm_st2" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x88c">
+			<bits name="bt_mdm_st3" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x890">
+			<bits name="bt_mdm_st4" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x894">
+			<bits name="bt_mdm_st5" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x898">
+			<bits name="bt_mdm_st6" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x89c">
+			<bits name="bt_mdm_st7" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="a0x8a0">
+			<bits name="dpll_cal_status" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="a0x8ac">
+			<bits name="bt_mdm_st8" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="mm_sys_ctrl" category="System">
+		<reg name="usb_pcie_comphy_sel">
+			<bits name="rg_usb_pcie_comphy_sel" pos="0" access="rw" rst="0x0" >
+				<comment> 0: pcie use 1: usb use </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="pcie_ana_cfg0">
+			<bits name="rg_pcie_ana_pll_reg_vbit" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pll_pu_bit" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pll_vco_band" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pll_cp_ibit" pos="9:7" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_frefx2_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rx_cm_mode" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_dpll_ck_sel" pos="12" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_clk_edge_sel" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_vco_low_test_mode" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_vco_high_test_mode" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pfd_dn_dlyc_bit" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pfd_dn_dlyf_bit" pos="23:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pfd_up_dlyc_bit" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_pfd_up_dlyf_bit" pos="31:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pcie_ana_cfg1">
+			<bits name="rg_pcie_ana_notch_sel_160M" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_ctle_bypass" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_ctle_cbit" pos="4:2" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_cdr_gain" pos="6:5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_sel_terr" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_lpf_notch_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rxdetect_cp" pos="10:9" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rxdetect_step" pos="12:11" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_iset_sq" pos="15:13" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_idac_mode" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_cdr_hys_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_en_rst_intp" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_idac_bit" pos="23:20" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_idac_aux_bit" pos="27:24" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_test_current" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_gpio_mode" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_tx_cm_mode" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_pcie_lock_out" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pcie_ana_cfg2">
+			<bits name="rg_pcie_ana_rterm_tx" pos="3:0" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rterm_rx" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rterm_tx_lp" pos="11:8" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_idac_bit_beacon" pos="15:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_idac_aux_bit_beacon" pos="19:16" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_ctle_gain" pos="21:20" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_div_clk_edge_sel" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_rx_mode_sel" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_ctle_ibit" pos="26:24" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ctle_offset_bit" pos="30:27" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pcie_ana_cfg3">
+			<bits name="rg_pcie_ana_plldiv15_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_fref_sel_xtal" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_doubler_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_clkx2_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_clk2dll_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_clk2dll_div4_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_clk160m2fpga_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_ana_fref2dig_sel_xtal" pos="7" access="rw" rst="0x0" >
+				<comment> 1'b0: 100MHz from host; 1'b1: xtal 40MHz </comment>
+			</bits>
+			<bits name="rg_pcie_beacon_clk_edge_sel" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_auto_rst_en" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_clk_edge_sel_aux" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_aux_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_notch_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_notch_mode_5g" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_pcie_notch_mode_2g" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="host_dma_cfg">
+			<bits name="rg_host_dma_upstream_hburst" pos="2:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_host_dma_downstream_hburst" pos="6:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="12*8"/>
+
+		<reg name="mem_cfg">
+			<bits name="cfg_mem_1pram" pos="15:0" access="rw" rst="0x21c8" >
+				<comment> memory configration </comment>
+			</bits>
+			<bits name="cfg_mem_2prf" pos="31:16" access="rw" rst="0x20c6" >
+				<comment> memory configration </comment>
+			</bits>
+		</reg>
+		<reg name="mem_cfg1">
+			<bits name="cfg_mem_1prf" pos="15:0" access="rw" rst="0x2498" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_mm_sys_tports_sel">
+			<bits name="cfg_mm_sys_tports_sel" pos="3:0" access="rw" rst="0x0" >
+				<comment> mm system test ports select </comment>
+			</bits>
+			<bits name="rg_host_dma_tports_sel" pos="7:4" access="rw" rst="0x0" >
+				<comment> host dma test ports select </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

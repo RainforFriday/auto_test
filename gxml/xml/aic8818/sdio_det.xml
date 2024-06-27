@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="sdio_det" category="sdio_det">
+		<reg name="cfg_det_sdio_ctrl0">
+			<bits name="cfg_det_sdio_trig_cmd_argument" pos="31:0" access="rw" rst="0x1200" >
+				<comment> SDIO detection trigger command argument </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_det_sdio_ctrl1">
+			<bits name="cfg_det_sdio_trig_cmd_argument_mask" pos="31:0" access="rw" rst="0x47ffff00" >
+				<comment> SDIO detection trigger command argument mask </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_det_sdio_ctrl2">
+			<bits name="cfg_det_sdio_int_en" pos="0" access="rw" rst="0x0" >
+				<comment> SDIO detection interrupt enable, high active. </comment>
+			</bits>
+			<bits name="cfg_det_sdio_clear_sd_int_to_dev" pos="1" access="rw" rst="0x0" >
+				<comment> SDIO detection interrupt clear </comment>
+			</bits>
+			<bits name="cfg_det_sdio_cmd_edge_sel" pos="2" access="rw" rst="0x1" >
+				<comment> SDIO detection command edge sel </comment>
+			</bits>
+			<bits name="cfg_det_sdio_dev_ind" pos="3" access="rw" rst="0x1" >
+				<comment> SDIO detection sleep flag </comment>
+			</bits>
+			<bits name="cfg_det_sdio_function_enable_reg" pos="5:4" access="rw" rst="0x3" >
+				<comment> SDIO detection function enalbe </comment>
+			</bits>
+			<bits name="cfg_det_sdio_trig_cmd_idex" pos="11:6" access="rw" rst="0x34" >
+				<comment> SDIO detection tigger command index </comment>
+			</bits>
+			<bits name="cfg_det_sdio_mon_sel" pos="13:12" access="rw" rst="0x1" >
+				<comment> SDIO detection monitor sel </comment>
+			</bits>
+			<bits name="cfg_det_sdio_pwr_on" pos="14" access="rw" rst="0x0" >
+				<comment> SDIO detection power on </comment>
+			</bits>
+			<bits name="cfg_det_sdio_pwr_on_update" pos="15" access="rw" rst="0x0" >
+				<comment> SDIO detection power on update </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_det_sdio_int_status">
+			<bits name="ro_det_sdio_int_status" pos="7:0" access="ro" rst="0x0" >
+				<comment> SDIO detection interrupt status, read only </comment>
+			</bits>
+			<bits name="ro_det_sdio_ulink_host_ack" pos="8" access="ro" rst="0x0" >
+				<comment> SDIO detection ulink host ack, read only </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

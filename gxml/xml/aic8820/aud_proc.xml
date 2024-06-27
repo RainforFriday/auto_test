@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="aud_proc" category="aud_proc">
+		<reg name="aud_proc function id">
+			<bits name="rev_id" pos="15:0" access="ro" rst="0x0" >
+				<comment> revision id </comment>
+			</bits>
+			<bits name="func_id" pos="31:16" access="ro" rst="0x302" >
+				<comment> function id </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_cfg">
+			<bits name="aud_proc_enable" pos="0" access="rw" rst="0x0" >
+				<comment> enable aud_proc </comment>
+			</bits>
+			<bits name="aud_proc_adc_path_reset" pos="1" access="rw" rst="0x0" >
+				<comment> reset aud_proc adc path </comment>
+			</bits>
+			<bits name="aud_proc_dac_path_reset" pos="2" access="rw" rst="0x0" >
+				<comment> reset aud_proc dac path </comment>
+			</bits>
+			<bits name="loopback_mode" pos="6" access="rw" rst="0x0" >
+				<comment> aud_proc loopback test mode, from rx path to tx path </comment>
+			</bits>
+			<bits name="high_speed_mode" pos="7" access="rw" rst="0x0" >
+				<comment> aud_proc high speed mode enable </comment>
+			</bits>
+			<bits name="sine_tone_en" pos="8" access="rw" rst="0x0" >
+				<comment> 1:select sine tone output </comment>
+			</bits>
+			<bits name="auto_clock_gating_en" pos="9" access="rw" rst="0x1" >
+				<comment> enable auto clock gating to save power </comment>
+			</bits>
+			<bits name="rx2tx_loop_en" pos="10" access="rw" rst="0x0" >
+				<comment> 1:enable rx to tx path, rx path sample rate must be same as tx path when this bit is enable </comment>
+			</bits>
+			<bits name="tx_lr_fifo_share_en" pos="15:14" access="rw" rst="0x0" >
+				<comment> 1: tx L/R share one buffer. 0: tx  L/R two buffer </comment>
+			</bits>
+			<bits name="rx_lr_fifo_share_en" pos="17:16" access="rw" rst="0x0" >
+				<comment> 1: rx L/R share one buffer. 0: rx  L/R two buffer </comment>
+			</bits>
+			<bits name="rxtx_lr_fifo_share_en" pos="19:18" access="rw" rst="0x0" >
+				<comment> 1: rxtx L/R share one buffer. 0: rxtx  L/R two buffer </comment>
+			</bits>
+			<bits name="txrx_lr_fifo_share_en" pos="20" access="rw" rst="0x0" >
+				<comment> 1:txrx channel L/R share mode. 0: txrx channel  </comment>
+			</bits>
+			<bits name="txrx_burst_mode" pos="21" access="rw" rst="0x0" >
+				<comment> 1: txrx channel burst incr 4 mode, 0: txrx channel single mode </comment>
+			</bits>
+			<bits name="rxtx_burst_mode" pos="22" access="rw" rst="0x0" >
+				<comment> 1: rxtx channel burst incr 4 mode, 0: rxtx channel single mode </comment>
+			</bits>
+			<bits name="tx_burst_mode" pos="23" access="rw" rst="0x0" >
+				<comment> 1: tx channel burst incr 4 mode, 0: tx channel single mode </comment>
+			</bits>
+			<bits name="rx_burst_mode" pos="24" access="rw" rst="0x0" >
+				<comment> 1: rx channel burst incr 4 mode, 0: rx channel single mode </comment>
+			</bits>
+			<bits name="monitor_sel" pos="31:25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_tx_cfg_ch0">
+			<bits name="tx_en_ch_0" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="tx_fifo_flush_ch_0" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="tx_mode_ch_01" pos="3:2" access="rw" rst="0x0" >
+				<comment> channel 0and1 bit mode
+2'b00: 16-bit mode
+2'b01: 24-bit mode
+2'b1x: 32-bit mode </comment>
+			</bits>
+			<bits name="tx_fifo_stat_ch_0" pos="5:4" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_tx_cfg_ch1">
+			<bits name="tx_en_ch_1" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="tx_fifo_flush_ch_1" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="tx_fifo_stat_ch_1" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_tx_cfg_ch2">
+			<bits name="tx_en_ch_2" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="tx_fifo_flush_ch_2" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="tx_mode_ch_23" pos="3:2" access="rw" rst="0x0" >
+				<comment> channel 2and3 bit mode
+2'b00: 16-bit mode
+2'b01: 24-bit mode
+2'b1x: 32-bit mode </comment>
+			</bits>
+			<bits name="tx_fifo_stat_ch_2" pos="5:4" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_tx_cfg_ch3">
+			<bits name="tx_en_ch_3" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="tx_fifo_flush_ch_3" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="tx_fifo_stat_ch_3" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_rx_cfg_ch01">
+			<bits name="rx_en_ch_0" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="rx_fifo_flush_ch_01" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="rx_mode_ch_01" pos="3:2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="rx_fifo_stat_ch_01" pos="5:4" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+			<bits name="rx_en_ch_1" pos="6" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_rx_cfg_ch23">
+			<bits name="rx_en_ch_2" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="rx_fifo_flush_ch_23" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="rx_mode_ch_23" pos="3:2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="rx_fifo_stat_ch_23" pos="5:4" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+			<bits name="rx_en_ch_3" pos="6" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_dac_cfg1">
+			<bits name="src_in_sel" pos="0" access="rw" rst="0x0" >
+				<comment> 0:select tx0andtx1 into src
+1:select rx2tx loop data into  src  </comment>
+			</bits>
+			<bits name="src_mode" pos="4:1" access="rw" rst="0x8" >
+				<comment> 0:mode_8k;
+1:mode_11p025k;
+2:mode_12k;
+3: mode_16k ;
+4: mode_22p05k;
+5:mode_24k;
+6:mode_32k;
+7:mode_44p1k;
+8: mode_48k; </comment>
+			</bits>
+			<bits name="src_freq_sel" pos="5" access="rw" rst="0x0" >
+				<comment> 0: output 48k mode
+1: output 26m/512 mode </comment>
+			</bits>
+			<bits name="src_ch_en" pos="7:6" access="rw" rst="0x0" >
+				<comment> [0]: l channel enable
+[1]: r channel enable </comment>
+			</bits>
+			<bits name="rx_mux_mode_l" pos="9:8" access="rw" rst="0x3" >
+				<comment> dac mux left channel add rx mux mode
+2'b00: add rx ch0 data
+2'b01: add rx ch1 data
+other: disable rx mux </comment>
+			</bits>
+			<bits name="tx_mux_mode_l" pos="11:10" access="rw" rst="0x3" >
+				<comment> dac mux left channel add tx mux mode
+2'b00: add tx ch2 data
+2'b01: add tx ch3 data
+other: disable tx23 mux </comment>
+			</bits>
+			<bits name="rx_mux_mode_r" pos="13:12" access="rw" rst="0x3" >
+				<comment> dac mux right channel add rx mux mode
+2'b00: add rx ch0 data
+2'b01: add rx ch1 data
+other: disable rx mux </comment>
+			</bits>
+			<bits name="tx_mux_mode_r" pos="15:14" access="rw" rst="0x3" >
+				<comment> dac mux right channel add tx mux mode
+2'b00: add tx ch0 data
+2'b01: add tx ch1 data
+other: disable tx01 mux </comment>
+			</bits>
+			<bits name="dac_volume_l" pos="23:16" access="rw" rst="0xa0" >
+				<comment> dac left channel volume </comment>
+			</bits>
+			<bits name="dac_volume_r" pos="31:24" access="rw" rst="0xa0" >
+				<comment> dac right channel volume </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_dac_cfg2">
+			<bits name="dac_mixer_mode_l" pos="2:0" access="rw" rst="0x0" >
+				<comment> dac left channel mixer mode
+3'h0:left channel data
+3'h1:mute
+3'h2:right channel data
+3'h3:(left channel + right channel)/2
+3'h4:(left channel - right channel)/2
+other: left channel data </comment>
+			</bits>
+			<bits name="dac_mixer_mode_r" pos="5:3" access="rw" rst="0x2" >
+				<comment> dac right channel mixer mode
+3'h0:left channel data
+3'h1:mute
+3'h2:right channel data
+3'h3:(left channel + right channel)/2
+3'h4:(left channel - right channel)/2
+other: right channel data </comment>
+			</bits>
+			<bits name="eq_ch_en" pos="7:6" access="rw" rst="0x0" >
+				<comment> EQ channel enable
+2'b11: enable both channel
+2'b10: enable right channel only
+2'b01: enable left channel only
+2'b00: Bypass EQ </comment>
+			</bits>
+			<bits name="eq_stage" pos="12:8" access="rw" rst="0xa" >
+				<comment> set eq number of stage </comment>
+			</bits>
+			<bits name="eq_clr_done" pos="13" access="ro" rst="0x0" >
+				<comment> EQ clear is done </comment>
+			</bits>
+			<bits name="eq_clr" pos="14" access="w1c" rst="0x0" >
+				<comment> clear EQ module </comment>
+			</bits>
+			<bits name="src_clr" pos="15" access="rw" rst="0x0" >
+				<comment> clear src path </comment>
+			</bits>
+			<bits name="tx_serial_data_stat" pos="17:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_parallel_data_stat" pos="19:18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="src_flt_bypass" pos="23:20" access="rw" rst="0x0" >
+				<comment> [0]: force half band filter 1 bypass
+[1]: force half band filter 2 bypass
+[2]:force upsample filter bypass
+[3]:force src filter bypass </comment>
+			</bits>
+			<bits name="aud_proc_dac_trig_en" pos="24" access="rw" rst="0x0" >
+				<comment> 1:enable dac trigger </comment>
+			</bits>
+			<bits name="aud_proc_tx_i2s_trig_en" pos="25" access="rw" rst="0x0" >
+				<comment> 1:enable i2s trigger </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_adc_cfg1">
+			<bits name="adc01_volume_l" pos="7:0" access="rw" rst="0xa0" >
+				<comment> adc left channel volume </comment>
+			</bits>
+			<bits name="adc01_volume_r" pos="15:8" access="rw" rst="0xa0" >
+				<comment> adc right channel volume </comment>
+			</bits>
+			<bits name="adc23_volume_l" pos="23:16" access="rw" rst="0xa0" >
+				<comment> adc left channel volume </comment>
+			</bits>
+			<bits name="adc23_volume_r" pos="31:24" access="rw" rst="0xa0" >
+				<comment> adc right channel volume </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_adc_cfg2">
+			<bits name="side_tone_l_input_sel" pos="0" access="rw" rst="0x0" >
+				<comment> 1:side_tone select right channel; 0:side_tone select left channel </comment>
+			</bits>
+			<bits name="side_tone_r_input_sel" pos="1" access="rw" rst="0x0" >
+				<comment> 1:side_tone select left channel; 0:side_tone select right channel </comment>
+			</bits>
+			<bits name="side_tone_gain" pos="6:2" access="rw" rst="0x0" >
+				<comment>  0 : 0dB
+1:- 2dB
+2:- 4dB
+3:- 6dB
+4:- 8dB
+5:-10dB
+6:-12dB
+7:-14dB
+8:-16dB
+9:-18dB
+10-20dB
+11:-22dB
+12:-24dB
+13:-26dB
+14:-28dB
+15:-30dB
+16:-32dB
+17:-34dB
+18:-36dB
+19:-38dB
+20:-40dB
+21:-42dB
+22:-44dB
+23:-46dB
+24:-48dB
+25:-50dB
+26:-52dB
+27:-54dB
+28: 56dB
+29:-58dB
+30-60dB </comment>
+			</bits>
+			<bits name="side_tone_mixer_mode_l" pos="9:7" access="rw" rst="0x0" >
+				<comment> dac left channel mixer mode
+3'h0:left channel data
+3'h1:mute
+3'h2:right channel data
+3'h3:(left channel + right channel)/2
+3'h4:(left channel - right channel)/2
+other: left channel data </comment>
+			</bits>
+			<bits name="side_tone_mixer_mode_r" pos="12:10" access="rw" rst="0x2" >
+				<comment> dac right channel mixer mode
+3'h0:left channel data
+3'h1:mute
+3'h2:right channel data
+3'h3:(left channel + right channel)/2
+3'h4:(left channel - right channel)/2
+other: right channel data </comment>
+			</bits>
+			<bits name="side_tone_mode" pos="13" access="rw" rst="0x0" >
+				<comment> side tone mode
+1'h0: add side tone after eq
+1'h1: add side tone before eq </comment>
+			</bits>
+			<bits name="side_tone_en" pos="14" access="rw" rst="0x0" >
+				<comment> side tone enable </comment>
+			</bits>
+			<bits name="aud_proc_rx01_i2s_trig_en" pos="15" access="rw" rst="0x0" >
+				<comment> 1:enable i2s trigger </comment>
+			</bits>
+			<bits name="aud_proc_rx23_i2s_trig_en" pos="16" access="rw" rst="0x0" >
+				<comment> 1:enable i2s trigger </comment>
+			</bits>
+			<bits name="eq_adc_ch_en" pos="18:17" access="rw" rst="0x0" >
+				<comment> EQ channel enable
+[1]: enable chanl1 adc EQ
+[0]: enable chanl0 adc EQ  </comment>
+			</bits>
+			<bits name="eq_adc_stage" pos="22:19" access="rw" rst="0xa" >
+				<comment> set eq number of stage </comment>
+			</bits>
+			<bits name="eq_adc_clr_done" pos="23" access="ro" rst="0x0" >
+				<comment> EQ clear is done </comment>
+			</bits>
+			<bits name="eq_adc_clr" pos="24" access="w1c" rst="0x0" >
+				<comment> clear EQ module </comment>
+			</bits>
+			<bits name="adc1_source_sel" pos="25" access="rw" rst="0x0" >
+				<comment> adc source select
+1'h1: select Ext Interface
+1'h0: select codec </comment>
+			</bits>
+			<bits name="adc2_source_sel" pos="26" access="rw" rst="0x0" >
+				<comment> adc source select
+1'h1: select Ext Interface
+1'h0: select codec </comment>
+			</bits>
+			<bits name="adc_sync_mode" pos="27" access="rw" rst="0x0" >
+				<comment> 1:adc01 and adc23 are sync; 0:adc01 and adc23 are async </comment>
+			</bits>
+			<bits name="loop_volume" pos="31:28" access="rw" rst="0x7" >
+				<comment> rx to tx loop path volume </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_txrx_cfg_ch0">
+			<bits name="txrx_en_ch_0" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="txrx_fifo_flush_ch_0" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="txrx_mode_ch_0" pos="2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="txrx_fifo_stat_ch_0" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+			<bits name="txrx_fifo_ae_th_ch_0" pos="14:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txrx_fifo_full_sel_ch_0" pos="15" access="rw" rst="0x0" >
+				<comment> 1:select almost full, thus can use af_th_ch_0 to control fifo level </comment>
+			</bits>
+			<bits name="txrx_fifo_af_th_ch_0" pos="22:16" access="rw" rst="0x1e" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txrx_fifo_clr_ch_0" pos="24" access="rw" rst="0x0" >
+				<comment> 1:clear txrx fifo </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_txrx_cfg_ch1">
+			<bits name="txrx_en_ch_1" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="txrx_fifo_flush_ch_1" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="txrx_mode_ch_1" pos="2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="txrx_fifo_stat_ch_1" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_rxtx_cfg_ch0">
+			<bits name="rxtx_en_ch_0" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="rxtx_fifo_flush_ch_0" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="rxtx_mode_ch_0" pos="2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="rxtx_fifo_stat_ch_0" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+			<bits name="rxtx_fifo_clr_ch_0" pos="5" access="rw" rst="0x0" >
+				<comment> rxtx fifo clr </comment>
+			</bits>
+			<bits name="rxtx_ch01_4mac_in_en" pos="6" access="rw" rst="0x0" >
+				<comment> 1: enable 4 mac sync mode </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_rxtx_cfg_ch1">
+			<bits name="rxtx_en_ch_1" pos="0" access="rw" rst="0x0" >
+				<comment> channel enable </comment>
+			</bits>
+			<bits name="rxtx_fifo_flush_ch_1" pos="1" access="rw" rst="0x0" >
+				<comment> flush fifo
+1'b1: flush status
+1'b0: normal status </comment>
+			</bits>
+			<bits name="rxtx_mode_ch_1" pos="2" access="rw" rst="0x0" >
+				<comment> channel mode
+1'b0: 16-bit mode
+1'b1: 24-bit mode </comment>
+			</bits>
+			<bits name="rxtx_fifo_stat_ch_1" pos="4:3" access="ro" rst="0x0" >
+				<comment> fifo_stat
+2'b00: empty~quarter
+2'b01: quarter~half
+2'b10: half~full
+2'b11: full </comment>
+			</bits>
+			<bits name="rxtx_fifo_clr_ch_1" pos="5" access="rw" rst="0x0" >
+				<comment> rxtx fifo clr </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_frac_src">
+			<bits name="frac_src_en" pos="0" access="rw" rst="0x0" >
+				<comment> 1: fractional src enable </comment>
+			</bits>
+			<bits name="frac_rate_adj_soft_en" pos="1" access="rw" rst="0x0" >
+				<comment> 1:set software configure src rate </comment>
+			</bits>
+			<bits name="frac_rate_soft_set" pos="2" access="rw" rst="0x0" >
+				<comment> 1: directly set frac src value </comment>
+			</bits>
+			<bits name="frac_rate_adj_sw" pos="27:4" access="rw" rst="0x0" >
+				<comment> 96k input : src adj rate = frac_rate_adj_sw*(96000/240/2^15);
+88.2k input : src adj rate = frac_rate_adj_sw*(88200/240/2^15);
+64k input: src adj rate = frac_rate_adj_sw*(64000/240/2^15); </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_dac_trig">
+			<bits name="aud_dac_trig_cfg_update" pos="0" access="w1c" rst="0x0" >
+				<comment> 1:update trig configure, such as *hw_en,*_sw, trig_cnt_th </comment>
+			</bits>
+			<bits name="aud_proc_dac_strb_lrck_sel" pos="2" access="rw" rst="0x0" >
+				<comment> 0: select lrck0, 1: select lrck1 </comment>
+			</bits>
+			<bits name="dac_src_trig_cnt_th" pos="27:4" access="rw" rst="0x0" >
+				<comment> hw trigger counter threshold,  </comment>
+			</bits>
+			<bits name="aud_proc_dac_strb_mode" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_dac_trig_sw_oe" pos="29" access="rw" rst="0x0" >
+				<comment> 1:enable software to start aud oe </comment>
+			</bits>
+			<bits name="aud_dac_trig_sw" pos="30" access="rw" rst="0x0" >
+				<comment> 1:enable software to start aud </comment>
+			</bits>
+			<bits name="aud_dac_trig_hw_en" pos="31" access="rw" rst="0x0" >
+				<comment> 1:enable hw trigger to start aud </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_dac_strb">
+			<bits name="dac_src_strb_lo_cnt_th" pos="23:0" access="rw" rst="0x0" >
+				<comment> strb cnt low 24 bits threshold </comment>
+			</bits>
+			<bits name="aud_proc_dac_stb_sel" pos="29:28" access="rw" rst="0x0" >
+				<comment> 0: aud codec strb, 1: aud intf strb l, 2: aud intf strb r </comment>
+			</bits>
+			<bits name="bt_clk_strb_inv" pos="30" access="rw" rst="0x0" >
+				<comment> 1:sel invert strb edge to cnt </comment>
+			</bits>
+			<bits name="dac_src_strb_cnt_en" pos="31" access="rw" rst="0x0" >
+				<comment> 1:enable strb cnt </comment>
+			</bits>
+		</reg>
+		<reg name="aud_proc_irq">
+			<bits name="irq_aud_proc_masked" pos="3:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="irq_aud_proc_raw" pos="7:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="irq_aud_proc_mask" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="irq_aud_proc_clr" pos="23:20" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_clk_lo_cnt">
+			<bits name="bt_clk_lo_cnt" pos="23:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_clk_hi_cnt">
+			<bits name="bt_clk_hi_cnt" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_clk_lo_cnt_latch">
+			<bits name="bt_clk_lo_cnt_latch" pos="23:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_clk_lo_frac_cnt_latch" pos="29:24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_clk_hi_cnt_latch">
+			<bits name="bt_clk_hi_cnt_latch" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dac_src_strb_lo_cnt">
+			<bits name="dac_src_strb_lo_cnt" pos="23:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="src_frac_strb_latch" pos="31:24" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dac_src_strb_hi_cnt">
+			<bits name="dac_src_strb_hi_cnt" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dpll_alfa1_cfg">
+			<bits name="dpll_1_sub_alfa1" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_alfa1" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dpll_k1_k2_cfg">
+			<bits name="dpll_k2" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_k1" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dpll_alfa2_cfg">
+			<bits name="dpll_1_sub_alfa2" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_alfa2" pos="29:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dpll_other_cfg1">
+			<bits name="dpll_gain" pos="13:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="dpll_trig_cfg">
+			<bits name="dpll_step_trig" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_hw_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_din" pos="18:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="dpll_cal_finish" pos="19" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="frac_rate_adj_up_th">
+			<bits name="frac_rate_adj_up_th" pos="23:0" access="rw" rst="0x7fffff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="frac_48k_cnt_th_h" pos="28:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="frac_rate_adj_dn_th">
+			<bits name="frac_rate_adj_dn_th" pos="23:0" access="rw" rst="0x800000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="frac_48k_cnt_th_l" pos="31:24" access="rw" rst="0x87" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="frac_rate_adj_hw">
+			<bits name="frac_rate_adj_hw" pos="23:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_intf_i2s_cfg0">
+			<bits name="swap_chlr_0" pos="1:0" access="rw" rst="0x0" >
+				<comment> Swap Channel L and Channel R.[0]
+[0] for output channel swap, 0: left, 1:right
+[1] for input channel swap, 0: left, 1: right </comment>
+			</bits>
+			<bits name="tx_data_half_cycle_dly_0" pos="2" access="rw" rst="0x0" >
+				<comment> delayed Audio data out by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="lsb_0" pos="3" access="rw" rst="0x0" >
+				<comment> When high, the output data format is with the least significant bit first.
+0:: MSB
+1:: LSB </comment>
+			</bits>
+			<bits name="right_justified_0" pos="4" access="rw" rst="0x0" >
+				<comment> right justified mode. </comment>
+			</bits>
+			<bits name="bck_lrck_0" pos="9:5" access="rw" rst="0x0" >
+				<comment> configure extend cycles of bck after data transfer is finished.
+Voice_Mode:: each sample takes wlen + tx_bck_lrck BCLK cycle. 
+Audio_Mode:: each sample takes 2*(wlen + tx_bck_lrck) BCLK cycle. 2 times than Voice  </comment>
+			</bits>
+			<bits name="wlen_0" pos="11:10" access="rw" rst="0x0" >
+				<comment> i2s data length
+00: 16-bit
+01: 20-bit
+10: 24-bit
+11: 32-bit </comment>
+			</bits>
+			<bits name="lrck_pol_0" pos="12" access="rw" rst="0x0" >
+				<comment> configure LRCK polarity. 
+0:: LEFT_H_RIGHT_L:    high level on LRCK means left channel, low level on LRCK means right channel. 
+1:: LEFT_L_RIGHT_H:    high level on LRCK means right channel, low level on LRCK means left channel. 
+
+Note: this bit should be set to '0' (LEFT_H_RIGHT_L) in voice mode. </comment>
+			</bits>
+			<bits name="bck_pol_0" pos="13" access="rw" rst="0x0" >
+				<comment> if Master Mode, invert BCLK out. if slave Mode, invert BCLK in.
+0:: NORMAL
+1:: INVERT </comment>
+			</bits>
+			<bits name="bckout_gate_0" pos="14" access="rw" rst="0x0" >
+				<comment> Sets the BckOut gating. This bit decide if aud intf continue to output BCK clock after data has been sent.
+0:: NO_GATE
+1:: GATED </comment>
+			</bits>
+			<bits name="rx_half_cycle_dly_0" pos="15" access="rw" rst="0x0" >
+				<comment> delayed Audio input data by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="tx_lrck_half_cycle_dly_0" pos="16" access="rw" rst="0x0" >
+				<comment> delayed Audio LRCK by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="rx_dly_0" pos="18:17" access="rw" rst="0x0" >
+				<comment> Indicates the delay between serial data in MSB and LRCK edge. 
+2'b00:: ALIGN:    Digital audio in MSB is aligned with LRCLK edge. 
+2'b01:: DLY_1:   Digital audio in MSB is 1 cycle delayed to LRCLK edge. 
+2'b10:: DLY_2:   Digital audio in MSB is 2 cycle delayed to LRCLK edge. 
+2'b11:: DLY_3:   Digital audio in MSB is 3 cycle delayed to LRCLK edge. </comment>
+			</bits>
+			<bits name="tx_dly_s_0" pos="19" access="rw" rst="0x0" >
+				<comment> ONLY for slave mode:: configure 1 cycle supplementary Tx delay. 
+0:: NO_DLY:  No supplementary Tx delay. 
+1:: DLY:         One Cycle supplementary Tx delay. </comment>
+			</bits>
+			<bits name="tx_dly_0" pos="20" access="rw" rst="0x0" >
+				<comment> configure the delay between serial data out MSB and LRCK edge. 
+0:: ALIGN:           Digital audio out MSB is aligned with LRCLK edge. 
+1:: DLY_1:          Digital audio out MSB is 1 cycle delayed to LRCLK edge </comment>
+			</bits>
+			<bits name="master_mode_0" pos="21" access="rw" rst="0x1" >
+				<comment> configure aud intf works in master mode (LRCLK and BCK timing signals are generated internally) or slave mode (LRCLK and BCK timing signals are generated externally).
+0:: SLAVE
+1:: MASTER </comment>
+			</bits>
+			<bits name="rx_serial_mode_0" pos="24:22" access="rw" rst="0x0" >
+				<comment> Configure serial aud intf mode. 
+0:: I2S_PCM
+1:: VOICE
+2:: DAI
+When mode is set DAI, the bit Master Mode should be set to '1'. Data should be sent out on falling edge, which requires either Bclk_Pol = '0' and Half_Cycle_DLY = '1' or Bclk_Pol = '1' and Half_Cycle_DLY = '0'. Bits Tx_DLY and BCKOut_Gate must be configured to '0' and '1'. 
+The DAI mode must NOT be modified after aud intf is enabled.  </comment>
+			</bits>
+			<bits name="tx_serial_mode_0" pos="27:25" access="rw" rst="0x0" >
+				<comment> Configure serial aud intf mode. 
+0:: I2S_PCM
+1:: VOICE
+2:: DAI
+When mode is set DAI, the bit Master Mode should be set to '1'. Data should be sent out on falling edge, which requires either Bclk_Pol = '0' and Half_Cycle_DLY = '1' or Bclk_Pol = '1' and Half_Cycle_DLY = '0'. Bits Tx_DLY and BCKOut_Gate must be configured to '0' and '1'. 
+The DAI mode must NOT be modified after aud intf is enabled.  </comment>
+			</bits>
+			<bits name="tx_off_0" pos="28" access="rw" rst="0x1" >
+				<comment> Disable aud intf Tx functions. Important:: if you want to do record only, you must set this bit otherwise aud intf state machine will not start. 
+0:: TX_ON:    Both Tx Rx enabled. 
+1:: TX_OFF:   Rx enabled only, Tx disabled. </comment>
+			</bits>
+			<bits name="tx_mode_0" pos="30:29" access="rw" rst="0x0" >
+				<comment> Configure mono or stereo format for Audio data out:
+2'b00:: STEREO_STEREO:  stereo input from DMA, stereo output to pin. 
+2'b01:: MONOL_STEREO_DUPLI:   mono channel L input from DMA, stereo output duplicate in both channels to pin. 
+2'b10:: MONOR_STEREO_DUPLI:  mono channel R input from DMA, stereo output duplicate in both channels to pin. 
+2'b11:: MONO_IN_MONO_OUT
+Funtion mono input from DMA, stereo output in left channel to pin, can be implemented by setting aud intf_tx_cfg_ch[1] or aud intf_tx_cfg_ch[0] disable.
+When works in DAI, or DSD mode, always select "00" mode STEREO_STEREO. </comment>
+			</bits>
+			<bits name="i2s_enable_0" pos="31" access="rw" rst="0x0" >
+				<comment> enable i2s interface </comment>
+			</bits>
+		</reg>
+		<reg name="aud_intf_i2s_cfg1">
+			<bits name="swap_chlr_1" pos="1:0" access="rw" rst="0x0" >
+				<comment> Swap Channel L and Channel R.[0]
+[0] for output channel swap, 0: left, 1:right
+[1] for input channel swap, 0: left, 1: right </comment>
+			</bits>
+			<bits name="tx_data_half_cycle_dly_1" pos="2" access="rw" rst="0x0" >
+				<comment> delayed Audio data out by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="lsb_1" pos="3" access="rw" rst="0x0" >
+				<comment> When high, the output data format is with the least significant bit first.
+0:: MSB
+1:: LSB </comment>
+			</bits>
+			<bits name="right_justified_1" pos="4" access="rw" rst="0x0" >
+				<comment> right justified mode. </comment>
+			</bits>
+			<bits name="bck_lrck_1" pos="9:5" access="rw" rst="0x0" >
+				<comment> configure extend cycles of bck after data transfer is finished.
+Voice_Mode:: each sample takes wlen + tx_bck_lrck BCLK cycle. 
+Audio_Mode:: each sample takes 2*(wlen + tx_bck_lrck) BCLK cycle. 2 times than Voice  </comment>
+			</bits>
+			<bits name="wlen_1" pos="11:10" access="rw" rst="0x0" >
+				<comment> i2s data length
+00: 16-bit
+01: 20-bit
+10: 24-bit
+11: 32-bit </comment>
+			</bits>
+			<bits name="lrck_pol_1" pos="12" access="rw" rst="0x0" >
+				<comment> configure LRCK polarity. 
+0:: LEFT_H_RIGHT_L:    high level on LRCK means left channel, low level on LRCK means right channel. 
+1:: LEFT_L_RIGHT_H:    high level on LRCK means right channel, low level on LRCK means left channel. 
+
+Note: this bit should be set to '0' (LEFT_H_RIGHT_L) in voice mode. </comment>
+			</bits>
+			<bits name="bck_pol_1" pos="13" access="rw" rst="0x0" >
+				<comment> if Master Mode, invert BCLK out. if slave Mode, invert BCLK in.
+0:: NORMAL
+1:: INVERT </comment>
+			</bits>
+			<bits name="bckout_gate_1" pos="14" access="rw" rst="0x0" >
+				<comment> Sets the BckOut gating. This bit decide if aud intf continue to output BCK clock after data has been sent.
+0:: NO_GATE
+1:: GATED </comment>
+			</bits>
+			<bits name="rx_half_cycle_dly_1" pos="15" access="rw" rst="0x0" >
+				<comment> delayed Audio input data by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="tx_lrck_half_cycle_dly_1" pos="16" access="rw" rst="0x0" >
+				<comment> delayed Audio output LRCK by half cycle.
+0:: NO_DLY
+1:: DLY </comment>
+			</bits>
+			<bits name="rx_dly_1" pos="18:17" access="rw" rst="0x0" >
+				<comment> Indicates the delay between serial data in MSB and LRCK edge. 
+2'b00:: ALIGN:    Digital audio in MSB is aligned with LRCLK edge. 
+2'b01:: DLY_1:   Digital audio in MSB is 1 cycle delayed to LRCLK edge. 
+2'b10:: DLY_2:   Digital audio in MSB is 2 cycle delayed to LRCLK edge. 
+2'b11:: DLY_3:   Digital audio in MSB is 3 cycle delayed to LRCLK edge. </comment>
+			</bits>
+			<bits name="tx_dly_s_1" pos="19" access="rw" rst="0x0" >
+				<comment> ONLY for slave mode:: configure 1 cycle supplementary Tx delay. 
+0:: NO_DLY:  No supplementary Tx delay. 
+1:: DLY:         One Cycle supplementary Tx delay. </comment>
+			</bits>
+			<bits name="tx_dly_1" pos="20" access="rw" rst="0x0" >
+				<comment> configure the delay between serial data out MSB and LRCK edge. 
+0:: ALIGN:           Digital audio out MSB is aligned with LRCLK edge. 
+1:: DLY_1:          Digital audio out MSB is 1 cycle delayed to LRCLK edge </comment>
+			</bits>
+			<bits name="master_mode_1" pos="21" access="rw" rst="0x1" >
+				<comment> configure aud intf works in master mode (LRCLK and BCK timing signals are generated internally) or slave mode (LRCLK and BCK timing signals are generated externally).
+0:: SLAVE
+1:: MASTER </comment>
+			</bits>
+			<bits name="rx_serial_mode_1" pos="24:22" access="rw" rst="0x0" >
+				<comment> Configure serial aud intf mode. 
+0:: I2S_PCM
+1:: VOICE
+2:: DAI
+When mode is set DAI, the bit Master Mode should be set to '1'. Data should be sent out on falling edge, which requires either Bclk_Pol = '0' and Half_Cycle_DLY = '1' or Bclk_Pol = '1' and Half_Cycle_DLY = '0'. Bits Tx_DLY and BCKOut_Gate must be configured to '0' and '1'. 
+The DAI mode must NOT be modified after aud intf is enabled.  </comment>
+			</bits>
+			<bits name="tx_serial_mode_1" pos="27:25" access="rw" rst="0x0" >
+				<comment> Configure serial aud intf mode. 
+0:: I2S_PCM
+1:: VOICE
+2:: DAI
+When mode is set DAI, the bit Master Mode should be set to '1'. Data should be sent out on falling edge, which requires either Bclk_Pol = '0' and Half_Cycle_DLY = '1' or Bclk_Pol = '1' and Half_Cycle_DLY = '0'. Bits Tx_DLY and BCKOut_Gate must be configured to '0' and '1'. 
+The DAI mode must NOT be modified after aud intf is enabled.  </comment>
+			</bits>
+			<bits name="tx_off_1" pos="28" access="rw" rst="0x1" >
+				<comment> Disable aud intf Tx functions. Important:: if you want to do record only, you must set this bit otherwise aud intf state machine will not start. 
+0:: TX_ON:    Both Tx Rx enabled. 
+1:: TX_OFF:   Rx enabled only, Tx disabled. </comment>
+			</bits>
+			<bits name="tx_mode_1" pos="30:29" access="rw" rst="0x0" >
+				<comment> Configure mono or stereo format for Audio data out:
+2'b00:: STEREO_STEREO:             stereo input from DMA, stereo output to pin. 
+2'b01:: MONOL_STEREO_DUPLI:   mono channel L input from DMA, stereo output duplicate in both channels to pin. 
+2'b10:: MONOR_STEREO_DUPLI:  mono channel R input from DMA, stereo output duplicate in both channels to pin. 
+2'b11:: MONO_IN_MONO_OUT
+Funtion mono input from DMA, stereo output in left channel to pin, can be implemented by setting aud intf_tx_cfg_ch[1] or aud intf_tx_cfg_ch[0] disable.
+When works in DAI, or DSD mode, always select "00" mode STEREO_STEREO. </comment>
+			</bits>
+			<bits name="i2s_enable_1" pos="31" access="rw" rst="0x0" >
+				<comment> enable i2s interface </comment>
+			</bits>
+		</reg>
+		<reg name="pcm_cfg_0">
+			<bits name="slotnum_0" pos="7:0" access="rw" rst="0x0" >
+				<comment> slots number to be transferred in one frame </comment>
+			</bits>
+			<bits name="longsync_0" pos="8" access="rw" rst="0x0" >
+				<comment> longsync enable </comment>
+			</bits>
+			<bits name="tx_bit_mode_0" pos="9" access="rw" rst="0x0" >
+				<comment> 0: low bit are inserted zero to 24bits
+1:high bits are inserted zero to 24bits </comment>
+			</bits>
+			<bits name="rx_bit_mode_0" pos="10" access="rw" rst="0x0" >
+				<comment> 0: low bit are inserted zero to 24bits
+1:high bits are inserted zero to 24bits </comment>
+			</bits>
+			<bits name="lrck_m_dly_0" pos="11" access="rw" rst="0x0" >
+				<comment> 1: output lrck delay one bck  </comment>
+			</bits>
+			<bits name="tx_sync_mode_0" pos="12" access="rw" rst="0x0" >
+				<comment> 1:output fast sync in master mode </comment>
+			</bits>
+			<bits name="loop_back_0" pos="13" access="rw" rst="0x0" >
+				<comment> Sets i2s in loop back mode. The feature is for debug only and can not work in DAI mode.
+0:: NORMAL
+1:: LOOPBACK </comment>
+			</bits>
+			<bits name="bckout_auto_gate_bypass_0" pos="14" access="rw" rst="0x0" >
+				<comment> 1: bypss bck auto  gate, keep bck output always ok </comment>
+			</bits>
+			<bits name="tx_ch01_iis_en_mux" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ch01_iis_en_mux" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_mode_0" pos="18:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="i2s_chn_out_sel" pos="19" access="rw" rst="0x0" >
+				<comment> 1:i2s tx sel channel 1; 0:i2s tx sel channel 0 </comment>
+			</bits>
+			<bits name="i2s_chn_in_sel" pos="20" access="rw" rst="0x0" >
+				<comment> 1:i2s rx sel channel 1; 0:i2s rx sel channel 0 </comment>
+			</bits>
+		</reg>
+		<reg name="pcm_cfg_1">
+			<bits name="slotnum_1" pos="7:0" access="rw" rst="0x0" >
+				<comment> slots number to be transferred in one frame </comment>
+			</bits>
+			<bits name="longsync_1" pos="8" access="rw" rst="0x0" >
+				<comment> longsync enable </comment>
+			</bits>
+			<bits name="tx_bit_mode_1" pos="9" access="rw" rst="0x0" >
+				<comment> 0: low bit are inserted zero to 24bits
+1:high bits are inserted zero to 24bits </comment>
+			</bits>
+			<bits name="rx_bit_mode_1" pos="10" access="rw" rst="0x0" >
+				<comment> 0: low bit are inserted zero to 24bits
+1:high bits are inserted zero to 24bits </comment>
+			</bits>
+			<bits name="lrck_m_dly_1" pos="11" access="rw" rst="0x0" >
+				<comment> 1: output lrck delay one bck  </comment>
+			</bits>
+			<bits name="tx_sync_mode_1" pos="12" access="rw" rst="0x0" >
+				<comment> 1:output fast sync in master mode </comment>
+			</bits>
+			<bits name="loop_back_1" pos="13" access="rw" rst="0x0" >
+				<comment> Sets i2s in loop back mode. The feature is for debug only and can not work in DAI mode.
+0:: NORMAL
+1:: LOOPBACK </comment>
+			</bits>
+			<bits name="bckout_auto_gate_bypass_1" pos="14" access="rw" rst="0x0" >
+				<comment> 1: bypss bck auto  gate, keep bck output always ok </comment>
+			</bits>
+			<bits name="tx_ch23_iis_en_mux" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_ch23_iis_en_mux" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_mode_1" pos="18:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_0">
+			<bits name="spdif_userdata_0" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_1">
+			<bits name="spdif_userdata_1" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_2">
+			<bits name="spdif_userdata_2" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_3">
+			<bits name="spdif_userdata_3" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_4">
+			<bits name="spdif_userdata_4" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_userdata_5">
+			<bits name="spdif_userdata_5" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_0">
+			<bits name="spdif_channel_stat_0" pos="31:0" access="rw" rst="0x0" >
+				<comment> spdif channel status out </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_1">
+			<bits name="spdif_channel_stat_1" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_2">
+			<bits name="spdif_channel_stat_2" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_3">
+			<bits name="spdif_channel_stat_3" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_4">
+			<bits name="spdif_channel_stat_4" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_channel_stat_5">
+			<bits name="spdif_channel_stat_5" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_output_cfg">
+			<bits name="validity_flag" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="vucz_mode" pos="2:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="req_point" pos="7:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="start_zen" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_input_cfg">
+			<bits name="spdif_in_fsdet_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="spdif_in_cfg" pos="13:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="iaau_spdif_in" pos="24:14" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_input_stat1">
+			<bits name="spdif_in_bit_width" pos="7:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="status_spdif_in" pos="29:8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="spdif_input_stat2">
+			<bits name="channel_spdif_in" pos="31:0" access="ro" rst="0x0" >
+				<comment> spdif input status2 </comment>
+			</bits>
+		</reg>
+		<reg name="aud_drc_cfg0">
+			<bits name="cfg_aud_drc_chnl_en" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_drc_clr" pos="8" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_drc_clr_done" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_band3_mode" pos="12:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_band3_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_eq_swap" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_crossover_bypass" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_en" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_stage_cnt" pos="18:17" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_band2_mode" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_band1_mode" pos="26:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_drc_band0_mode" pos="29:27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="32*8"/>
+
+		<reg name="eq_stereo_coef_ram_cfg0">
+			<bits name="eq_stereo_coef_wdata" pos="29:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="eq_stereo_coef_wr" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="eq_stereo_coef_ram_cfg1">
+			<bits name="eq_stereo_coef_rdata" pos="29:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="eq_stereo_coef_rd" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="eq_mono_coef_ram_cfg0">
+			<bits name="eq_mono_coef_wdata" pos="29:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="eq_mono_coef_wr" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="eq_mono_coef_ram_cfg1">
+			<bits name="eq_mono_coef_rdata" pos="29:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="eq_mono_coef_rd" pos="31" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_drc_ram_cfg0">
+			<bits name="cfg_aud_drc_ram_wr" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_drc_ram_rd" pos="1" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_drc_ram_addr" pos="14:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_drc_ram_sel" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_drc_ram_cfg1">
+			<bits name="cfg_aud_drc_ram_wdata" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_drc_ram_cfg2">
+			<bits name="cfg_aud_drc_ram_rdata" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_ctrl0">
+			<bits name="aud_src_enable" pos="0" access="rw" rst="0x0" >
+				<comment> 1: aud src function enable </comment>
+			</bits>
+			<bits name="aud_src_path_reset" pos="1" access="rw" rst="0x0" >
+				<comment> 1: aud src path reset </comment>
+			</bits>
+			<bits name="aud_src_txrx_lr_fifo_share_en" pos="2" access="rw" rst="0x0" >
+				<comment> 1: enable txrx channel share one buffer </comment>
+			</bits>
+			<bits name="aud_src_tx_lr_fifo_share_en" pos="3" access="rw" rst="0x0" >
+				<comment> 1: enable tx channel data share one buffer </comment>
+			</bits>
+			<bits name="aud_src_txrx_en_ch_1" pos="4" access="rw" rst="0x0" >
+				<comment> 1: enable src txrx channel r. </comment>
+			</bits>
+			<bits name="aud_src_txrx_en_ch_0" pos="5" access="rw" rst="0x0" >
+				<comment> 1: enable src txrx channel l, </comment>
+			</bits>
+			<bits name="aud_src_txrx_fifo_flush_ch" pos="6" access="rw" rst="0x0" >
+				<comment> 1: flush txrx src buffer </comment>
+			</bits>
+			<bits name="aud_src_txrx_mode_ch" pos="7" access="rw" rst="0x0" >
+				<comment> 1: select src txrx data is 24 bits; 0; select src txrx data is 16 bits </comment>
+			</bits>
+			<bits name="aud_src_tx_en_ch_1" pos="8" access="rw" rst="0x0" >
+				<comment> 1: enable src tx channel r. </comment>
+			</bits>
+			<bits name="aud_src_tx_en_ch_0" pos="9" access="rw" rst="0x0" >
+				<comment> 1: enable src tx channel l, </comment>
+			</bits>
+			<bits name="aud_src_tx_fifo_flush_ch" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_tx_mode_ch" pos="11" access="rw" rst="0x0" >
+				<comment> 1: select src tx data is 24 bits; 0; select src tx data is 16 bits </comment>
+			</bits>
+			<bits name="aud_src_auto_clock_gating_en" pos="12" access="rw" rst="0x1" >
+				<comment> 1: enable src audo clock gating </comment>
+			</bits>
+			<bits name="aud_src_adc_in_en" pos="13" access="rw" rst="0x0" >
+				<comment> 1: select src tx data from adc channel, 0: select src tx data from src tx channel </comment>
+			</bits>
+			<bits name="aud_src_txrx_burst_mode" pos="14" access="rw" rst="0x0" >
+				<comment> 1:src txrx channel burst inc4 mode; 0: src txrx channel single mode </comment>
+			</bits>
+			<bits name="aud_src_tx_burst_mode" pos="15" access="rw" rst="0x0" >
+				<comment> 1:src tx channel burst inc4 mode; 0: src tx channel single mode </comment>
+			</bits>
+			<bits name="aud_src_txrx_ch_stat" pos="17:16" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_tx_ch_stat" pos="19:18" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_ctrl1">
+			<bits name="aud_src_frac_rate_adj_sw" pos="23:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_frac_rate_soft_set" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_ctrl2">
+			<bits name="aud_src_frac_src_en" pos="0" access="rw" rst="0x0" >
+				<comment> 1. enable aud rx src function mode </comment>
+			</bits>
+			<bits name="aud_src_ch_en" pos="2:1" access="rw" rst="0x0" >
+				<comment> [0]:1, enable aud src l channel
+[1]:1, enable aud src r channel </comment>
+			</bits>
+			<bits name="aud_src_freq_sel" pos="3" access="rw" rst="0x0" >
+				<comment> 0: output 48k mode
+1: output 26m/512 mode </comment>
+			</bits>
+			<bits name="aud_src_mode" pos="7:4" access="rw" rst="0x0" >
+				<comment> 0:mode_8k;
+1:mode_11p025k;
+2:mode_12k;
+3: mode_16k ;
+4: mode_22p05k;
+5:mode_24k;
+6:mode_32k;
+7:mode_44p1k;
+8: mode_48k; </comment>
+			</bits>
+			<bits name="aud_src_clr" pos="8" access="rw" rst="0x0" >
+				<comment> 1: clear aud src data path </comment>
+			</bits>
+			<bits name="aud_src_flt_bypass" pos="12:9" access="rw" rst="0x0" >
+				<comment> [0]:1, bypass 1th src half band filter
+[1]:1, bypass 2th src half band filter
+[2]:1, bypass 3th src half band filter
+[3]:1, bypass src filter </comment>
+			</bits>
+			<bits name="aud_src_decim24_sel" pos="13" access="rw" rst="0x0" >
+				<comment> 1: select src decimation 2; 0: select src decimation 4; </comment>
+			</bits>
+			<bits name="aud_src_decim24_bypass" pos="14" access="rw" rst="0x0" >
+				<comment> 1:bypass src decimation 2/4 </comment>
+			</bits>
+			<bits name="aud_src_decim3_sel" pos="15" access="rw" rst="0x0" >
+				<comment> 1:select src decimation 3 </comment>
+			</bits>
+			<bits name="aud_src_decim3_bypass" pos="16" access="rw" rst="0x0" >
+				<comment> 1: bypass src decimation 3  </comment>
+			</bits>
+			<bits name="aud_src_iir_hpf_bypass" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_iir_bank_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_iir_flt_stage" pos="21:19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_iir_hpf_bypass" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_iir_bank_en" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_iir_flt_stage" pos="26:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_hpf_coef1_a1">
+			<bits name="aud_src_hpf_coef1_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_hpf_coef1_a2">
+			<bits name="aud_src_hpf_coef1_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_hpf_coef1_b1">
+			<bits name="aud_src_hpf_coef1_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_hpf_coef1_g0">
+			<bits name="aud_src_hpf_coef1_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_hpf_coef1_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_hpf_coef1_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_hpf_coef1_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef2_a1">
+			<bits name="aud_src_lpf_coef2_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef2_a2">
+			<bits name="aud_src_lpf_coef2_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef2_b1">
+			<bits name="aud_src_lpf_coef2_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef2_g0">
+			<bits name="aud_src_lpf_coef2_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef2_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef2_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef2_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef3_a1">
+			<bits name="aud_src_lpf_coef3_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef3_a2">
+			<bits name="aud_src_lpf_coef3_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef3_b1">
+			<bits name="aud_src_lpf_coef3_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_src_lpf_coef3_g0">
+			<bits name="aud_src_lpf_coef3_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef3_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef3_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_src_lpf_coef3_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_hpf_coef1_a1">
+			<bits name="aud_adc_hpf_coef1_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_hpf_coef1_a2">
+			<bits name="aud_adc_hpf_coef1_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_hpf_coef1_b1">
+			<bits name="aud_adc_hpf_coef1_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_hpf_coef1_g0">
+			<bits name="aud_adc_hpf_coef1_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_hpf_coef1_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_hpf_coef1_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_hpf_coef1_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef2_a1">
+			<bits name="aud_adc_lpf_coef2_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef2_a2">
+			<bits name="aud_adc_lpf_coef2_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef2_b1">
+			<bits name="aud_adc_lpf_coef2_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef2_g0">
+			<bits name="aud_adc_lpf_coef2_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef2_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef2_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef2_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef3_a1">
+			<bits name="aud_adc_lpf_coef3_a1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef3_a2">
+			<bits name="aud_adc_lpf_coef3_a2_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef3_b1">
+			<bits name="aud_adc_lpf_coef3_b1_high32" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_lpf_coef3_g0">
+			<bits name="aud_adc_lpf_coef3_g0" pos="19:0" access="rw" rst="0x40000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef3_b1_low4" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef3_a2_low4" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_lpf_coef3_a1_low4" pos="31:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="8*8"/>
+
+		<reg name="eq_coef_ram_cfg3">
+			<bits name="eq_stereo_coef_addr" pos="7:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="eq_mono_coef_addr" pos="21:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_drc_cfg0">
+			<bits name="cfg_adc_drc_chnl_en" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_adc_drc_clr" pos="8" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="aud_adc_drc_clr_done" pos="9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_adc_drc_band_mode" pos="12:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_adc_drc_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_adc_drc_auto_clk_gating" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_drc_ram_cfg0">
+			<bits name="cfg_aud_adc_drc_ram_wr" pos="0" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_adc_drc_ram_rd" pos="1" access="w1c" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_adc_drc_ram_addr" pos="14:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_aud_adc_drc_ram_sel" pos="17:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_drc_ram_cfg1">
+			<bits name="cfg_aud_adc_drc_ram_wdata" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="aud_adc_drc_ram_cfg2">
+			<bits name="cfg_aud_adc_drc_ram_rdata" pos="31:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

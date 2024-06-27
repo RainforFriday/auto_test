@@ -1,0 +1,319 @@
+<archive relative="sd_host.xml">
+  <module name="sd_host" category="Periph">
+    <reg protect="rw" name="ctrl">
+      <bits access="rw" name="dma_tx_th" pos="19:16" rst="0">
+        <comment>
+            Tx dma req triggered threshold
+        </comment>
+      </bits>
+      <bits access="rw" name="dma_rx_th" pos="11:8" rst="0">
+        <comment>
+            Rx dma req triggered threshold
+        </comment>
+      </bits>
+      <bits access="rw" name="dma_tx_en" pos="5" rst="0">
+        <comment>
+            Enable tx dma req triggered when txfifo level arrived dma_tx_th
+        </comment>
+      </bits>
+      <bits access="rw" name="dma_rx_en" pos="4" rst="0">
+        <comment>
+            Enable rx dma req triggered when rxfifo level arrived dma_rx_th
+        </comment>
+      </bits>
+      <bits access="rw" name="reset_n" pos="3" rst="1">
+        <comment>
+          Software reset, active Low
+          Software reset for TX and RX FIFOs of Sd host, active low 
+        </comment>
+      </bits>
+      <bits access="rw" name="endian" pos="2:0" rst="0">
+        <comment>
+          Endian Type
+          SD TX FIFO Endian
+          3'b000: {pwdata_byte[3],pwdata_byte[2],pwdata_byte[1],pwdata_byte[0]}
+          3'b001: {pwdata_byte[0],pwdata_byte[1],pwdata_byte[2],pwdata_byte[3]}
+          3'b010: {pwdata_byte[1],pwdata_byte[0],pwdata_byte[3],pwdata_byte[2]}
+          3'b011: pwdata_bit[0-31]
+          3'b100: {pwdata_byte[2],pwdata_byte[3],pwdata_byte[0],pwdata_byte[1]}
+          default: 32'h0
+        </comment>
+      </bits>
+    </reg>
+    <hole size="32"/>
+    <reg protect="w" name="txfifo_entry">
+      <bits access="w" name="txfifo_entry" pos="31:0" rst="0">
+        <comment>
+          Tx FIFO Write Entry
+          Write data for 8x32 bit TxFIFO
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rxfifo_entry">
+      <bits access="r" name="rxfifo_entry" pos="31:0" rst="0">
+        <comment>
+          Rx FIFO Read Entry
+          Read data from 8x32 bit RxFIFO
+        </comment>
+      </bits>
+    </reg>
+    <hole size="16256"/>
+    <reg protect="rw" name="cfg">
+      <bits access="rw" name="auto_cmd12_en" pos="16" rst="1">
+        <comment>
+          Auto cmd12 enable
+        </comment>
+      </bits>
+      <bits access="rw" name="multi_block_mode" pos="10" rst="0">
+        <comment>
+          '1' means multiple block data operation.
+          0:SIMPLE
+          1:MULTIPLE
+        </comment>
+      </bits>
+      <bits access="rw" name="write_mode" pos="9" rst="0">
+        <comment>
+          '1' means write operation,'0' means read operation.
+          0:READ
+          1:WRITE
+        </comment>
+      </bits>
+      <bits access="rw" name="read_write_en" pos="8" rst="0">
+        <comment>
+            Read/write enable
+        </comment>
+      </bits>
+      <bits access="rw" name="response_type" pos="6:5" rst="0">
+        <comment>
+          Response select register
+          3:Reserved
+          2:R2
+          1:R3
+          0:Other
+        </comment>
+      </bits>
+      <bits access="rw" name="response_en" pos="4" rst="0">
+        <comment>
+          Response enable
+        </comment>
+      </bits>
+      <bits access="rw" name="cmd_start" pos="0" rst="0">
+        <comment>
+          Configuration begin
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="status">
+      <bits access="r" name="no_response_error" pos="9" rst="0">
+        <comment>
+          '1' means the card has no response to command.
+        </comment>
+      </bits>
+      <bits access="r" name="response_error" pos="8" rst="0">
+        <comment>
+          Response CRC checks error register, '1' means response CRC check error.
+        </comment>
+      </bits>
+      <bits access="r" name="data_line_busy" pos="2" rst="0">
+        <comment>
+          '1' means the data line is busy.
+        </comment>
+      </bits>
+      <bits access="r" name="busy" pos="1" rst="0">
+        <comment>
+          '1' means sd modem is busy.
+        </comment>
+      </bits>
+      <bits access="r" name="sd_not_over" pos="0" rst="0">
+        <comment>
+          '1' means the sd/mmc operation is not over.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="cmd_index">
+      <bits access="rw" name="command" pos="5:0" rst="0">
+        <comment>
+          Sd command register.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="cmd_arg">
+      <bits access="rw" name="argument" pos="31:0" rst="0">
+        <comment>
+          Sd command argument register, write data to the Sd card.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rsp_index">
+      <bits access="r" name="resp" pos="5:0" rst="0">
+        <comment>
+          Sd response index register.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rsp_arg3">
+      <bits access="r" name="arg3" pos="31:0" rst="0">
+        <comment>
+          Response argument of R1, R3 and R6, or 127 to 96 bit response argument of R2.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rsp_arg2">
+      <bits access="r" name="arg2" pos="31:0" rst="0">
+        <comment>
+          95 to 64 bit response argument of R2.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rsp_arg1">
+      <bits access="r" name="arg1" pos="31:0" rst="0">
+        <comment>
+          63 to 32 bit response argument of R2.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="r" name="rsp_arg0">
+      <bits access="r" name="arg0" pos="31:0" rst="0">
+        <comment>
+          31 to 0 bit response argument of R2.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="dline_width">
+      <bits access="rw" name="dline_width" pos="3:0" rst="0">
+        <comment>
+          Sd data width:
+          0x1: 1 data line
+          0x2: 2 reserved
+          0x4: 4 data lines
+          0x8: 8 data lines
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="block_size">
+      <bits access="rw" name="block_size" pos="3:0" rst="0">
+        <comment>
+          Sd size of one block:
+          0-1:reserved
+          2: 1 word
+          3: 2 words
+          4: 4 words
+          5: 8 words
+          6: 16 words
+
+          11: 512 words
+          12-15 reserved
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="block_cnt">
+      <bits access="rw" name="block_cnt" pos="15:0" rst="0">
+        <comment>
+          Block number that wants to transfer.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="int_status">
+      <bits access="r" name="rx_dma_done_cause" pos="16" rst="0">
+        <comment>
+          '1' means tx dma done is the source of interrupt.
+        </comment>
+      </bits>
+      <bits access="r" name="txdma_done_cause" pos="15" rst="0">
+        <comment>
+          '1' means rx dma done is the source of interrupt.
+        </comment>
+      </bits>
+      <bits access="r" name="data_done_cause" pos="14" rst="0">
+        <comment>
+          Read write correct int status after masking
+        </comment>
+      </bits>
+      <bits access="r" name="rxdma_done_int" pos="6" rst="0">
+        <comment>
+          '1' means tx dma done.
+        </comment>
+      </bits>
+      <bits access="r" name="txdma_done_int" pos="5" rst="0">
+        <comment>
+          '1' means rx dma done.
+        </comment>
+      </bits>
+      <bits access="r" name="data_done_int" pos="4" rst="0">
+        <comment>
+          Read write correct int raw status.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="int_enable">
+      <bits access="rw" name="rxdma_done_en" pos="6" rst="0">
+        <comment>
+          When rx dma done, '0' means INT is disabled.
+        </comment>
+      </bits>
+      <bits access="rw" name="txdma_done_en" pos="5" rst="0">
+        <comment>
+          When tx dma done, '0' means INT is disabled.
+        </comment>
+      </bits>
+      <bits access="rw" name="data_done_en" pos="4" rst="0">
+        <comment>
+          When data transmission is over, '0' means INT is disable.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="w" name="int_clear">
+      <bits access="w" name="rxdma_done_clear" pos="6" rst="0">
+        <comment>
+          Write a '1' to this bit to clear the rxdma_done interrupt.
+        </comment>
+      </bits>
+      <bits access="w" name="txdma_done_clear" pos="5" rst="0">
+        <comment>
+          Write a '1' to this bit to clear the txdma_done interrupt.
+        </comment>
+      </bits>
+      <bits access="w" name="data_done_clear" pos="4" rst="0">
+        <comment>
+          Write a '1' to this bit to clear the data_over interrupt.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="trans_speed">
+      <bits access="rw" name="trans_speed" pos="11:0" rst="9">
+        <comment>
+          Mclk = Pclk/(2*(trans_speed +1)).
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="mclk_ctrl">
+      <bits access="rw" name="mclk_disable" pos="8" rst="1">
+        <comment>
+          Mclk disable
+        </comment>
+      </bits>
+      <bits access="rw" name="mclk_inv_en" pos="4" rst="0">
+        <comment>
+          Mclk invert enable
+        </comment>
+      </bits>
+      <bits access="rw" name="mclk_delay" pos="3:0" rst="0">
+        <comment>
+          This register may delay the mclk output. When MCLK_DELAY = n, Mclk is outputted with n Pclk.
+        </comment>
+      </bits>
+    </reg>
+    <reg protect="rw" name="fifo_status">
+      <bits access="r" name="txfifo_level" pos="19:16" rst="8">
+        <comment>
+          Tx fifo level monitor
+        </comment>
+      </bits>
+      <bits access="r" name="rxfifo_level" pos="11:8" rst="0">
+        <comment>
+          Rx fifo level monitor
+        </comment>
+      </bits>
+    </reg>
+  </module>
+</archive>

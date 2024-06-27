@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="cm_rf_interface" category="cm_rf_interface">
+		<reg name="reg_00">
+			<bits name="bbpll_clk_vco_en_reg" pos="1:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_vco_en_dr" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_bbpll_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pu_bbpll_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_rstn_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_rstn_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_clk26m_en_reg" pos="11:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_clk26m_en_dr" pos="15:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_outclk_en_reg" pos="19:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_outclk_en_dr" pos="23:20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_pu_mdll_clk26m_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_pu_mdll_clk26m_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_pu_mdll_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_pu_mdll_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_clk2bbpll_en_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_clk2bbpll_en_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_04">
+			<bits name="cm_xtal_reg_buf_vbit" pos="3:0" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_pd_td0" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_div1p5_en_td1" pos="7:6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_clk2bbpll_en_td2" pos="10:8" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="test_enable_bbpll" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_vco_high_test_mode" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_vco_low_test_mode" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_test_enable_mdll_clk" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_test_enable_mdll" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_test_enable_xtal" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_test_bit" pos="19:17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_pu_bit" pos="21:20" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_pu_bit" pos="23:22" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_pu_bit" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_div1p5_en_reg" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_div1p5_en_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_div1p5_en_reg" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_div1p5_en_dr" pos="31:30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_08">
+			<bits name="cm_xdblr_count_l_out" pos="5:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xdblr_count_h_out" pos="11:6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_cmp_ibit" pos="14:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_clk_delay_bit" pos="17:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_cap_fine_bit" pos="23:18" access="rw" rst="0x1f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_iref_lp_bit" pos="26:24" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_ibias_lp_bit" pos="30:27" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_xtal_vbcg_en" pos="31" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_0C">
+			<bits name="cm_mdll_freq_bit" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_band_high_bit" pos="4:3" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_div_num" pos="9:5" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_frefx2_en" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_colpitts_input_sw_notch_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_colpitts_input_sw_rc_en1" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_colpitts_input_sw_rc_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_input_sel_colpitts" pos="14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_reg_clk_bit" pos="18:15" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_sf_avdd_sw_bit" pos="25:19" access="rw" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_vref_sel_self_bias" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_sf_sel_ldo18" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_psw_mode" pos="28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_sf_mode" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_10">
+			<bits name="cm_mdll_lock_det_en" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_auto_reset_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_out_clk" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_out" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_vcm_bit" pos="8:5" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_input_swap" pos="9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_duty_bit" pos="16:10" access="rw" rst="0x3f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_dcc_clk_edge" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_outclk_sel_div2" pos="18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_outclk_div2_en" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_ring_reg_lp_mode" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_fref_edge_sel_rise" pos="21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_rstn_vbit" pos="24:22" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_lpf_short_res_bit" pos="28:25" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_cp_ibit" pos="31:29" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_14">
+			<bits name="bbpll_pfd_up_dlyf_bit" pos="3:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_pfd_up_dlyc_bit" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_80m_duty_bit" pos="9:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_64m_en" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_80m_en" pos="13:12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_cp_ibit" pos="16:14" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_reg_vbit" pos="20:17" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_frefx2_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_rsvd_read_bit" pos="25:22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_rsvd_bit" pos="29:26" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_lock_out" pos="30" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_18">
+			<bits name="bbpll_lock_out" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_lpf_notch_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_adc_clk160m_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_vco_band_sel" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_div4_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_pcon_mode" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_64m_dly_bit" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_64m_dly_en" pos="8:7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_clk_64m_dly_sel" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_pfd_dn_dlyf_bit" pos="13:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_pfd_dn_dlyc_bit" pos="17:14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cm_1m_reg">
+			<bits name="div_num_1m" pos="5:0" access="rw" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_1m_div_en" pos="6" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_div_num" pos="13:8" access="rw" rst="0x9" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_cfg" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="xtal_sel" pos="17:16" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bbpll_sdm_reg1">
+			<bits name="bbpll_sdm_resetn_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_resetn_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_resetn_delay" pos="9:2" access="rw" rst="0x74" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_clk_sel_reg" pos="11:10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_intdec_sel" pos="14:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_dither_bypass" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="triangle_wave_cyc_ct" pos="25:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="triangle_wave_amp_ct" pos="27:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="spread_spectrum_en" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpllon_reg" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpllon_dr" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpllon_done" pos="31" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bbpll_sdm_reg2">
+			<bits name="bbpll_sdm_freq_cfg" pos="27:0" access="rw" rst="0x6000000" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bbpll_sdm_freq_cfg_pulse" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="wf_wr_only_reg">
+			<bits name="wf_wo_reg" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_wr_only_reg">
+			<bits name="bt_wo_reg" pos="31:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="mdll_fref_reg">
+			<bits name="mdll_fref_lo" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="mdll_fref_md" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cm_mdll_lock_ctrl_reg">
+			<bits name="mdll_lock_delay" pos="9:0" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_lock_chk" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cm_mdll_lock_status_reg">
+			<bits name="cm_mdll_unlock_intr" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_unlock_raw" pos="7" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cm_mdll_unlock_en_reg">
+			<bits name="cm_mdll_unlock_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cm_mdll_unlock_clear_reg">
+			<bits name="cm_mdll_unlock_clr" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dig_reserved_reg">
+		</reg>
+	</module>
+</archive>

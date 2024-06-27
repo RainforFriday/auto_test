@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="cpu_sys_ctrl" category="System">
+		<reg name="hclk_ctrl_mode">
+			<bits name="cfg_hclk_mode" pos="31:0" access="rw" rst="0xffffffff" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="hclk1_ctrl_mode">
+			<bits name="cfg_hclk1_mode" pos="31:0" access="rw" rst="0xffffffff" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="pclk_ctrl_mode">
+			<bits name="cfg_pclk_mode" pos="31:0" access="rw" rst="0xffffffff" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="others_clk_ctrl_mode">
+			<bits name="cfg_others_clk_mode" pos="31:0" access="rw" rst="0xffffffff" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_mem_rom">
+			<bits name="cfg_mem_rom" pos="15:0" access="rw" rst="0x2006" >
+				<comment> memory configration </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_mem_1prf">
+			<bits name="cfg_mem_1prf" pos="15:0" access="rw" rst="0x2488" >
+				<comment> memory configration </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_mem_2prf">
+			<bits name="cfg_mem_2prf" pos="15:0" access="rw" rst="0x20d6" >
+				<comment> memory configration </comment>
+			</bits>
+		</reg>
+		<reg name="trap_bypass">
+			<bits name="cfg_trap_bypass" pos="0" access="rw" rst="0x1" >
+				<comment> 1'b1: bypass trap </comment>
+			</bits>
+		</reg>
+		<reg name="cache_bypass">
+			<bits name="cfg_cache_bypass" pos="0" access="rw" rst="0x1" >
+				<comment> 1'b1: bypass cache, 32KB ram used for normal sram </comment>
+			</bits>
+			<bits name="cfg_burst_incr_only_en" pos="1" access="rw" rst="0x1" >
+				<comment> 1'b1: trans ahb incr4/8/16 burst to incr only when noncache access </comment>
+			</bits>
+		</reg>
+		<reg name="pclk_div">
+			<bits name="cfg_pclk_div_denom" pos="7:0" access="rw" rst="0x4" >
+				<comment> APB clock divider denominator </comment>
+			</bits>
+			<bits name="cfg_pclk_div_update" pos="8" access="rw" rst="0x0" >
+				<comment> APB clk divider update </comment>
+			</bits>
+		</reg>
+		<reg name="codec_mclk_div">
+			<bits name="cfg_mclk_div_denom" pos="5:0" access="rw" rst="0x4" >
+				<comment> mclk clock divider denominator </comment>
+			</bits>
+			<bits name="cfg_mclk_div_update" pos="8" access="rw" rst="0x0" >
+				<comment> mclk divider update </comment>
+			</bits>
+		</reg>
+		<reg name="bclk_sel">
+			<bits name="cfg_bck_0_sel" pos="0" access="rw" rst="0x0" >
+				<comment> 1'b0: pad_i2s_bck0; 1'b1: mclk_div </comment>
+			</bits>
+			<bits name="cfg_bck_0_inv" pos="1" access="rw" rst="0x0" >
+				<comment> bck0 invert enable </comment>
+			</bits>
+			<bits name="cfg_bck_1_sel" pos="2" access="rw" rst="0x0" >
+				<comment> 1'b0: pad_i2s_bck1; 1'b1: mclk_div </comment>
+			</bits>
+			<bits name="cfg_bck_1_inv" pos="3" access="rw" rst="0x0" >
+				<comment> bck1 invert enable </comment>
+			</bits>
+		</reg>
+		<reg name="cpu_sys_tports_sel">
+			<bits name="cfg_cpu_sys_tports_sel" pos="7:0" access="rw" rst="0x0" >
+				<comment> test ports selector </comment>
+			</bits>
+			<bits name="cfg_dbg_clk_sel" pos="15:8" access="rw" rst="0x0" >
+				<comment> debug clock selector </comment>
+			</bits>
+		</reg>
+		<reg name="phy_dump_sel">
+			<bits name="cfg_phy_dump_sel" pos="0" access="rw" rst="0x0" >
+				<comment> 1: BT; 0: WLAN </comment>
+			</bits>
+		</reg>
+		<reg name="clk_msadc_div">
+			<bits name="cfg_clk_msadc_div_denom" pos="7:0" access="rw" rst="0x8" >
+				<comment> msadc clock divider denominator </comment>
+			</bits>
+			<bits name="cfg_clk_msadc_div_update" pos="8" access="rw" rst="0x0" >
+				<comment> msadc clock divider update </comment>
+			</bits>
+			<bits name="cfg_clk_msadc_and_inv" pos="9" access="rw" rst="0x0" >
+				<comment> msadc clock invert sel for analog ADC </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_cpu_stclk_div">
+			<bits name="cfg_cpu_stclk_div" pos="7:0" access="rw" rst="0x27" >
+				<comment> CPU stclk divider, default div40; 40MHz/40=1MHz </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_usb_gpio">
+			<bits name="cfg_usb_gpio_mode" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_usb_gpio_pullup" pos="2:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_usb_gpio_pulldown" pos="4:3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_cpu_p_rxev">
+			<bits name="cfg_cpu_p_rxev_bt_dma_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_bt_uart_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pwrctrl_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pmu_rtc0_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pmu_rtc1_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_gpiob_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_aon_pwm_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_uart0_en" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_uart1_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_uart2_en" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_dma_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_usb_dma_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pwm_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_gpioa_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_spi_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pcie_en" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_trng_en" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_i2cm_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_sdmmc_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_psi_mst_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_usb_ready_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_p_rxev_pcie_ready_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_cpu_s0_rxev">
+			<bits name="cfg_cpu_s0_rxev_bt_dma_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_bt_uart_en" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pwrctrl_en" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pmu_rtc0_en" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pmu_rtc1_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_gpiob_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_aon_pwm_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_uart0_en" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_uart1_en" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_uart2_en" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_dma_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_usb_dma_en" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pwm_en" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_gpioa_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_spi_en" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pcie_en" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_trng_en" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_i2cm_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_sdmmc_en" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_psi_mst_en" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_usb_ready_en" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cfg_cpu_s0_rxev_pcie_ready_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_cpu_nmi_en">
+			<bits name="cfg_cpu_p_nmi_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="ro_top_tports">
+			<bits name="ro_top_tports" pos="15:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="256*8 - 32*21"/>
+
+		<reg name="hclk_manual_enable">
+			<bits name="hclk_cpu_p_manual_enable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_p_gated_manual_enable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_s0_manual_enable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_s0_gated_manual_enable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_rom_manual_enable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram0_manual_enable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram1_manual_enable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram2_manual_enable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram3_manual_enable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram4_manual_enable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram5_manual_enable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram6_manual_enable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sys_matrix_manual_enable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_ahb0_manual_enable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_apb0_manual_enable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_exmem_bus_manual_enable" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_cache_manual_enable" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_dma_manual_enable" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_flash_manual_enable" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_trap_p_manual_enable" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_trap_s0_manual_enable" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart0_manual_enable" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart1_manual_enable" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart2_manual_enable" pos="23" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_usbc_manual_enable" pos="24" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_aud_proc_manual_enable" pos="25" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_mailbox_manual_enable" pos="26" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sdio_manual_enable" pos="27" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_mm_manual_enable" pos="28" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_pcie_manual_enable" pos="29" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="hclk_manual_disable">
+			<bits name="hclk_cpu_p_manual_disable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_p_gated_manual_disable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_s0_manual_disable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_cpu_s0_gated_manual_disable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_rom_manual_disable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram0_manual_disable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram1_manual_disable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram2_manual_disable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram3_manual_disable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram4_manual_disable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram5_manual_disable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ram6_manual_disable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sys_matrix_manual_disable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_ahb0_manual_disable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_apb0_manual_disable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_exmem_bus_manual_disable" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_cache_manual_disable" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_dma_manual_disable" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_flash_manual_disable" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_trap_p_manual_disable" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_trap_s0_manual_disable" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart0_manual_disable" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart1_manual_disable" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_uart2_manual_disable" pos="23" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_usbc_manual_disable" pos="24" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_aud_proc_manual_disable" pos="25" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_mailbox_manual_disable" pos="26" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sdio_manual_disable" pos="27" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_mm_manual_disable" pos="28" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_pcie_manual_disable" pos="29" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="hclk1_manual_enable">
+			<bits name="hclk_sdmmc_always_manual_enable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sdmmc_manual_enable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram0_low_manual_enable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram0_high_manual_enable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram1_low_manual_enable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram1_high_manual_enable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="hclk1_manual_disable">
+			<bits name="hclk_sdmmc_always_manual_disable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sdmmc_manual_disable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram0_low_manual_disable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram0_high_manual_disable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram1_low_manual_disable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="hclk_sram1_high_manual_disable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="pclk_manual_enable">
+			<bits name="pclk_cpu_sysctrl_manual_enable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_wdg0_manual_enable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_wdg1_manual_enable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_timer0_manual_enable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_timer1_manual_enable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_pwm_manual_enable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_i2cm_manual_enable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_mod_i2cm_manual_enable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_spi_manual_enable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_trng_manual_enable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_process_mon_manual_enable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_analog_reg0_manual_enable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_gpioa_manual_enable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_msadc_manual_enable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="pclk_efuse_manual_enable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="pclk_manual_disable">
+			<bits name="pclk_cpu_sysctrl_manual_disable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_wdg0_manual_disable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_wdg1_manual_disable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_timer0_manual_disable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_timer1_manual_disable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_pwm_manual_disable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_i2cm_manual_disable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_mod_i2cm_manual_disable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_spi_manual_disable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_trng_manual_disable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_process_mon_manual_disable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_analog_reg0_manual_disable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_gpioa_manual_disable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_msadc_manual_disable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="pclk_efuse_manual_disable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="others_manual_enable">
+			<bits name="others_aux_pcie_manual_enable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_sdmmc_manual_enable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_flash_manual_enable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_time0_manual_enable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_time1_manual_enable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_uart0_manual_enable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_uart1_manual_enable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_uart2_manual_enable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_sdio_manual_enable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_pwm_manual_enable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_always_manual_enable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_wdg0_manual_enable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_wdg1_manual_enable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_audio_proc_manual_enable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_process_mon_manual_enable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_bck_0_manual_enable" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_bck_1_manual_enable" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_spdif_manual_enable" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_spi_manual_enable" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_msadc_manual_enable" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_efuse_manual_enable" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_1m_pcie_manual_enable" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+			<bits name="others_usbc_manual_enable" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 enable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="others_manual_disable">
+			<bits name="others_aux_pcie_manual_disable" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_sdmmc_manual_disable" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_flash_manual_disable" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_time0_manual_disable" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_time1_manual_disable" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_uart0_manual_disable" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_uart1_manual_disable" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_uart2_manual_disable" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_sdio_manual_disable" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_pwm_manual_disable" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_always_manual_disable" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_wdg0_manual_disable" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_rtc_wdg1_manual_disable" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_audio_proc_manual_disable" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_process_mon_manual_disable" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_bck_0_manual_disable" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_bck_1_manual_disable" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_spdif_manual_disable" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_spi_manual_disable" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_msadc_manual_disable" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_efuse_manual_disable" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_1m_pcie_manual_disable" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+			<bits name="others_usbc_manual_disable" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 disable manual mode </comment>
+			</bits>
+		</reg>
+		<reg name="hclk_soft_resetn_set">
+			<bits name="hresetn_rom_set" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram0_set" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram1_set" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram2_set" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram3_set" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram4_set" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram5_set" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram6_set" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_ahb0_dec_set" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_apb0_set" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_exmem_bus_set" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_cache_set" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_dma_set" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_flash_set" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_trap_p_set" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_trap_s0_set" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart0_set" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart1_set" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart2_set" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_pcie_set" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_aud_proc_set" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_mailbox_set" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sdio_set" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_mm_sys_set" pos="23" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="hresetn_sdmmc_set" pos="24" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+		</reg>
+		<reg name="hclk_soft_resetn_clr">
+			<bits name="hresetn_rom_clear" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram0_clear" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram1_clear" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram2_clear" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram3_clear" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram4_clear" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram5_clear" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sram6_clear" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_ahb0_dec_clear" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_apb0_clear" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_exmem_bus_clear" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_cache_clear" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_dma_clear" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_flash_clear" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_trap_p_clear" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_trap_s0_clear" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart0_clear" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart1_clear" pos="17" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_uart2_clear" pos="18" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_pcie_clear" pos="19" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_aud_proc_clear" pos="20" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_mailbox_clear" pos="21" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sdio_clear" pos="22" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_mm_sys_clear" pos="23" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="hresetn_sdmmc_clear" pos="24" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+		</reg>
+		<reg name="hclk1_soft_resetn_set">
+		</reg>
+		<reg name="hclk1_soft_resetn_clr">
+		</reg>
+		<reg name="pclk_soft_resetn_set">
+			<bits name="presetn_cpu_sysctrl_set" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_wdg0_set" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_wdg1_set" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_timer0_set" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_timer1_set" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_pwm_set" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_i2cm_set" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_mod_i2cm_set" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_spi_set" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_trng_set" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_process_mon_set" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_analog_reg0_set" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_gpioa_set" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_msadc_set" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="presetn_efuse_set" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+		</reg>
+		<reg name="pclk_soft_resetn_clr">
+			<bits name="presetn_cpu_sysctrl_clear" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_wdg0_clear" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_wdg1_clear" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_timer0_clear" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_timer1_clear" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_pwm_clear" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_i2cm_clear" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_mod_i2cm_clear" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_spi_clear" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_trng_clear" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_process_mon_clear" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_analog_reg0_clear" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_gpioa_clear" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_msadc_clear" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="presetn_efuse_clear" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+		</reg>
+		<reg name="others_soft_resetn_set">
+			<bits name="resetn_timer0_set" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_timer1_set" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_uart0_set" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_uart1_set" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_uart2_set" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_sdio_set" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_pwm_set" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_rtc_wdg0_set" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_rtc_wdg1_set" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_audio_proc_set" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_process_mon_set" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_spi_set" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_flash_set" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_msadc_set" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_efuse_set" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_1m_pcie_set" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+			<bits name="resetn_usbc_set" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 set soft reset </comment>
+			</bits>
+		</reg>
+		<reg name="others_soft_resetn_clr">
+			<bits name="resetn_timer0_clear" pos="0" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_timer1_clear" pos="1" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_uart0_clear" pos="2" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_uart1_clear" pos="3" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_uart2_clear" pos="4" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_sdio_clear" pos="5" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_pwm_clear" pos="6" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_rtc_wdg0_clear" pos="7" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_rtc_wdg1_clear" pos="8" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_audio_proc_clear" pos="9" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_process_mon_clear" pos="10" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_spi_clear" pos="11" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_flash_clear" pos="12" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_msadc_clear" pos="13" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_efuse_clear" pos="14" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_1m_pcie_clear" pos="15" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+			<bits name="resetn_usbc_clear" pos="16" access="rw" rst="0x1" >
+				<comment> write 1'b1 clear soft reset </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

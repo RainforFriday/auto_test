@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="cache" category="System">
+		<reg name="BUS_CFG0">
+			<bits name="rf_blk_cache_en0" pos="0" access="rw" rst="0x0" >
+				<comment> 0: block 0 – cache disabled
+1: block 0 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en1" pos="1" access="rw" rst="0x0" >
+				<comment> 0: block 1 – cache disabled
+1: block 1 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en2" pos="2" access="rw" rst="0x0" >
+				<comment> 0: block 2 – cache disabled
+1: block 2 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en3" pos="3" access="rw" rst="0x0" >
+				<comment> 0: block 3 – cache disabled
+1: block 3 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en4" pos="4" access="rw" rst="0x1" >
+				<comment> 0: block 4 – cache disabled
+1: block 4 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en5" pos="5" access="rw" rst="0x1" >
+				<comment> 0: block 5 – cache disabled
+1: block 5 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en6" pos="6" access="rw" rst="0x1" >
+				<comment> 0: block 6 – cache disabled
+1: block 6 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_cache_en7" pos="7" access="rw" rst="0x1" >
+				<comment> 0: block 7 – cache disabled
+1: block 7 – cache enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en0" pos="8" access="rw" rst="0x0" >
+				<comment> 0: block 0 – cache remap disabled
+1: block 0 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en1" pos="9" access="rw" rst="0x0" >
+				<comment> 0: block 1 – cache remap disabled
+1: block 1 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en2" pos="10" access="rw" rst="0x0" >
+				<comment> 0: block 2 – cache remap disabled
+1: block 2 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en3" pos="11" access="rw" rst="0x0" >
+				<comment> 0: block 3 – cache remap disabled
+1: block 3 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en4" pos="12" access="rw" rst="0x1" >
+				<comment> 0: block 4 – cache remap disabled
+1: block 4 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en5" pos="13" access="rw" rst="0x1" >
+				<comment> 0: block 5 – cache remap disabled
+1: block 5 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en6" pos="14" access="rw" rst="0x1" >
+				<comment> 0: block 6 – cache remap disabled
+1: block 6 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_remap_en7" pos="15" access="rw" rst="0x1" >
+				<comment> 0: block 7 – cache remap disabled
+1: block 7 – cache remap enabled </comment>
+			</bits>
+			<bits name="rf_blk_prot_en0" pos="16" access="rw" rst="0x0" >
+				<comment> 0: block 0 – protect disabled or access permitted
+1: block 0 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en1" pos="17" access="rw" rst="0x0" >
+				<comment> 0: block 1 – protect disabled or access permitted
+1: block 1 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en2" pos="18" access="rw" rst="0x0" >
+				<comment> 0: block 2 – protect disabled or access permitted
+1: block 2 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en3" pos="19" access="rw" rst="0x0" >
+				<comment> 0: block 3 – protect disabled or access permitted
+1: block 3 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en4" pos="20" access="rw" rst="0x0" >
+				<comment> 0: block 4 – protect disabled or access permitted
+1: block 4 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en5" pos="21" access="rw" rst="0x0" >
+				<comment> 0: block 5 – protect disabled or access permitted
+1: block 5 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en6" pos="22" access="rw" rst="0x0" >
+				<comment> 0: block 6 – protect disabled or access permitted
+1: block 6 – protect enabled or access forbidden </comment>
+			</bits>
+			<bits name="rf_blk_prot_en7" pos="23" access="rw" rst="0x0" >
+				<comment> 0: block 7 – protect disabled or access permitted
+1: block 7 – protect enabled or access forbidden </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG1">
+			<bits name="rf_blk_base_addr1" pos="28:13" access="rw" rst="0x0" >
+				<comment> block 1 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG2">
+			<bits name="rf_blk_base_addr2" pos="28:13" access="rw" rst="0x0" >
+				<comment> block 2 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG3">
+			<bits name="rf_blk_base_addr3" pos="28:13" access="rw" rst="0x0" >
+				<comment> block 3 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG4">
+			<bits name="rf_blk_base_addr4" pos="28:13" access="rw" rst="0x4000" >
+				<comment> block 4 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG5">
+			<bits name="rf_blk_base_addr5" pos="28:13" access="rw" rst="0x4000" >
+				<comment> block 5 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG6">
+			<bits name="rf_blk_base_addr6" pos="28:13" access="rw" rst="0x4000" >
+				<comment> block 6 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_CFG7">
+			<bits name="rf_blk_base_addr7" pos="28:13" access="rw" rst="0x4000" >
+				<comment> block 7 start address </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP0">
+			<bits name="rf_blk0_remap_offset" pos="31:12" access="rw" rst="0x0" >
+				<comment> block 0 remap offset when the block 0 remap function is enabled. 
+The address after remap will be original addr + rf_blk0_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP1">
+			<bits name="rf_blk1_remap_offset" pos="31:12" access="rw" rst="0x0" >
+				<comment> block 1 remap offset when the block 1 remap function is enabled. 
+The address after remap will be original addr + rf_blk1_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP2">
+			<bits name="rf_blk2_remap_offset" pos="31:12" access="rw" rst="0x0" >
+				<comment> block 2 remap offset when the block 2 remap function is enabled. 
+The address after remap will be original addr + rf_blk2_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP3">
+			<bits name="rf_blk3_remap_offset" pos="31:12" access="rw" rst="0x0" >
+				<comment> block 3 remap offset when the block 3 remap function is enabled. 
+The address after remap will be original addr + rf_blk3_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP4">
+			<bits name="rf_blk4_remap_offset" pos="31:12" access="rw" rst="0xfc000" >
+				<comment> block 4 remap offset when the block 4 remap function is enabled. 
+The address after remap will be original addr + rf_blk4_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP5">
+			<bits name="rf_blk5_remap_offset" pos="31:12" access="rw" rst="0xfc000" >
+				<comment> block 5 remap offset when the block 5 remap function is enabled. 
+The address after remap will be original addr + rf_blk5_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP6">
+			<bits name="rf_blk6_remap_offset" pos="31:12" access="rw" rst="0xfc000" >
+				<comment> block 6 remap offset when the block 6 remap function is enabled. 
+The address after remap will be original addr + rf_blk6_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_REMAP7">
+			<bits name="rf_blk7_remap_offset" pos="31:12" access="rw" rst="0xfc000" >
+				<comment> block 7 remap offset when the block 7 remap function is enabled. 
+The address after remap will be original addr + rf_blk7_remap_offset </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_CFG0">
+			<bits name="rf_write_mode" pos="1:0" access="rw" rst="0x0" >
+				<comment> cache write operation mode: 
+2’b00: write through
+2’b01: write back, no write allocate
+2’b10: write back, write allocate
+ </comment>
+			</bits>
+			<bits name="rf_hprot_byp" pos="5:2" access="rw" rst="0x0" >
+				<comment> Bit [5]: 
+1’b1: hprot[3] from CM4 go through cache  controller without modification
+ 1’b0: hprot[3] is provided by cache controller register
+Bit [4]: 
+1’b1: hprot[2] from CM4 go through cache controller without modification
+1’b0: hprot[2] is provided by cache controller register
+Bit [3]: 
+1’b1: hprot[1] from CM4 go through cache controller without modification
+1’b0: hprot[1] is provided by cache controller register
+Bit [2]: 
+1’b1: hprot[0] from CM4 go through cache controller without modification
+1’b0: hprot[0] is provided by cache controller register
+ </comment>
+			</bits>
+			<bits name="rf_hprot_bus_reg" pos="9:6" access="rw" rst="0x3" >
+				<comment> hprot control register which provide 4bit hprot for cache bus AHB </comment>
+			</bits>
+			<bits name="rf_hprot_cache_reg" pos="13:10" access="rw" rst="0xb" >
+				<comment> hprot control register which provide 4bit hprot for cache ctrl AHB  </comment>
+                         </bits>
+                         <bits name="ahb_ram_en" pos="14" access="rw" rst="0x0" >
+                                <comment> Cache Data Ram Can be Write/Read Throught rf AHB Bus </comment>
+			</bits>
+			<bits name="rf_cache_size_sel" pos="29:28" access="rw" rst="0x3" >
+				<comment> cache size selection: 
+0: 4K Byte
+1: 8K Byte
+2: 16K Byte
+3: 32K Byte
+ </comment>
+			</bits>
+			<bits name="rf_cmd_exec_mode" pos="30" access="rw" rst="0x0" >
+				<comment> 0: (recommended) software can run in cacheable region during software command processing
+1: software cannot run in cacheable region during software command processing
+ </comment>
+			</bits>
+			<bits name="rf_debug_en" pos="31" access="rw" rst="0x0" >
+				<comment> cache debug mode enable: 
+0: normal mode
+1: debug mode
+This bit MUST always be cleared during cache operating  </comment>
+			</bits>
+		</reg>
+		<reg name="BUS_STS0">
+			<bits name="rf_prot_detect_addr" pos="27:0" access="ro" rst="0x0" >
+				<comment> trigging address for protect block </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_STS0">
+			<bits name="rf_cache_st" pos="3:0" access="ro" rst="0x0" >
+				<comment> rf_cache_st </comment>
+			</bits>
+			<bits name="rf_cmd_st" pos="6:4" access="ro" rst="0x0" >
+				<comment> rf_cmd_st </comment>
+			</bits>
+			<bits name="rf_write_ongoing" pos="7" access="ro" rst="0x0" >
+				<comment> rf_write_ongoing, this is a status register for write through mode to avoid potential coherence issue.
+1’b1: the cache is still doing AHB write transaction to the main memory and the data is not written into the main memory.
+1’b0: the cache has finished AHB write transaction and the data is written into the main memory. </comment>
+			</bits>
+		</reg>
+
+		<hole size="32"/>
+
+		<reg name="CMD_CFG0">
+			<bits name="rf_cmd_str_addr" pos="27:0" access="rw" rst="0x0" >
+				<comment> cmd_all      : not used
+cmd_range : start address
+cmd_entry  : entry address
+ </comment>
+			</bits>
+		</reg>
+		<reg name="CMD_CFG1">
+			<bits name="rf_cmd_end_addr" pos="27:0" access="rw" rst="0x0" >
+				<comment> cmd_all      : not used
+cmd_range : end address
+cmd_entry  : not used
+ </comment>
+			</bits>
+		</reg>
+		<reg name="CMD_CFG2">
+			<bits name="rf_cmd_type" pos="5:0" access="rw" rst="0x0" >
+				<comment> software command type:
+6’h0 : clean all
+6’h1 : clean range
+6’h2 : clean entry
+6’h3 : reserved
+6’h4 : invalid all
+6’h5 : invalid range
+6’h6 : invalid entry
+6’h7 : reserved
+6’h8 : clean and invalid all
+6’h9 : clean and invalid range
+6’hA : clean and invalid entry
+6’hB : reserved </comment>
+			</bits>
+			<bits name="rf_cmd_str" pos="31" access="wo" rst="0x0" >
+				<comment> software command start: 
+write 1 to this bit to issue one command </comment>
+			</bits>
+		</reg>
+
+		<hole size="32"/>
+
+		<reg name="INT_EN">
+			<bits name="rf_cmd_irq_en" pos="0" access="rw" rst="0x0" >
+				<comment> interrupt enable for software command done </comment>
+			</bits>
+			<bits name="rf_prot_irq_en" pos="1" access="rw" rst="0x0" >
+				<comment> interrupt enable for protect block trigging </comment>
+			</bits>
+		</reg>
+		<reg name="INT_RAW">
+			<bits name="rf_cmd_irq_raw" pos="0" access="ro" rst="0x0" >
+				<comment> interrupt raw status for software command done </comment>
+			</bits>
+			<bits name="rf_prot_irq_raw" pos="1" access="ro" rst="0x0" >
+				<comment> interrupt raw status for protect block trigging </comment>
+			</bits>
+		</reg>
+		<reg name="INT_MASK">
+			<bits name="rf_cmd_irq_mask" pos="0" access="ro" rst="0x0" >
+				<comment> interrupt masked status for software command done </comment>
+			</bits>
+			<bits name="rf_prot_irq_mask" pos="1" access="ro" rst="0x0" >
+				<comment> interrupt masked status for protect block trigging </comment>
+			</bits>
+		</reg>
+		<reg name="INT_CLR">
+			<bits name="rf_cmd_irq_clr" pos="0" access="wo" rst="0x0" >
+				<comment> interrupt clear for software command done </comment>
+			</bits>
+			<bits name="rf_prot_irq_clr" pos="1" access="wo" rst="0x0" >
+				<comment> interrupt clear for protect block trigging </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_WRITE_HIT_CNT">
+			<bits name="rf_write_hit_cnt" pos="31:0" access="ro" rst="0x0" >
+				<comment> Cache write hit times. When cache write hit, the counter value increment by 1 </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_WRITE_MISS_CNT">
+			<bits name="rf_write_miss_cnt" pos="29:0" access="ro" rst="0x0" >
+				<comment> Cache write miss times. When cache write miss, the counter value increment by 1 </comment>
+			</bits>
+			<bits name="rf_write_cnt_run" pos="30" access="rw" rst="0x0" >
+				<comment> 1: write hit/miss counter will run
+0: write hit/miss counter will stop </comment>
+			</bits>
+			<bits name="rf_write_cnt_clr" pos="31" access="wo" rst="0x0" >
+				<comment> clear write counter values to zero </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_READ_HIT_CNT">
+			<bits name="rf_read_hit_cnt" pos="31:0" access="ro" rst="0x0" >
+				<comment> Cache read hit times. When cache read hit, the counter value increment by 1 </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_READ_MISS_CNT">
+			<bits name="rf_read_miss_cnt" pos="29:0" access="ro" rst="0x0" >
+				<comment> Cache read miss times. When cache read miss, the counter value increment by 1 </comment>
+			</bits>
+			<bits name="rf_read_cnt_run" pos="30" access="rw" rst="0x0" >
+				<comment> 1: read hit/miss counter will run
+0: read hit/miss counter will stop </comment>
+			</bits>
+			<bits name="rf_read_cnt_clr" pos="31" access="wo" rst="0x0" >
+				<comment> clear read counter values to zero </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_HACT_CNT">
+			<bits name="rf_hact_cnt" pos="31:0" access="ro" rst="0x0" >
+				<comment> Cache master AHB active cycles in total. When master AHB is active (hsel and htrans[1]), the counter value increment by 1 </comment>
+			</bits>
+		</reg>
+		<reg name="CACHE_HRDY_CNT">
+			<bits name="rf_hrdy_cnt" pos="29:0" access="ro" rst="0x0" >
+				<comment> The HRDY counter counts the valid cycles of HREADY signal from the cache controller to the master when the master AHB is active. When HREADY signal to the master is high and the master AHB is active, the counter value increment by 1 </comment>
+			</bits>
+			<bits name="rf_hact_hrdy_run" pos="30" access="rw" rst="0x0" >
+				<comment> 1: HACT and HRDY counters will run
+0: HACT and HRDY counters will stop </comment>
+			</bits>
+			<bits name="rf_hact_hrdy_clr" pos="31" access="wo" rst="0x0" >
+				<comment> clear HACT and HRDY counter values to zero
+ </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="dual_dcdc_common" category="System">
+		<reg name="dcdc_ref_clk_div">
+			<bits name="rg_dcdc_ref_clk_div_denom" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ref_clk_div_update" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl0">
+			<bits name="rg_dcdc_ref_clk_sel" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl1">
+			<bits name="rg_dcdc_rf_clk_offset" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_aud_clk_offset" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl2">
+			<bits name="rg_dcdc_ref_clk_div_denom_tx" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_tx_on_ref_clk_enable" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl3">
+			<bits name="rg_dcdc_ref_clk_div_denom_rx" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_rx_on_ref_clk_enable" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

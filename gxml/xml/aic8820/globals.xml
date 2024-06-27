@@ -1,0 +1,68 @@
+<archive vhdlpkg="chip_cfg_pkg">
+
+  <!-- Common constants -->
+
+  <var name="AHB0_NB_BITS_ADDR" value="12"></var>
+  <var name="AHB0_STEP" value="exp2(AHB0_NB_BITS_ADDR)"/>
+  <enum name="AHB0_Slave_Id">
+      <entry name="AHB0_SLV_ID_CACHE_REG"/>
+      <entry name="AHB0_SLV_ID_DMA_CE" value="32"/>
+      <entry name="AHB0_SLV_ID_CPU_P_TRAP" value="48"/>
+      <entry name="AHB0_SLV_ID_CPU_S0_TRAP"/>
+      <entry name="AHB0_SLV_ID_UART0"/>
+      <entry name="AHB0_SLV_ID_UART1"/>
+      <entry name="AHB0_SLV_ID_UART2"/>
+      <entry name="AHB0_SLV_ID_MAILBOX"/>
+      <entry name="AHB0_SLV_ID_SDMMC"/>
+      <entry name="AHB0_SLV_ID_AUD_PROC"/>
+      <entry name="AHB0_SLV_ID_FLASH_REG"/>
+  </enum>
+
+  <var name="APB0_NB_BITS_PSEL" value="15" ><comment>Apb0 Bus Configuration</comment></var>
+  <var name="APB0_NB_BITS_PADDR" value="12"></var>
+  <var name="APB0_APB_STEP" value="exp2(APB0_NB_BITS_PADDR)"/>
+  <enum name="Apb0_Slv_Id">
+      <entry name="APB0_SLV_ID_CPU_SYSCTRL"/>
+      <entry name="APB0_SLV_ID_PWM"/>
+      <entry name="APB0_SLV_ID_I2CM"/>
+      <entry name="APB0_SLV_ID_WDG0"/>
+      <entry name="APB0_SLV_ID_WDG1"/>
+      <entry name="APB0_SLV_ID_SPI"/>
+      <entry name="APB0_SLV_ID_TIMER0"/>
+      <entry name="APB0_SLV_ID_TIMER1"/>
+      <entry name="APB0_SLV_ID_TRNG"/>
+      <entry name="APB0_SLV_ID_ANA_REG0"/>
+      <entry name="APB0_SLV_ID_PROC_MON"/>
+      <entry name="APB0_SLV_ID_GPIOA"/>
+      <bound name="APB0_NB_PSEL"><comment>Num of Apb0 Slaves</comment></bound>
+  </enum>
+
+  <var name="APB1_NB_BITS_PSEL" value="14" ><comment>Apb1 Bus Configuration</comment></var>
+  <var name="APB1_NB_BITS_PADDR" value="12"></var>
+  <var name="APB1_APB_STEP" value="exp2(APB1_NB_BITS_PADDR)"/>
+  <enum name="Apb1_Slv_Id">
+      <entry name="APB1_SLV_ID_SYSCTRL"/>
+      <entry name="APB1_SLV_ID_TIMER2"/>
+      <entry name="APB1_SLV_ID_ANA_REG1"/>
+      <entry name="APB1_SLV_ID_SDIO_DET"/>
+      <entry name="APB1_SLV_ID_IOMUX"/>
+      <entry name="APB1_SLV_ID_GPIOB"/>
+      <entry name="APB1_SLV_ID_PWR_CTRL"/>
+      <entry name="APB1_SLV_ID_EFUSE_CTRL"/>
+      <entry name="APB1_SLV_ID_WDG2"/>
+      <entry name="APB1_SLV_ID_MSADC"/>
+      <entry name="APB1_SLV_ID_PMU_RTC0"/>
+      <entry name="APB1_SLV_ID_PMU_RTC1"/>
+      <entry name="APB1_SLV_ID_PSI_MST"/>
+      <bound name="APB1_NB_PSEL"><comment>Num of Apb1 Slaves</comment></bound>
+  </enum>
+
+  <var name="AHB2_NB_BITS_ADDR" value="12"></var>
+  <var name="AHB2_STEP" value="exp2(AHB2_NB_BITS_ADDR)"/>
+  <enum name="AHB2_Slave_Id">
+      <entry name="AHB2_SLV_ID_USBC"/>
+      <entry name="AHB2_SLV_ID_SDIO" value="64"/>
+      <entry name="AHB2_SLV_ID_PSRAM_REG"/>
+  </enum>
+
+</archive>

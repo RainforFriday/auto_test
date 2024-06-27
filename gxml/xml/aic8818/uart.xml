@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+  <module name="uart" category="Periph">
+    <reg name="txrx_fifo_divl" >
+      <bits name="txrx_data_divl" pos="7:0" access="RW" rst="0x0"  >
+          <comment>
+              Tx data(when write data), Rx data(when read data), Divisor latch(low) config when divisor latch is enable.
+          </comment>
+      </bits>
+    </reg>
+    <reg name="int_en_divh" >
+      <comment> 
+          Interrupt enable register; divisor latch high when divisor latch is enable.
+      </comment>
+      <bits name="rx_int_en_divh_0" pos="0" access="RW" rst="0x0"  >
+          <comment>
+              Enable Received Data Available Interrupt; Divisor latch high bit 0 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="tx_int_en_divh_1" pos="1" access="RW" rst="0x0"  >
+          <comment>
+              Enable Transmit Holding Register Empty Interrupt; Divisor latch high bit 1 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="lstatus_int_en_divh_2" pos="2" access="RW" rst="0x0"  >
+          <comment>
+              Enable Receiver Line Status Interrupt; Divisor latch high bit 2 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="mstatus_int_en_divh_3" pos="3" access="RW" rst="0x0"  >
+          <comment>
+              Enable Modem Status Interrupt; Divisor latch high bit 3 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="divh_4" pos="4" access="RW" rst="0x0"  >
+          <comment>
+              Divisor latch high bit 4 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="timeout_int_en_divh_5" pos="5" access="RW" rst="0x0"  >
+          <comment>
+              Enable Timeout Interrupt; Divisor latch high bit 5 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="divh_6" pos="6" access="RW" rst="0x0"  >
+          <comment>
+              Divisor latch high bit 6 when divisor latch is enable.
+          </comment>
+      </bits>
+      <bits name="ptime_divh_7" pos="7" access="RW" rst="0x0"  >
+          <comment>
+              Programmable THRE Interrupt Mode Enable; Divisor latch high bit 7 when divisor latch is enable.
+          </comment>
+      </bits>
+    </reg>
+    <reg name="int_id_fifo_ctrl" >
+      <comment>
+          Interrupt identity register or fifo control register
+      </comment>
+      <bits name="int_id_0_fifo_en" pos="0" access="RW" rst="0x1"  >
+          <comment>
+              Read: Interrupt identity bit 0, reset value is '0'; Write: Fifo enable, reset value is '1'
+          </comment>
+      </bits>
+      <bits name="int_id_1_rx_reset" pos="1" access="RW" rst="0x0"  >
+          <comment>
+              Read: Interrupt identity bit 1; Write: Receiver reset
+          </comment>
+      </bits>
+      <bits name="int_id_2_tx_reset" pos="2" access="RW" rst="0x0"  >
+          <comment>
+              Read: Interrupt identity bit 2; Write: Transmit reset
+          </comment>
+      </bits>
+      <bits name="int_id_3_dma_mode" pos="3" access="RW" rst="0x0"  >
+          <comment>
+              Read: Interrupt identity bit 3; Write: Dma mode enable
+          </comment>
+      </bits>
+      <bits name="fifo_enabled" pos="7:6" access="RO" rst="0x3"  >
+          <comment>
+          </comment>
+      </bits>
+    </reg>
+    <reg name="line_ctrl" >
+      <bits name="data_length_sel" pos="1:0" access="RW" rst="0x3"  >
+          <comment>
+              0: 5 bit
+              1: 6 bit
+              2: 7 bit
+              3: 8 bit
+          </comment>
+      </bits>
+      <bits name="stop" pos="2" access="RW" rst="0x0"  >
+          <comment>
+             Number of stop bits
+          </comment>
+      </bits>
+      <bits name="parity_en" pos="3" access="RW" rst="0x0"  >
+          <comment>
+              Parity enable
+          </comment>
+      </bits>
+      <bits name="even_parity_sel" pos="4" access="RW" rst="0x0"  >
+          <comment>
+              '1' select even parity
+          </comment>
+      </bits>
+      <bits name="break_irq" pos="6" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="div_latch_acc" pos="7" access="RW" rst="0x0"  >
+          <comment>
+              Divisor Latch access enable
+          </comment>
+      </bits>
+      <bits name="div_mode" pos="8" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="break_en" pos="9" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+    </reg>
+    <reg name="modem_ctrl" >
+      <bits name="dtr" pos="0" access="RW" rst="0x0"  >
+          <comment>
+              Data terminal ready
+          </comment>
+      </bits>
+      <bits name="rts" pos="1" access="RW" rst="0x0"  >
+          <comment>
+              Request to send
+          </comment>
+      </bits>
+      <bits name="out1" pos="2" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="out2" pos="3" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="loopback" pos="4" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="auto_flow_ctrl_enable" pos="5" access="RW" rst="0x0"  >
+          <comment>Auto flow control enable
+          </comment>
+      </bits>
+      <bits name="serial_infrared_radiation_en" pos="6" access="RW" rst="0x0"  >
+          <comment>Serial infrared radiation enable
+          </comment>
+      </bits>
+      <bits name="auto_det" pos="7" access="RW" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="clk_p" pos="8" access="RW" rst="0x0"  >
+          <comment>1: 48M 0: 24M
+          </comment>
+      </bits>
+    </reg>
+    <reg name="line_status" >
+      <bits name="rx_data_ready" pos="0" access="RO" rst="0x0"  >
+          <comment>Rx Data ready(rxfifo not empty)
+          </comment>
+      </bits>
+      <bits name="rx_overflow" pos="1" access="RO" rst="0x0"  >
+          <comment>Overflow error
+          </comment>
+      </bits>
+      <bits name="tx_fifo_empty" pos="5" access="RO" rst="0x0"  >
+          <comment>Tx fifo empty or almost empty
+          </comment>
+      </bits>
+      <bits name="tx_empty" pos="6" access="RO" rst="0x0"  >
+          <comment>Tx fifo empty and shift register empty
+          </comment>
+      </bits>
+      <bits name="rx_fifo_error" pos="7" access="RO" rst="0x0"  >
+          <comment>Rx fifo error
+          </comment>
+      </bits>
+      <bits name="trigger_ready" pos="8" access="RO" rst="0x0"  >
+          <comment>Trigger ready(rxfifo not empty)
+          </comment>
+      </bits>
+    </reg>
+    <reg name="modem_status" >
+      <bits name="delayed_cts" pos="0" access="RO" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="cts" pos="4" access="RO" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+    </reg>
+    <reg name="scratchpad" >
+      <bits name="scratchpad" pos="6:0" access="RW" rst="0x0"  >
+          <comment>
+              not used
+          </comment>
+      </bits>
+    </reg>
+    <reg name="fifo_status" >
+      <bits name="tx_count" pos="7:0" access="RO" rst="0x0"  >
+          <comment>TX fifo count
+          </comment>
+      </bits>
+      <bits name="rx_count" pos="16:9" access="RO" rst="0x0"  >
+          <comment>RX fifo count
+          </comment>
+      </bits>
+      <bits name="tx_fifo_empty" pos="18" access="RO" rst="0x1"  >
+          <comment>TX fifo empty
+          </comment>
+      </bits>
+      <bits name="tx_fifo_full" pos="19" access="RO" rst="0x0"  >
+          <comment>TX fifo full
+          </comment>
+      </bits>
+      <bits name="rx_fifo_empty" pos="20" access="RO" rst="0x1"  >
+          <comment>RX fifo empty
+          </comment>
+      </bits>
+      <bits name="rx_fifo_full" pos="21" access="RO" rst="0x0"  >
+          <comment>RX fifo full
+          </comment>
+      </bits>
+    </reg>
+    <reg name="fifo_trigger" >
+      <bits name="rx_trigger_th" pos="7:0" access="RW" rst="0x10"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="tx_trigger_th" pos="16:9" access="RW" rst="0x10"  >
+          <comment>
+          </comment>
+      </bits>
+      <bits name="rx_tout_trig_en" pos="18" access="RW" rst="0x0"  >
+          <comment>
+              Enable rx legacy dma req triggered when timeout
+          </comment>
+      </bits>
+    </reg>
+    <reg name="divisor_latch2" >
+      <bits name="divisor_adjust_coef" pos="7:0" access="RW" rst="0x0"  >
+          <comment>accuray adjust baudrate
+          </comment>
+      </bits>
+    </reg>
+    <hole size="128" />
+    <reg name="counter_real" >
+      <bits name="counter_real" pos="19:0" access="RO" rst="0x0"  >
+          <comment>
+          </comment>
+      </bits>
+    </reg>
+    <reg name="div_real_slow" >
+      <bits name="div_real_slow" pos="31:0" access="RW" rst="0x1000e"  >
+          <comment>
+              when clk_p is 0:  slow div_real        = div_real_slow[15:1];
+                                slow div_adjust_real = div_real_slow[31:24];
+              when clk_p is 1:  slow div_real        = div_real_slow[15:0];
+                                slow div_adjust_real = div_real_slow[23:16];
+          </comment>
+      </bits>
+    </reg>
+    <reg name="div_real_fast" >
+      <bits name="div_real_fast" pos="31:0" access="RW" rst="0x660001"  >
+          <comment>
+              when clk_p is 0:  fast div_real        = div_real_fast[15:1];
+                                fast div_adjust_real = div_real_fast[31:24];
+              when clk_p is 1:  fast div_real        = div_real_fast[15:0];
+                                fast div_adjust_real = div_real_fast[23:16];
+          </comment>
+      </bits>
+    </reg>
+    <reg name="tports_sel" >
+      <bits name="tports_sel" pos="7:0" access="RW" rst="0x0"  >
+          <comment>Tports Select
+          </comment>
+      </bits>
+    </reg>
+  </module>
+</archive>

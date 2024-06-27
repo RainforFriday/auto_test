@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="process_mon" category="System">
+		<reg name="auto_mode">
+			<bits name="cfg_auto_mode" pos="0" access="rw" rst="0x0" >
+				<comment> 1'b1: auto pvt monitor mode; 1'b0: single mode </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_start">
+			<bits name="cfg_start" pos="0" access="rw" rst="0x0" >
+				<comment> Write to generate start pulse </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_auto_stop">
+			<bits name="cfg_auto_stop" pos="0" access="rw" rst="0x0" >
+				<comment> Write to generate stop pulse when auto monitor mode </comment>
+			</bits>
+		</reg>
+		<reg name="enable duration">
+			<bits name="cfg_enable_duration" pos="31:0" access="rw" rst="0x190" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_auto_interval">
+			<bits name="cfg_auto_interval" pos="31:0" access="rw" rst="0x2625a00" >
+				<comment> 1'b1: manual mode; 1'b0: auto mode </comment>
+			</bits>
+		</reg>
+		<reg name="ro_pvt_cnt_hvt">
+			<bits name="ro_pvt_cnt_hvt" pos="31:0" access="ro" rst="0x0" >
+				<comment> PVT counter for HVT cell </comment>
+			</bits>
+		</reg>
+		<reg name="cfg_cnt_last">
+			<bits name="cfg_cnt_last" pos="7:0" access="rw" rst="0xa" >
+				<comment> PVT counter last cycle. </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

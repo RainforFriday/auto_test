@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="bt_rf_interface" category="bt_rf_interface">
+		<reg name="reg_00">
+			<bits name="bt_dco_rxlo_en_reg" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_rxlo_en_dr" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dco_reg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dco_dr" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_bt2wf_en_reg" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_bt2wf_en_dr" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_cdr_rstn_reg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_cdr_rstn_dr" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_clk2dac_intf_en_reg" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_clk2dac_intf_en_dr" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_reg" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_dr" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dly_dpa_ldo_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dly_dpa_ldo_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_ldo_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_ldo_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dig_rstn_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dig_rstn_dr" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_byp_mode_reg" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_byp_mode_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_sdm_adc_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_sdm_adc_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_rstn_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_rstn_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_tia_reg" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_tia_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_rmx_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_rmx_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_trx24g_wf2bt_en_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_trx24g_wf2bt_en_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_lna_reg" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_lna_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_04">
+			<bits name="bt_test_bit" pos="2:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_pll_test_mode" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_pu_bit" pos="5:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_pu_bit" pos="7:6" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_reg_pu_bit" pos="9:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_pu_bit" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_pu_bit" pos="13:12" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_pu_bit" pos="15:14" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_rmx_pu_bit" pos="17:16" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_pu_bit" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_chop_bg_en_reg" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_chop_bg_en_dr" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_chop_bg_reg" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_chop_bg_dr" pos="23" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_sdadc_clk_en_reg" pos="24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_sdadc_clk_en_dr" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_rstn_reg" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_rstn_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpll_reg" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpll_dr" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_txlo_en_reg" pos="30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_txlo_en_dr" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_08">
+			<bits name="bt_pu_rmx_td1" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_rstn_td2" pos="4:2" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_rstn_td1" pos="6:5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_clk2dac_intf_en_td1" pos="8:7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_txlo_en_td1" pos="10:9" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_rxlo_en_td1" pos="12:11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dco_td1" pos="14:13" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dly_dpa_ldo_td2" pos="17:15" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_ldo_td3" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_chop_bg_en_td1" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_chop_bg_td1" pos="23:22" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_dpa_ldo" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_chop_bg" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_dpa" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_ac_enable_dpll" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_sdm_adc" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_tia" pos="29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_rmx" pos="30" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_test_enable_lna" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_0C">
+			<bits name="bt_lna_gbit" pos="1:0" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_iref_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pd_td0" pos="4:3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="btcm_mdll_rstn_td2" pos="7:5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="btcm_mdll_rstn_td1" pos="9:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="btcm_pu_mdll_td1" pos="11:10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_txon_co_ant_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_txon_co_ant_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxon_co_ant_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="wf_rxon_co_ant_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="co_ant_enable" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cm_mdll_auto_reset_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_dpa_off_td1" pos="19:18" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_cdr_rstn_off_td1" pos="21:20" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_cdr_rstn_td1" pos="23:22" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_lna_td1" pos="25:24" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_sdm_adc_td1" pos="27:26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_rstn_td1" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_pu_tia_td1" pos="31:30" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_10">
+			<bits name="bt_tia_if_bit" pos="4:0" access="ro" rst="0x13" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_bw_bit" pos="9:5" access="ro" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_swap_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_lpf_mode" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_rmx_lobias_vbit" pos="14:12" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_cap_sel" pos="15" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_cbit" pos="19:16" access="ro" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_mixer1st_en" pos="20" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_cg_vbit" pos="24:21" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_lna_ibias_bit" pos="28:25" access="ro" rst="0xa" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_14">
+			<bits name="bt_tia_rin_bit" pos="2:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_gain_bit" pos="7:3" access="ro" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_cal_v_range" pos="10:8" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_cal_i_range" pos="13:11" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_vcm_vbit" pos="16:14" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_op_q_rbit" pos="19:17" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_op_mil_rbit" pos="22:20" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_op_mil_cbit" pos="25:23" access="ro" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_op_ibit" pos="29:26" access="ro" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_18">
+			<bits name="bt_sdm_adc_gbit" pos="1:0" access="ro" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_cal_en" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_cbit" pos="5:3" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_vcal_bit" pos="9:6" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dith_en" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_clk_sar_div2_en" pos="11" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_q_cal_bit_reg" pos="18:12" access="rw" rst="0x40" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_q_cal_bit_dr" pos="19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_i_cal_bit_reg" pos="26:20" access="rw" rst="0x40" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_tia_i_cal_bit_dr" pos="27" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_1C">
+			<bits name="bt_dpa_ldo_sink_current_bit" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_notch_mode" pos="4:3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dvdd_pwrsw_bit" pos="6:5" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_ana_rstn" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_sar_en" pos="9:8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_sdm_en" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_sar_insel" pos="12:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dly_bit" pos="16:13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_dwa_en" pos="17" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_clk_phsel" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_nr_mode" pos="20:19" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_iq_swap_en" pos="21" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_iq_mode" pos="23:22" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_sdm_adc_ibit" pos="29:24" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_20">
+			<bits name="bt_dpa_reg_bypass" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_drv_pwr_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_div_mode" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_bypass_rx" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_pull0" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_vref_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_vref_cal_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_rdac_data_in_rx" pos="14:7" access="rw" rst="0x70" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_rbit1" pos="18:15" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_current_limit_bit" pos="21:19" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_current_limit_en" pos="22" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_sink_current_en" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_rbit" pos="25:24" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ldo_ibit" pos="28:26" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_24">
+			<bits name="bt_dpa_auto_pm_sync" pos="0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_ant_cbit" pos="3:1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_trx_cap_sw_bit" pos="7:4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_pm_edge_sel" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_capbank_bit" pos="11:9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_slice_enn" pos="15:12" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_slice_enp" pos="19:16" access="rw" rst="0xf" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_mode_sel" pos="20" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_sign_dly_sel" pos="22:21" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_sinc_en" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_1p2g_mode" pos="24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_retime_sel" pos="25" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_clk_edge_sel" pos="26" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_reg_vbit" pos="30:27" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_28">
+			<bits name="bt_dco_reg_var_bit" pos="3:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_reg_vco_bit" pos="7:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_dvar_clk_edge_sel" pos="8" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_dvar_din" pos="17:9" access="ro" rst="0xff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_band" pos="27:18" access="ro" rst="0x1ff" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_cdr_mode" pos="29:28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpa_balun_tap_bit" pos="31:30" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_2C">
+			<bits name="bt_dpll_dly_sel4" pos="1:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_dly_sel3" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_dly_sel2" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_dly_sel1" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_dly_sel0" pos="9:8" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_trx_mode" pos="10" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_band_aux" pos="14:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_res1_bit" pos="18:15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_res0_bit" pos="22:19" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_dvdd_en" pos="23" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_cap_bit" pos="27:24" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_rot_en" pos="28" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_dvdd_dec_sel_bit" pos="30:29" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dco_reg_var_bypass" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_30">
+			<bits name="bt_dpll_fref_div2_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_chopper_clk_sel" pos="2:1" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_sdm_clk_sel" pos="3" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_vco_cal_sel" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_cal_en" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_cal_clk_sel" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_div_mode" pos="8" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_div_clk_edge_sel" pos="9" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_clk_am_sel" pos="10" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_switch_rbit" pos="12:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_presc_reg_bypass" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_pfd_ldo_bypass" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_reg_bypass" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_presc_reg_vbit" pos="19:16" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_reg_vbit" pos="23:20" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_gro_ldo_vbit" pos="25:24" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_fbc_sel" pos="26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_fref_sel" pos="27" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_dly_sel5" pos="29:28" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_34">
+			<bits name="bt_tia2gpio_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_chop_bg_osc_bit" pos="2:1" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_chop_bg_osc_en" pos="3" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_sdadc_clk_sel" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_chop_clk_en" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll2wf_img24g_en" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll2wf_img5g_en" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_img_cal_mode" pos="8" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_cnt_out" pos="25:9" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_dpll_drv_bit" pos="31:26" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="reg_38">
+			<bits name="bt_rsvd_read_bit" pos="3:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_rsvd_bit" pos="11:4" access="rw" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_apc_rsvd" pos="19:12" access="ro" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_agc_rsvd" pos="27:20" access="ro" rst="0xf0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_soft_reset_reg">
+			<bits name="soft_reset" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_man_crtl_reg">
+			<bits name="tx_gain_reg" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_gain_dr" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="tx_gain_dr_pulse" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_gain_reg" pos="9:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_gain_dr" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rx_gain_dr_pulse" pos="11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_reg" pos="12" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_dr" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_reg" pos="14" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txon_dr" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="twson_reg" pos="16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="twson_dr" pos="17" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwron" pos="18" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="bt_gro_rstn_sel" pos="19" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="bt_calclk_reg">
+			<bits name="cal_clk_div_num" pos="9:0" access="rw" rst="0x4f" >
+				<comment>  </comment>
+			</bits>
+			<bits name="cal_clk_en" pos="10" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_mux" pos="12:11" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="debug_clk_en" pos="13" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gain_mem_ctrl_reg">
+			<bits name="clk_txgain_en" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_txgain_sel" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txgain_mem_cfg" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_rxgain_en" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="clk_rxgain_sel" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxgain_mem_cfg" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="gain_mem_fetch_reg">
+			<bits name="txgain_mem_fetch_addr" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="txgain_mem_fetch_p" pos="15" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxgain_mem_fetch_addr" pos="19:16" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxgain_mem_fetch_p" pos="31" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="pu_done_reg">
+			<bits name="txon_done" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rxon_done" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="pwron_done" pos="2" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dig_reserved_reg">
+		</reg>
+		<reg name="agc_table_out_reg0">
+			<bits name="agc_table_out_0" pos="31:0" access="ro" rst="0x6f2663ab" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_table_out_reg1">
+			<bits name="agc_table_out_1" pos="31:0" access="ro" rst="0x83db" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="agc_table_out_reg2">
+			<bits name="agc_table_out_2" pos="31:0" access="ro" rst="0x81000000" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="apc_table_out_reg0">
+			<bits name="apc_table_out_0" pos="31:0" access="ro" rst="0x15870" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>

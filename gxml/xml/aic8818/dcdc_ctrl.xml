@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<archive>
+	<module name="dcdc_ctrl" category="System">
+		<reg name="dcdc_ref_clk_div">
+			<bits name="rg_dcdc_ref_clk_div_denom" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ref_clk_div_update" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl0">
+			<bits name="rg_dcdc_ref_clk_sel" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_en" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_lpo_sel" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_offset" pos="7:4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl1">
+			<bits name="rg_dcdc_pfm_denom" pos="5:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_pfm_denom_update" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_lpo_inv_en" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl2">
+			<bits name="rg_dcdc_dcm_clk_mod0_denom" pos="5:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_clk_mod0_denom_update" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_out_dly_deepsleep_en" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl3">
+			<bits name="rg_dcdc_dcm_clk_mod1_denom" pos="5:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_clk_mod1_denom_update" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_updn_deepsleep_en" pos="7" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl4">
+			<bits name="rg_dcdc_dcm_clk_mod2_denom" pos="5:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_clk_mod2_denom_update" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl5">
+			<bits name="rg_dcdc_dcm_clk_mod3_denom" pos="5:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_clk_mod3_denom_update" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl6">
+			<bits name="rg_dcdc_smpl_mode" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_dn_sel" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_lpo_denom" pos="6:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_lpo_denom_update" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl7">
+			<bits name="rg_dcdc_clk_dn_phase" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_up_phase" pos="3:2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl8">
+			<bits name="rg_dcdc_ref_clk_div_denom_tx" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_tx_on_ref_clk_enable" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_clk_ctrl9">
+			<bits name="rg_dcdc_ref_clk_div_denom_rx" pos="6:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_rx_on_ref_clk_enable" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+
+		<hole size="4*8"/>
+
+		<reg name="dcdc_ctrl_cfg0">
+			<bits name="rg_dcdc_ss_bypass" pos="0" access="rw" rst="0x1" >
+				<comment> soft start bypss </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_auto_enable_mode" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ns_auto_track_en" pos="2" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_sel" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_offset_l" pos="7:5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg1">
+			<bits name="rg_dcdc_offset_h" pos="6:0" access="rw" rst="0x40" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_offset_update" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg2">
+			<bits name="rg_dcdc_cnt_mode_th" pos="7:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg3">
+			<bits name="rg_dcdc_cnt_mode1_th" pos="7:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg4">
+			<bits name="rg_dcdc_dcm_clk_int_up_th" pos="7:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg5">
+			<bits name="rg_dcdc_dcm_clk_int_dn_th" pos="7:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg6">
+			<bits name="rg_dcdc_flagp_th0" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_flagp_th1" pos="6:4" access="rw" rst="0x6" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg7">
+			<bits name="rg_dcdc_flagp_th2" pos="2:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg8">
+			<bits name="rg_dcdc_flagn_th0" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_flagn_th1" pos="6:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg9">
+			<bits name="rg_dcdc_flagn_th2" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg10">
+			<bits name="rg_dcdc_pfm_clk_div" pos="7:0" access="rw" rst="0xc" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg11">
+			<bits name="rg_dcdc_pfm_low_cnt_vth1" pos="7:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg12">
+			<bits name="rg_dcdc_pfm_low_cnt_vth2" pos="7:0" access="rw" rst="0x7" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg13">
+			<bits name="rg_dcdc_pfm_low_cnt_vth3" pos="7:0" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg14">
+			<bits name="rg_dcdc_pfm_high_cnt_vth" pos="5:0" access="rw" rst="0x19" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_hyscomp_high_det_bps" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_pfm_low_det_mode" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg15">
+			<bits name="rg_dcdc_nlg_scale0" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_nlg_scale1" pos="3:2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_nlg_scale2" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_nlg_scale3" pos="7:6" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg16">
+			<bits name="rg_dcdc_ks" pos="3:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_kp" pos="6:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg17">
+			<bits name="rg_dcdc_kz" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_kw_l" pos="7:4" access="rw" rst="0x8" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg18">
+			<bits name="rg_dcdc_kw_h" pos="5:0" access="rw" rst="0xd" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_kw_update" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg19">
+			<bits name="rg_dcdc_diff_vth_sel" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_fp_int" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg20">
+			<bits name="rg_dcdc_fp_gain" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_w_step" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg21">
+			<bits name="rg_dcdc_vx_int_vth" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg22">
+			<bits name="rg_dcdc_add2d_init" pos="7:0" access="rw" rst="0x5f" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg23">
+			<bits name="rg_dcdc_add3d_init" pos="7:0" access="rw" rst="0x5f" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg24">
+			<bits name="rg_dcdc_hys_pfm_gain3" pos="5:0" access="rw" rst="0x10" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg25">
+			<bits name="rg_dcdc_dout_pw_lim" pos="5:0" access="rw" rst="0x1e" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg26">
+			<bits name="rg_dcdc_dout_offset" pos="5:0" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg27">
+			<bits name="rg_dcdc_dout1_offset" pos="5:0" access="rw" rst="0x28" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg28">
+			<bits name="rg_dcdc_ss_step0_dout" pos="2:0" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ss_step1_dout" pos="6:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg29">
+			<bits name="rg_dcdc_ss_step2_dout" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ss_step3_dout" pos="6:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg30">
+			<bits name="rg_dcdc_ss_step4_dout" pos="2:0" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ss_step5_dout" pos="6:4" access="rw" rst="0x4" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg31">
+			<bits name="rg_dcdc_ss_step6_dout" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ss_step7_dout" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg32">
+			<bits name="rg_dcdc_ss_step8_dout" pos="2:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ss_step9_dout" pos="6:4" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg33">
+			<bits name="rg_dcdc_dcm_clk_mode_init" pos="1:0" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg34">
+			<bits name="rg_dcdc_dcm_clk_mode" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_clk_mode_force" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_ns_hys_gain" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_pu_lpo_sw_mode" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_pu_lpo_sw" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg35">
+			<bits name="rg_dcdc_vth_scale0" pos="1:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_vth_scale1" pos="3:2" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_vth_scale2" pos="5:4" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_vth_scale3" pos="7:6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg36">
+			<bits name="rg_tports_sel" pos="3:0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_adc_gain_norm" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg37">
+			<bits name="rg_dcdc_gain3_limit_vth" pos="5:0" access="rw" rst="0x14" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg38">
+			<bits name="rg_dcdc_deepsleep_sw_mode" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_deepsleep_sw" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_hys_pfm_mode_sw_mode" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_hys_pfm_mode_sw" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_force_res_on_sw_mode" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_force_res_on" pos="5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg39">
+			<bits name="rg_dcdc_en_pmos" pos="2:0" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_en_nmos" pos="6:4" access="rw" rst="0x3" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_en_nmos_pmos_sw_mode" pos="7" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg40">
+			<bits name="rg_dcdc_dcm_flag_th" pos="3:0" access="rw" rst="0x5" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dcm_flag_sel" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_mode_flag_frc_en" pos="5" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_mode_flag_frc_value" pos="6" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg41">
+			<bits name="rg_dcdc_tx_on_dcm_enable" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_tx_on_dcm_clk_mode" pos="2:1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_rx_on_dcm_enable" pos="4" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_rx_on_dcm_clk_mode" pos="6:5" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg42">
+			<bits name="rg_dcdc_tx_on_mode_flag_enable" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_tx_on_mode_flag" pos="1" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_rx_on_mode_flag_enable" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_rx_on_mode_flag" pos="3" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_clk_dly_mode" pos="5:4" access="rw" rst="0x2" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_ctrl_cfg43">
+			<bits name="rg_dcdc_dpwm_frc_on_deepsleep" pos="0" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dpwm_frc_on_norm" pos="1" access="rw" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="rg_dcdc_dpwm_frc_on_sw_mode" pos="2" access="rw" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_status">
+			<bits name="ro_dcdc_mode_flag" pos="0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_dcdc_pw_lim" pos="1" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_dcdc_dcm_clk_mode" pos="3:2" access="ro" rst="0x1" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_dcdc_hys_pfm_mode" pos="4" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_dcdc_ss_win_end" pos="5" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+			<bits name="ro_dcdc_ss_fail_flag" pos="6" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+		<reg name="dcdc_din">
+			<bits name="ro_dcdc_in" pos="9:0" access="ro" rst="0x0" >
+				<comment>  </comment>
+			</bits>
+		</reg>
+	</module>
+</archive>
