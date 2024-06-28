@@ -61,7 +61,6 @@ pa_bg_v1v_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_
 pa_bias_vl,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b010,TX_ON,WF_LB
 dtmx_avdd_lo,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB
 dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
-dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
 dtmx_dac_dvdd,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b110,TX_ON,WF_LB
 dtmx_dac_bias,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b111,TX_ON,WF_LB
 lp mode bias voltage,CM,XTAL,cfg_msadc_sw_mux_bits,4'b0000,cm_test_enable_xtal,1'b1,,,cm_test_bit,3'b011,TX_ON,WF_LB
