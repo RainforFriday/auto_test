@@ -174,8 +174,9 @@ class WF_MS:
                                 cmdx = cmdx + self.UARTX.sendcmd(u_cmdx)
                     except:
                         cmdx = "ERROR"
-                    cmdx.replace(",", "#")
-                    cmdx.replace("\n", "$")
+                    cmdx = cmdx.replace(",", " ")
+                    cmdx = cmdx.replace("\n", " ")
+                    cmdx = cmdx.replace("\r", " ")
 
                     self.CMPX.wlan_auto_peak_pwr()
                     self.CMPX.wlan_meas_start()
