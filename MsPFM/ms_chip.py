@@ -1,0 +1,44 @@
+import os
+import sys
+import openpyxl
+
+from icbasic.aicinstr.rs.cmp180 import *
+from icbasic.aicintf.uart import *
+from MsPFM.csv import *
+from MsPFM.GlobalVar import *
+global_create()
+from MsPFM.ms_wf import *
+
+
+def MSAIC(xlsx_path, csv_path):
+    # csv_path = "./MsDatas/AIC8822_WF_MEASURE_DATA_20240628_V3.csv"
+    # xlsx_path = "./MsTables/WF_MEASURE_TABLE_20240628_V3.xlsx"
+
+    UARTX = Uart(7)
+    UARTX.open()
+
+    host = "10.21.10.200"
+    port = 5025
+    CMPX = CMP180()
+    CMPX.open_tcp(host, port)
+
+    CSVX = CSV(csv_path)
+
+    GX.set_value("UARTX", UARTX)
+    GX.set_value("CSVX", CSVX)
+    GX.set_value("CMPX", CMPX)
+
+    MS = WF_MS(xlsx_path)
+    MS.wf_ms_table()
+
+
+if __name__ == "__main__":
+    # aic8820
+    xlsx_path = "./AIC8820/MsTables/WF_MEASURE_TABLE_20240628_V1.xlsx"
+    csv_path = "./AIC8820/MsDatas/AIC8820_WF_MEASURE_DATA_20240628_V1.csv"
+
+    # aic8822
+    # xlsx_path = "./AIC8822/MsTables/WF_MEASURE_TABLE_20240628_V3.xlsx"
+    # csv_path = "./AIC8822/MsDatas/AIC8822_WF_MEASURE_DATA_20240628_V3.csv"
+
+    MSAIC(xlsx_path, csv_path)

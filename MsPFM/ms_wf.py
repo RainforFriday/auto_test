@@ -108,6 +108,13 @@ class WF_MS_LINE:
             l_pwrx.append("setpwr {}".format(pwrx))
         return l_pwrx
 
+    def l_uartcmd(self):
+        if isinstance(self.uart_cmd(), str):
+            if self.uart_cmd().strip() != "":
+                return self.uart_cmd().split(",")
+        else:
+            return None
+
 
 class WF_MS:
     def __init__(self, xlsx_path):
@@ -118,6 +125,8 @@ class WF_MS:
         self.CSVX = GX.get_value("CSVX")
 
     def wf_ms_table(self):
+        csv_header = "Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg\n"
+        self.CSVX.write_append_line(csv_header)
         for linex in self.l_test_lines:
             db_line = WF_MS_LINE(linex)
             if db_line.enable() not in ["Y", "y", "YES", "yes"]:
@@ -155,18 +164,27 @@ class WF_MS:
                 self.UARTX.sendcmd(setchx)
                 time.sleep(2)
                 for setpwrx in db_line.l_setpwr_ucmd():
-                    pwr = " ".join(setpwrx.strip().split(" ")[1:])
+                    setpwr = " ".join(setpwrx.strip().split(" ")[1:])
                     self.UARTX.sendcmd(setpwrx)
-                    reg = self.UARTX.read_reg("403422c8")
-                    self.CMPX.wlan_auto_peak_pwr()
 
+                    cmdx = ""
+                    try:
+                        if db_line.l_uartcmd() is not None:
+                            for u_cmdx in db_line.l_uartcmd():
+                                cmdx = cmdx + self.UARTX.sendcmd(u_cmdx)
+                    except:
+                        cmdx = "ERROR"
+                    cmdx.replace(",", "#")
+                    cmdx.replace("\n", "$")
+
+                    self.CMPX.wlan_auto_peak_pwr()
                     self.CMPX.wlan_meas_start()
                     time.sleep(2)
                     ms_pwr = self.CMPX.wlan_meas_pwr()
                     ms_evm = self.CMPX.wlan_meas_evm()
                     self.CMPX.wlan_meas_abort()
 
-                    results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, pwr, ms_pwr, ms_evm,reg )
+                    results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, setpwr, cmdx, ms_pwr, ms_evm)
                     self.CSVX.write_append_line(results)
                     print(results)
         self.UARTX.sendcmd("settx 0")
