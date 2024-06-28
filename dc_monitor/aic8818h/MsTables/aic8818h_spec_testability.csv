@@ -57,11 +57,8 @@ rfpll_regulator,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1
 rfpll_dvdd_regulator,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_LB
 cp_outn,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_LB
 cp_outp,WF,RFPLL,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_rfpll,1'b1,,,wf_test_bit,3'b101,RX_ON,WF_LB
-pa_avdd1v,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB
 pa_bg_v1v_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
 pa_bias_vl,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b010,TX_ON,WF_LB
-pa_bias_vm_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b011,TX_ON,WF_LB
-pa_bias_vh_sense,WF,PA,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b100,TX_ON,WF_LB
 dtmx_avdd_lo,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB
 dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB
 dtmx_bg_v1v,WF,DTMX,cfg_msadc_sw_mux_bits,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB

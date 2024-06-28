@@ -23,7 +23,7 @@ class WF_MS_TABLE:
                 linex = []
                 for columnx in range(1, pms_sheet.max_column+1):
                     linex.append(pms_sheet.cell(rowx, columnx).value)
-                if None in linex[0:5]:
+                if None in linex[0:6]:
                     continue
                 else:
                     l_test_lines.append(linex)
@@ -37,43 +37,46 @@ class WF_MS_LINE:
     def __init__(self, l_line):
         self.l_line = l_line
 
+    def enable(self):
+        return str(self.l_line[0]).strip()
+
     def l_ch(self):
-        ch_string = str(self.l_line[0]).strip()
+        ch_string = str(self.l_line[1]).strip()
         if " " in ch_string:
             return list(range(int(ch_string.split(" ")[0]), int(ch_string.split(" ")[1]), int(ch_string.split(" ")[2])))
         else:
             return ch_string.split(",")
 
     def rate(self):
-        return str(self.l_line[1]).strip()
-
-    def bw(self):
         return str(self.l_line[2]).strip()
 
-    def len(self):
+    def bw(self):
         return str(self.l_line[3]).strip()
 
+    def len(self):
+        return str(self.l_line[4]).strip()
+
     def l_pwr(self):
-        pwr_string = self.l_line[4].strip()
+        pwr_string = self.l_line[5].strip()
         if " " in pwr_string:
             return list(range(int(pwr_string.split(" ")[0]), int(pwr_string.split(" ")[1]), int(pwr_string.split(" ")[2])))
         else:
             return pwr_string.split(",")
 
     def uart_cmd(self):
-        return self.l_line[5]
+        return self.l_line[6]
 
     def res_pwr(self):
-        return self.result_cell_check(self.l_line[6])
-
-    def res_evm_rms(self):
         return self.result_cell_check(self.l_line[7])
 
-    def res_evm_peak(self):
+    def res_evm_rms(self):
         return self.result_cell_check(self.l_line[8])
 
-    def res_mask(self):
+    def res_evm_peak(self):
         return self.result_cell_check(self.l_line[9])
+
+    def res_mask(self):
+        return self.result_cell_check(self.l_line[10])
 
     @staticmethod
     def result_cell_check(cell_value):
@@ -117,6 +120,8 @@ class WF_MS:
     def wf_ms_table(self):
         for linex in self.l_test_lines:
             db_line = WF_MS_LINE(linex)
+            if db_line.enable() not in ["Y", "y", "YES", "yes"]:
+                continue
             # print(db_line.l_setch_ucmd())
             # print(db_line.l_setpwr_ucmd())
             # print(db_line.setbw_ucmd())
@@ -164,6 +169,7 @@ class WF_MS:
                     results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, pwr, ms_pwr, ms_evm,reg )
                     self.CSVX.write_append_line(results)
                     print(results)
+        self.UARTX.sendcmd("settx 0")
 
 
 if __name__ == "__main__":

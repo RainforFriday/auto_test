@@ -11,8 +11,8 @@ from MsPFM.wf_ms import *
 
 
 def MS_AIC8822():
-    csv_path = "./MsDatas/AIC8822_WF_MEASURE_TABLE_20240627_V2.csv"
-    xlsx_path = "./MsTables/WF_MEASURE_TABLE_20240627_V2.xlsx"
+    csv_path = "./MsDatas/AIC8822_WF_MEASURE_DATA_20240628_V3.csv"
+    xlsx_path = "./MsTables/WF_MEASURE_TABLE_20240628_V3.xlsx"
 
     CSVX = CSV(csv_path)
     csv_header = "Channel, Rate, BandWidth, Length, SetPwr, MsPwrAvg, MsEvmAvg\n"
