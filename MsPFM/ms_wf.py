@@ -60,6 +60,8 @@ class WF_MS_LINE:
         pwr_string = self.l_line[5].strip()
         if " " in pwr_string:
             return list(range(int(pwr_string.split(" ")[0]), int(pwr_string.split(" ")[1]), int(pwr_string.split(" ")[2])))
+        elif ":" in pwr_string:
+            return list(range(int(pwr_string.split(":")[0]), int(pwr_string.split(":")[1]), int(pwr_string.split(":")[2])))
         else:
             return pwr_string.split(",")
 
