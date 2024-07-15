@@ -136,6 +136,7 @@ class WF_MS:
             # print(db_line.setbw_ucmd())
             # print(db_line.setrate_ucmd())
             self.UARTX.sendcmd("settx 1")
+            self.UARTX.sendcmd("pwrmm 1")
             self.UARTX.sendcmd(db_line.setrate_ucmd())
             self.UARTX.sendcmd(db_line.setbw_ucmd())
             self.UARTX.sendcmd(db_line.setlen_ucmd())

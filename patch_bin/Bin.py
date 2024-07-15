@@ -40,6 +40,17 @@ class Bin:
             l_new_bin[flag_index:flag_index+len(l_old_apc)] = l_new_apc
         return l_new_bin
 
+    def replace_apcs(self, l_old_apcs, l_new_apcs):
+        l_new_bin = self.read_to_list()
+        for old_apc in l_old_apcs:
+            x_index = l_new_apcs.index(old_apc)
+            flag_index_list = self.search_table(old_apc)
+            print(flag_index_list)
+            for flag_index in flag_index_list:
+                l_new_bin[flag_index:flag_index+len(old_apc)] = l_new_apcs[x_index]
+        return l_new_bin
+
+
     def search_table(self, l_table):
         ref_bin_data = self.read_to_list()
         apc_table_bytes_list = l_table
@@ -99,6 +110,20 @@ def bin_replace_apc(old_apc_xlsx_path, new_apc_xlxs_path, old_bin_path, new_bin_
     l_new_bin_data = OLD_BIN.replace_apc(L_OLD_APC, L_NEW_APC)
     OLD_BIN.write_bin(l_new_bin_data, new_bin_path)
 
+
+def bin_replace_apcs(old_apc_xlsx_path, new_apc_xlxs_path, old_bin_path, new_bin_path, sheet_names):
+    OLD_XLSX = APCXLSX(old_apc_xlsx_path)
+    NEW_XLSX = APCXLSX(new_apc_xlxs_path)
+    OLD_BIN = Bin(old_bin_path)
+
+    L_OLD_APCS = []
+    L_NEW_APCS = []
+    for sheet_name in sheet_names:
+        L_OLD_APCS.append(OLD_XLSX.read_table_to_list(sheet_name))
+        L_NEW_APCS.append(NEW_XLSX.read_table_to_list(sheet_name))
+
+    l_new_bin_data = OLD_BIN.replace_apcs(L_OLD_APCS, L_NEW_APCS)
+    OLD_BIN.write_bin(l_new_bin_data, new_bin_path)
 
 
 if __name__ == "__main__":
