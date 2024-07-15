@@ -1,5 +1,5 @@
 ### short cable
-
+![Cable 照片](./ShortCable.jpg "Magic Gardens")
 |Freq MHz |	Loss dB	|	
 |-------- | -----|
 |2442|	0.48|		
