@@ -206,8 +206,10 @@ class CMP180(GenericInstrument):
         # defalut unit : Hz
         if int(ch) < 15:
             freq = (2407 + 5*int(ch))*1E6
-        elif int(ch) > 30:
+        elif (int(ch) > 30) and (int(ch) < 170) :
             freq = (5000 + 5*int(ch))*1E6
+        else:
+            freq = int(ch)*1E6
         self.write("CONFigure:WLAN:MEAS{}:RFSettings:FREQuency {}".format(self.MeasNum, freq))
 
     def wlan_set_standard(self, standard: object = "11n") -> object:
@@ -300,6 +302,20 @@ class CMP180(GenericInstrument):
         self.wlan_set_peakpwr(int(float(peak_pwr)) + 3)
         self.wlan_meas_abort()
         return True
+
+    def wlan_meas_tsmask_avg(self):
+        return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:AVERage?".format(self.MeasNum))
+
+    def wlan_meas_tsmask_min(self):
+        return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:MINimum?".format(self.MeasNum))
+
+    def wlan_meas_tsmask_max(self):
+        return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:MAXimum?".format(self.MeasNum))
+
+    def wlan_meas_tsmask_current(self):
+        return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:CURRent?".format(self.MeasNum))
+
+
 
 
 if __name__ == "__main__":
