@@ -4,24 +4,13 @@ import numpy as np
 import time
 from icbasic import *
 from aic8822 import *
+from aic8822.pwr_sense.GlobalVar import *
 from icbasic.aicintf.uart import *
-
-global UARTc
-
-
-def uart_open(comport):
-    global UARTc
-    UARTc = Uart(comport)
-    UARTc.open()
-    return UARTc
-
-
-def uart_close():
-    UARTc.close()
 
 
 class MSADC:
     def __init__(self, clk_div=40, acc_mode=1, adc_id=0):
+        self.UARTc = GX.get_value("UARTc")
         self.Mult = 1.0
         self.ClkDiv = clk_div
         if acc_mode == 0:
@@ -52,38 +41,38 @@ class MSADC:
             self.roAddr = "4010E010"
 
     def basiconfig(self):
-        UARTc.write_reg_mask(self.clkdivAddr, ["8", "7:0"], [1, self.ClkDiv])
-        UARTc.write_reg_mask(self.winAddr, "27:16", self.Window)
-        print(self.winAddr, self.Window)
-        UARTc.write_reg_mask(self.anaAddr, ["28:21", "18:12", "1"], [int('01010000', 2), int('1101010', 2), 0])
+        self.UARTc.write_reg_mask(self.clkdivAddr, ["8", "7:0"], [1, self.ClkDiv])
+        self.UARTc.write_reg_mask(self.winAddr, "27:16", self.Window)
+        # print(self.winAddr, self.Window)
+        self.UARTc.write_reg_mask(self.anaAddr, ["28:21", "18:12", "1"], [int('01010000', 2), int('1101010', 2), 0])
 
     def adconfig(self):
-        UARTc.write_reg_mask(self.anaAddr, ["20", "19", "10", "9:2"], [0, 1, 1, int('79', 16)],
+        self.UARTc.write_reg_mask(self.anaAddr, ["20", "19", "10", "9:2"], [0, 1, 1, int('79', 16)],
                              "ts_mode/adc_ff_en/sdm_mode/others")
 
     def tsconfig(self):
-        UARTc.write_reg_mask(self.anaAddr, ["20", "19", "10", "9:2"], [1, 0, 0, int('8C', 16)],
+        self.UARTc.write_reg_mask(self.anaAddr, ["20", "19", "10", "9:2"], [1, 0, 0, int('8C', 16)],
                              "ts_mode/adc_ff_en/sdm_mode/others")
 
     def set_diff_mode(self):
         # mode 2
-        UARTc.write_reg_mask(self.winAddr, "28", 1)
-        UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 0])
+        self.UARTc.write_reg_mask(self.winAddr, "28", 1)
+        self.UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 0])
 
     def set_se_p_mode(self):
         # single-ended positive port input
-        UARTc.write_reg_mask(self.winAddr, "28", 0)
-        UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 1])
+        self.UARTc.write_reg_mask(self.winAddr, "28", 0)
+        self.UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 1])
 
     def set_se_n_mode(self):
         # single-ended positive port input
-        UARTc.write_reg_mask(self.winAddr, "28", 0)
-        UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 0])
+        self.UARTc.write_reg_mask(self.winAddr, "28", 0)
+        self.UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 0])
 
     def set_selfcal_mode(self):
         # mode 3
-        UARTc.write_reg_mask(self.winAddr, "28", 1)
-        UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [1, 0])
+        self.UARTc.write_reg_mask(self.winAddr, "28", 1)
+        self.UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [1, 0])
 
     def self_calibration(self):
         self.basiconfig()
@@ -93,98 +82,98 @@ class MSADC:
         return (int(adc_ro.split('x')[1], 16) / self.Denom - 1) * 1214 * self.Mult
 
     def input_sel_avdd33(self):  # it is vflash in aic8822
-        UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 3)
-        UARTc.write_reg_mask(self.winAddr, "3:0", 15)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 3)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 15)
         self.set_diff_mode()
         self.Mult = 4.0
 
     def input_sel_avdd18(self):
-        UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 2)
-        UARTc.write_reg_mask(self.winAddr, "3:0", 15)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 2)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 15)
         self.set_diff_mode()
         self.Mult = 2.0
 
     def input_sel_avdd13(self):
-        UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 1)
-        UARTc.write_reg_mask(self.winAddr, "3:0", 15)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "15", 1)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 1)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 15)
         self.set_diff_mode()
         self.Mult = 4.0 / 3.0
 
     def input_sel_vbat(self):
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 8)
-        UARTc.write_reg_mask(self.winAddr, "3:0", 15)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 8)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 15)
         self.set_diff_mode()
         self.Mult = 5.5
 
     def input_sel_vtrc0(self):
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 4)
-        UARTc.write_reg_mask(self.winAddr, "3:0", 15)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 4)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 15)
         self.set_diff_mode()
         self.Mult = 1.0
 
     def input_sel_vrefulpbuf(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 10)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 10)
         self.set_se_p_mode()
         self.Mult = 1.0
 
     def input_sel_vcore(self):
-        UARTc.write_reg_mask(self.winAddr, ["28", "3:0"], [0, 11])
-        UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 1])
+        self.UARTc.write_reg_mask(self.winAddr, ["28", "3:0"], [0, 11])
+        self.UARTc.write_reg_mask(self.anaAddr, ["11", "0"], [0, 1])
         self.set_se_p_mode()
         self.Mult = 1.0
 
     def input_sel_gpio23_diff(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 2)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 2)
         self.set_diff_mode()
         self.Mult = 1.0
 
     def input_sel_gpio01_diff(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 3)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 3)
         self.set_diff_mode()
         self.Mult = 1.0
 
     def input_sel_gpio3(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 2)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 2)
         self.set_se_n_mode()
         self.Mult = 1.0
 
     def input_sel_gpio2(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 2)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 2)
         self.set_se_p_mode()
         self.Mult = 1.0
 
     def input_sel_gpio1(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 3)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 3)
         self.set_se_n_mode()
         self.Mult = 1.0
 
     def input_sel_gpio0(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 3)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 3)
         self.set_se_p_mode()
         self.Mult = 1.0
 
     def input_sel_ts_pa(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 1)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 1)
         self.set_diff_mode()
         self.Mult = 1.0
 
     def input_sel_testport(self):
-        UARTc.write_reg_mask(self.winAddr, "3:0", 0)
+        self.UARTc.write_reg_mask(self.winAddr, "3:0", 0)
         self.set_se_p_mode()
         self.Mult = 1.0
 
     def vddsense_off(self):
-        UARTc.write_reg_mask(self.vddSenAddr, "13:10", 0)
+        self.UARTc.write_reg_mask(self.vddSenAddr, "13:10", 0)
         self.Mult = 1
 
     def measure(self):
-        UARTc.write_reg_mask(self.msAddr, "0", 1)  # start
+        self.UARTc.write_reg_mask(self.msAddr, "0", 1)  # start
         sleep_time = self.ClkDiv * 25E-9 * self.Window * 1.1
         time.sleep(sleep_time)
-        return UARTc.read_reg(self.roAddr)
+        return self.UARTc.read_reg(self.roAddr)
 
     def ms_volt(self):
         adc_ro = self.measure()
@@ -316,97 +305,97 @@ class MSADC:
         return v_portdc * 1000.0
 
     def ms_dc_wfadc0(self):
-        UARTc.write_reg_mask("40344028", "16", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("40344028", "16", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
         vreg_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
         vref_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40344028", "16", 0)  # enable
+        self.UARTc.write_reg_mask("40344028", "16", 0)  # enable
         return [vreg_wfadc, vref_wfadc]
 
     def ms_dc_wfadc1(self):
-        UARTc.write_reg_mask("40344028", "15", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("40344028", "15", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
         vreg_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
         vref_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40344028", "15", 0)  # enable
+        self.UARTc.write_reg_mask("40344028", "15", 0)  # enable
         return [vreg_wfadc, vref_wfadc]
 
     def cal_dc_wfadc0(self):
-        UARTc.write_reg_mask("40344028", "16", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
-        UARTc.write_reg_mask("40344154", "3:0", 8)  # adc0_vreg_vbit
+        self.UARTc.write_reg_mask("40344028", "16", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("40344154", "3:0", 8)  # adc0_vreg_vbit
         msb_vreg = 3
         for i in range(4):
             vreg_wfadc = self.ms_portdc()
             if vreg_wfadc > 970:
-                UARTc.write_reg_mask("40344154", str(msb_vreg - i), 0)  # adc0_vreg_vbit
+                self.UARTc.write_reg_mask("40344154", str(msb_vreg - i), 0)  # adc0_vreg_vbit
             if i < 3:
-                UARTc.write_reg_mask("40344154", str(msb_vreg - 1 - i), 1)  # adc0_vreg_vbit
+                self.UARTc.write_reg_mask("40344154", str(msb_vreg - 1 - i), 1)  # adc0_vreg_vbit
         vreg_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
-        UARTc.write_reg_mask("40344158", "19:15", 16)  # adc0_vref_vbit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40344158", "19:15", 16)  # adc0_vref_vbit
         msb_vref = 19
         for i in range(5):
             vref_wfadc = self.ms_portdc()
             if vref_wfadc > 1010:
-                UARTc.write_reg_mask("40344158", str(msb_vref - i), 0)  # adc0_vref_vbit
+                self.UARTc.write_reg_mask("40344158", str(msb_vref - i), 0)  # adc0_vref_vbit
             if i < 4:
-                UARTc.write_reg_mask("40344158", str(msb_vref - 1 - i), 1)  # adc0_vref_vbit
+                self.UARTc.write_reg_mask("40344158", str(msb_vref - 1 - i), 1)  # adc0_vref_vbit
         vref_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40344028", "16", 0)  # enable
+        self.UARTc.write_reg_mask("40344028", "16", 0)  # enable
         return [vreg_wfadc, vref_wfadc]
 
     def cal_dc_wfadc1(self):
-        UARTc.write_reg_mask("40344028", "15", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
-        UARTc.write_reg_mask("4034415c", "21:18", 8)  # adc1_vreg_vbit
+        self.UARTc.write_reg_mask("40344028", "15", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("4034415c", "21:18", 8)  # adc1_vreg_vbit
         msb_vreg = 21
         for i in range(4):
             vreg_wfadc = self.ms_portdc()
             if vreg_wfadc > 970:
-                UARTc.write_reg_mask("4034415c", str(msb_vreg - i), 0)  # adc1_vreg_vbit
+                self.UARTc.write_reg_mask("4034415c", str(msb_vreg - i), 0)  # adc1_vreg_vbit
             if i < 3:
-                UARTc.write_reg_mask("4034415c", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
+                self.UARTc.write_reg_mask("4034415c", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
         vreg_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
-        UARTc.write_reg_mask("4034415c", "5:1", 16)  # adc1_vref_vbit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("4034415c", "5:1", 16)  # adc1_vref_vbit
         msb_vref = 5
         for i in range(5):
             vref_wfadc = self.ms_portdc()
             if vref_wfadc > 1010:
-                UARTc.write_reg_mask("4034415c", str(msb_vref - i), 0)  # adc1_vref_vbit
+                self.UARTc.write_reg_mask("4034415c", str(msb_vref - i), 0)  # adc1_vref_vbit
             if i < 4:
-                UARTc.write_reg_mask("4034415c", str(msb_vref - 1 - i), 1)  # adc1_vref_vbit
+                self.UARTc.write_reg_mask("4034415c", str(msb_vref - 1 - i), 1)  # adc1_vref_vbit
         vref_wfadc = self.ms_portdc()
-        UARTc.write_reg_mask("40344028", "15", 0)  # enable
+        self.UARTc.write_reg_mask("40344028", "15", 0)  # enable
         return [vreg_wfadc, vref_wfadc]
 
     def ms_dc_btadc(self, printEn=0):
         self.ms_portdc_config()
-        UARTc.write_reg_mask("40622008", "13", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("40622008", "13", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
         # UARTc.write_reg_mask("40622024", " 7: 4", 8)  # adc1_vreg_vbit
         vreg_btadc = self.ms_volt()*1000
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
         # UARTc.write_reg_mask("40622028", "23:19", 16)  # adc1_vref_vbit
         vref_btadc = self.ms_volt()*1000
-        UARTc.write_reg_mask("40622008", "13", 0)  # enable
+        self.UARTc.write_reg_mask("40622008", "13", 0)  # enable
         if printEn == 1:
             print('vreg: {:5.1f}mV, vref: {:5.1f}mV'.format(vreg_btadc, vref_btadc))
         return [vreg_btadc, vref_btadc]
 
     def cal_dc_btadc(self, logOn=0):
-        UARTc.write_reg_mask("40622008", "13", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
-        UARTc.write_reg_mask("40622024", " 7: 4", 8)  # adc_vreg_vbit
+        self.UARTc.write_reg_mask("40622008", "13", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 2)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 0)  # test_bit
+        self.UARTc.write_reg_mask("40622024", " 7: 4", 8)  # adc_vreg_vbit
         self.ms_portdc_config()
         msb_vreg = 7
         for i in range(4):
@@ -414,64 +403,65 @@ class MSADC:
             if logOn == 1:
                 print(str(i) + ": " + str(vreg_btadc))
             if vreg_btadc > 960:
-                UARTc.write_reg_mask("40622024", str(msb_vreg - i), 0)  # adc_vreg_vbit
+                self.UARTc.write_reg_mask("40622024", str(msb_vreg - i), 0)  # adc_vreg_vbit
             if i < 3:
-                UARTc.write_reg_mask("40622024", str(msb_vreg - 1 - i), 1)  # adc_vreg_vbit
+                self.UARTc.write_reg_mask("40622024", str(msb_vreg - 1 - i), 1)  # adc_vreg_vbit
         vreg_btadc = self.ms_volt() *1000
         if logOn == 1:
-            bits = UARTc.read_reg_bits("40622024", "7:4")
+            bits = self.UARTc.read_reg_bits("40622024", "7:4")
             print(str(bits) + ": " + str(vreg_btadc))
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
-        UARTc.write_reg_mask("40622028", "23:19", 16)  # adc_vref_vbit
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40622028", "23:19", 16)  # adc_vref_vbit
         msb_vref = 23
         for i in range(5):
             vref_btadc = self.ms_volt() *1000
             if logOn == 1:
                 print(str(i) + ": " + str(vref_btadc))
             if vref_btadc > 960:
-                UARTc.write_reg_mask("40622028", str(msb_vref - i), 0)  # adc_vref_vbit
+                self.UARTc.write_reg_mask("40622028", str(msb_vref - i), 0)  # adc_vref_vbit
             if i < 4:
-                UARTc.write_reg_mask("40622028", str(msb_vref - 1 - i), 1)  # adc_vref_vbit
+                self.UARTc.write_reg_mask("40622028", str(msb_vref - 1 - i), 1)  # adc_vref_vbit
         vref_btadc = self.ms_volt() *1000
         if logOn == 1:
-            bits = UARTc.read_reg_bits("40622028", "23:19")
+            bits = self.UARTc.read_reg_bits("40622028", "23:19")
             print(str(bits) + ": " + str(vref_btadc))
-        UARTc.write_reg_mask("40622008", "13", 0)  # enable
+        self.UARTc.write_reg_mask("40622008", "13", 0)  # enable
         return [vreg_btadc, vref_btadc]
 
     def cal_dc_hb0_pa_opamp(self):
-        UARTc.write_reg_mask("40344024", "26", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 3)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
-        UARTc.write_reg_mask("40344068", "19:14", int('100000', 2))  # hb0_pa_dc_cal_bit
+        self.UARTc.write_reg_mask("40344024", "26", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 3)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40344068", "19:14", int('100000', 2))  # hb0_pa_dc_cal_bit
         msb_vreg = 19
         for i in range(6):
             dcos0 = self.ms_portdc()
             print("DC offset: {: >3.1f} mV".format(dcos0))
             if dcos0 > 0:
-                UARTc.write_reg_mask("40344068", str(msb_vreg - i), 0)  # adc1_vreg_vbit
+                self.UARTc.write_reg_mask("40344068", str(msb_vreg - i), 0)  # adc1_vreg_vbit
             if i < 5:
-                UARTc.write_reg_mask("40344068", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
-        UARTc.write_reg_mask("40344024", "26", 0)  # enable
+                self.UARTc.write_reg_mask("40344068", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
+        self.UARTc.write_reg_mask("40344024", "26", 0)  # enable
 
     def cal_dc_hb1_pa_opamp(self):
-        UARTc.write_reg_mask("40344024", "26", 1)  # enable
-        UARTc.write_reg_mask("40502018", " 8: 7", 3)  # test_mode
-        UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
-        UARTc.write_reg_mask("40344024", "9", 1)  # enable
-        UARTc.write_reg_mask("403440dc", "31:26", int('100000', 2))  # hb1_pa_dc_cal_bit
+        self.UARTc.write_reg_mask("40344024", "26", 1)  # enable
+        self.UARTc.write_reg_mask("40502018", " 8: 7", 3)  # test_mode
+        self.UARTc.write_reg_mask("40502018", "17:15", 1)  # test_bit
+        self.UARTc.write_reg_mask("40344024", "9", 1)  # enable
+        self.UARTc.write_reg_mask("403440dc", "31:26", int('100000', 2))  # hb1_pa_dc_cal_bit
         msb_vreg = 31
         for i in range(6):
             dcos = self.ms_portdc()
             print("DC offset: {: >3.1f} mV".format(dcos))
             if dcos > 0:
-                UARTc.write_reg_mask("403440dc", str(msb_vreg - i), 0)  # adc1_vreg_vbit
+                self.UARTc.write_reg_mask("403440dc", str(msb_vreg - i), 0)  # adc1_vreg_vbit
             if i < 5:
-                UARTc.write_reg_mask("403440dc", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
-        UARTc.write_reg_mask("40344024", "9", 0)  # enable
+                self.UARTc.write_reg_mask("403440dc", str(msb_vreg - 1 - i), 1)  # adc1_vreg_vbit
+        self.UARTc.write_reg_mask("40344024", "9", 0)  # enable
 
 
 if __name__ == "__main__":
+    UARTc = Uart(7)
     UARTc.open()
     UARTc.write_reg("40580018", 0)  # wf_rf_en (set it in btonly mode)
     UARTc.write_reg_bits("40506008", "18:17", 1)  # poff/on_wifi_core (set it in btonly mode)
@@ -479,23 +469,23 @@ if __name__ == "__main__":
     # UARTc.write_reg("4058001C", 0)  # bt_rf_en (de-bug of bt-pa in u02)
     # UARTc.write_reg_mask("40622000", " 3: 2", 3)  # de-bug of bt-pa in u02
 
-    # msadc0 = MSADC(clk_div=40, acc_mode=1, adc_id=0)
+    msadc0 = MSADC(clk_div=40, acc_mode=1, adc_id=0)
     # msadc0.ms_temp()
 
-    msadc1 = MSADC(clk_div=30, acc_mode=1, adc_id=1)
-    UARTc.write_reg_bits("40622000", "17:14", 15)  # pu_adc = 1
-    UARTc.write_reg_bits("40622004", " 7: 6", 3)   # pu_iref = 1
-    msadc1.cal_dc_btadc(1)
+    # msadc1 = MSADC(clk_div=30, acc_mode=1, adc_id=1)
+    # UARTc.write_reg_bits("40622000", "17:14", 15)  # pu_adc = 1
+    # UARTc.write_reg_bits("40622004", " 7: 6", 3)   # pu_iref = 1
+    # msadc1.cal_dc_btadc(1)
     # # msadc1.cal_dc_wfadc0()
 
     # msadc1 = MSADC(clk_div=20, acc_mode=1, adc_id=1)
     # msadc1.ms_dc_btadc(1)
 
-    # vcore  = msadc0.ms_vcore()
+    vcore  = msadc0.ms_vcore()
     # avdd18 = msadc0.ms_avdd18()
     # avdd13 = msadc0.ms_avdd13()
     # avdd33 = msadc0.ms_vbat()
-    # print("vcore  : {:6.1f} mV".format(vcore))
+    print("vcore  : {:6.1f} mV".format(vcore))
     # print("avdd13 : {:6.1f} mV".format(avdd13))
     # print("avdd18 : {:6.1f} mV".format(avdd18))
     # print("avdd33 : {:6.1f} mV".format(avdd33))

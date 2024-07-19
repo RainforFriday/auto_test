@@ -116,12 +116,23 @@ class CMP180(GenericInstrument):
         self.write("STOP:GPRF:MEAS{}:POWer".format(self.MeasNum))
 
     def spa_peak_pwr(self):
-        aaa = self.query("FETCh:GPRF:MEAS{}:SPECtrum:MAXimum:CURRent?".format(self.MeasNum)).split(",")[1:]
-        return aaa
+        return self.query("FETCh:GPRF:MEAS{}:SPECtrum:MAXimum:CURRent?".format(self.MeasNum)).split(",")[1:]
 
     ####3 fft mode
     def fsp_peak(self):
-        return self.query("FETCh:GPRF:MEAS{}:FFTSanalyzer:PEAKs:CURRent?".format(self.MeasNum)).split(",")[1:3]
+        return self.query("FETCh:GPRF:MEAS{}:FFTSanalyzer:PEAKs:AVERage?".format(self.MeasNum)).split(",")[1:3]
+
+    def fsp_peak_pwr(self):
+        try:
+            return float(self.fsp_peak()[1])
+        except:
+            return 0
+
+    def fsp_peak_freq(self):
+        try:
+            return float(self.fsp_peak()[0])
+        except:
+            return 0
 
     def fsp_span(self, span=1.25):
         if span not in [1.25, 2.5, 5, 10, 20, 40, 80, 160]:
@@ -134,9 +145,19 @@ class CMP180(GenericInstrument):
     def fsp_get_cfreq(self):
         return self.query("CONFigure:GPRF:MEAS{}:RFSettings:FREQuency?".format(self.MeasNum))
 
-    def fsp_cfreq(self, freq=2400):  # cfreq Mhz
+    def fsp_set_cfreq(self, freq=2400):  # cfreq Mhz
         self.write("CONFigure:GPRF:MEAS{}:RFSettings:FREQuency {}".format(self.MeasNum, freq*1.0e6))
         return True
+
+    def fsp_set_cfreq_by_ch(self, ch=1):
+        # defalut unit : Hz
+        if int(ch) < 15:
+            freq = (2407 + 5*int(ch))*1E6
+        elif (int(ch) > 30) and (int(ch) < 170) :
+            freq = (5000 + 5*int(ch))*1E6
+        else:
+            freq = int(ch)*1E6
+        self.write("CONFigure:GPRF:MEAS{}:RFSettings:FREQuency {}".format(self.MeasNum, freq))
 
     def fsp_on(self):
         self.write("INITiate:GPRF:MEAS{}:FFTSanalyzer".format(self.MeasNum))
@@ -144,8 +165,16 @@ class CMP180(GenericInstrument):
     def fsp_off(self):
         self.write("ABORt:GPRF:MEAS{}:FFTSanalyzer".format(self.MeasNum))
 
-    def fsp_pwr(self,power=20):
+    def fsp_set_enpwr(self, power=20):
         self.write("CONFigure:GPRF:MEAS{}:RFSettings:ENPower {}".format(self.MeasNum, power))
+
+    def fsp_auto_enpwr(self):
+        self.fsp_set_enpwr(30)
+        self.fsp_on()
+        peak_pwr = self.fsp_peak_pwr()
+        self.fsp_set_enpwr(int(float(peak_pwr)) + 3)
+        # self.fsp_off()
+        return True
 
     def fsp_cw_mode(self):
         self.write("CONFigure:GPRF:MEAS{}:FFTSanalyzer:REPetion CONTinuous:".format(self.MeasNum))
