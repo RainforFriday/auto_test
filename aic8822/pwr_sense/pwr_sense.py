@@ -202,7 +202,7 @@ def pa_gain_dr_release(blk = "lb0"):
 def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     # 0 blk in ["lb0", "lb1", "hb0", ""hb1]
     ana_index = "c"
-    CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, reg_value")
+    CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal")
 
     # 1 blk sel
     if (int(ch) < 15) and (ant == 0):
@@ -269,9 +269,12 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
         pwr_msadc_mw = pwr_msadc
         pwr_cmp180_mw = pow(10.0, pwr_cmp180_dbm/10.0)
 
-        regval = UARTc.read_reg("403422c9")
+        # for 2.4G band
+        pwr_msadc_mw_fix_coeff = 0.00107*pwr_msadc_mw + 0.8466
+        pwr_msadc_mw_cal = pwr_msadc_mw*pwr_msadc_mw_fix_coeff
+        pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
 
-        pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{}".format(ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, regval)
+        pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal)
         print(pwr_result)
         CSVX.write_append_line(pwr_result)
 
@@ -282,7 +285,7 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
 
 
 if __name__ == "__main__":
-    csv_name = "./data/20240719/pwr_sense_data_HB_20240719_1623.csv"
+    csv_name = "./data/20240722/pwr_sense_data_HB1_CALED_20240722_1159.csv"
     CSVX = CSV(csv_name)
 
     UARTc = Uart(7)
@@ -301,6 +304,6 @@ if __name__ == "__main__":
     ch_list_hb = [42, 58, 106, 122, 138, 155]
 
     for chx in ch_list_hb:
-        msadc_pwr_sense_by_dig_pwr(chx, 0)
+        msadc_pwr_sense_by_dig_pwr(chx, 1)
 
     UARTc.close()
