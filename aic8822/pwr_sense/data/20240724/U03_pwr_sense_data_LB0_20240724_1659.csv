@@ -1,0 +1,4 @@
+ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal
+1,660,64.25,20.94,-65.28,124.18,0.00,121.63,20.85
+7,6F0,64.99,18.19,-65.28,65.87,0.00,60.41,17.81
+13,750,65.45,17.73,-64.23,59.31,0.00,53.97,17.32

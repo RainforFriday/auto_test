@@ -50,35 +50,41 @@ class PWRCSV:
             datax.append(float(data_cell.strip().split(",")[4]))
         return datax
 
-    def l_msadc_vs_instr_10mw(self, ch, msadc_min = 10.0):
+    def l_msadc_vs_instr_min_max(self, ch, msadc_mw_min = 10.0, msadc_mw_max = 100.0):
         l_msadc_mw = []
         l_instr_mw = []
         for data_cell in self.read_csv_by_ch(ch):
-            print(data_cell)
+            # print(data_cell)
             msadc_mw = float(data_cell.strip().split(",")[5])
             instr_mw = float(data_cell.strip().split(",")[6])
-            print("{},{}".format(msadc_mw, instr_mw))
-            if msadc_mw > msadc_min:
+            # print("{},{}".format(msadc_mw, instr_mw))
+            if (msadc_mw > msadc_mw_min) and (msadc_mw < msadc_mw_max):
                 l_msadc_mw.append(msadc_mw)
                 l_instr_mw.append(instr_mw)
         return [l_msadc_mw, l_instr_mw]
 
 
-def curve_fitting(l_msadc, l_instr):
-    coefficient = np.polyfit(l_msadc, l_instr, 1)
-    return coefficient
+def curve_fitting(l_msadc_mw, l_instr_mw):
+    coefficient = np.polyfit(l_msadc_mw, l_instr_mw, 2)
+    print(coefficient)
 
 
 if __name__ == "__main__":
-    csv_path = "./data/20240722/pwr_sense_data_HB1_CALED_20240722_1159.csv"
-    LBCSV = PWRCSV(csv_path)
+    HB = True
+    if HB:
+        csv_path = "./data/20240722/pwr_sense_data_HB1_CALED_20240722_1750.csv"
+        CSVX = PWRCSV(csv_path)
+        for chx in [42, 58, 106, 122, 138, 155]:
+            xxx = CSVX.l_msadc_vs_instr_min_max(chx, 10, 500)
+            curve_fitting(xxx[0], xxx[1])
 
-    # y=1.211*x - 20.571
-
-    CHX = 42
-
-    xxx = LBCSV.l_msadc_vs_instr_10mw(CHX)
-    print(xxx)
+    LB = False
+    if LB:
+        csv_path = "./data/20240719/pwr_sense_data_LB1_CALED_20240719_1816.csv"
+        CSVX = PWRCSV(csv_path)
+        for chx in [1, 7, 13]:
+            xxx = CSVX.l_msadc_vs_instr_min_max(chx, 10, 1000)
+            curve_fitting(xxx[0], xxx[1])
 
 
     """

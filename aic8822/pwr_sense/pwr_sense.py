@@ -228,6 +228,11 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     # 3 setch
     UARTc.sendcmd("setch {}".format(int(ch)))
     time.sleep(2)
+    UARTc.sendcmd("setrate 5 11")
+    UARTc.sendcmd("setbw 1 1")
+    UARTc.sendcmd("settx 1")
+    UARTc.sendcmd("settx 0")
+
 
     # 4 open pa pwr sense
     pa_pwrsen_on(blk)
@@ -247,10 +252,11 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     # UARTc.write_reg_mask("40344004", "13:12", 0)
 
     # 7 measure pwr
-    for dig_pwr in range(640, 4096, 64):
+    for dig_pwr in range(640, 4096, 64):  # 640
         dig_pwr_hex_str = hex(dig_pwr).split("0x")[-1]
 
         tone_on_cmd = "tone_on {} 4 {} {}".format(ant_sel, dig_pwr_hex_str, ana_index)
+        # print(tone_on_cmd)
         UARTc.sendcmd(tone_on_cmd)
         time.sleep(2)
         CMPX.fsp_auto_enpwr()
@@ -270,9 +276,15 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
         pwr_cmp180_mw = pow(10.0, pwr_cmp180_dbm/10.0)
 
         # for 2.4G band
-        pwr_msadc_mw_fix_coeff = 0.00107*pwr_msadc_mw + 0.8466
-        pwr_msadc_mw_cal = pwr_msadc_mw*pwr_msadc_mw_fix_coeff
-        pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+        if ch < 15:
+            pwr_msadc_mw_fix_coeff = 0.00107*pwr_msadc_mw + 0.8466
+            pwr_msadc_mw_cal = pwr_msadc_mw*pwr_msadc_mw_fix_coeff
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+
+        # for 5G band
+        if (ch > 30) and (ch < 170):
+            pwr_msadc_mw_cal = pwr_msadc_mw*1.547 - 0.6
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
 
         pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal)
         print(pwr_result)
@@ -284,9 +296,216 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     pa_pwrsen_off(blk)
 
 
+def msadc_pwr_sense_by_ch(dig_pwr_dec = 640, ant = 0, l_ch = None):
+    # 0 blk in ["lb0", "lb1", "hb0", ""hb1]
+    ana_index = "b"
+    CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal")
+
+    # msadc init
+    MSADCX = MSADC(clk_div=30, acc_mode=1, adc_id=1)
+
+    # 7 measure pwr
+    for chx in l_ch:
+        # 1 blk sel
+        if (int(chx) < 15) and (ant == 0):
+            blk = "lb0"
+            ant_sel = "01"
+        elif (int(chx) < 15) and (ant == 1):
+            blk = "lb1"
+            ant_sel = "10"
+        elif (int(chx) > 15) and (ant == 0):
+            blk = "hb0"
+            ant_sel = "01"
+        elif (int(chx) > 15) and (ant == 1):
+            blk = "hb1"
+            ant_sel = "10"
+        else:
+            blk = "lb0"
+            ant_sel = "11"
+            print("Input Error!!!")
+
+        # 2 setch
+        UARTc.sendcmd("setch {}".format(int(chx)))
+        time.sleep(2)
+        UARTc.sendcmd("setrate 5 11")
+        UARTc.sendcmd("setbw 1 1")
+        UARTc.sendcmd("settx 1")
+        UARTc.sendcmd("settx 0")
+
+        # 3 open pa pwr sense
+        pa_pwrsen_on(blk)
+
+        # 4 set cmp500
+        CMPX.fsp_set_cfreq_by_ch(chx)
+
+        # 5 get ref
+        UARTc.sendcmd("tone_on {} 4 {} {}".format(ant_sel, "0", ana_index))
+        time.sleep(1)
+        # UARTc.write_reg_mask("40344004", "13:12", 2)
+        pa_gain_dr_off(blk)
+        pwrref_msadc = MSADCX.ms_portdc()
+        UARTc.sendcmd("tone_off 11")
+        print("MSADC PWR SENSE REF: {:.2f}".format(pwrref_msadc))
+        pa_gain_dr_release(blk)
+
+        dig_pwr_hex_str = hex(dig_pwr_dec).split("0x")[-1]
+
+        tone_on_cmd = "tone_on {} 4 {} {}".format(ant_sel, dig_pwr_hex_str, ana_index)
+        # print(tone_on_cmd)
+        UARTc.sendcmd(tone_on_cmd)
+        time.sleep(2)
+        CMPX.fsp_auto_enpwr()
+
+        CMPX.fsp_on()
+        pwr_dig = dig_pwr_dec
+        pwr_msadc = MSADCX.ms_portdc() - pwrref_msadc
+        pwr_cmp180 = CMPX.fsp_peak_pwr()
+        # freq_cmp180 = CMPX.fsp_peak_freq()
+        CMPX.fsp_off()
+
+        pwr_dig_dbm = 20.0*math.log10(pwr_dig)
+        pwr_msadc_dbm = 10.0*math.log10(pwr_msadc)
+        pwr_cmp180_dbm = pwr_cmp180
+
+        pwr_msadc_mw = pwr_msadc
+        pwr_cmp180_mw = pow(10.0, pwr_cmp180_dbm/10.0)
+
+        pwr_msadc_mw_cal = "NONE"
+        pwr_msadc_dbm_cal = "NONE"
+
+        # for 2.4G band
+        if chx < 15:
+            pwr_msadc_mw_fix_coeff = 0.00107*pwr_msadc_mw + 0.8466
+            pwr_msadc_mw_cal = pwr_msadc_mw*pwr_msadc_mw_fix_coeff
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+
+        # for 5G band
+        if (chx > 30) and (chx < 170):
+            # function 1
+            # pwr_msadc_mw_cal = pwr_msadc_mw*1.547 - 0.6
+            # function 2
+            pwr_msadc_mw_cal = 9.2E-4*pwr_msadc_mw*pwr_msadc_mw + 1.434*pwr_msadc_mw + 1.707
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+
+        pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(chx, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal)
+        print(pwr_result)
+        CSVX.write_append_line(pwr_result)
+
+        UARTc.sendcmd("tone_off 11")
+
+        # 7 close pwr sense
+        pa_pwrsen_off(blk)
+
+
+def msadc_pwr_sense_by_ch_digpwr(ch_digpwr_dict = {}, ant = 0, ana_index = "c"):
+    # 0 blk in ["lb0", "lb1", "hb0", ""hb1]
+    CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal")
+
+    # msadc init
+    MSADCX = MSADC(clk_div=30, acc_mode=1, adc_id=1)
+
+    # 7 measure pwr
+    for chx in ch_digpwr_dict.keys():
+        # 1 blk sel
+        if (int(chx) < 15) and (ant == 0):
+            blk = "lb0"
+            ant_sel = "01"
+        elif (int(chx) < 15) and (ant == 1):
+            blk = "lb1"
+            ant_sel = "10"
+        elif (int(chx) > 15) and (ant == 0):
+            blk = "hb0"
+            ant_sel = "01"
+        elif (int(chx) > 15) and (ant == 1):
+            blk = "hb1"
+            ant_sel = "10"
+        else:
+            blk = "lb0"
+            ant_sel = "11"
+            print("Input Error!!!")
+
+        # 2 setch
+        UARTc.sendcmd("setch {}".format(int(chx)))
+        time.sleep(2)
+        UARTc.sendcmd("setrate 5 11")
+        UARTc.sendcmd("setbw 1 1")
+        UARTc.sendcmd("settx 1")
+        UARTc.sendcmd("settx 0")
+
+        # 3 open pa pwr sense
+        pa_pwrsen_on(blk)
+
+        # 4 set cmp500
+        CMPX.fsp_set_cfreq_by_ch(chx)
+
+        # 5 get ref
+        UARTc.sendcmd("tone_on {} 4 {} {}".format(ant_sel, "0", ana_index))
+        time.sleep(1)
+        # UARTc.write_reg_mask("40344004", "13:12", 2)
+        pa_gain_dr_off(blk)
+        pwrref_msadc = MSADCX.ms_portdc()
+        UARTc.sendcmd("tone_off 11")
+        print("MSADC PWR SENSE REF: {:.2f}".format(pwrref_msadc))
+        pa_gain_dr_release(blk)
+
+        dig_pwr_hex_str = ch_digpwr_dict[chx] + "0"
+
+        tone_on_cmd = "tone_on {} 4 {} {}".format(ant_sel, dig_pwr_hex_str, ana_index)
+        # print(tone_on_cmd)
+        UARTc.sendcmd(tone_on_cmd)
+        time.sleep(2)
+        CMPX.fsp_auto_enpwr()
+
+        CMPX.fsp_on()
+
+        dig_pwr_dec = int(dig_pwr_hex_str, 16)
+        pwr_dig = dig_pwr_dec
+        pwr_msadc = MSADCX.ms_portdc() - pwrref_msadc
+        pwr_cmp180 = CMPX.fsp_peak_pwr()
+        # freq_cmp180 = CMPX.fsp_peak_freq()
+        CMPX.fsp_off()
+
+        pwr_dig_dbm = 20.0*math.log10(pwr_dig)
+        pwr_msadc_dbm = 10.0*math.log10(pwr_msadc)
+        pwr_cmp180_dbm = pwr_cmp180
+
+        pwr_msadc_mw = pwr_msadc
+        pwr_cmp180_mw = pow(10.0, pwr_cmp180_dbm/10.0)
+
+        pwr_msadc_mw_cal = "NONE"
+        pwr_msadc_dbm_cal = "NONE"
+
+        # for 2.4G band
+        if chx < 15:
+            pwr_msadc_mw_fix_coeff = 0.00107*pwr_msadc_mw + 0.8466
+            pwr_msadc_mw_cal = pwr_msadc_mw*pwr_msadc_mw_fix_coeff
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+
+        # for 5G band
+        if (chx > 30) and (chx < 170):
+            # function 1
+            # pwr_msadc_mw_cal = pwr_msadc_mw*1.547 - 0.6
+            # function 2
+            pwr_msadc_mw_cal = 9.2E-4*pwr_msadc_mw*pwr_msadc_mw + 1.434*pwr_msadc_mw + 1.707
+            pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
+
+        pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(chx, dig_pwr_hex_str, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal)
+        print(pwr_result)
+        CSVX.write_append_line(pwr_result)
+
+        UARTc.sendcmd("tone_off 11")
+
+        # 7 close pwr sense
+        pa_pwrsen_off(blk)
+
+
+
+
 if __name__ == "__main__":
-    csv_name = "./data/20240722/pwr_sense_data_HB1_CALED_20240722_1159.csv"
+    csv_name = "./data/20240724/U03_pwr_sense_data_LB0_20240724_1659.csv"
     CSVX = CSV(csv_name)
+
+    ANT = 0
 
     UARTc = Uart(7)
     UARTc.open()
@@ -303,7 +522,16 @@ if __name__ == "__main__":
     ch_list_lb = [1, 7, 13]
     ch_list_hb = [42, 58, 106, 122, 138, 155]
 
+    """
     for chx in ch_list_hb:
-        msadc_pwr_sense_by_dig_pwr(chx, 1)
+        msadc_pwr_sense_by_dig_pwr(chx, ANT)
+    """
+
+    # for dig_pwr in range(640, 2000, 192):
+    #    msadc_pwr_sense_by_ch(dig_pwr, ANT, ch_list_hb)
+
+    # ch_dig_pwr_dict = {42: "9D", 58: "9C", 106: "96", 122: "97", 138: "97", 155: "97"}
+    ch_dig_pwr_dict = {1:"66", 7:"6F", 13:"75"}
+    msadc_pwr_sense_by_ch_digpwr(ch_dig_pwr_dict, 0, "9")
 
     UARTc.close()

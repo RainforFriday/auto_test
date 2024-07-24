@@ -1,0 +1,4 @@
+Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg
+1,5 7,1 1,20000,15,r 403422c8  [0x403422C8] = 0xCC3F494D    ,9.16,-38.45
+7,5 7,1 1,20000,15,r 403422c8  [0x403422C8] = 0xCC3F494C    ,7.64,-40.04
+13,5 7,1 1,20000,15,r 403422c8  [0x403422C8] = 0xCC3F494D    ,6.20,-40.11
