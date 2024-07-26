@@ -186,6 +186,17 @@ class CMP180(GenericInstrument):
         self.write("ROUTe:GPRF:MEAS{}:RFSettings:CONNector {}".format(self.MeasNum, route))
         return True
 
+    def fsq_set_route(self, route="RF1.1"):  # Update cmp180
+        cmpx_route_list = []
+        for xnum in range(1, 9):
+            for ynum in range(1, 3):
+                cmpx_route_list.append("RF{}.{}".format(ynum, xnum))
+        if route in cmpx_route_list:
+            self.write("ROUTe:WLAN:MEAS{}:SPATh \"{}\"".format(self.MeasNum, route))
+            return True
+        else:
+            print("Route ERROR: {}".format(route))
+
     # WLAN Signal Measure Section
     def wlan_set_route(self, route="RF1.1"):  # Update cmp180
         self.write("ROUTe:WLAN:MEAS{}:SPATh \"{}\"".format(self.MeasNum, route))

@@ -201,8 +201,12 @@ def pa_gain_dr_release(blk = "lb0"):
 
 def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     # 0 blk in ["lb0", "lb1", "hb0", ""hb1]
-    ana_index = "c"
+    ana_index = "9"
     CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal")
+
+    if ant == 0:
+        CMPX.fs
+
 
     # 1 blk sel
     if (int(ch) < 15) and (ant == 0):
@@ -502,7 +506,7 @@ def msadc_pwr_sense_by_ch_digpwr(ch_digpwr_dict = {}, ant = 0, ana_index = "c"):
 
 
 if __name__ == "__main__":
-    csv_name = "./data/20240724/U03_pwr_sense_data_LB0_20240724_1659.csv"
+    csv_name = "./data/20240726/NO2_pwr_sense_data_20240726_1646.csv"
     CSVX = CSV(csv_name)
 
     ANT = 0
@@ -522,16 +526,14 @@ if __name__ == "__main__":
     ch_list_lb = [1, 7, 13]
     ch_list_hb = [42, 58, 106, 122, 138, 155]
 
-    """
     for chx in ch_list_hb:
         msadc_pwr_sense_by_dig_pwr(chx, ANT)
-    """
 
     # for dig_pwr in range(640, 2000, 192):
     #    msadc_pwr_sense_by_ch(dig_pwr, ANT, ch_list_hb)
 
     # ch_dig_pwr_dict = {42: "9D", 58: "9C", 106: "96", 122: "97", 138: "97", 155: "97"}
-    ch_dig_pwr_dict = {1:"66", 7:"6F", 13:"75"}
-    msadc_pwr_sense_by_ch_digpwr(ch_dig_pwr_dict, 0, "9")
+    # ch_dig_pwr_dict = {1:"66", 7:"6F", 13:"75"}
+    # msadc_pwr_sense_by_ch_digpwr(ch_dig_pwr_dict, 0, "9")
 
     UARTc.close()
