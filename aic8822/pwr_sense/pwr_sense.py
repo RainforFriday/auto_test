@@ -202,11 +202,12 @@ def pa_gain_dr_release(blk = "lb0"):
 def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
     # 0 blk in ["lb0", "lb1", "hb0", ""hb1]
     ana_index = "9"
-    CSVX.write_append_line("ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal")
+    CSVX.write_append_line("ant, ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw")
 
     if ant == 0:
-        CMPX.fs
-
+        CMPX.fsq_set_route("RF1.8")
+    elif ant == 1:
+        CMPX.fsq_set_route("RF2.8")
 
     # 1 blk sel
     if (int(ch) < 15) and (ant == 0):
@@ -262,7 +263,7 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
         tone_on_cmd = "tone_on {} 4 {} {}".format(ant_sel, dig_pwr_hex_str, ana_index)
         # print(tone_on_cmd)
         UARTc.sendcmd(tone_on_cmd)
-        time.sleep(2)
+        time.sleep(1)
         CMPX.fsp_auto_enpwr()
 
         CMPX.fsp_on()
@@ -290,7 +291,7 @@ def msadc_pwr_sense_by_dig_pwr(ch = 1, ant = 0):
             pwr_msadc_mw_cal = pwr_msadc_mw*1.547 - 0.6
             pwr_msadc_dbm_cal = 10.0*math.log10(pwr_msadc_mw_cal)
 
-        pwr_result = "{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw, pwr_msadc_mw_cal, pwr_msadc_dbm_cal)
+        pwr_result = "{},{},{},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(ant, ch, pwr_dig, pwr_dig_dbm, pwr_msadc_dbm, pwr_cmp180_dbm, pwr_msadc_mw, pwr_cmp180_mw)
         print(pwr_result)
         CSVX.write_append_line(pwr_result)
 
@@ -503,10 +504,8 @@ def msadc_pwr_sense_by_ch_digpwr(ch_digpwr_dict = {}, ant = 0, ana_index = "c"):
         pa_pwrsen_off(blk)
 
 
-
-
 if __name__ == "__main__":
-    csv_name = "./data/20240726/NO2_pwr_sense_data_20240726_1646.csv"
+    csv_name = "./data/20240726/NREF_pwr_sense_data_20240726_1646.csv"
     CSVX = CSV(csv_name)
 
     ANT = 0
@@ -527,7 +526,9 @@ if __name__ == "__main__":
     ch_list_hb = [42, 58, 106, 122, 138, 155]
 
     for chx in ch_list_hb:
-        msadc_pwr_sense_by_dig_pwr(chx, ANT)
+        msadc_pwr_sense_by_dig_pwr(chx, 0)
+        msadc_pwr_sense_by_dig_pwr(chx, 1)
+
 
     # for dig_pwr in range(640, 2000, 192):
     #    msadc_pwr_sense_by_ch(dig_pwr, ANT, ch_list_hb)

@@ -172,7 +172,7 @@ class CMP180(GenericInstrument):
         self.fsp_set_enpwr(30)
         self.fsp_on()
         peak_pwr = self.fsp_peak_pwr()
-        self.fsp_set_enpwr(int(float(peak_pwr)) + 3)
+        self.fsp_set_enpwr(int(float(peak_pwr)) + 5)
         # self.fsp_off()
         return True
 
@@ -192,7 +192,7 @@ class CMP180(GenericInstrument):
             for ynum in range(1, 3):
                 cmpx_route_list.append("RF{}.{}".format(ynum, xnum))
         if route in cmpx_route_list:
-            self.write("ROUTe:WLAN:MEAS{}:SPATh \"{}\"".format(self.MeasNum, route))
+            self.write("ROUTe:GPRF:MEAS{}:SPATh \"{}\"".format(self.MeasNum, route))
             return True
         else:
             print("Route ERROR: {}".format(route))

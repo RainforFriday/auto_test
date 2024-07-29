@@ -190,7 +190,7 @@ class cal_pwrf:
             print("Input Error!!!")
 
 
-    def cal_pwrf_lb(self, ant_sel="0", ch_gainmap_dict = {1: "966", 7: "96F", 13: "975"}):
+    def cal_pwrf_lb_ofdm(self, ant_sel="0", ch_gainmap_dict = {1: "966", 7: "96F", 13: "975"}):
         # CHGAINMAPDICT should match tx gain map, setpwr 15
         # CHGAINMAPDICT , CH: ANAINDEX+DIGINDEX
 
@@ -340,7 +340,17 @@ class cal_pwrf:
             time.sleep(1)
             pwr_msadc_mw = MSADCX.ms_portdc() - pwrofst_msadc
             # print(pwr_msadc_mw)
-            pwr_msadc_mw_cal = 0.00170*pwr_msadc_mw * pwr_msadc_mw + 0.8466*pwr_msadc_mw
+
+            coef_dict = {42:  [4.4E-4, 8E-1, 1.5],
+                         58:  [3.3E-4, 7E-1, 1.5],
+                         106: [4.4E-4, 8E-1, 0],
+                         122: [4.0E-4, 8E-1, 0],
+                         138: [6.0E-4, 1.0, 0],
+                         155: [5.0E-4, 1.0, 0]}
+
+            # for chx
+            # pwr_msadc_mw_cal = 0.00170*pwr_msadc_mw * pwr_msadc_mw + 0.8466*pwr_msadc_mw
+            pwr_msadc_mw_cal = coef_dict[chx][0]*pwr_msadc_mw * pwr_msadc_mw + coef_dict[chx][1]*pwr_msadc_mw + coef_dict[chx][2]
             pwr_msadc_dbm_cal = 10.0 * math.log10(pwr_msadc_mw_cal)
 
             if chx <70:

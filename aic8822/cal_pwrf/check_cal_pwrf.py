@@ -168,7 +168,7 @@ if __name__ == "__main__":
     CMPX.open_tcp(host, port)
 
     BOADINFO = "NO2"
-    csv_path = "./data/20240725/test2_hb.csv"
+    csv_path = "./data/20240729/test_hb.csv"
     # csv_header = "BOAEDNUM, ch1_ms, ch7_ms, ch13_ms, c cmp_pwr, cmp_evm, gain_index".format(BNUM)
     CSVX = CSV(csv_path)
     # CSVX.write_append_line("")
@@ -190,3 +190,5 @@ if __name__ == "__main__":
     CSVX.write_append_line(",".join([BOADINFO] + res_ant0 + ["NONE"] + res_ant1))
 
     # cal_pwrf_lb("0", ch_gainmap_dict_lb)
+
+    # 1 ref
