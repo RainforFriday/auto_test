@@ -9,7 +9,7 @@ from aic8822.pwr_sense.GlobalVar import *
 from aic8822.msadc.msadc import *
 
 
-class cal_pwrf:
+class cal_txpf:
     def __init__(self):
         self.UARTc = GX.get_value("UARTc")
 
@@ -320,8 +320,8 @@ class cal_pwrf:
             i = i + 1
         return ch_offset_dict
 
-    def cal_pwrf_lb_11b(self, ant_sel="0", ch_gainmap_dict = {1: "966", 7: "96F", 13: "975"}):
-        # CHGAINMAPDICT should match tx gain map, setpwr 15
+    def cal_pwrf_lb_11b(self, ant_sel="0", ch_gainmap_dict = {1: "974", 7: "974", 13: "977"}):
+        # CHGAINMAPDICT should match tx gain map, setpwr 18
         # CHGAINMAPDICT , CH: ANAINDEX+DIGINDEX
 
         # fix 2.4G 11B APC
@@ -548,7 +548,21 @@ if __name__ == "__main__":
     UARTc.open()
     GX.set_value("UARTc", UARTc)
 
-    cal_pwrf_lb("1")
-    # cal_pwrf_hb("0")
+    CALX = cal_txpf()
+
+    # 1 cal lb ofdm
+    ch_gainmap_dict_lb_ofdm = {} # get from tx gain map
+    CALX.cal_pwrf_lb_ofdm(ant_sel="0", ch_gainmap_dict=ch_gainmap_dict_lb_ofdm)
+    CALX.cal_pwrf_lb_ofdm(ant_sel="1", ch_gainmap_dict=ch_gainmap_dict_lb_ofdm)
+
+    # 2 cal lb 11B
+    ch_gainmap_dict_lb_11b = {} # get from tx gain map
+    CALX.cal_pwrf_lb_11b(ant_sel="0", ch_gainmap_dict=ch_gainmap_dict_lb_11b)
+    CALX.cal_pwrf_lb_11b(ant_sel="1", ch_gainmap_dict=ch_gainmap_dict_lb_11b)
+
+    # 3 cal hb
+    ch_gainmap_dict_hb = {} # get from tx gain map
+    CALX.cal_pwrf_hb(ant_sel="0", ch_gainmap_dict=ch_gainmap_dict_hb)
+    CALX.cal_pwrf_hb(ant_sel="1", ch_gainmap_dict=ch_gainmap_dict_hb)
 
     UARTc.close()

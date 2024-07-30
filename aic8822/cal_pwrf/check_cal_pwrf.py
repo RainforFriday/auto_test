@@ -8,15 +8,25 @@ from icbasic.aicintf.uart import *
 from aic8822.pwr_sense.GlobalVar import *
 global_create()
 global GX
-from aic8822.cal_pwrf.cal_pwrf import *
+from aic8822.cal_pwrf.cal_txpf import *
 from aic8822.pwr_sense.csv import *
 
 
-def cmp_ms_pwr_by_ch(l_ch=[1, 7, 13], setpwr = 15):
+def cmp_ms_pwr_by_ch(l_ch=[1, 7, 13], setpwr = 15, standard = "11b"):
 
-    setrate_ucmd = "setrate 5 7"
-    setbw_ucmd = "setbw 1 1"
-    setlen_ucmd = "setlen 20000"
+    if standard == "OFDM":
+        setrate_ucmd = "setrate 5 7"
+        setbw_ucmd = "setbw 1 1"
+        setlen_ucmd = "setlen 20000"
+    elif standard == "11B":
+        setrate_ucmd = "setrate 0 3"
+        setbw_ucmd = "setbw 0 0"
+        setlen_ucmd = "setlen 2000"
+    else:
+        setrate_ucmd = "setrate 5 7"
+        setbw_ucmd = "setbw 1 1"
+        setlen_ucmd = "setlen 20000"
+
     UARTc.sendcmd("settx 0")
     UARTc.sendcmd("pwrmm 1")
     UARTc.sendcmd(setrate_ucmd)
@@ -32,6 +42,8 @@ def cmp_ms_pwr_by_ch(l_ch=[1, 7, 13], setpwr = 15):
         CMPX.wlan_set_standard("11ac")
     elif rate.strip().split(" ")[0] == "2":
         CMPX.wlan_set_standard("11n")
+    elif rate.strip() == "0 3":
+        CMPX.wlan_set_standard("11b")
 
     if "0 0" in bw:
         CMPX.wlan_set_bandwidth("20")
@@ -51,12 +63,23 @@ def cmp_ms_pwr_by_ch(l_ch=[1, 7, 13], setpwr = 15):
         time.sleep(2)
 
         UARTc.sendcmd("settx 1")
-        CMPX.wlan_auto_peak_pwr()
+        if standard == "OFDM":
+            CMPX.wlan_auto_peak_pwr()
+        else:
+            CMPX.wlan_set_peakpwr(30)
         CMPX.wlan_meas_start()
         time.sleep(2)
 
-        ms_pwr = CMPX.wlan_meas_pwr()
-        ms_evm = CMPX.wlan_meas_evm()
+        if standard == "OFDM":
+            ms_pwr = CMPX.wlan_meas_pwr()
+            ms_evm = CMPX.wlan_meas_evm()
+        elif standard == "11B":
+            ms_pwr = CMPX.wlan_meas_11b_pwr()
+            ms_evm = CMPX.wlan_meas_11b_evm_rms()
+        else:
+            ms_pwr = CMPX.wlan_meas_pwr()
+            ms_evm = CMPX.wlan_meas_evm()
+
         CMPX.wlan_meas_abort()
 
         l_reg = UARTc.read_reg("403422C8")
@@ -70,20 +93,30 @@ def cmp_ms_pwr_by_ch(l_ch=[1, 7, 13], setpwr = 15):
     return ch_gainmap_dict, ch_pwr_dict
 
 
-def test_lb_ant(ant_sel="0"):
+def test_lb_ant(ant_sel="0", standard = "OFDM"):
     l_ch = [1, 7, 13]
-    pwr = 15
+    if standard == "OFDM":
+        pwr = 15
+    elif standard == "11B":
+        pwr = 18
+    else:
+        pwr =15
 
     if ant_sel == "0":
         CMPX.wlan_set_route("RF1.8")
     elif ant_sel == "1":
         CMPX.wlan_set_route("RF2.8")
 
-    ch_gainmap_dict, ch_mspwr_dict = cmp_ms_pwr_by_ch(l_ch, pwr)
+    ch_gainmap_dict, ch_mspwr_dict = cmp_ms_pwr_by_ch(l_ch, pwr, standard)
     print(ch_gainmap_dict)
 
     # ch_gainmap_dict = {1: "97B", 7: "97E", 13: "97E"}
-    ch_ofst_dict = cal_pwrf().cal_pwrf_lb(ant_sel, ch_gainmap_dict)
+    if standard == "OFDM":
+        ch_ofst_dict = cal_txpf().cal_pwrf_lb_ofdm(ant_sel, ch_gainmap_dict)
+    elif standard == "11B":
+        ch_ofst_dict = cal_txpf().cal_pwrf_lb_11b(ant_sel, ch_gainmap_dict)
+    else:
+        ch_ofst_dict = cal_txpf().cal_pwrf_lb_ofdm(ant_sel, ch_gainmap_dict)
     print(ch_ofst_dict)
 
     ch_calpwr_dict = {}
@@ -127,7 +160,7 @@ def test_hb_ant(ant_sel="0"):
     print(ch_mspwr_dict)
 
     # ch_gainmap_dict = {1: "97B", 7: "97E", 13: "97E"}
-    ch_ofst_dict = cal_pwrf().cal_pwrf_hb(ant_sel, ch_gainmap_dict)
+    ch_ofst_dict = cal_txpf().cal_pwrf_hb(ant_sel, ch_gainmap_dict)
     print(ch_ofst_dict)
 
     ch_calpwr_dict = {}
@@ -168,7 +201,7 @@ if __name__ == "__main__":
     CMPX.open_tcp(host, port)
 
     BOADINFO = "NO2"
-    csv_path = "./data/20240729/test_hb.csv"
+    csv_path = "./data/20240730/test_11b.csv"
     # csv_header = "BOAEDNUM, ch1_ms, ch7_ms, ch13_ms, c cmp_pwr, cmp_evm, gain_index".format(BNUM)
     CSVX = CSV(csv_path)
     # CSVX.write_append_line("")
@@ -177,18 +210,19 @@ if __name__ == "__main__":
     GX.set_value("CSVX", CSVX)
     GX.set_value("CMPX", CMPX)
 
-    # lb cal
-    # res_ant0 = test_lb_ant("0")
-    # res_ant1 = test_lb_ant("1")
+    # lb cal OFDM
+    print("CAL LB OFDM")
+    res_ant0_ofdm = test_lb_ant("0", "OFDM")
+    res_ant1_ofdm = test_lb_ant("1", "OFDM")
+
+    # lb cal 11B
+    print("CAL LB 11B")
+    res_ant0_11b = test_lb_ant("0", "11B")
+    res_ant1_11b = test_lb_ant("1", "11B")
+
 
     # hb cal
-    res_ant0 = test_hb_ant("0")
-    res_ant1 = test_hb_ant("1")
+    # res_ant0 = test_hb_ant("0")
+    # res_ant1 = test_hb_ant("1")
 
-    # hb cal
-
-    CSVX.write_append_line(",".join([BOADINFO] + res_ant0 + ["NONE"] + res_ant1))
-
-    # cal_pwrf_lb("0", ch_gainmap_dict_lb)
-
-    # 1 ref
+    # CSVX.write_append_line(",".join([BOADINFO] + res_ant0_ofdm + [" "] + res_ant1_ofdm + [" "] + res_ant0_11b + [" "] + res_ant1_11b))

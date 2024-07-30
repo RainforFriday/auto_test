@@ -289,11 +289,14 @@ class CMP180(GenericInstrument):
     def wlan_meas_11b_avg(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:MODulation:DSSS:AVERage?".format(self.MeasNum))
 
-    def wlan_meas_11b_evm(self):
-        return self.wlan_meas_11b_avg().split(",")[5]
+    def wlan_meas_11b_evm_peak(self):
+        return "{:.2f}".format(float(self.wlan_meas_11b_avg().split(",")[5]))
+
+    def wlan_meas_11b_evm_rms(self):
+        return "{:.2f}".format(float(self.wlan_meas_11b_avg().split(",")[6]))
 
     def wlan_meas_11b_pwr(self):
-        return self.wlan_meas_11b_avg().split(",")[4]
+        return "{:.2f}".format(float(self.wlan_meas_11b_avg().split(",")[4]))
 
     def wlan_meas_avg(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:MODulation:AVERage?".format(self.MeasNum))
@@ -364,9 +367,10 @@ if __name__ == "__main__":
     CMPX = CMP180()
     CMPX.open_tcp(host, port)
     print(CMPX.id_string())
-    print(CMPX.wlan_meas_evm())
+    print(CMPX.wlan_meas_11b_avg())
+    #print(CMPX.wlan_meas_evm())
     # evm = CMPX.wlan_meas_evm()
     # print(evm)
-    print(CMPX.wlan_meas_pwr())
+    #print(CMPX.wlan_meas_pwr())
 
     CMPX.close()
