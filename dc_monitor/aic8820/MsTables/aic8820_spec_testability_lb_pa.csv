@@ -1,0 +1,7 @@
+Function,SUB-TOP,BLOCK,msadc_mux_regname,msadc_mux_regvalue,test_enable_regname,test_enable_regvalue,test_mode_regname,test_mode_regvalue,test_bits_regname,test_bits_regvalue,test_case,test_band,
+,,,,,,,,,,,,,
+pa_bias_hb_vl2,WF,PA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_HB,WF_TX_ON
+pa_bias_hb_vl1,WF,PA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_HB,WF_TX_ON
+pa_bias_lb_vl,WF,PA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b010,TX_ON,WF_LB,WF_TX_ON
+pa_bias_vm,WF,PA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b011,TX_ON,WF_LB,WF_TX_ON
+pa_bg_v1v,WF,PA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_pa,1'b1,,,wf_test_bit,3'b100,TX_ON,WF_LB,WF_TX_ON

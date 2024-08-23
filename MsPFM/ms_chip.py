@@ -33,14 +33,14 @@ def MSAIC(COMNUM, xlsx_path, csv_path):
 
 
 if __name__ == "__main__":
-    COMNUM = 7
+    COMNUM = 11
 
     # aic8820
-    #xlsx_path = "./AIC8820/MsTables/WF_MEASURE_TABLE_IPC_20240715_V1.xlsx"
-    #csv_path = "./AIC8820/MsDatas/AIC8820_WF_MEASURE_DATA_IPC_20240715_V1.csv"
+    xlsx_path = "./AIC8820/MsTables/WF_MEASURE_TABLE_20240821_11B_X0.xlsx"
+    csv_path = "./AIC8820/MsDatas/NO2_AIC8820D40L_11b_spwr_20240821_x1.csv"
 
     # aic8822
-    xlsx_path = "./AIC8822/MsTables/WF_MEASURE_TABLE_LB_20240724_V1.xlsx"
-    csv_path = "./AIC8822/MsDatas/NO6_AIC8822_WF_MEASURE_DATA_LB_ANT1_20240724_V1.xlsx"
+    # xlsx_path = "./AIC8822/MsTables/WF_MEASURE_TABLE_LB_20240801.xlsx"
+    # csv_path = "./AIC8822/MsDatas/NO_U03_AIC8822_WF_MEASURE_DATA_LB_ANT1_20240801.xlsx"
 
     MSAIC(COMNUM, xlsx_path, csv_path)

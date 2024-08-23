@@ -146,12 +146,20 @@ class WF_MS:
             bw = " ".join(db_line.setbw_ucmd().strip().split(" ")[1:])
             len = " ".join(db_line.setlen_ucmd().strip().split(" ")[1:])
 
+            wlan_standard = "11ax"
             if rate.strip().split(" ")[0] == "5":
-                self.CMPX.wlan_set_standard("11ax")
+                wlan_standard = "11ax"
             elif rate.strip().split(" ")[0] == "4":
-                self.CMPX.wlan_set_standard("11ac")
+                wlan_standard = "11ac"
             elif rate.strip().split(" ")[0] == "2":
-                self.CMPX.wlan_set_standard("11n")
+                wlan_standard = "11n"
+            elif rate.strip().split(" ")[0] == "0":
+                if rate.strip().split(" ")[1] == "3":
+                    wlan_standard = "11b"
+                else:
+                    wlan_standard = "11g"
+
+            self.CMPX.wlan_set_standard(wlan_standard)
 
             # print(bw)
             if "0 0" in bw:
@@ -184,8 +192,12 @@ class WF_MS:
                     self.CMPX.wlan_auto_peak_pwr()
                     self.CMPX.wlan_meas_start()
                     time.sleep(2)
-                    ms_pwr = self.CMPX.wlan_meas_pwr()
-                    ms_evm = self.CMPX.wlan_meas_evm()
+                    if wlan_standard == "11b":
+                        ms_pwr = self.CMPX.wlan_meas_11b_pwr()
+                        ms_evm = self.CMPX.wlan_meas_11b_evm_rms()
+                    else:
+                        ms_pwr = self.CMPX.wlan_meas_pwr()
+                        ms_evm = self.CMPX.wlan_meas_evm()
                     self.CMPX.wlan_meas_abort()
 
                     results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, setpwr, cmdx, ms_pwr, ms_evm)

@@ -416,8 +416,8 @@ def gen_bits_table(xml_file, bits_table_file):
 #     for sub in child:
 #         print('sub-tag:', sub.tag, ', sub-attrib: ', sub.attrib, ', sub-text: ', sub.text)
 if __name__ == '__main__':
-    xml_file_path = "./xml/aic8818/aic8818_hard.xml"
-    bits_table_file = "aic8818_bits_table.csv"
+    xml_file_path = "./xml/aic8820/aic8820_hard.xml"
+    bits_table_file = "aic8820_bits_table.csv"
     gen_bits_table(xml_file_path, bits_table_file)
 
 

@@ -24,8 +24,9 @@ def flt_11b(f0):
 
 
 if __name__ == "__main__":
-    UARTX = Uart(7)
-    UARTX.open()
-    value = flt_11b(350)
-    UARTX.write_reg("40330320", value)
+    #UARTX = Uart(7)
+    #UARTX.open()
+    value = flt_11b(300)
+    print(value)
+    # UARTX.write_reg("40330320", value)
 
