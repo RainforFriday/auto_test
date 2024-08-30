@@ -36,11 +36,11 @@ if __name__ == "__main__":
     COMNUM = 11
 
     # aic8820
-    xlsx_path = "./AIC8820/MsTables/WF_MEASURE_TABLE_20240821_11B_X0.xlsx"
-    csv_path = "./AIC8820/MsDatas/NO2_AIC8820D40L_11b_spwr_20240821_x1.csv"
+    # xlsx_path = "./AIC8820/MsTables/WF_MEASURE_TABLE_20240821_11B_X0.xlsx"
+    # csv_path = "./AIC8820/MsDatas/NO2_AIC8820D40L_11b_spwr_20240821_x1.csv"
 
     # aic8822
-    # xlsx_path = "./AIC8822/MsTables/WF_MEASURE_TABLE_LB_20240801.xlsx"
-    # csv_path = "./AIC8822/MsDatas/NO_U03_AIC8822_WF_MEASURE_DATA_LB_ANT1_20240801.xlsx"
+    xlsx_path = "AIC8822/MsTables/20240830/WF_MEASURE_TABLE_LB_20240830.xlsx"
+    csv_path = "./AIC8822/MsDatas/20240830/AIC8822U05_NO1_ANT0_20240830_X0.xlsx"
 
     MSAIC(COMNUM, xlsx_path, csv_path)

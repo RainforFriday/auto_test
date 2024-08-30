@@ -110,7 +110,7 @@ def measure_dc_by_channel(db_nets_by_channel):
 if __name__ == "__main__":
     global UARTc
 
-    UARTc = uart_open(7)
+    UARTc = uart_open(11)
     UARTc.open()
 
     msadcx = MSADC(clk_div=30, acc_mode=1, adc_id=1)
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     time.sleep(8)
     measure_dc_by_channel(aic8822_spec.db_nets_by_band("WF_LB"))
 
-    with open("./MsDatas/aic8822_test_lb_dc_20240731.csv", "a+") as CSVFILE:
+    with open("./MsDatas/aic8822_test_lb_dc_20240823_X3.csv", "a+") as CSVFILE:
         CSVFILE.writelines(datax)
 
     """

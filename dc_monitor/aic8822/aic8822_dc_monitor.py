@@ -118,7 +118,7 @@ if __name__ == "__main__":
     msadcx.adconfig()
     msadcx.input_sel_testport()
 
-    spec_table_path = "./Tables/aic8822_spec_testability_20240619.csv"
+    spec_table_path = "./Tables/aic8822_spec_testability_2024730.csv"
     aic8822_spec = SpecTable(spec_table_path)
     bits_table_path = "./Tables/aic8822_bits_table.csv"
     aic8822_bits = BitsTable(bits_table_path)
@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
     UARTc.close()
 
-    with open("aic8822_test_hb1_pwr_20240619.csv", "a+") as CSVFILE:
+    with open("aic8822_test_lb1_pwr_20240619.csv", "a+") as CSVFILE:
         CSVFILE.writelines(datax)
 
     with open("aic8822_test_cmd_20240619.csv", "w") as CMDX:

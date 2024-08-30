@@ -83,7 +83,7 @@ class APCXLSX:
                 # for AIC8822, AIC8820H cilumn = 25
                 value_hex = apc_sheet.cell(row=rowx, column=25).value[2:-1]
                 # for AIC8820, column = 24
-                #value_hex = apc_sheet.cell(row=rowx, column=24).value[2:-1]
+                # value_hex = apc_sheet.cell(row=rowx, column=24).value[2:-1]
                 value_bytes = value_bytes + self.reg_value_to_bytes(value_hex)
             apc_bytes_dict[sheet_name] = value_bytes
         return apc_bytes_dict[sheet_name]
