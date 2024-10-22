@@ -1,0 +1,10 @@
+Function,SUB-TOP,BLOCK,msadc_mux_regname,msadc_mux_regvalue,test_enable_regname,test_enable_regvalue,test_mode_regname,test_mode_regvalue,test_bits_regname,test_bits_regvalue,test_case,test_band,
+,,,,,,,,,,,,,
+dtmx_dvdd_sw,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b000,TX_ON,WF_LB,WF_TX_ON
+dtmx_vref_lo,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b001,TX_ON,WF_LB,WF_TX_ON
+dtmx_dac_vb,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b010,TX_ON,WF_LB,WF_TX_ON
+dtmx_dac_vb_cscd,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b011,TX_ON,WF_LB,WF_TX_ON
+dtmx_logen_reg,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b100,TX_ON,WF_LB,WF_TX_ON
+dtmx_logen_dvdd_dll,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b101,TX_ON,WF_LB,WF_TX_ON
+dtmx_logen_vbn_mont,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b110,TX_ON,WF_LB,WF_TX_ON
+dtmx_logen_vbp_mont,WF,DTMX,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_dtmx,1'b1,,,wf_test_bit,3'b111,TX_ON,WF_LB,WF_TX_ON

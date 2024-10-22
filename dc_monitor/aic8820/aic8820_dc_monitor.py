@@ -81,7 +81,7 @@ def measure_dc_by_channel(db_nets_by_channel):
 if __name__ == "__main__":
     global UARTc
 
-    UARTc = uart_open(11)
+    UARTc = uart_open(7)
     UARTc.open()
 
     msadcx = MSADC()
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     msadcx.adconfig()
     msadcx.input_sel_testport()
 
-    spec_table_path = "./MsTables/aic8820_spec_testability_lb_pa.csv"
+    spec_table_path = "./MsTables/aic8820_spec_testability_dtmx.csv"
     aic_spec = SpecTable(spec_table_path)
     bits_table_path = "./MsTables/aic8820_bits_table.csv"
     aic_bits = BitsTable(bits_table_path)
@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
     UARTc.close()
 
-    with open("./MsDatas/aic8820_lb_pa_20240820.csv", "a+") as CSVFILE:
+    with open("./MsDatas/aic8820_lb_dtmx_20241008.csv", "a+") as CSVFILE:
         CSVFILE.writelines(datax)
 
     # with open("aic8822_test_cmd_20240619.csv", "w") as CMDX:
