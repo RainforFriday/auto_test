@@ -36,28 +36,38 @@ class WF_MS_TABLE:
 class WF_MS_LINE:
     def __init__(self, l_line):
         self.l_line = l_line
+        self.index_offset = 3
+
+    def boardno(self):
+        return str(self.l_line[-3 + self.index_offset]).strip()
+
+    def binversion(self):
+        return str(self.l_line[-2 + self.index_offset]).strip()
+
+    def route(self):
+        return str(self.l_line[-1 + self.index_offset]).strip()
 
     def enable(self):
-        return str(self.l_line[0]).strip()
+        return str(self.l_line[0 + self.index_offset]).strip()
 
     def l_ch(self):
-        ch_string = str(self.l_line[1]).strip()
+        ch_string = str(self.l_line[1 + self.index_offset]).strip()
         if " " in ch_string:
             return list(range(int(ch_string.split(" ")[0]), int(ch_string.split(" ")[1]), int(ch_string.split(" ")[2])))
         else:
             return ch_string.split(",")
 
     def rate(self):
-        return str(self.l_line[2]).strip()
+        return str(self.l_line[2 + self.index_offset]).strip()
 
     def bw(self):
-        return str(self.l_line[3]).strip()
+        return str(self.l_line[3 + self.index_offset]).strip()
 
     def len(self):
-        return str(self.l_line[4]).strip()
+        return str(self.l_line[4 + self.index_offset]).strip()
 
     def l_pwr(self):
-        pwr_string = self.l_line[5].strip()
+        pwr_string = self.l_line[5 + self.index_offset].strip()
         if " " in pwr_string:
             return list(range(int(pwr_string.split(" ")[0]), int(pwr_string.split(" ")[1]), int(pwr_string.split(" ")[2])))
         elif ":" in pwr_string:
@@ -66,19 +76,19 @@ class WF_MS_LINE:
             return pwr_string.split(",")
 
     def uart_cmd(self):
-        return self.l_line[6]
+        return self.l_line[6 + self.index_offset]
 
     def res_pwr(self):
-        return self.result_cell_check(self.l_line[7])
+        return self.result_cell_check(self.l_line[7 + self.index_offset])
 
     def res_evm_rms(self):
-        return self.result_cell_check(self.l_line[8])
+        return self.result_cell_check(self.l_line[8 + self.index_offset])
 
     def res_evm_peak(self):
-        return self.result_cell_check(self.l_line[9])
+        return self.result_cell_check(self.l_line[9 + self.index_offset])
 
     def res_mask(self):
-        return self.result_cell_check(self.l_line[10])
+        return self.result_cell_check(self.l_line[10 + self.index_offset])
 
     @staticmethod
     def result_cell_check(cell_value):
@@ -127,7 +137,7 @@ class WF_MS:
         self.CSVX = GX.get_value("CSVX")
 
     def wf_ms_table(self):
-        csv_header = "Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg\n"
+        csv_header = "BoardNo, BinVersion, Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg\n"
         self.CSVX.write_append_line(csv_header)
         for linex in self.l_test_lines:
             db_line = WF_MS_LINE(linex)
@@ -145,6 +155,10 @@ class WF_MS:
             rate = " ".join(db_line.setrate_ucmd().strip().split(" ")[1:])
             bw = " ".join(db_line.setbw_ucmd().strip().split(" ")[1:])
             len = " ".join(db_line.setlen_ucmd().strip().split(" ")[1:])
+
+            # set route
+            if db_line.route() != "":
+                self.CMPX.wlan_set_route(db_line.route())
 
             wlan_standard = "11ax"
             if rate.strip().split(" ")[0] == "5":
@@ -200,7 +214,7 @@ class WF_MS:
                         ms_evm = self.CMPX.wlan_meas_evm()
                     self.CMPX.wlan_meas_abort()
 
-                    results = "{},{},{},{},{},{},{},{}".format(ch, rate, bw, len, setpwr, cmdx, ms_pwr, ms_evm)
+                    results = "{},{},{},{},{},{},{},{},{},{}".format(db_line.boardno(), db_line.binversion(), ch, rate, bw, len, setpwr, cmdx, ms_pwr, ms_evm)
                     self.CSVX.write_append_line(results)
                     print(results)
         self.UARTX.sendcmd("settx 0")

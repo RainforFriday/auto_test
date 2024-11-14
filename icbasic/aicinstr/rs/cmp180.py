@@ -349,15 +349,35 @@ class CMP180(GenericInstrument):
     def wlan_meas_tsmask_avg(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:AVERage?".format(self.MeasNum))
 
+    def wlan_meas_tsmask_avg_maxval(self):
+        return self.__get_mask_margin__(self.wlan_meas_tsmask_avg())
+
     def wlan_meas_tsmask_min(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:MINimum?".format(self.MeasNum))
+
+    def wlan_meas_tsmask_min_maxval(self):
+        return self.__get_mask_margin__(self.wlan_meas_tsmask_min())
 
     def wlan_meas_tsmask_max(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:MAXimum?".format(self.MeasNum))
 
+    def wlan_meas_tsmask_max_maxval(self):
+        return self.__get_mask_margin__(self.wlan_meas_tsmask_max())
+
     def wlan_meas_tsmask_current(self):
         return self.query("FETCh:WLAN:MEAS{}:MEValuation:TSMask:CURRent?".format(self.MeasNum))
 
+    def wlan_meas_tsmask_current_maxval(self):
+        return self.__get_mask_margin__(self.wlan_meas_tsmask_current())
+
+    def __get_mask_margin__(self, mask_str):
+        mask_margin_lines = mask_str.split(",")[2:]
+        # print(mask_margin_lines)
+        mask_margin_res = float(mask_margin_lines[0])
+        for valuex_str in mask_margin_lines:
+            if mask_margin_res < float(valuex_str):
+                mask_margin_res = float(valuex_str)
+        return mask_margin_res
 
 
 
@@ -367,7 +387,10 @@ if __name__ == "__main__":
     CMPX = CMP180()
     CMPX.open_tcp(host, port)
     print(CMPX.id_string())
-    print(CMPX.wlan_meas_11b_avg())
+    print(CMPX.wlan_meas_tsmask_max_maxval())
+    #print(CMPX.wlan_meas_tsmask_max())
+    #print(CMPX.wlan_meas_tsmask_avg())
+    #print(CMPX.wlan_meas_11b_avg())
     #print(CMPX.wlan_meas_evm())
     # evm = CMPX.wlan_meas_evm()
     # print(evm)
