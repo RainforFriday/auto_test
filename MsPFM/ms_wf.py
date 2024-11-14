@@ -81,14 +81,17 @@ class WF_MS_LINE:
     def res_pwr(self):
         return self.result_cell_check(self.l_line[7 + self.index_offset])
 
-    def res_evm_rms(self):
+    def res_evm_avg(self):
         return self.result_cell_check(self.l_line[8 + self.index_offset])
 
     def res_evm_peak(self):
         return self.result_cell_check(self.l_line[9 + self.index_offset])
 
-    def res_mask(self):
+    def res_mask_avg(self):
         return self.result_cell_check(self.l_line[10 + self.index_offset])
+
+    def res_mask_max(self):
+        return self.result_cell_check(self.l_line[11 + self.index_offset])
 
     @staticmethod
     def result_cell_check(cell_value):
@@ -206,15 +209,54 @@ class WF_MS:
                     self.CMPX.wlan_auto_peak_pwr()
                     self.CMPX.wlan_meas_start()
                     time.sleep(2)
+
+                    # measure pwr and evm
                     if wlan_standard == "11b":
-                        ms_pwr = self.CMPX.wlan_meas_11b_pwr()
-                        ms_evm = self.CMPX.wlan_meas_11b_evm_rms()
+                        if db_line.res_pwr():
+                            ms_pwr = self.CMPX.wlan_meas_11b_pwr()
+                        else:
+                            ms_pwr = "NA"
+
+                        if db_line.res_evm_avg():
+                            ms_evm_avg = self.CMPX.wlan_meas_11b_evm_rms()
+                        else:
+                            ms_evm_avg = "NA"
+
+                        if db_line.res_evm_peak():
+                            ms_evm_peak = self.CMPX.wlan_meas_11b_evm_peak()
+                        else:
+                            ms_evm_peak = "NA"
                     else:
-                        ms_pwr = self.CMPX.wlan_meas_pwr()
-                        ms_evm = self.CMPX.wlan_meas_evm()
+                        if db_line.res_pwr():
+                            ms_pwr = self.CMPX.wlan_meas_pwr()
+                        else:
+                            ms_pwr = "NA"
+
+                        if db_line.res_evm_avg():
+                            ms_evm_avg = self.CMPX.wlan_meas_evm()
+                        else:
+                            ms_evm_avg = "NA"
+
+                        if db_line.res_evm_peak():
+                            ms_evm_peak = self.CMPX.wlan_meas_evm_peak()
+                        else:
+                            ms_evm_peak = "NA"
+
+                    # measure mask
+                    if db_line.res_mask_avg():
+                        ms_mask_avg = self.CMPX.wlan_meas_tsmask_avg_maxval()
+                    else:
+                        ms_mask_avg = "NA"
+
+                    if db_line.res_mask_max():
+                        ms_mask_max = self.CMPX.wlan_meas_tsmask_max_maxval()
+                    else:
+                        ms_mask_max = "NA"
+
                     self.CMPX.wlan_meas_abort()
 
-                    results = "{},{},{},{},{},{},{},{},{},{}".format(db_line.boardno(), db_line.binversion(), ch, rate, bw, len, setpwr, cmdx, ms_pwr, ms_evm)
+                    results = "{},{},{},{},{},{},{},{},{},{},{},{},{}".format(db_line.boardno(), db_line.binversion(), ch, rate,
+                                                                     bw, len, setpwr, cmdx, ms_pwr, ms_evm_avg, ms_evm_peak, ms_mask_avg, ms_mask_max)
                     self.CSVX.write_append_line(results)
                     print(results)
         self.UARTX.sendcmd("settx 0")
@@ -225,7 +267,8 @@ if __name__ == "__main__":
     xlsx_path = "./MsTables/WF_MEASURE_TABLE_20240627_V1.xlsx"
 
     CSVX = CSV(csv_path)
-    csv_header = "Channel, Rate, BandWidth, Length, SetPwr, MsPwrAvg, MsEvmAvg\n"
+    csv_header = "Board NO, Bin, Channel, Rate, BandWidth, Length, SetPwr, CmdInfo, MsPwrAvg, MsEvmAvg, MsEvmPeak, " \
+                 "MsMaskAvg, MsMaskPeak\n"
     CSVX.write_append_line(csv_header)
 
     UARTc = Uart(8)
