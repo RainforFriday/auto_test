@@ -32,11 +32,18 @@ class Uart(COM):
         try:
             cmd_r = self.reg_r_cmd + " " + reg_address
             com_return = self.sendcmd(cmd_r)
+            # print("@@@")
+            # print(com_return)
+            """ del check cmd
             if com_return.split("\n")[0].strip() == cmd_r:
                 return com_return.split("\n")[1].strip().split("=")[1].strip()
             else:
                 wlogerror("ERROR: "+cmd_r)
                 return None
+            """
+            if True:
+                return com_return.split("\n")[1].strip().split("=")[1].strip()
+
         except Exception as e:
             wlogerror(e)
 
@@ -71,6 +78,8 @@ class Uart(COM):
         :return:
         """
         bits_value_dec = aicNum(str(bits_value)).DEC
+        # print("$$$")
+        # print(reg_address)
         reg_value_hex = self.read_reg(reg_address)
         return self.write_reg(reg_address, self.__reg_value_modify_bits__(reg_value_hex, bits_position, bits_value_dec))
 
@@ -114,6 +123,8 @@ class Uart(COM):
         reg_pos_width = abs(reg_pos_start - reg_pos_stop) + 1
         reg_address_mask = ~((pow(2, reg_pos_width) - 1) << min(reg_pos_start, reg_pos_stop))
         reg_value_mask = aicNum(reg_bits_value_dec).DEC << min(reg_pos_start, reg_pos_stop)
+        # print("###")
+        # print(old_reg_value_hex)
         new_reg_value = aicNum(aicNum(old_reg_value_hex).DEC & reg_address_mask | reg_value_mask).HEX
         return new_reg_value
 

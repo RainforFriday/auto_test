@@ -1,10 +1,10 @@
 from Bin import *
 
 if __name__ == "__main__":
-    old_apc_xlsx = "./aic8820/20241114/AIC8820_APC_24G_MCS11_20240522.xlsx"
-    new_apc_xlsx = "./aic8820/20241114/AIC8820_APC_24G_MCS11_20241114.xlsx"
-    old_bin = "./aic8820/20241114/testmode20_2024_1112_2037.bin"
-    new_bin = "./aic8820/20241114/testmode20_2024_1112_2037_bcd.bin"
+    old_apc_xlsx = "./aic8820/20241118/AIC8820_APC_24G_MCS11_20240522.xlsx"
+    new_apc_xlsx = "./aic8820/20241118/AIC8820_APC_24G_MCS11_20241118.xlsx"
+    old_bin = "./aic8820/20241118/testmode20_2024_1112_2037.bin"
+    new_bin = "./aic8820/20241118/testmode20_2024_1112_2037_9bcd.bin"
     #new_bin = "./aic8820/testmode_8820_0812_wf_pa_vh_vbit_7_new.bin"
 
     Binx = Bin(old_bin)

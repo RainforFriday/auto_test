@@ -118,7 +118,8 @@ if __name__ == "__main__":
     msadcx.adconfig()
     msadcx.input_sel_testport()
 
-    spec_table_path = "./MsTables/aic8822_spec_testability_20241021.csv"
+    spec_table_path = "./MsTables/aic8822_spec_testability_20241128_dac.csv"
+    res_data_path = "./MsDatas/aic8822_test_lb_dc_20241128_dac_bad.csv"
     aic8822_spec = SpecTable(spec_table_path)
     bits_table_path = "./MsTables/aic8822_bits_table.csv"
     aic8822_bits = BitsTable(bits_table_path)
@@ -134,9 +135,9 @@ if __name__ == "__main__":
     UARTc.sendcmd("settx 1")
     UARTc.sendcmd("settx 0")
     time.sleep(8)
-    measure_dc_by_channel(aic8822_spec.db_nets_by_band("WF_LB"))
+    measure_dc_by_channel(aic8822_spec.db_nets_by_band(["WF_LB", "WF"]))
 
-    with open("./MsDatas/aic8822_test_lb_dc_20241021_1707.csv", "a+") as CSVFILE:
+    with open(res_data_path, "a+") as CSVFILE:
         CSVFILE.writelines(datax)
 
     """
