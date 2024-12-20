@@ -79,6 +79,7 @@ class COM:
             # self.ser.write((cmdstr+'\r').encode())
             self.ser.write(cmd_byte)
             wlogdebug("COM CMD: "+cmdstr)
+            # wlog("COM CMD: "+cmdstr)
             time.sleep(0.05)  # from 0.2 to 0.02 <-xtan
             ser_result = self.ser.read(self.ser.in_waiting)
             com_return_value = str(ser_result, encoding="utf-8")
