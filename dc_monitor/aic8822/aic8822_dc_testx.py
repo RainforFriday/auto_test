@@ -118,8 +118,8 @@ if __name__ == "__main__":
     msadcx.adconfig()
     msadcx.input_sel_testport()
 
-    spec_table_path = "./MsTables/aic8822_spec_testability_20241128_dac.csv"
-    res_data_path = "./MsDatas/aic8822_test_lb_dc_20241128_dac_bad.csv"
+    spec_table_path = "./MsTables/aic8822_spec_testability_20250102.csv"
+    res_data_path = "./MsDatas/aic8822_test_hb_dc_20250108_vh_3.csv"
     aic8822_spec = SpecTable(spec_table_path)
     bits_table_path = "./MsTables/aic8822_bits_table.csv"
     aic8822_bits = BitsTable(bits_table_path)
@@ -128,6 +128,8 @@ if __name__ == "__main__":
     datax = []
 
     ms_cmd = ["MSADC_BASICONFIG, MSADC_ADCONFIG, MSADC_INPUT_SEL_TESTPORT\n"]
+
+    """"
     ms_cmd.append("setch 7, setrate 5 0, setpwr 14, settx 1, settx 0\n")
     UARTc.sendcmd("setch 7")
     UARTc.sendcmd("setrate 5 11")
@@ -141,6 +143,7 @@ if __name__ == "__main__":
         CSVFILE.writelines(datax)
 
     """
+
     ms_cmd.append("setch 100, setrate 5 0, setpwr 14, settx 1, settx 0\n")
     UARTc.sendcmd("setch 100")
     UARTc.sendcmd("setrate 5 1")
@@ -148,18 +151,26 @@ if __name__ == "__main__":
     UARTc.sendcmd("settx 1")
     UARTc.sendcmd("settx 0")
     time.sleep(8)
+    ### hb0_tmx_vh_vbit
+    UARTc.write_reg_mask("40344050", "6:4", "3")
+    ### hb1_tmx_vh_vbit
+    UARTc.write_reg_mask("403440C4", "20:18", "3")
+
     measure_dc_by_channel(aic8822_spec.db_nets_by_band(["WF_HB", "WF", "CM"]))
 
+    """
     ms_cmd.append("setch 6500\n")
     UARTc.sendcmd("setch 6500")
     time.sleep(8)
     measure_dc_by_channel(aic8822_spec.db_nets_by_band("WF_6E"))
+    """
 
     UARTc.close()
 
-    with open("aic8822_test_hb1_pwr_20240619.csv", "a+") as CSVFILE:
+    with open(res_data_path, "a+") as CSVFILE:
         CSVFILE.writelines(datax)
 
+    """
     with open("aic8822_test_cmd_20240619.csv", "w") as CMDX:
         CMDX.writelines(ms_cmd)
     """

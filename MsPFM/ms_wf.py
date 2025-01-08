@@ -36,9 +36,12 @@ class WF_MS_TABLE:
 class WF_MS_LINE:
     def __init__(self, l_line):
         self.l_line = l_line
-        self.index_offset = 3
+        self.index_offset = 4
 
     def boardno(self):
+        return str(self.l_line[-4 + self.index_offset]).strip()
+
+    def ant(self):
         return str(self.l_line[-3 + self.index_offset]).strip()
 
     def binversion(self):
@@ -140,7 +143,7 @@ class WF_MS:
         self.CSVX = GX.get_value("CSVX")
 
     def wf_ms_table(self):
-        csv_header = "BoardNo, BinVersion, Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg\n"
+        csv_header = "BoardNo, ANT, BinVersion, Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg\n"
         self.CSVX.write_append_line(csv_header)
         for linex in self.l_test_lines:
             db_line = WF_MS_LINE(linex)
@@ -255,7 +258,7 @@ class WF_MS:
 
                     self.CMPX.wlan_meas_abort()
 
-                    results = "{},{},{},{},{},{},{},{},{},{},{},{},{}".format(db_line.boardno(), db_line.binversion(), ch, rate,
+                    results = "{},{},{},{},{},{},{},{},{},{},{},{},{},{}".format(db_line.boardno(), db_line.ant(), db_line.binversion(), ch, rate,
                                                                      bw, len, setpwr, cmdx, ms_pwr, ms_evm_avg, ms_evm_peak, ms_mask_avg, ms_mask_max)
                     self.CSVX.write_append_line(results)
                     print(results)

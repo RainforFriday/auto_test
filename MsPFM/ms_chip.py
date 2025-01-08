@@ -40,7 +40,7 @@ if __name__ == "__main__":
     #csv_path = "./AIC8820/MsDatas/20241220/AIC8820H2_TT_OFDM_MASK_DATA_PWR_V00.csv"
 
     # aic8822
-    xlsx_path = "./AIC8822/MsTables/20241220/WF_MEASURE_TABLE_HB_20241220_1731.xlsx"
-    csv_path = "./AIC8822/MsDatas/20241220/WF_MEASURE_TABLE_HB_20241220_1748.csv"
+    xlsx_path = "./AIC8822/MsTables/20250108/WF_MEASURE_TABLE_20250108_1903.xlsx"
+    csv_path = "./AIC8822/MsDatas/20250108/WF_MEASURE_TABLE_20250108_1906.csv"
 
     MSAIC(COMNUM, xlsx_path, csv_path)

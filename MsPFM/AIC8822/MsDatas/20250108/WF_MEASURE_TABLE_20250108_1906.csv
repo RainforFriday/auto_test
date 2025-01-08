@@ -1,0 +1,4 @@
+BoardNo, ANT, BinVersion, Channel, Rate, BandWidth, Length, SetPwr, CMD, MsPwrAvg, MsEvmAvg
+#A2,ANT0,testmode22_dbg_tmx_vh_vbit.bin,7,5 11,0 0,10000,15,r 403422c8  [0x403422C8] = 0xCC3F496D    ,14.92,-44.27,NA,NA,NA
+#A2,ANT0,testmode22_dbg_tmx_vh_vbit.bin,42,5 11,0 0,10000,15,r 403422c8  [0x403422C8] = 0xD53F5B90    ,14.52,-43.00,NA,NA,NA
+#A2,ANT0,testmode22_dbg_tmx_vh_vbit.bin,58,5 11,0 0,10000,15,r 403422c8  [0x403422C8] = 0xDE3F5D64    ,13.82,-42.16,NA,NA,NA
