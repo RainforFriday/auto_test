@@ -1,0 +1,84 @@
+
+
+
+
+C:\Users\AIC_PC\AppData\Local\Programs\Python\Python38\python.exe "D:/Program Files/JetBrains/PyCharm 2022.3.3/plugins/python/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --client 127.0.0.1 --port 57883 --file D:\PyProject\AIC_TEST\aic8819\Rx\cmp_rx.py 
+Connected to pydev debugger (build 223.8836.43)
+successful : Rohde&Schwarz,CMP,1201.0002k18/101743,5.0.40.42
+Com27 is open
+-75.0 下per: 9.0%
+-87.5 下per: 16.3%
+-81.25 下per: 12.1%
+-78.125 下per: 12.0%
+-76.5625 下per: 9.7%
+-77.34375 下per: 9.5%
+-77.734375 下per: 14.3%
+choose pwr: -77.34375   per：7.0
+保存的数据行： {'NO': 1, 'ch': 7, 'rate': '11ax', 'mcs': 0, 'bw': 20, 'lvl': -77.34, 'per': 7.0}
+-75.0 下per: 96.2%
+-62.5 下per: 7.3%
+-68.75 下per: 96.5%
+-65.625 下per: 95.6%
+-64.0625 下per: 6.1%
+-64.84375 下per: 44.6%
+-64.453125 下per: 34.2%
+choose pwr: -64.0625   per：5.9
+保存的数据行： {'NO': 1, 'ch': 7, 'rate': '11ax', 'mcs': 11, 'bw': 20, 'lvl': -64.06, 'per': 5.9}
+-75.0 下per: 5.5%
+-87.5 下per: 9.3%
+-93.75 下per: 100.0%
+-90.625 下per: 27.3%
+-89.0625 下per: 18.4%
+-88.28125 下per: 19.4%
+-87.890625 下per: 18.0%
+choose pwr: -87.5   per：15.4
+保存的数据行： {'NO': 1, 'ch': 7, 'rate': '11ax', 'mcs': 0, 'bw': 40, 'lvl': -87.5, 'per': 15.4}
+-75.0 下per: 100.0%
+-62.5 下per: 100.0%
+-56.25 下per: 7.8%
+-59.375 下per: 8.4%
+-60.9375 下per: 76.3%
+-60.15625 下per: 14.4%
+-59.765625 下per: 9.8%
+choose pwr: -59.765625   per：9.8
+保存的数据行： {'NO': 1, 'ch': 7, 'rate': '11ax', 'mcs': 11, 'bw': 40, 'lvl': -59.77, 'per': 9.8}
+-75.0 下per: 0.7%
+-87.5 下per: 0.0%
+-93.75 下per: 10.8%
+-90.625 下per: 1.4%
+-92.1875 下per: 3.2%
+-92.96875 下per: 4.4%
+-93.359375 下per: 9.1%
+choose pwr: -93.359375   per：7.2
+保存的数据行： {'NO': 1, 'ch': 106, 'rate': '11ax', 'mcs': 0, 'bw': 20, 'lvl': -93.36, 'per': 7.2}
+-75.0 下per: 100.0%
+-62.5 下per: 100.0%
+-56.25 下per: 12.7%
+-53.125 下per: 5.7%
+-54.6875 下per: 8.4%
+-55.46875 下per: 10.9%
+-55.078125 下per: 7.9%
+choose pwr: -55.078125   per：10.8
+保存的数据行： {'NO': 1, 'ch': 106, 'rate': '11ax', 'mcs': 11, 'bw': 20, 'lvl': -55.08, 'per': 10.8}
+-75.0 下per: 0.0%
+-87.5 下per: 1.7%
+-93.75 下per: 100.0%
+-90.625 下per: 7.6%
+-92.1875 下per: 55.3%
+-91.40625 下per: 16.2%
+-91.015625 下per: 11.0%
+choose pwr: -90.625   per：7.8
+保存的数据行： {'NO': 1, 'ch': 106, 'rate': '11ax', 'mcs': 0, 'bw': 40, 'lvl': -90.62, 'per': 7.8}
+-75.0 下per: 100.0%
+-62.5 下per: 100.0%
+-56.25 下per: 100.0%
+-53.125 下per: 100.0%
+-51.5625 下per: 100.0%
+-50.78125 下per: 100.0%
+-50.390625 下per: 100.0%
+choose pwr: -50   per：100.0
+保存的数据行： {'NO': 1, 'ch': 106, 'rate': '11ax', 'mcs': 11, 'bw': 40, 'lvl': -50, 'per': 100.0}
+代码执行用时: 224.323 s
+------
+
+Process finished with exit code 0

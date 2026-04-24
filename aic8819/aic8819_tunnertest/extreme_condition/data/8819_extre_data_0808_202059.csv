@@ -1,0 +1,1 @@
+test_time, BoardNo, ANT, Temp, am, phase, BinVersion,freq, Channel, Rate, BandWidth, SetPwr, CMD, MsPwrAvg, MsEvmAvg, Band1, (0.03 to fch-40), Band2, (fch-40 to fch+40), Band3, (fch+40 to 2fch-80), Band4, (2fch-80 to 2fch+80),Band5, (2fch+80 to 3fch-120), Band6, (3fch-120 to 3fch+120),Band, 7(3fch+120 to 26)

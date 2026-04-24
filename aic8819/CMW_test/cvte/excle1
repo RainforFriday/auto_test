@@ -1,0 +1,26 @@
+import pandas as pd
+
+def extract_and_save_to_new_sheet(input_file, output_file, sheet_name="all", new_sheet_name="汇总数据"):
+    # 读取 Excel 文件
+    df = pd.read_excel(input_file, sheet_name=sheet_name, header=None)
+
+    # 创建一个新的 DataFrame 来存储汇总数据
+    new_data = pd.DataFrame()
+
+    # 提取 H2, H29, H56, ..., H28 + 27*i
+    for i in range(27):
+        # 计算每列的数据，从H2开始，每隔27行提取一个值
+        column_data = df.iloc[1 + i * 27:28 + i * 27, 7].reset_index(drop=True)  # 7是H列的索引
+        new_data[f'Column_{i+1}'] = column_data
+
+    # 保存到新的工作表
+    with pd.ExcelWriter(output_file, engine='openpyxl', mode='a') as writer:
+        new_data.to_excel(writer, index=False, sheet_name=new_sheet_name)
+
+    print(f"数据已成功汇总到 {new_sheet_name} 工作表")
+
+# 使用示例
+input_file = 'data.xlsx'  # 输入文件路径
+output_file = 'output_data.xlsx'  # 输出文件路径
+
+extract_and_save_to_new_sheet(input_file, output_file)

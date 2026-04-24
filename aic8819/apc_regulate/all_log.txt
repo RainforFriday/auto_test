@@ -1,0 +1,2567 @@
+D:\Download\anaconda3\envs\Py38\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 50552 --file D:/Aic8800/Code/AIC_TEST/aic8819/apc_regulate/apc_regulate.py
+pydev debugger: process 4068 is connecting
+
+Connected to pydev debugger (build 201.7223.92)
+Com8 is open
+
+Hello, I am: 'Rohde&Schwarz,CMW,1201.0002k50/170904,4.0.250'
+setpwr 1
+cur_default 7: 2.043947
+val_7:  2.074186   val_8:  3.146788
+val_6:  0.9994708   val_7:  2.074186
+cal done!!!
+choose 6  ： 0.9994708
+cur_default 24: 1.021456
+val_24:  1.002886   val_25:  1.079716
+first choose 7->6     24->24
+cur_default 24: -0.1995061
+val_start  30: 0.2445355
+val_29:  0.1768983   val_30:  0.2574695
+val_30:  0.2574695   val_31:  0.3326915
+cal done! Use maximum value
+cur_default 31: 1.374669
+val_start  26: 1.02641
+val_26:  1.037597   val_27:  1.09746
+second choose 7     31->26
+code spand : 106.07 s
+保存的数据行： {'test_time': 106.06559705734253, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '3', 'setpwr': 1, 'pwrRes': 1.04, 'default_it': 7, 'default_ib': 24, 'it_first': 6, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 7, 'wf_dtmx_dac_vl_ib_bit': 26}
+setpwr 2
+setpwr 3
+setpwr 4
+setpwr 5
+setpwr 6
+cur_default 8: 5.959767
+val_7:  4.83597   val_8:  5.93997
+val_8:  5.93997   val_9:  6.812088
+cal done!!!
+choose 8  ： 5.93997
+cur_default 29: 5.941598
+val_28:  5.886067   val_29:  5.929759
+val_29:  5.929759   val_30:  6.019514
+cal done!!!
+choose 30  ： 6.019514
+first choose 8->8     29->30
+cur_default 30: 6.069263
+val_30:  6.045232   val_31:  6.122577
+val_29:  5.988175   val_30:  6.045232
+cal done!!!
+choose 29  ： 5.988175
+second choose 8     30->29
+code spand : 85.62 s
+保存的数据行： {'test_time': 85.62263488769531, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '5', 'setpwr': 6, 'pwrRes': 5.99, 'default_it': 8, 'default_ib': 29, 'it_first': 8, 'ib_first': 30, 'wf_dtmx_dac_vl_it_bit': 8, 'wf_dtmx_dac_vl_ib_bit': 29}
+setpwr 7
+setpwr 8
+setpwr 9
+setpwr 10
+cur_default 11: 9.95931
+val_10:  9.17985   val_11:  9.947501
+val_11:  9.947501   val_12:  10.70029
+cal done!!!
+choose 11  ： 9.947501
+cur_default 19: 9.975771
+val_18:  9.915493   val_19:  9.985887
+first choose 11->11     19->19
+cur_default 19: 10.00049
+val_19:  10.01362   val_20:  10.04945
+second choose 11     19->19
+code spand : 68.71 s
+保存的数据行： {'test_time': 68.7093517780304, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '7', 'setpwr': 10, 'pwrRes': 10.01, 'default_it': 11, 'default_ib': 19, 'it_first': 11, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 11, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 11
+setpwr 12
+setpwr 13
+setpwr 14
+cur_default 11: 13.97556
+val_10:  13.27385   val_11:  13.96217
+cur_default 19: 13.95509
+val_18:  13.91714   val_19:  13.96898
+first choose 11->11     19->19
+cur_default 19: 13.95821
+val_18:  13.92096   val_19:  13.96093
+second choose 11     19->19
+code spand : 60.01 s
+保存的数据行： {'test_time': 60.006551027297974, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '9', 'setpwr': 14, 'pwrRes': 13.96, 'default_it': 11, 'default_ib': 19, 'it_first': 11, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 11, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 15
+setpwr 16
+setpwr 17
+setpwr 18
+cur_default 21: 17.86385
+val_20:  17.48186   val_21:  17.83174
+val_21:  17.83174   val_22:  18.15943
+cal done!!!
+choose 22  ： 18.15943
+cur_default 15: 18.17226
+val_start  7: 17.97288
+val_6:  17.95473   val_7:  17.9818
+first choose 21->22     15->7
+cur_default 7: 18.04708
+val_7:  18.09215   val_8:  18.11646
+val_6:  18.07311   val_7:  18.09215
+val_5:  18.05855   val_6:  18.07311
+val_4:  18.02985   val_5:  18.05855
+second choose 22     7->4
+code spand : 86.86 s
+保存的数据行： {'test_time': 86.85554146766663, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': 'B', 'setpwr': 18, 'pwrRes': 18.03, 'default_it': 21, 'default_ib': 15, 'it_first': 22, 'ib_first': 7, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 4}
+setpwr 19
+setpwr 20
+setpwr 21
+setpwr 22
+cur_default 47: 22.0619
+val_47:  22.03877   val_48:  22.08581
+cur_default 23: 22.02197
+first choose 47->47     23->24
+cur_default 24: 22.04722
+val_start  17: 21.99848
+second choose 47     24->16
+code spand : 55.60 s
+保存的数据行： {'test_time': 55.60210108757019, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': 'D', 'setpwr': 22, 'pwrRes': 21.99, 'default_it': 47, 'default_ib': 23, 'it_first': 47, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 47, 'wf_dtmx_dac_vl_ib_bit': 16}
+setpwr 23
+setpwr 24
+setpwr 1
+cur_default 19: 0.6823996
+val_18:  0.231048   val_19:  0.7512864
+val_19:  0.7512864   val_20:  1.255527
+cal done!!!
+choose 19  ： 0.7512864
+cur_default 8: 0.7694709
+val_start  15: 0.9969365
+first choose 19->19     8->14
+cur_default 14: 0.9790066
+second choose 19     14->13
+code spand : 64.94 s
+保存的数据行： {'test_time': 64.94037747383118, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '3', 'setpwr': 1, 'pwrRes': 0.98, 'default_it': 19, 'default_ib': 8, 'it_first': 19, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+setpwr 4
+setpwr 5
+setpwr 6
+cur_default 16: 5.823782
+val_15:  5.222593   val_16:  5.834934
+val_16:  5.834934   val_17:  6.411472
+cal done!!!
+choose 16  ： 5.834934
+cur_default 8: 5.833103
+val_start  12: 6.000962
+val_12:  6.003348   val_13:  6.044064
+first choose 16->16     8->12
+cur_default 12: 5.974033
+val_11:  5.946722   val_12:  5.978436
+second choose 16     12->12
+code spand : 74.16 s
+保存的数据行： {'test_time': 74.15574169158936, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '5', 'setpwr': 6, 'pwrRes': 5.98, 'default_it': 16, 'default_ib': 8, 'it_first': 16, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 7
+setpwr 8
+setpwr 9
+setpwr 10
+cur_default 16: 9.826686
+val_15:  9.264234   val_16:  9.819134
+val_16:  9.819134   val_17:  10.35783
+cal done!!!
+choose 16  ： 9.819134
+cur_default 23: 9.829027
+val_start  27: 9.98563
+val_26:  9.935162   val_27:  9.979897
+first choose 16->16     23->27
+cur_default 27: 9.943731
+val_26:  9.910004   val_27:  9.946266
+val_27:  9.946266   val_28:  9.995482
+second choose 16     27->28
+code spand : 78.82 s
+保存的数据行： {'test_time': 78.81726050376892, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '7', 'setpwr': 10, 'pwrRes': 10.0, 'default_it': 16, 'default_ib': 23, 'it_first': 16, 'ib_first': 27, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 28}
+setpwr 11
+setpwr 12
+setpwr 13
+setpwr 14
+cur_default 19: 13.88823
+val_18:  13.41848   val_19:  13.87667
+val_19:  13.87667   val_20:  14.32549
+cal done!!!
+choose 19  ： 13.87667
+cur_default 18: 13.87047
+val_start  22: 14.00015
+first choose 19->19     18->23
+cur_default 23: 14.04331
+val_23:  14.0394   val_24:  14.06564
+second choose 19     23->23
+code spand : 69.54 s
+保存的数据行： {'test_time': 69.53928518295288, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '9', 'setpwr': 14, 'pwrRes': 14.04, 'default_it': 19, 'default_ib': 18, 'it_first': 19, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 23}
+setpwr 15
+setpwr 16
+setpwr 17
+setpwr 18
+cur_default 22: 18.07918
+val_22:  18.05616   val_23:  18.36851
+val_21:  17.69752   val_22:  18.05616
+cal done!!!
+choose 22  ： 18.05616
+cur_default 15: 18.05552
+val_15:  18.04798   val_16:  18.0703
+val_14:  18.0239   val_15:  18.04798
+first choose 22->22     15->14
+cur_default 14: 17.98696
+val_13:  17.95826   val_14:  17.98238
+second choose 22     14->14
+code spand : 74.10 s
+保存的数据行： {'test_time': 74.09565377235413, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': 'B', 'setpwr': 18, 'pwrRes': 17.98, 'default_it': 22, 'default_ib': 15, 'it_first': 22, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 14}
+setpwr 19
+setpwr 20
+setpwr 21
+setpwr 22
+cur_default 61: 21.59391
+val_start  62: 21.64226
+val_61:  21.56185   val_62:  21.62822
+val_62:  21.62822   val_63:  21.68491
+cal done! Use maximum value
+cur_default 23: 21.68195
+val_start  30: 21.72947
+val_29:  21.77511   val_30:  21.73783
+val_30:  21.73783   val_31:  21.72963
+cal done! Use maximum value
+cur_default 31: 21.72522
+val_start  30: 21.71734
+val_29:  21.71623   val_30:  21.75437
+val_30:  21.75437   val_31:  21.7082
+cal done! Use maximum value
+first choose 61->63     31->31
+cur_default 31: 21.71507
+val_start  30: 21.60215
+val_29:  21.59878   val_30:  21.59774
+val_30:  21.59774   val_31:  21.59454
+cal done! Use maximum value
+cur_default 31: 21.58598
+val_start  30: 21.57976
+val_29:  21.56807   val_30:  21.57035
+val_30:  21.57035   val_31:  21.58014
+cal done! Use maximum value
+second choose 63     31->31
+code spand : 167.36 s
+保存的数据行： {'test_time': 167.3573489189148, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': 'D', 'setpwr': 22, 'pwrRes': 21.58, 'default_it': 61, 'default_ib': 23, 'it_first': 63, 'ib_first': 31, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 31}
+setpwr 23
+setpwr 24
+setpwr 1
+cur_default 20: 0.9909574
+val_19:  0.4137034   val_20:  0.9654878
+cur_default 4: 0.9771972
+val_3:  0.9421175   val_4:  0.9803928
+first choose 20->20     4->4
+cur_default 4: 1.014216
+val_4:  1.03078   val_5:  1.046377
+second choose 20     4->4
+code spand : 60.20 s
+保存的数据行： {'test_time': 60.20353841781616, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.03, 'default_it': 20, 'default_ib': 4, 'it_first': 20, 'ib_first': 4, 'wf_dtmx_dac_vl_it_bit': 20, 'wf_dtmx_dac_vl_ib_bit': 4}
+setpwr 2
+setpwr 3
+cur_default 16: 2.96913
+val_15:  2.352026   val_16:  2.958037
+val_16:  2.958037   val_17:  3.540787
+cal done!!!
+choose 16  ： 2.958037
+cur_default 16: 2.970417
+val_15:  2.909895   val_16:  2.967888
+first choose 16->16     16->16
+cur_default 16: 3.012499
+second choose 16     16->17
+code spand : 64.09 s
+保存的数据行： {'test_time': 64.0911271572113, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.04, 'default_it': 16, 'default_ib': 16, 'it_first': 16, 'ib_first': 16, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 16: 7.007923
+val_16:  7.008147   val_17:  7.585071
+cur_default 26: 7.005877
+first choose 16->16     26->27
+cur_default 27: 7.052104
+val_27:  7.068297   val_28:  7.109723
+val_26:  7.057775   val_27:  7.068297
+val_25:  7.007363   val_26:  7.057775
+second choose 16     27->25
+code spand : 64.83 s
+保存的数据行： {'test_time': 64.83210682868958, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.01, 'default_it': 16, 'default_ib': 26, 'it_first': 16, 'ib_first': 27, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 19: 10.95533
+val_18:  10.4621   val_19:  10.95446
+val_19:  10.95446   val_20:  11.45436
+cal done!!!
+choose 19  ： 10.95446
+cur_default 29: 10.96467
+val_28:  10.91733   val_29:  10.95032
+val_29:  10.95032   val_30:  10.99508
+first choose 19->19     29->30
+cur_default 30: 11.00815
+cur_default 31: 11.53318
+val_start  17: 11.0221
+val_17:  11.02134   val_18:  11.06561
+second choose 20     31->17
+code spand : 93.07 s
+保存的数据行： {'test_time': 93.06662178039551, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.02, 'default_it': 19, 'default_ib': 29, 'it_first': 19, 'ib_first': 30, 'wf_dtmx_dac_vl_it_bit': 20, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 23: 14.99365
+val_22:  14.57282   val_23:  14.98316
+cur_default 16: 15.0064
+first choose 23->23     16->17
+cur_default 17: 15.03015
+val_17:  15.03265   val_18:  15.07692
+second choose 23     17->17
+code spand : 55.63 s
+保存的数据行： {'test_time': 55.62699842453003, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 23, 'default_ib': 16, 'it_first': 23, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 23, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 30: 18.93999
+val_29:  18.60047   val_30:  18.90583
+val_30:  18.90583   val_31:  19.16941
+cal done!!!
+choose 30  ： 18.90583
+cur_default 10: 18.89089
+val_start  15: 18.97303
+first choose 30->30     10->14
+cur_default 14: 19.04479
+val_14:  19.04367   val_15:  19.07428
+val_13:  19.01506   val_14:  19.04367
+second choose 30     14->13
+code spand : 73.27 s
+保存的数据行： {'test_time': 73.26505661010742, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.02, 'default_it': 30, 'default_ib': 10, 'it_first': 30, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 30, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 43: 23.04757
+val_43:  23.02503   val_44:  23.12272
+cur_default 11: 23.01808
+first choose 43->43     11->12
+cur_default 12: 23.01955
+second choose 43     12->13
+code spand : 50.98 s
+保存的数据行： {'test_time': 50.97591280937195, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.02, 'default_it': 43, 'default_ib': 11, 'it_first': 43, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 43, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 1
+cur_default 15: 0.9248243
+val_14:  0.3297552   val_15:  0.9466565
+val_15:  0.9466565   val_16:  1.486399
+cal done!!!
+choose 15  ： 0.9466565
+cur_default 13: 0.9242603
+val_12:  0.9019671   val_13:  0.9644746
+first choose 15->15     13->13
+cur_default 13: 0.992608
+val_12:  0.9488907   val_13:  1.00039
+cal done!!!
+choose 13  ： 1.00039
+second choose 15     13->13
+code spand : 72.58 s
+保存的数据行： {'test_time': 72.58000993728638, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 15, 'default_ib': 13, 'it_first': 15, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 15, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+cur_default 15: 2.950908
+val_14:  2.378505   val_15:  2.942985
+val_15:  2.942985   val_16:  3.463156
+cal done!!!
+choose 15  ： 2.942985
+cur_default 22: 2.936921
+val_21:  2.896692   val_22:  2.939174
+val_22:  2.939174   val_23:  2.984697
+first choose 15->15     22->23
+cur_default 23: 2.978367
+val_22:  2.946637   val_23:  2.979627
+second choose 15     23->23
+code spand : 73.16 s
+保存的数据行： {'test_time': 73.15830564498901, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.98, 'default_it': 15, 'default_ib': 22, 'it_first': 15, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 15, 'wf_dtmx_dac_vl_ib_bit': 23}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 18: 6.957087
+val_17:  6.440074   val_18:  6.977398
+cur_default 23: 6.965906
+val_22:  6.940378   val_23:  6.98649
+first choose 18->18     23->23
+cur_default 23: 6.963884
+val_22:  6.934817   val_23:  6.983527
+second choose 18     23->23
+code spand : 60.20 s
+保存的数据行： {'test_time': 60.20216917991638, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.98, 'default_it': 18, 'default_ib': 23, 'it_first': 18, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 18, 'wf_dtmx_dac_vl_ib_bit': 23}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 24: 10.97874
+val_23:  10.56227   val_24:  10.97164
+cur_default 13: 10.97498
+val_12:  10.92089   val_13:  10.96637
+first choose 24->24     13->13
+cur_default 13: 10.97135
+val_12:  10.95793   val_13:  10.96036
+second choose 24     13->13
+code spand : 60.08 s
+保存的数据行： {'test_time': 60.07872748374939, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.96, 'default_it': 24, 'default_ib': 13, 'it_first': 24, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 24, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 34: 15.00519
+val_34:  15.0044   val_35:  15.24298
+cur_default 7: 14.98638
+first choose 34->34     7->6
+cur_default 6: 14.98104
+second choose 34     6->5
+code spand : 51.07 s
+保存的数据行： {'test_time': 51.07286238670349, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.97, 'default_it': 34, 'default_ib': 7, 'it_first': 34, 'ib_first': 6, 'wf_dtmx_dac_vl_it_bit': 34, 'wf_dtmx_dac_vl_ib_bit': 5}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 50: 20.80773
+val_49:  20.6553   val_50:  20.75872
+val_50:  20.75872   val_51:  20.85684
+val_51:  20.85684   val_52:  20.95148
+val_52:  20.95148   val_53:  21.03584
+cal done!!!
+choose 53  ： 21.03584
+cur_default 8: 21.03369
+val_start  2: 20.97183
+first choose 50->53     8->1
+cur_default 1: 21.14383
+val_start  1: 21.14818
+val_1:  21.14382   val_2:  21.16919
+val_0:  21.1301   val_1:  21.14382
+cal done! Use minimum value
+cur_default 0: 21.04219
+val_start  1: 21.043
+val_1:  21.04246   val_2:  21.0595
+val_0:  21.03834   val_1:  21.04246
+cal done! Use minimum value
+cur_default 0: 20.94073
+val_start  7: 21.0056
+second choose 51     0->8
+code spand : 143.61 s
+保存的数据行： {'test_time': 143.6148579120636, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.0, 'default_it': 50, 'default_ib': 8, 'it_first': 53, 'ib_first': 1, 'wf_dtmx_dac_vl_it_bit': 51, 'wf_dtmx_dac_vl_ib_bit': 8}
+setpwr 22
+setpwr 23
+cur_default 49: 23.00126
+val_49:  22.97924   val_50:  23.06629
+cal done!!!
+choose 49  ： 22.97924
+cur_default 1: 22.98162
+cur_default 0: 22.89047
+val_start  19: 23.00226
+first choose 49->48     0->20
+cur_default 20: 23.04001
+val_start  14: 22.98169
+second choose 48     20->13
+code spand : 79.35 s
+保存的数据行： {'test_time': 79.35103297233582, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.99, 'default_it': 49, 'default_ib': 1, 'it_first': 48, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 48, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 1
+cur_default 20: 0.9221322
+val_19:  0.3676299   val_20:  0.939876
+val_20:  0.939876   val_21:  1.467529
+cal done!!!
+choose 20  ： 0.939876
+cur_default 1: 0.946161
+val_0:  0.9168667   val_1:  0.9565133
+val_1:  0.9565133   val_2:  0.9874132
+first choose 20->20     1->2
+cur_default 2: 1.077661
+val_2:  1.088763   val_3:  1.12013
+val_1:  1.043429   val_2:  1.088763
+val_0:  1.014593   val_1:  1.043429
+cal done! Use minimum value
+cur_default 0: 0.4334846
+val_start  14: 0.9638651
+val_13:  0.9346448   val_14:  0.9565981
+val_14:  0.9565981   val_15:  1.009147
+cal done!!!
+choose 15  ： 1.009147
+second choose 19     0->15
+code spand : 120.59 s
+保存的数据行： {'test_time': 120.58851313591003, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 20, 'default_ib': 1, 'it_first': 20, 'ib_first': 2, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 15}
+setpwr 2
+setpwr 3
+cur_default 16: 2.95524
+val_15:  2.304053   val_16:  2.944067
+val_16:  2.944067   val_17:  3.559544
+cal done!!!
+choose 16  ： 2.944067
+cur_default 16: 2.956604
+val_15:  2.90798   val_16:  2.956238
+val_16:  2.956238   val_17:  2.992169
+first choose 16->16     16->17
+cur_default 17: 3.008291
+val_17:  3.005027   val_18:  3.047673
+second choose 16     17->17
+code spand : 74.15 s
+保存的数据行： {'test_time': 74.15393328666687, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.01, 'default_it': 16, 'default_ib': 16, 'it_first': 16, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 16: 6.972077
+val_15:  6.359295   val_16:  6.956288
+val_16:  6.956288   val_17:  7.555241
+cal done!!!
+choose 16  ： 6.956288
+cur_default 26: 6.955688
+val_25:  6.917078   val_26:  6.959754
+val_26:  6.959754   val_27:  7.015272
+cal done!!!
+choose 27  ： 7.015272
+first choose 16->16     26->27
+cur_default 27: 7.038663
+val_27:  7.03417   val_28:  7.091767
+second choose 16     27->27
+code spand : 78.04 s
+保存的数据行： {'test_time': 78.0391457080841, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.03, 'default_it': 16, 'default_ib': 26, 'it_first': 16, 'ib_first': 27, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 27}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 19: 10.99207
+val_18:  10.46244   val_19:  10.99188
+cur_default 28: 10.99094
+val_27:  10.94905   val_28:  10.98474
+first choose 19->19     28->28
+cur_default 28: 10.97858
+val_27:  10.93487   val_28:  10.98382
+second choose 19     28->28
+code spand : 61.02 s
+保存的数据行： {'test_time': 61.02126884460449, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 19, 'default_ib': 28, 'it_first': 19, 'ib_first': 28, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 28}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 22: 15.03607
+val_22:  15.01869   val_23:  15.43993
+cur_default 26: 15.0147
+val_26:  15.01802   val_27:  15.05841
+first choose 22->22     26->26
+cur_default 26: 15.0172
+second choose 22     26->27
+code spand : 56.35 s
+保存的数据行： {'test_time': 56.3458034992218, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 22, 'default_ib': 26, 'it_first': 22, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 27}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 29: 18.96082
+val_28:  18.62396   val_29:  18.91683
+val_29:  18.91683   val_30:  19.20218
+cal done!!!
+choose 29  ： 18.91683
+cur_default 16: 18.92654
+val_15:  18.89355   val_16:  18.91817
+val_16:  18.91817   val_17:  18.93762
+val_17:  18.93762   val_18:  18.95475
+val_18:  18.95475   val_19:  18.98153
+first choose 29->29     16->19
+cur_default 19: 19.02245
+val_19:  19.01913   val_20:  19.04305
+second choose 29     19->19
+code spand : 83.39 s
+保存的数据行： {'test_time': 83.39156913757324, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.02, 'default_it': 29, 'default_ib': 16, 'it_first': 29, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 29, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 41: 23.02458
+val_41:  22.9886   val_42:  23.11043
+cal done!!!
+choose 41  ： 22.9886
+cur_default 15: 22.98938
+first choose 41->41     15->14
+cur_default 14: 22.97428
+second choose 41     14->13
+code spand : 55.78 s
+保存的数据行： {'test_time': 55.77779459953308, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.96, 'default_it': 41, 'default_ib': 15, 'it_first': 41, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 41, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 1
+cur_default 19: 0.8783051
+val_18:  0.3533689   val_19:  0.9020168
+val_19:  0.9020168   val_20:  1.42505
+cal done!!!
+choose 19  ： 0.9020168
+cur_default 12: 0.8919459
+val_11:  0.8642014   val_12:  0.9110495
+val_12:  0.9110495   val_13:  0.9489902
+val_13:  0.9489902   val_14:  0.9795364
+first choose 19->19     12->14
+cur_default 14: 0.9915289
+second choose 19     14->13
+code spand : 73.20 s
+保存的数据行： {'test_time': 73.19699883460999, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.98, 'default_it': 19, 'default_ib': 12, 'it_first': 19, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+cur_default 15: 2.983754
+val_14:  2.355587   val_15:  2.975222
+cur_default 25: 2.985325
+val_24:  2.9384   val_25:  2.966044
+first choose 15->15     25->25
+cur_default 25: 2.963421
+val_24:  2.933433   val_25:  2.96633
+second choose 15     25->25
+code spand : 60.17 s
+保存的数据行： {'test_time': 60.16803812980652, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.97, 'default_it': 15, 'default_ib': 25, 'it_first': 15, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 15, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 16: 6.98157
+val_15:  6.376441   val_16:  6.970374
+cur_default 20: 6.965691
+val_19:  6.930473   val_20:  6.976974
+first choose 16->16     20->20
+cur_default 20: 6.90735
+val_19:  6.868452   val_20:  6.901575
+val_20:  6.901575   val_21:  6.950695
+val_21:  6.950695   val_22:  7.000623
+cal done!!!
+choose 22  ： 7.000623
+second choose 16     20->22
+code spand : 73.20 s
+保存的数据行： {'test_time': 73.19925022125244, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.0, 'default_it': 16, 'default_ib': 20, 'it_first': 16, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 22}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 19: 10.94499
+val_18:  10.43585   val_19:  10.93358
+val_19:  10.93358   val_20:  11.4478
+cal done!!!
+choose 19  ： 10.93358
+cur_default 24: 10.94859
+val_23:  10.90116   val_24:  10.92076
+val_24:  10.92076   val_25:  10.98543
+first choose 19->19     24->25
+cur_default 25: 10.98051
+val_24:  10.94253   val_25:  10.96495
+second choose 19     25->25
+code spand : 73.13 s
+保存的数据行： {'test_time': 73.1349241733551, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.96, 'default_it': 19, 'default_ib': 24, 'it_first': 19, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 23: 14.96228
+val_22:  14.51257   val_23:  14.94176
+val_23:  14.94176   val_24:  15.40341
+cal done!!!
+choose 23  ： 14.94176
+cur_default 10: 14.93791
+val_9:  14.90956   val_10:  14.92544
+val_10:  14.92544   val_11:  14.95256
+val_11:  14.95256   val_12:  14.99588
+first choose 23->23     10->12
+cur_default 12: 15.04581
+val_12:  15.06365   val_13:  15.08365
+val_11:  15.03077   val_12:  15.06365
+second choose 23     12->11
+code spand : 82.33 s
+保存的数据行： {'test_time': 82.32506513595581, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 23, 'default_ib': 10, 'it_first': 23, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 23, 'wf_dtmx_dac_vl_ib_bit': 11}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 30: 18.92008
+val_29:  18.5846   val_30:  18.8814
+val_30:  18.8814   val_31:  19.15396
+cal done!!!
+choose 30  ： 18.8814
+cur_default 1: 18.88948
+val_start  7: 18.98832
+first choose 30->30     1->6
+cur_default 6: 19.04555
+val_6:  19.0512   val_7:  19.07498
+val_5:  19.04685   val_6:  19.0512
+val_4:  19.0085   val_5:  19.04685
+second choose 30     6->4
+code spand : 77.86 s
+保存的数据行： {'test_time': 77.86045670509338, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.01, 'default_it': 30, 'default_ib': 1, 'it_first': 30, 'ib_first': 6, 'wf_dtmx_dac_vl_it_bit': 30, 'wf_dtmx_dac_vl_ib_bit': 4}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 44: 22.87731
+val_43:  22.71493   val_44:  22.82016
+val_44:  22.82016   val_45:  22.88198
+val_45:  22.88198   val_46:  22.97167
+cur_default 2: 22.97511
+val_start  6: 22.97796
+first choose 44->46     2->5
+cur_default 5: 23.15549
+val_start  1: 23.12211
+val_1:  23.13339   val_2:  23.14397
+val_0:  23.12053   val_1:  23.13339
+cal done! Use minimum value
+cur_default 0: 23.03029
+val_start  1: 23.03663
+second choose 45     0->2
+code spand : 102.17 s
+保存的数据行： {'test_time': 102.1700611114502, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.04, 'default_it': 44, 'default_ib': 2, 'it_first': 46, 'ib_first': 5, 'wf_dtmx_dac_vl_it_bit': 45, 'wf_dtmx_dac_vl_ib_bit': 2}
+setpwr 1
+cur_default 14: 0.8487749
+val_13:  0.1945165   val_14:  0.8563758
+val_14:  0.8563758   val_15:  1.460094
+cal done!!!
+choose 14  ： 0.8563758
+cur_default 15: 0.8739904
+val_14:  0.8201484   val_15:  0.860468
+val_15:  0.860468   val_16:  0.9075822
+val_16:  0.9075822   val_17:  0.9436783
+val_17:  0.9436783   val_18:  0.9899439
+first choose 14->14     15->18
+cur_default 18: 1.051274
+val_18:  1.031427   val_19:  1.077586
+second choose 14     18->18
+code spand : 82.40 s
+保存的数据行： {'test_time': 82.40049958229065, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.03, 'default_it': 14, 'default_ib': 15, 'it_first': 14, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 2
+setpwr 3
+cur_default 14: 2.959203
+val_13:  2.33881   val_14:  2.957565
+val_14:  2.957565   val_15:  3.500409
+cal done!!!
+choose 14  ： 2.957565
+cur_default 25: 2.972
+val_24:  2.917222   val_25:  2.9509
+val_25:  2.9509   val_26:  2.996906
+first choose 14->14     25->26
+cur_default 26: 3.039839
+val_26:  3.050062   val_27:  3.067017
+val_25:  2.993953   val_26:  3.050062
+cal done!!!
+choose 25  ： 2.993953
+second choose 14     26->25
+code spand : 81.69 s
+保存的数据行： {'test_time': 81.68852210044861, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 14, 'default_ib': 25, 'it_first': 14, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.968731
+val_16:  6.441203   val_17:  6.958855
+val_17:  6.958855   val_18:  7.453502
+cal done!!!
+choose 17  ： 6.958855
+cur_default 25: 6.9402
+val_24:  6.936264   val_25:  6.977447
+first choose 17->17     25->25
+cur_default 25: 7.027378
+val_25:  7.019575   val_26:  7.05869
+second choose 17     25->25
+code spand : 68.68 s
+保存的数据行： {'test_time': 68.67964792251587, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 17, 'default_ib': 25, 'it_first': 17, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 23: 10.89236
+val_22:  10.49213   val_23:  10.89355
+val_23:  10.89355   val_24:  11.28287
+cal done!!!
+choose 23  ： 10.89355
+cur_default 10: 10.88277
+val_start  14: 10.99559
+first choose 23->23     10->13
+cur_default 13: 10.98296
+second choose 23     13->12
+code spand : 64.10 s
+保存的数据行： {'test_time': 64.09661507606506, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.97, 'default_it': 23, 'default_ib': 10, 'it_first': 23, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 23, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 32: 14.99222
+val_31:  14.82718   val_32:  14.99431
+cur_default 10: 14.97328
+val_9:  14.93019   val_10:  14.94996
+val_10:  14.94996   val_11:  14.96741
+first choose 32->32     10->11
+cur_default 11: 14.97977
+second choose 32     11->10
+code spand : 60.29 s
+保存的数据行： {'test_time': 60.28875994682312, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.98, 'default_it': 32, 'default_ib': 10, 'it_first': 32, 'ib_first': 11, 'wf_dtmx_dac_vl_it_bit': 32, 'wf_dtmx_dac_vl_ib_bit': 10}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 48: 20.79487
+val_47:  20.69329   val_48:  20.75779
+val_48:  20.75779   val_49:  20.8386
+val_49:  20.8386   val_50:  20.92445
+val_50:  20.92445   val_51:  21.03745
+cal done!!!
+choose 51  ： 21.03745
+cur_default 7: 21.01612
+first choose 48->51     7->8
+cur_default 8: 21.22923
+val_start  1: 21.14212
+val_1:  21.1557   val_2:  21.1621
+val_0:  21.13512   val_1:  21.1557
+cal done! Use minimum value
+cur_default 0: 21.0352
+val_1:  21.0358   val_2:  21.06132
+second choose 50     0->1
+code spand : 106.22 s
+保存的数据行： {'test_time': 106.21740627288818, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.04, 'default_it': 48, 'default_ib': 7, 'it_first': 51, 'ib_first': 8, 'wf_dtmx_dac_vl_it_bit': 50, 'wf_dtmx_dac_vl_ib_bit': 1}
+setpwr 22
+setpwr 23
+cur_default 50: 22.84966
+val_49:  22.71819   val_50:  22.77468
+val_50:  22.77468   val_51:  22.82553
+val_51:  22.82553   val_52:  22.89398
+val_52:  22.89398   val_53:  22.95434
+val_53:  22.95434   val_54:  23.02085
+cal done!!!
+choose 54  ： 23.02085
+cur_default 1: 23.01664
+first choose 50->54     1->2
+cur_default 2: 23.20072
+val_start  1: 23.20509
+val_1:  23.20781   val_2:  23.20529
+val_0:  23.20411   val_1:  23.20781
+cal done! Use minimum value
+cur_default 0: 23.14558
+val_start  1: 23.16029
+val_1:  23.16219   val_2:  23.17043
+val_0:  23.15727   val_1:  23.16219
+cal done! Use minimum value
+cur_default 0: 23.09026
+val_start  1: 23.10064
+val_1:  23.09917   val_2:  23.10533
+val_0:  23.07742   val_1:  23.09917
+cal done! Use minimum value
+cur_default 0: 23.00846
+second choose 51     0->2
+code spand : 172.14 s
+保存的数据行： {'test_time': 172.14312934875488, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.01, 'default_it': 50, 'default_ib': 1, 'it_first': 54, 'ib_first': 2, 'wf_dtmx_dac_vl_it_bit': 51, 'wf_dtmx_dac_vl_ib_bit': 2}
+setpwr 1
+cur_default 19: 0.7980312
+val_18:  0.2601381   val_19:  0.8299426
+val_19:  0.8299426   val_20:  1.396658
+cal done!!!
+choose 19  ： 0.8299426
+cur_default 9: 0.8366214
+val_start  13: 0.9995564
+val_12:  0.9530597   val_13:  0.9863394
+first choose 19->19     9->13
+cur_default 13: 1.069257
+val_13:  1.072418   val_14:  1.107228
+val_12:  1.032055   val_13:  1.072418
+second choose 19     13->12
+code spand : 78.63 s
+保存的数据行： {'test_time': 78.6346492767334, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.03, 'default_it': 19, 'default_ib': 9, 'it_first': 19, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 2
+setpwr 3
+cur_default 15: 2.944329
+val_14:  2.271941   val_15:  2.954977
+val_15:  2.954977   val_16:  3.560219
+cal done!!!
+choose 15  ： 2.954977
+cur_default 25: 2.940806
+val_24:  2.891764   val_25:  2.944369
+val_25:  2.944369   val_26:  2.981362
+first choose 15->15     25->26
+cur_default 26: 2.98399
+val_25:  2.945183   val_26:  2.991459
+second choose 15     26->26
+code spand : 74.15 s
+保存的数据行： {'test_time': 74.14631056785583, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 15, 'default_ib': 25, 'it_first': 15, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 15, 'wf_dtmx_dac_vl_ib_bit': 26}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 16: 6.975921
+val_15:  6.353229   val_16:  6.974011
+cur_default 20: 6.980618
+val_19:  6.928671   val_20:  6.986754
+first choose 16->16     20->20
+cur_default 20: 6.960352
+val_19:  6.912906   val_20:  6.95063
+val_20:  6.95063   val_21:  7.001381
+cal done!!!
+choose 21  ： 7.001381
+second choose 16     20->21
+code spand : 69.40 s
+保存的数据行： {'test_time': 69.39898371696472, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.0, 'default_it': 16, 'default_ib': 20, 'it_first': 16, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 19: 11.01019
+val_19:  11.00394   val_20:  11.535
+cur_default 23: 11.00631
+first choose 19->19     23->24
+cur_default 24: 11.00713
+second choose 19     24->25
+code spand : 51.76 s
+保存的数据行： {'test_time': 51.758005142211914, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.04, 'default_it': 19, 'default_ib': 23, 'it_first': 19, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 22: 15.00196
+val_22:  15.00034   val_23:  15.42186
+cur_default 20: 15.00671
+first choose 22->22     20->21
+cur_default 21: 14.98505
+val_20:  14.94611   val_21:  14.98772
+second choose 22     21->21
+code spand : 56.43 s
+保存的数据行： {'test_time': 56.43369674682617, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.99, 'default_it': 22, 'default_ib': 20, 'it_first': 22, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 28: 18.71832
+val_27:  18.35654   val_28:  18.68636
+val_28:  18.68636   val_29:  18.98376
+cur_default 11: 18.97753
+val_10:  18.93979   val_11:  18.9551
+val_11:  18.9551   val_12:  18.97514
+first choose 28->29     11->12
+cur_default 12: 19.04212
+val_12:  19.0369   val_13:  19.057
+second choose 29     12->12
+code spand : 70.32 s
+保存的数据行： {'test_time': 70.31781363487244, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.04, 'default_it': 28, 'default_ib': 11, 'it_first': 29, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 29, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 42: 22.99931
+val_41:  22.86905   val_42:  22.97119
+cur_default 9: 22.97409
+first choose 42->42     9->8
+cur_default 8: 22.97308
+val_7:  22.93687   val_8:  22.94604
+val_8:  22.94604   val_9:  22.95657
+val_9:  22.95657   val_10:  22.96322
+second choose 42     8->10
+code spand : 65.71 s
+保存的数据行： {'test_time': 65.70701122283936, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.96, 'default_it': 42, 'default_ib': 9, 'it_first': 42, 'ib_first': 8, 'wf_dtmx_dac_vl_it_bit': 42, 'wf_dtmx_dac_vl_ib_bit': 10}
+setpwr 1
+cur_default 14: 0.8907581
+val_13:  0.1867319   val_14:  0.9164076
+val_14:  0.9164076   val_15:  1.607554
+cal done!!!
+choose 14  ： 0.9164076
+cur_default 6: 0.9167895
+val_5:  0.9028773   val_6:  0.9452961
+val_6:  0.9452961   val_7:  0.980071
+first choose 14->14     6->7
+cur_default 7: 0.9592552
+val_6:  0.9183524   val_7:  0.9402028
+val_7:  0.9402028   val_8:  0.9766382
+second choose 14     7->8
+code spand : 77.71 s
+保存的数据行： {'test_time': 77.70902371406555, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.98, 'default_it': 14, 'default_ib': 6, 'it_first': 14, 'ib_first': 7, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 8}
+setpwr 2
+setpwr 3
+cur_default 14: 2.880605
+val_13:  2.198036   val_14:  2.913488
+val_14:  2.913488   val_15:  3.543517
+cal done!!!
+choose 14  ： 2.913488
+cur_default 15: 2.908559
+val_14:  2.850807   val_15:  2.90661
+val_15:  2.90661   val_16:  2.958842
+val_16:  2.958842   val_17:  3.001111
+cal done!!!
+choose 17  ： 3.001111
+first choose 14->14     15->17
+cur_default 17: 2.985146
+val_16:  2.924325   val_17:  2.973541
+second choose 14     17->17
+code spand : 81.67 s
+保存的数据行： {'test_time': 81.66903281211853, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.97, 'default_it': 14, 'default_ib': 15, 'it_first': 14, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.882555
+val_16:  6.294551   val_17:  6.893727
+val_17:  6.893727   val_18:  7.433023
+cal done!!!
+choose 17  ： 6.893727
+cur_default 11: 6.871006
+val_10:  6.821419   val_11:  6.868962
+val_11:  6.868962   val_12:  6.91325
+val_12:  6.91325   val_13:  6.939214
+val_13:  6.939214   val_14:  6.977326
+first choose 17->17     11->14
+cur_default 14: 6.99846
+val_13:  6.951424   val_14:  6.989129
+second choose 17     14->14
+code spand : 82.43 s
+保存的数据行： {'test_time': 82.43346810340881, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 17, 'default_ib': 11, 'it_first': 17, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 14}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 21: 10.92151
+val_20:  10.45382   val_21:  10.90253
+val_21:  10.90253   val_22:  11.36304
+cal done!!!
+choose 21  ： 10.90253
+cur_default 21: 10.91939
+val_20:  10.88213   val_21:  10.91267
+val_21:  10.91267   val_22:  10.94351
+val_22:  10.94351   val_23:  10.97308
+first choose 21->21     21->23
+cur_default 23: 11.01138
+val_23:  11.018   val_24:  11.0649
+second choose 21     23->23
+code spand : 77.87 s
+保存的数据行： {'test_time': 77.86951446533203, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.02, 'default_it': 21, 'default_ib': 21, 'it_first': 21, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 21, 'wf_dtmx_dac_vl_ib_bit': 23}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 30: 15.01961
+val_30:  14.97277   val_31:  15.27031
+cal done!!!
+choose 30  ： 14.97277
+cur_default 4: 14.97745
+val_3:  14.93555   val_4:  14.97067
+first choose 30->30     4->4
+cur_default 4: 15.02391
+val_4:  15.027   val_5:  15.05681
+second choose 30     4->4
+code spand : 64.05 s
+保存的数据行： {'test_time': 64.05220007896423, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 30, 'default_ib': 4, 'it_first': 30, 'ib_first': 4, 'wf_dtmx_dac_vl_it_bit': 30, 'wf_dtmx_dac_vl_ib_bit': 4}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 40: 18.87398
+val_39:  18.62829   val_40:  18.84412
+val_40:  18.84412   val_41:  19.01599
+cal done!!!
+choose 41  ： 19.01599
+cur_default 4: 18.99283
+first choose 40->41     4->3
+cur_default 3: 19.06895
+val_start  1: 19.0444
+val_1:  19.04062   val_2:  19.06602
+val_0:  19.01104   val_1:  19.04062
+cal done! Use minimum value
+cur_default 0: 18.84068
+val_start  9: 18.99578
+val_8:  18.95995   val_9:  18.98573
+second choose 40     0->9
+code spand : 101.76 s
+保存的数据行： {'test_time': 101.76330614089966, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.99, 'default_it': 40, 'default_ib': 4, 'it_first': 41, 'ib_first': 3, 'wf_dtmx_dac_vl_it_bit': 40, 'wf_dtmx_dac_vl_ib_bit': 9}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 45: 22.79154
+val_44:  22.6445   val_45:  22.71638
+val_45:  22.71638   val_46:  22.79138
+val_46:  22.79138   val_47:  22.87398
+val_47:  22.87398   val_48:  22.91312
+val_48:  22.91312   val_49:  22.97892
+cur_default 7: 22.97468
+val_start  11: 22.99709
+first choose 45->49     7->10
+cur_default 10: 23.16738
+val_start  1: 23.11559
+val_1:  23.12219   val_2:  23.13006
+val_0:  23.11486   val_1:  23.12219
+cal done! Use minimum value
+cur_default 0: 23.04006
+val_start  1: 23.03885
+val_1:  23.05483   val_2:  23.0506
+val_0:  23.05099   val_1:  23.05483
+cal done! Use minimum value
+cur_default 0: 22.99797
+cur_default 0: 22.91329
+val_start  11: 22.98362
+second choose 46     0->10
+code spand : 159.76 s
+保存的数据行： {'test_time': 159.7647988796234, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 45, 'default_ib': 7, 'it_first': 49, 'ib_first': 10, 'wf_dtmx_dac_vl_it_bit': 46, 'wf_dtmx_dac_vl_ib_bit': 10}
+setpwr 1
+cur_default 14: 0.832212
+val_13:  0.1547114   val_14:  0.8480939
+val_14:  0.8480939   val_15:  1.472135
+cal done!!!
+choose 14  ： 0.8480939
+cur_default 10: 0.8398134
+val_9:  0.7895971   val_10:  0.8547189
+val_10:  0.8547189   val_11:  0.9118755
+val_11:  0.9118755   val_12:  0.9462164
+val_12:  0.9462164   val_13:  0.9840984
+first choose 14->14     10->13
+cur_default 13: 1.010614
+val_13:  1.009215   val_14:  1.041379
+second choose 14     13->13
+code spand : 82.29 s
+保存的数据行： {'test_time': 82.28525018692017, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 14, 'default_ib': 10, 'it_first': 14, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+cur_default 14: 2.939927
+val_13:  2.290987   val_14:  2.918278
+val_14:  2.918278   val_15:  3.505633
+cal done!!!
+choose 14  ： 2.918278
+cur_default 20: 2.924717
+val_19:  2.893045   val_20:  2.94882
+val_20:  2.94882   val_21:  2.978011
+first choose 14->14     20->21
+cur_default 21: 2.937613
+val_20:  2.850765   val_21:  2.909372
+val_21:  2.909372   val_22:  2.962902
+second choose 14     21->22
+code spand : 77.68 s
+保存的数据行： {'test_time': 77.67956614494324, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.96, 'default_it': 14, 'default_ib': 20, 'it_first': 14, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 22}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.921761
+val_16:  6.396146   val_17:  6.908738
+val_17:  6.908738   val_18:  7.419768
+cal done!!!
+choose 17  ： 6.908738
+cur_default 21: 6.910335
+val_20:  6.856443   val_21:  6.890119
+val_21:  6.890119   val_22:  6.921005
+val_22:  6.921005   val_23:  6.995616
+first choose 17->17     21->23
+cur_default 23: 7.02513
+second choose 17     23->24
+code spand : 73.25 s
+保存的数据行： {'test_time': 73.25367140769958, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 17, 'default_ib': 21, 'it_first': 17, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 22: 10.86253
+val_21:  10.4336   val_22:  10.84344
+val_22:  10.84344   val_23:  11.23408
+cal done!!!
+choose 22  ： 10.84344
+cur_default 20: 10.85644
+val_start  24: 10.94231
+val_23:  10.90818   val_24:  10.96253
+first choose 22->22     20->24
+cur_default 24: 11.00013
+second choose 22     24->25
+code spand : 68.71 s
+保存的数据行： {'test_time': 68.71366810798645, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.03, 'default_it': 22, 'default_ib': 20, 'it_first': 22, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 32: 14.86257
+val_31:  14.71905   val_32:  14.81902
+val_32:  14.81902   val_33:  15.06906
+cal done!!!
+choose 33  ： 15.06906
+cur_default 6: 15.07293
+val_start  2: 14.9848
+first choose 32->33     6->1
+cur_default 1: 15.03373
+val_1:  15.0203   val_2:  15.05327
+second choose 33     1->1
+code spand : 68.60 s
+保存的数据行： {'test_time': 68.60202741622925, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.02, 'default_it': 32, 'default_ib': 6, 'it_first': 33, 'ib_first': 1, 'wf_dtmx_dac_vl_it_bit': 33, 'wf_dtmx_dac_vl_ib_bit': 1}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 50: 20.80529
+val_49:  20.65955   val_50:  20.75514
+val_50:  20.75514   val_51:  20.83897
+val_51:  20.83897   val_52:  20.94073
+val_52:  20.94073   val_53:  21.03778
+cal done!!!
+choose 53  ： 21.03778
+cur_default 23: 21.04011
+val_23:  21.02496   val_24:  21.0492
+first choose 50->53     23->23
+cur_default 23: 21.1891
+val_start  1: 21.00089
+second choose 53     23->2
+code spand : 77.79 s
+保存的数据行： {'test_time': 77.79007577896118, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.0, 'default_it': 50, 'default_ib': 23, 'it_first': 53, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 53, 'wf_dtmx_dac_vl_ib_bit': 2}
+setpwr 22
+setpwr 23
+cur_default 50: 22.74161
+val_start  53: 22.85833
+val_52:  22.78458   val_53:  22.8376
+val_53:  22.8376   val_54:  22.88019
+val_54:  22.88019   val_55:  22.93503
+val_55:  22.93503   val_56:  22.97387
+cur_default 23: 22.97179
+val_start  29: 23.00199
+first choose 50->56     23->30
+cur_default 30: 23.23959
+val_start  1: 23.07814
+val_1:  23.07962   val_2:  23.08849
+val_0:  23.0922   val_1:  23.07962
+cal done! Use minimum value
+cur_default 0: 23.02335
+val_1:  23.05237   val_2:  23.05859
+val_0:  23.04404   val_1:  23.05237
+cal done! Use minimum value
+cur_default 0: 22.9842
+cur_default 0: 22.90708
+val_start  13: 22.98332
+second choose 53     0->12
+code spand : 155.10 s
+保存的数据行： {'test_time': 155.10005259513855, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 50, 'default_ib': 23, 'it_first': 56, 'ib_first': 30, 'wf_dtmx_dac_vl_it_bit': 53, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 1
+cur_default 14: 0.8952247
+val_13:  0.112623   val_14:  0.9058146
+val_14:  0.9058146   val_15:  1.608297
+cal done!!!
+choose 14  ： 0.9058146
+cur_default 8: 0.9183009
+val_7:  0.8449323   val_8:  0.8957862
+val_8:  0.8957862   val_9:  0.9510223
+val_9:  0.9510223   val_10:  0.9846783
+first choose 14->14     8->10
+cur_default 10: 0.9777436
+val_9:  0.9313752   val_10:  0.9715675
+second choose 14     10->10
+code spand : 78.65 s
+保存的数据行： {'test_time': 78.6529791355133, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.97, 'default_it': 14, 'default_ib': 8, 'it_first': 14, 'ib_first': 10, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 10}
+setpwr 2
+setpwr 3
+cur_default 14: 2.954963
+val_13:  2.215936   val_14:  2.947583
+val_14:  2.947583   val_15:  3.605992
+cal done!!!
+choose 14  ： 2.947583
+cur_default 18: 2.959545
+val_17:  2.906837   val_18:  2.94712
+val_18:  2.94712   val_19:  2.994024
+first choose 14->14     18->19
+cur_default 19: 3.011364
+val_19:  3.006932   val_20:  3.054032
+second choose 14     19->19
+code spand : 74.07 s
+保存的数据行： {'test_time': 74.07057046890259, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.01, 'default_it': 14, 'default_ib': 18, 'it_first': 14, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.932796
+val_16:  6.321187   val_17:  6.918581
+val_17:  6.918581   val_18:  7.511319
+cal done!!!
+choose 17  ： 6.918581
+cur_default 13: 6.918727
+val_12:  6.870979   val_13:  6.914666
+val_13:  6.914666   val_14:  6.94201
+val_14:  6.94201   val_15:  6.982152
+first choose 17->17     13->15
+cur_default 15: 7.007208
+val_15:  7.010229   val_16:  7.06778
+second choose 17     15->15
+code spand : 78.75 s
+保存的数据行： {'test_time': 78.74815893173218, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.01, 'default_it': 17, 'default_ib': 13, 'it_first': 17, 'ib_first': 15, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 15}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 21: 10.95355
+val_20:  10.46654   val_21:  10.95382
+val_21:  10.95382   val_22:  11.43067
+cal done!!!
+choose 21  ： 10.95382
+cur_default 17: 10.94939
+val_16:  10.92035   val_17:  10.9469
+val_17:  10.9469   val_18:  10.98192
+first choose 21->21     17->18
+cur_default 18: 10.98539
+val_17:  10.95101   val_18:  10.97887
+second choose 21     18->18
+code spand : 74.07 s
+保存的数据行： {'test_time': 74.06953883171082, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 21, 'default_ib': 17, 'it_first': 21, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 21, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 28: 14.9592
+val_27:  14.58464   val_28:  14.94719
+val_28:  14.94719   val_29:  15.27416
+cal done!!!
+choose 28  ： 14.94719
+cur_default 18: 14.95324
+val_17:  14.92688   val_18:  14.95063
+val_18:  14.95063   val_19:  14.96937
+first choose 28->28     18->19
+cur_default 19: 14.98773
+val_18:  14.95589   val_19:  14.97883
+second choose 28     19->19
+code spand : 74.15 s
+保存的数据行： {'test_time': 74.15408325195312, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.98, 'default_it': 28, 'default_ib': 18, 'it_first': 28, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 28, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 38: 18.95848
+val_37:  18.73222   val_38:  18.94782
+val_38:  18.94782   val_39:  19.15298
+cal done!!!
+choose 38  ： 18.94782
+cur_default 11: 18.94753
+val_10:  18.92028   val_11:  18.93409
+val_11:  18.93409   val_12:  18.95242
+val_12:  18.95242   val_13:  18.96693
+first choose 38->38     11->13
+cur_default 13: 18.95914
+val_12:  18.93861   val_13:  18.95316
+val_13:  18.95316   val_14:  18.9662
+second choose 38     13->14
+code spand : 83.44 s
+保存的数据行： {'test_time': 83.43886733055115, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.97, 'default_it': 38, 'default_ib': 11, 'it_first': 38, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 38, 'wf_dtmx_dac_vl_ib_bit': 14}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 42: 22.90611
+val_41:  22.77155   val_42:  22.87336
+val_42:  22.87336   val_43:  22.96593
+cur_default 22: 22.96176
+val_start  26: 22.98407
+first choose 42->43     22->25
+cur_default 25: 22.97932
+second choose 43     25->24
+code spand : 61.04 s
+保存的数据行： {'test_time': 61.04377245903015, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.97, 'default_it': 42, 'default_ib': 22, 'it_first': 43, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 43, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 1
+cur_default 14: 0.804378
+val_13:  0.0780733   val_14:  0.8241246
+val_14:  0.8241246   val_15:  1.468814
+cal done!!!
+choose 14  ： 0.8241246
+cur_default 13: 0.8300996
+val_12:  0.7811077   val_13:  0.813318
+val_13:  0.813318   val_14:  0.8735197
+val_14:  0.8735197   val_15:  0.9159984
+val_15:  0.9159984   val_16:  0.9594404
+val_16:  0.9594404   val_17:  0.996525
+first choose 14->14     13->17
+cur_default 17: 1.123946
+val_17:  1.126595   val_18:  1.157617
+val_16:  1.092867   val_17:  1.126595
+val_15:  1.023418   val_16:  1.092867
+second choose 14     17->15
+code spand : 95.97 s
+保存的数据行： {'test_time': 95.97313237190247, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.02, 'default_it': 14, 'default_ib': 13, 'it_first': 14, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 15}
+setpwr 2
+setpwr 3
+cur_default 14: 2.978557
+val_13:  2.318667   val_14:  2.994779
+cur_default 24: 3.009483
+val_24:  2.979835   val_25:  3.04484
+cal done!!!
+choose 24  ： 2.979835
+first choose 14->14     24->24
+cur_default 24: 2.953383
+val_23:  2.910953   val_24:  2.95553
+val_24:  2.95553   val_25:  3.000084
+cal done!!!
+choose 25  ： 3.000084
+second choose 14     24->25
+code spand : 72.62 s
+保存的数据行： {'test_time': 72.62419033050537, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 14, 'default_ib': 24, 'it_first': 14, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 25}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.890408
+val_16:  6.315721   val_17:  6.90057
+val_17:  6.90057   val_18:  7.467467
+cal done!!!
+choose 17  ： 6.90057
+cur_default 20: 6.915027
+val_19:  6.860723   val_20:  6.88455
+val_20:  6.88455   val_21:  6.938268
+val_21:  6.938268   val_22:  6.98054
+first choose 17->17     20->22
+cur_default 22: 6.987103
+second choose 17     22->21
+code spand : 73.20 s
+保存的数据行： {'test_time': 73.19692921638489, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.97, 'default_it': 17, 'default_ib': 20, 'it_first': 17, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 22: 10.9123
+val_21:  10.46084   val_22:  10.90045
+val_22:  10.90045   val_23:  11.32446
+cal done!!!
+choose 22  ： 10.90045
+cur_default 16: 10.92733
+val_15:  10.8768   val_16:  10.95039
+val_16:  10.95039   val_17:  10.96405
+first choose 22->22     16->17
+cur_default 17: 10.96731
+val_16:  10.91173   val_17:  10.94207
+val_17:  10.94207   val_18:  10.98204
+second choose 22     17->18
+code spand : 77.83 s
+保存的数据行： {'test_time': 77.82859969139099, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 22, 'default_ib': 16, 'it_first': 22, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 31: 14.87716
+val_30:  14.55599   val_31:  14.875
+val_31:  14.875   val_32:  14.99418
+cur_default 2: 14.99997
+first choose 31->32     2->1
+cur_default 1: 15.04191
+val_1:  15.02423   val_2:  15.06353
+second choose 32     1->1
+code spand : 60.11 s
+保存的数据行： {'test_time': 60.111244440078735, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.02, 'default_it': 31, 'default_ib': 2, 'it_first': 32, 'ib_first': 1, 'wf_dtmx_dac_vl_it_bit': 32, 'wf_dtmx_dac_vl_ib_bit': 1}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 42: 18.95338
+val_41:  18.76932   val_42:  18.95643
+val_42:  18.95643   val_43:  19.13964
+cal done!!!
+choose 42  ： 18.95643
+cur_default 3: 18.96347
+val_2:  18.93417   val_3:  18.94849
+val_3:  18.94849   val_4:  18.97423
+first choose 42->42     3->4
+cur_default 4: 18.98375
+val_3:  18.95957   val_4:  18.98021
+second choose 42     4->4
+code spand : 73.31 s
+保存的数据行： {'test_time': 73.30814218521118, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.98, 'default_it': 42, 'default_ib': 3, 'it_first': 42, 'ib_first': 4, 'wf_dtmx_dac_vl_it_bit': 42, 'wf_dtmx_dac_vl_ib_bit': 4}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 48: 22.78473
+val_47:  22.67682   val_48:  22.70612
+val_48:  22.70612   val_49:  22.7646
+val_49:  22.7646   val_50:  22.8359
+val_50:  22.8359   val_51:  22.88647
+val_51:  22.88647   val_52:  22.95285
+val_52:  22.95285   val_53:  22.99426
+cur_default 26: 22.98782
+first choose 48->53     26->25
+cur_default 25: 23.17463
+val_start  1: 23.0398
+val_1:  23.04707   val_2:  23.05036
+val_0:  23.04612   val_1:  23.04707
+cal done! Use minimum value
+cur_default 0: 22.98097
+cur_default 0: 22.90967
+val_start  12: 22.98753
+second choose 51     0->11
+code spand : 126.65 s
+保存的数据行： {'test_time': 126.65430688858032, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 48, 'default_ib': 26, 'it_first': 53, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 51, 'wf_dtmx_dac_vl_ib_bit': 11}
+setpwr 1
+cur_default 14: 0.7597591
+val_13:  0.09880544   val_14:  0.7509973
+val_14:  0.7509973   val_15:  1.351261
+cal done!!!
+choose 14  ： 0.7509973
+cur_default 17: 0.7667245
+val_start  22: 0.9822307
+val_21:  0.9414647   val_22:  0.9796781
+first choose 14->14     17->22
+cur_default 22: 1.086459
+val_22:  1.089858   val_23:  1.11972
+val_21:  1.04353   val_22:  1.089858
+val_20:  0.9918285   val_21:  1.04353
+cal done!!!
+choose 20  ： 0.9918285
+second choose 14     22->20
+code spand : 86.26 s
+保存的数据行： {'test_time': 86.26277875900269, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 14, 'default_ib': 17, 'it_first': 14, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 20}
+setpwr 2
+setpwr 3
+cur_default 14: 2.88524
+val_13:  2.248245   val_14:  2.883795
+val_14:  2.883795   val_15:  3.46004
+cal done!!!
+choose 14  ： 2.883795
+cur_default 28: 2.866959
+val_27:  2.856114   val_28:  2.871375
+val_28:  2.871375   val_29:  2.928815
+val_29:  2.928815   val_30:  2.967359
+first choose 14->14     28->30
+cur_default 30: 2.99752
+val_29:  2.943464   val_30:  2.988233
+second choose 14     30->30
+code spand : 77.73 s
+保存的数据行： {'test_time': 77.73237800598145, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 14, 'default_ib': 28, 'it_first': 14, 'ib_first': 30, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 30}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 18: 6.993864
+val_17:  6.454259   val_18:  7.000762
+cal done!!!
+choose 18  ： 7.000762
+cur_default 16: 6.991592
+val_15:  6.933014   val_16:  6.969444
+first choose 18->18     16->16
+cur_default 16: 6.939733
+val_15:  6.923181   val_16:  6.967566
+second choose 18     16->16
+code spand : 64.12 s
+保存的数据行： {'test_time': 64.12039184570312, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.97, 'default_it': 18, 'default_ib': 16, 'it_first': 18, 'ib_first': 16, 'wf_dtmx_dac_vl_it_bit': 18, 'wf_dtmx_dac_vl_ib_bit': 16}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 23: 10.94865
+val_22:  10.53306   val_23:  10.93732
+val_23:  10.93732   val_24:  11.35049
+cal done!!!
+choose 23  ： 10.93732
+cur_default 20: 10.94436
+val_19:  10.90582   val_20:  10.91661
+val_20:  10.91661   val_21:  10.96936
+first choose 23->23     20->21
+cur_default 21: 10.96651
+val_20:  10.92795   val_21:  10.96013
+second choose 23     21->21
+code spand : 73.28 s
+保存的数据行： {'test_time': 73.27533054351807, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.96, 'default_it': 23, 'default_ib': 20, 'it_first': 23, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 23, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 34: 14.94082
+val_33:  14.64028   val_34:  14.9109
+val_34:  14.9109   val_35:  15.14436
+cal done!!!
+choose 34  ： 14.9109
+cur_default 3: 14.8961
+val_start  8: 14.982
+first choose 34->34     3->7
+cur_default 7: 15.06552
+val_7:  15.06551   val_8:  15.07627
+val_6:  15.04381   val_7:  15.06551
+val_5:  15.01276   val_6:  15.04381
+second choose 34     7->5
+code spand : 77.81 s
+保存的数据行： {'test_time': 77.8091938495636, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.01, 'default_it': 34, 'default_ib': 3, 'it_first': 34, 'ib_first': 7, 'wf_dtmx_dac_vl_it_bit': 34, 'wf_dtmx_dac_vl_ib_bit': 5}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 53: 20.76126
+val_52:  20.60187   val_53:  20.70325
+val_53:  20.70325   val_54:  20.77053
+val_54:  20.77053   val_55:  20.85749
+val_55:  20.85749   val_56:  20.9481
+val_56:  20.9481   val_57:  21.03168
+cal done!!!
+choose 57  ： 21.03168
+cur_default 9: 21.01528
+first choose 53->57     9->10
+cur_default 10: 21.22492
+val_start  1: 21.15442
+val_1:  21.15465   val_2:  21.16419
+val_0:  21.15708   val_1:  21.15465
+cal done! Use minimum value
+cur_default 0: 21.06642
+val_start  1: 21.08321
+val_1:  21.05736   val_2:  21.08687
+val_0:  21.07375   val_1:  21.05736
+cal done! Use minimum value
+cur_default 0: 20.97737
+cur_default 0: 20.86708
+val_start  12: 20.98699
+second choose 54     0->11
+code spand : 159.20 s
+保存的数据行： {'test_time': 159.2023630142212, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 20.99, 'default_it': 53, 'default_ib': 9, 'it_first': 57, 'ib_first': 10, 'wf_dtmx_dac_vl_it_bit': 54, 'wf_dtmx_dac_vl_ib_bit': 11}
+setpwr 22
+setpwr 23
+cur_default 59: 22.92932
+val_58:  22.86776   val_59:  22.90429
+val_59:  22.90429   val_60:  22.94175
+val_60:  22.94175   val_61:  22.98165
+cur_default 9: 22.97688
+val_start  14: 22.99314
+first choose 59->61     9->13
+cur_default 13: 22.98653
+second choose 61     13->12
+code spand : 64.79 s
+保存的数据行： {'test_time': 64.78540396690369, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 59, 'default_ib': 9, 'it_first': 61, 'ib_first': 13, 'wf_dtmx_dac_vl_it_bit': 61, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 1
+cur_default 14: 0.9150273
+val_13:  0.1639397   val_14:  0.9248051
+val_14:  0.9248051   val_15:  1.612051
+cal done!!!
+choose 14  ： 0.9248051
+cur_default 16: 0.9248059
+val_15:  0.8716991   val_16:  0.9334728
+val_16:  0.9334728   val_17:  0.9857516
+first choose 14->14     16->17
+cur_default 17: 1.027223
+val_17:  1.022828   val_18:  1.071094
+second choose 14     17->17
+code spand : 74.10 s
+保存的数据行： {'test_time': 74.09511303901672, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.02, 'default_it': 14, 'default_ib': 16, 'it_first': 14, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 2
+setpwr 3
+cur_default 14: 2.959582
+val_13:  2.228329   val_14:  2.953755
+val_14:  2.953755   val_15:  3.590838
+cal done!!!
+choose 14  ： 2.953755
+cur_default 25: 2.947142
+val_24:  2.908035   val_25:  2.957042
+val_25:  2.957042   val_26:  3.005617
+cal done!!!
+choose 26  ： 3.005617
+first choose 14->14     25->26
+cur_default 26: 2.969299
+val_25:  2.923023   val_26:  2.975342
+second choose 14     26->26
+code spand : 77.97 s
+保存的数据行： {'test_time': 77.96876573562622, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.98, 'default_it': 14, 'default_ib': 25, 'it_first': 14, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 14, 'wf_dtmx_dac_vl_ib_bit': 26}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 17: 6.930274
+val_16:  6.347048   val_17:  6.926817
+val_17:  6.926817   val_18:  7.497152
+cal done!!!
+choose 17  ： 6.926817
+cur_default 21: 6.920811
+val_20:  6.873026   val_21:  6.926016
+val_21:  6.926016   val_22:  6.971336
+first choose 17->17     21->22
+cur_default 22: 6.916326
+val_21:  6.881171   val_22:  6.915641
+val_22:  6.915641   val_23:  6.95942
+val_23:  6.95942   val_24:  7.003361
+cal done!!!
+choose 24  ： 7.003361
+second choose 17     22->24
+code spand : 87.37 s
+保存的数据行： {'test_time': 87.37467241287231, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.0, 'default_it': 17, 'default_ib': 21, 'it_first': 17, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 22: 10.91747
+val_21:  10.41995   val_22:  10.91662
+val_22:  10.91662   val_23:  11.36542
+cal done!!!
+choose 22  ： 10.91662
+cur_default 13: 10.9109
+val_12:  10.8838   val_13:  10.92177
+val_13:  10.92177   val_14:  10.95543
+val_14:  10.95543   val_15:  10.98865
+first choose 22->22     13->15
+cur_default 15: 10.98899
+val_14:  10.94863   val_15:  10.98184
+second choose 22     15->15
+code spand : 78.78 s
+保存的数据行： {'test_time': 78.78037476539612, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 22, 'default_ib': 13, 'it_first': 22, 'ib_first': 15, 'wf_dtmx_dac_vl_it_bit': 22, 'wf_dtmx_dac_vl_ib_bit': 15}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 29: 15.01839
+val_29:  15.00173   val_30:  15.32763
+cur_default 22: 15.00139
+first choose 29->29     22->23
+cur_default 23: 15.00492
+second choose 29     23->24
+code spand : 51.68 s
+保存的数据行： {'test_time': 51.676421880722046, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 29, 'default_ib': 22, 'it_first': 29, 'ib_first': 23, 'wf_dtmx_dac_vl_it_bit': 29, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 40: 18.98647
+val_39:  18.75714   val_40:  18.97244
+cur_default 9: 18.96893
+val_8:  18.95038   val_9:  18.96264
+first choose 40->40     9->9
+cur_default 9: 18.96231
+val_8:  18.94397   val_9:  18.95714
+val_9:  18.95714   val_10:  18.9703
+second choose 40     9->10
+code spand : 65.68 s
+保存的数据行： {'test_time': 65.67790913581848, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.97, 'default_it': 40, 'default_ib': 9, 'it_first': 40, 'ib_first': 9, 'wf_dtmx_dac_vl_it_bit': 40, 'wf_dtmx_dac_vl_ib_bit': 10}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 48: 22.97462
+val_47:  22.90628   val_48:  22.93781
+val_48:  22.93781   val_49:  23.01888
+cal done!!!
+choose 49  ： 23.01888
+cur_default 11: 23.01368
+first choose 48->49     11->12
+cur_default 12: 23.01246
+second choose 49     12->13
+code spand : 60.24 s
+保存的数据行： {'test_time': 60.24245619773865, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.02, 'default_it': 48, 'default_ib': 11, 'it_first': 49, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 49, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 1
+cur_default 16: 0.8225519
+val_15:  0.2359792   val_16:  0.846938
+val_16:  0.846938   val_17:  1.400936
+cal done!!!
+choose 16  ： 0.846938
+cur_default 17: 0.8494199
+val_16:  0.7982703   val_17:  0.8347588
+val_17:  0.8347588   val_18:  0.8999901
+val_18:  0.8999901   val_19:  0.9210975
+val_19:  0.9210975   val_20:  0.9748087
+first choose 16->16     17->20
+cur_default 20: 1.149152
+val_20:  1.144322   val_21:  1.174114
+val_19:  1.095397   val_20:  1.144322
+val_18:  1.066809   val_19:  1.095397
+val_17:  1.039494   val_18:  1.066809
+second choose 16     20->17
+code spand : 96.05 s
+保存的数据行： {'test_time': 96.04608869552612, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.04, 'default_it': 16, 'default_ib': 17, 'it_first': 16, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 2
+setpwr 3
+cur_default 16: 2.953898
+val_15:  2.371958   val_16:  2.95602
+val_16:  2.95602   val_17:  3.505659
+cal done!!!
+choose 16  ： 2.95602
+cur_default 28: 2.9281
+val_27:  2.903005   val_28:  2.932693
+val_28:  2.932693   val_29:  2.983991
+first choose 16->16     28->29
+cur_default 29: 3.008529
+second choose 16     29->30
+code spand : 68.76 s
+保存的数据行： {'test_time': 68.75583219528198, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.04, 'default_it': 16, 'default_ib': 28, 'it_first': 16, 'ib_first': 29, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 30}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 20: 6.876202
+val_19:  6.383914   val_20:  6.869537
+val_20:  6.869537   val_21:  7.333365
+cal done!!!
+choose 20  ： 6.869537
+cur_default 15: 6.862289
+val_start  19: 7.00046
+first choose 20->20     15->20
+cur_default 20: 7.072136
+val_20:  7.075373   val_21:  7.086816
+val_19:  7.024088   val_20:  7.075373
+second choose 20     20->19
+code spand : 73.34 s
+保存的数据行： {'test_time': 73.34098982810974, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 20, 'default_ib': 15, 'it_first': 20, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 20, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 11.13337
+val_26:  11.09408   val_27:  11.4449
+val_25:  10.71737   val_26:  11.09408
+cal done!!!
+choose 26  ： 11.09408
+cur_default 16: 11.09744
+val_16:  11.0947   val_17:  11.12114
+val_15:  11.07818   val_16:  11.0947
+val_14:  11.03793   val_15:  11.07818
+first choose 26->26     16->14
+cur_default 14: 11.05718
+val_14:  11.06122   val_15:  11.09657
+val_13:  11.04629   val_14:  11.06122
+val_12:  11.01555   val_13:  11.04629
+second choose 26     14->12
+code spand : 86.91 s
+保存的数据行： {'test_time': 86.91135215759277, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.02, 'default_it': 26, 'default_ib': 16, 'it_first': 26, 'ib_first': 14, 'wf_dtmx_dac_vl_it_bit': 26, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 37: 14.98539
+val_36:  14.71666   val_37:  14.94813
+val_37:  14.94813   val_38:  15.18048
+cal done!!!
+choose 37  ： 14.94813
+cur_default 2: 14.94446
+val_1:  14.91834   val_2:  14.93116
+val_2:  14.93116   val_3:  14.95451
+val_3:  14.95451   val_4:  14.97557
+first choose 37->37     2->4
+cur_default 4: 15.0769
+val_start  1: 15.02569
+second choose 37     4->2
+code spand : 77.75 s
+保存的数据行： {'test_time': 77.74759578704834, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 37, 'default_ib': 2, 'it_first': 37, 'ib_first': 4, 'wf_dtmx_dac_vl_it_bit': 37, 'wf_dtmx_dac_vl_ib_bit': 2}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 47: 18.77766
+val_46:  18.61235   val_47:  18.73147
+val_47:  18.73147   val_48:  18.82376
+val_48:  18.82376   val_49:  18.93308
+val_49:  18.93308   val_50:  19.08104
+cal done!!!
+choose 49  ： 18.93308
+cur_default 28: 18.9286
+val_start  30: 18.9608
+val_29:  18.92876   val_30:  18.94352
+val_30:  18.94352   val_31:  18.96233
+cal done! Use maximum value
+cur_default 31: 19.07787
+val_start  25: 19.00277
+first choose 47->50     31->26
+cur_default 26: 19.10173
+val_start  18: 19.0002
+second choose 50     26->19
+code spand : 110.77 s
+保存的数据行： {'test_time': 110.77167797088623, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.04, 'default_it': 47, 'default_ib': 28, 'it_first': 50, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 50, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 61: 22.78826
+val_start  62: 22.76418
+val_61:  22.70291   val_62:  22.72634
+val_62:  22.72634   val_63:  22.77304
+cal done! Use maximum value
+cur_default 2: 22.77434
+val_start  30: 22.87602
+val_29:  22.86988   val_30:  22.86968
+val_30:  22.86968   val_31:  22.86972
+cal done! Use maximum value
+cur_default 31: 22.84883
+val_start  30: 22.85433
+val_29:  22.8379   val_30:  22.83902
+val_30:  22.83902   val_31:  22.8387
+cal done! Use maximum value
+first choose 61->63     31->31
+cur_default 31: 23.06742
+val_start  1: 22.96495
+val_0:  22.95226   val_1:  22.98018
+second choose 63     31->1
+code spand : 123.53 s
+保存的数据行： {'test_time': 123.52914023399353, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 61, 'default_ib': 2, 'it_first': 63, 'ib_first': 31, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 1}
+setpwr 1
+cur_default 12: -2.19852
+val_start  17: 0.8008379
+val_16:  0.2797268   val_17:  0.8103991
+val_17:  0.8103991   val_18:  1.338836
+cal done!!!
+choose 17  ： 0.8103991
+cur_default 16: 0.8297972
+val_start  20: 0.9634102
+val_19:  0.9344862   val_20:  0.9529483
+val_20:  0.9529483   val_21:  0.9716408
+first choose 12->17     16->21
+cur_default 21: 1.295801
+val_start  14: 1.038435
+val_14:  1.048202   val_15:  1.096915
+val_13:  1.014182   val_14:  1.048202
+second choose 17     21->13
+code spand : 91.42 s
+保存的数据行： {'test_time': 91.42069935798645, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 12, 'default_ib': 16, 'it_first': 17, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+cur_default 13: 0.6001422
+val_start  17: 2.806648
+val_16:  2.302366   val_17:  2.807421
+val_17:  2.807421   val_18:  3.301725
+cal done!!!
+choose 17  ： 2.807421
+cur_default 26: 2.809626
+val_start  30: 2.956625
+val_29:  2.934608   val_30:  2.954741
+val_30:  2.954741   val_31:  2.989943
+cal done! Use maximum value
+cur_default 31: 3.489392
+val_start  18: 3.023686
+val_18:  3.02983   val_19:  3.057882
+first choose 13->18     31->18
+cur_default 18: 3.374959
+val_start  7: 3.001469
+second choose 18     18->8
+code spand : 110.79 s
+保存的数据行： {'test_time': 110.78675389289856, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.04, 'default_it': 13, 'default_ib': 26, 'it_first': 18, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 18, 'wf_dtmx_dac_vl_ib_bit': 8}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 19: 6.006441
+val_18:  5.515895   val_19:  5.990531
+val_19:  5.990531   val_20:  6.450731
+val_20:  6.450731   val_21:  6.884537
+val_21:  6.884537   val_22:  7.309616
+cal done!!!
+choose 21  ： 6.884537
+cur_default 16: 6.872922
+val_start  20: 6.999571
+first choose 19->21     16->19
+cur_default 19: 7.054392
+val_19:  7.059876   val_20:  7.091412
+val_18:  7.01732   val_19:  7.059876
+second choose 21     19->18
+code spand : 82.29 s
+保存的数据行： {'test_time': 82.29136514663696, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 19, 'default_ib': 16, 'it_first': 21, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 21, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 10.53945
+val_25:  10.17522   val_26:  10.52963
+val_26:  10.52963   val_27:  10.82644
+val_27:  10.82644   val_28:  11.13734
+cal done!!!
+choose 28  ： 11.13734
+cur_default 16: 11.15449
+val_start  9: 10.9964
+first choose 26->28     16->8
+cur_default 8: 11.015
+val_8:  11.01558   val_9:  11.04794
+second choose 28     8->8
+code spand : 73.30 s
+保存的数据行： {'test_time': 73.29692912101746, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.02, 'default_it': 26, 'default_ib': 16, 'it_first': 28, 'ib_first': 8, 'wf_dtmx_dac_vl_it_bit': 28, 'wf_dtmx_dac_vl_ib_bit': 8}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 39: 15.01073
+val_39:  14.94864   val_40:  15.19649
+cal done!!!
+choose 39  ： 14.94864
+cur_default 19: 14.94953
+val_18:  14.93723   val_19:  14.95005
+val_19:  14.95005   val_20:  14.9593
+val_20:  14.9593   val_21:  14.97775
+first choose 39->39     19->21
+cur_default 21: 15.01256
+val_21:  15.0482   val_22:  15.071
+val_20:  15.02462   val_21:  15.0482
+second choose 39     21->20
+code spand : 77.85 s
+保存的数据行： {'test_time': 77.84746432304382, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.02, 'default_it': 39, 'default_ib': 19, 'it_first': 39, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 39, 'wf_dtmx_dac_vl_ib_bit': 20}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 59: 20.88096
+val_58:  20.79402   val_59:  20.86531
+val_59:  20.86531   val_60:  20.92668
+val_60:  20.92668   val_61:  21.01172
+cal done!!!
+choose 61  ： 21.01172
+cur_default 9: 20.97664
+val_start  13: 20.99733
+first choose 59->61     9->12
+cur_default 12: 20.99607
+second choose 61     12->11
+code spand : 68.61 s
+保存的数据行： {'test_time': 68.60972833633423, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 20.98, 'default_it': 59, 'default_ib': 9, 'it_first': 61, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 61, 'wf_dtmx_dac_vl_ib_bit': 11}
+setpwr 22
+setpwr 23
+cur_default 63: 22.56802
+val_start  62: 22.51909
+val_61:  22.46724   val_62:  22.5043
+val_62:  22.5043   val_63:  22.53956
+cal done! Use maximum value
+cur_default 31: 22.53774
+val_start  30: 22.52646
+val_29:  22.51908   val_30:  22.53188
+val_30:  22.53188   val_31:  22.53302
+cal done! Use maximum value
+cur_default 31: 22.52116
+val_start  30: 22.51665
+val_29:  22.51566   val_30:  22.51987
+val_30:  22.51987   val_31:  22.52195
+cal done! Use maximum value
+first choose 63->63     31->31
+cur_default 31: 22.5327
+val_start  30: 22.50109
+val_29:  22.50752   val_30:  22.51383
+val_30:  22.51383   val_31:  22.51199
+cal done! Use maximum value
+cur_default 31: 22.51917
+val_start  30: 22.50513
+val_29:  22.50033   val_30:  22.50406
+val_30:  22.50406   val_31:  22.51033
+cal done! Use maximum value
+second choose 63     31->31
+code spand : 165.21 s
+保存的数据行： {'test_time': 165.2127001285553, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.51, 'default_it': 63, 'default_ib': 31, 'it_first': 63, 'ib_first': 31, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 31}
+setpwr 1
+cur_default 12: -2.006507
+val_start  16: 0.8031725
+val_15:  0.1830823   val_16:  0.8153833
+val_16:  0.8153833   val_17:  1.409479
+cal done!!!
+choose 16  ： 0.8153833
+cur_default 16: 0.8168253
+val_start  20: 0.9756165
+val_19:  0.9345488   val_20:  0.9743797
+first choose 12->16     16->20
+cur_default 20: 0.9742945
+val_19:  0.9269653   val_20:  0.9778193
+second choose 16     20->20
+code spand : 78.82 s
+保存的数据行： {'test_time': 78.81638813018799, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.98, 'default_it': 12, 'default_ib': 16, 'it_first': 16, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 20}
+setpwr 2
+setpwr 3
+cur_default 13: 0.8700816
+val_start  16: 2.797516
+val_15:  2.19796   val_16:  2.78791
+val_16:  2.78791   val_17:  3.362455
+cal done!!!
+choose 16  ： 2.78791
+cur_default 26: 2.796401
+val_start  30: 2.970272
+val_29:  2.927825   val_30:  2.971138
+first choose 13->16     26->30
+cur_default 30: 3.026193
+val_30:  3.024178   val_31:  3.078772
+second choose 16     30->30
+code spand : 78.68 s
+保存的数据行： {'test_time': 78.67570185661316, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.02, 'default_it': 13, 'default_ib': 26, 'it_first': 16, 'ib_first': 30, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 30}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 19: 6.426284
+val_18:  5.883716   val_19:  6.422455
+val_19:  6.422455   val_20:  6.951219
+val_20:  6.951219   val_21:  7.422992
+cal done!!!
+choose 20  ： 6.951219
+cur_default 16: 6.944237
+val_15:  6.913072   val_16:  6.941395
+val_16:  6.941395   val_17:  6.985362
+first choose 19->20     16->17
+cur_default 17: 7.013067
+val_17:  7.011529   val_18:  7.061759
+second choose 20     17->17
+code spand : 78.71 s
+保存的数据行： {'test_time': 78.71145391464233, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.01, 'default_it': 19, 'default_ib': 16, 'it_first': 20, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 20, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 11.33949
+val_26:  11.32559   val_27:  11.69627
+val_25:  10.92693   val_26:  11.32559
+cal done!!!
+choose 25  ： 10.92693
+cur_default 16: 10.92584
+val_15:  10.90108   val_16:  10.92904
+val_16:  10.92904   val_17:  10.96099
+first choose 26->25     16->17
+cur_default 17: 10.97035
+val_16:  10.95164   val_17:  10.97652
+second choose 25     17->17
+code spand : 74.14 s
+保存的数据行： {'test_time': 74.13669443130493, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 26, 'default_ib': 16, 'it_first': 25, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 25, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 34: 14.98168
+val_33:  14.67412   val_34:  14.9461
+val_34:  14.9461   val_35:  15.20567
+cal done!!!
+choose 34  ： 14.9461
+cur_default 22: 14.93439
+val_21:  14.90772   val_22:  14.92981
+val_22:  14.92981   val_23:  14.95208
+val_23:  14.95208   val_24:  14.96539
+first choose 34->34     22->24
+cur_default 24: 15.02293
+val_24:  15.03421   val_25:  15.04197
+second choose 34     24->24
+code spand : 78.74 s
+保存的数据行： {'test_time': 78.73538112640381, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 34, 'default_ib': 22, 'it_first': 34, 'ib_first': 24, 'wf_dtmx_dac_vl_it_bit': 34, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 45: 18.82129
+val_44:  18.65403   val_45:  18.80723
+val_45:  18.80723   val_46:  18.96901
+cur_default 23: 18.9718
+first choose 45->46     23->22
+cur_default 22: 18.98291
+second choose 46     22->21
+code spand : 56.29 s
+保存的数据行： {'test_time': 56.2883825302124, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.97, 'default_it': 45, 'default_ib': 23, 'it_first': 46, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 46, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 55: 22.96159
+val_54:  22.87345   val_55:  22.92732
+val_55:  22.92732   val_56:  22.98259
+cur_default 19: 22.9767
+val_start  23: 22.99711
+first choose 55->56     19->22
+cur_default 22: 22.98624
+second choose 56     22->21
+code spand : 61.08 s
+保存的数据行： {'test_time': 61.07896184921265, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH138_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.98, 'default_it': 55, 'default_ib': 19, 'it_first': 56, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 56, 'wf_dtmx_dac_vl_ib_bit': 21}
+setpwr 1
+cur_default 12: -1.689564
+val_start  16: 1.04953
+val_16:  1.051257   val_17:  1.635707
+val_15:  0.4443341   val_16:  1.051257
+cal done!!!
+choose 16  ： 1.051257
+cur_default 16: 1.066128
+val_16:  1.077888   val_17:  1.107756
+val_15:  1.038203   val_16:  1.077888
+first choose 12->16     16->15
+cur_default 15: 1.333991
+val_start  8: 1.021183
+val_8:  1.03213   val_9:  1.079845
+second choose 16     15->8
+code spand : 82.35 s
+保存的数据行： {'test_time': 82.35420775413513, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.03, 'default_it': 12, 'default_ib': 16, 'it_first': 16, 'ib_first': 15, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 8}
+setpwr 2
+setpwr 3
+cur_default 13: 1.318334
+val_12:  0.6159422   val_13:  1.303439
+val_13:  1.303439   val_14:  2.032705
+val_14:  2.032705   val_15:  2.646535
+val_15:  2.646535   val_16:  3.217501
+cal done!!!
+choose 16  ： 3.217501
+cur_default 26: 3.215555
+val_start  21: 3.015287
+val_21:  3.019728   val_22:  3.059461
+first choose 13->16     26->21
+cur_default 21: 3.140315
+val_21:  3.149148   val_22:  3.187158
+val_20:  3.119148   val_21:  3.149148
+val_19:  3.083434   val_20:  3.119148
+val_18:  3.043576   val_19:  3.083434
+val_17:  3.004665   val_18:  3.043576
+second choose 16     21->17
+code spand : 100.51 s
+保存的数据行： {'test_time': 100.50694847106934, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 13, 'default_ib': 26, 'it_first': 16, 'ib_first': 21, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 19: 6.857041
+val_18:  6.318419   val_19:  6.835305
+val_19:  6.835305   val_20:  7.353345
+cal done!!!
+choose 19  ： 6.835305
+cur_default 16: 6.83908
+val_start  20: 6.987293
+val_19:  6.949627   val_20:  6.979623
+first choose 19->19     16->20
+cur_default 20: 7.020391
+val_20:  7.030326   val_21:  7.062816
+second choose 19     20->20
+code spand : 73.12 s
+保存的数据行： {'test_time': 73.12428569793701, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.03, 'default_it': 19, 'default_ib': 16, 'it_first': 19, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 20}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 11.53354
+val_26:  11.52124   val_27:  11.88634
+val_25:  11.14207   val_26:  11.52124
+val_24:  10.75465   val_25:  11.14207
+cal done!!!
+choose 25  ： 11.14207
+cur_default 16: 11.15146
+val_start  11: 11.01044
+first choose 26->25     16->12
+cur_default 12: 11.02931
+val_12:  11.03181   val_13:  11.05834
+second choose 25     12->12
+code spand : 73.09 s
+保存的数据行： {'test_time': 73.0935869216919, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.03, 'default_it': 26, 'default_ib': 16, 'it_first': 25, 'ib_first': 12, 'wf_dtmx_dac_vl_it_bit': 25, 'wf_dtmx_dac_vl_ib_bit': 12}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 34: 15.00198
+val_34:  14.94231   val_35:  15.21892
+cal done!!!
+choose 34  ： 14.94231
+cur_default 23: 14.94743
+val_22:  14.91987   val_23:  14.92475
+val_23:  14.92475   val_24:  14.95464
+val_24:  14.95464   val_25:  14.97401
+first choose 34->34     23->25
+cur_default 25: 15.06881
+val_25:  15.06985   val_26:  15.08945
+val_24:  15.0462   val_25:  15.06985
+val_23:  15.02198   val_24:  15.0462
+second choose 34     25->23
+code spand : 82.25 s
+保存的数据行： {'test_time': 82.250004529953, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.02, 'default_it': 34, 'default_ib': 23, 'it_first': 34, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 34, 'wf_dtmx_dac_vl_ib_bit': 23}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 50: 18.91552
+val_49:  18.73973   val_50:  18.85998
+val_50:  18.85998   val_51:  18.97574
+cur_default 2: 18.98552
+val_1:  18.95111   val_2:  18.96746
+first choose 50->51     2->2
+cur_default 2: 19.11392
+val_start  1: 19.08983
+val_1:  19.10363   val_2:  19.104
+val_0:  19.08964   val_1:  19.10363
+cal done! Use minimum value
+cur_default 0: 18.95625
+cur_default 0: 18.82375
+val_start  15: 18.99797
+second choose 49     0->14
+code spand : 113.05 s
+保存的数据行： {'test_time': 113.05260109901428, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.99, 'default_it': 50, 'default_ib': 2, 'it_first': 51, 'ib_first': 2, 'wf_dtmx_dac_vl_it_bit': 49, 'wf_dtmx_dac_vl_ib_bit': 14}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 63: 22.63838
+val_start  62: 22.51697
+val_61:  22.46001   val_62:  22.47665
+val_62:  22.47665   val_63:  22.51886
+cal done! Use maximum value
+cur_default 31: 22.51194
+val_start  30: 22.48815
+val_29:  22.48569   val_30:  22.48881
+val_30:  22.48881   val_31:  22.47659
+cal done! Use maximum value
+cur_default 31: 22.46946
+val_start  30: 22.47363
+val_29:  22.46205   val_30:  22.46124
+val_30:  22.46124   val_31:  22.46559
+cal done! Use maximum value
+first choose 63->63     31->31
+cur_default 31: 22.7088
+val_start  30: 22.71195
+val_29:  22.71567   val_30:  22.71452
+val_30:  22.71452   val_31:  22.72876
+cal done! Use maximum value
+cur_default 31: 22.72673
+val_start  30: 22.72645
+val_29:  22.72071   val_30:  22.7259
+val_30:  22.7259   val_31:  22.73209
+cal done! Use maximum value
+second choose 63     31->31
+code spand : 165.11 s
+保存的数据行： {'test_time': 165.10906887054443, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.73, 'default_it': 63, 'default_ib': 31, 'it_first': 63, 'ib_first': 31, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 31}
+setpwr 1
+cur_default 12: -1.720724
+val_start  16: 0.8486863
+val_15:  0.2980232   val_16:  0.8756979
+val_16:  0.8756979   val_17:  1.426602
+cal done!!!
+choose 16  ： 0.8756979
+cur_default 16: 0.8762805
+val_15:  0.8402115   val_16:  0.8953696
+val_16:  0.8953696   val_17:  0.943755
+val_17:  0.943755   val_18:  0.9677327
+first choose 12->16     16->18
+cur_default 18: 1.221027
+val_start  13: 1.028487
+val_13:  1.038458   val_14:  1.060487
+second choose 16     18->13
+code spand : 86.99 s
+保存的数据行： {'test_time': 86.99326372146606, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.04, 'default_it': 12, 'default_ib': 16, 'it_first': 16, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+cur_default 13: 1.058277
+val_start  16: 2.812593
+val_15:  2.272781   val_16:  2.793782
+val_16:  2.793782   val_17:  3.31523
+cal done!!!
+choose 16  ： 2.793782
+cur_default 26: 2.783147
+val_start  30: 2.970368
+val_29:  2.915035   val_30:  2.956378
+val_30:  2.956378   val_31:  3.004819
+cal done!!!
+choose 31  ： 3.004819
+cur_default 31: 3.517475
+val_start  18: 3.033654
+val_18:  3.016508   val_19:  3.05022
+first choose 13->17     31->18
+cur_default 18: 3.258077
+val_start  12: 3.045079
+val_12:  3.062017   val_13:  3.108148
+val_11:  3.014672   val_12:  3.062017
+second choose 17     18->11
+code spand : 119.83 s
+保存的数据行： {'test_time': 119.83014273643494, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.01, 'default_it': 13, 'default_ib': 26, 'it_first': 17, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 17, 'wf_dtmx_dac_vl_ib_bit': 11}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 19: 6.449009
+val_18:  5.954191   val_19:  6.419126
+val_19:  6.419126   val_20:  6.932682
+val_20:  6.932682   val_21:  7.352123
+cal done!!!
+choose 20  ： 6.932682
+cur_default 16: 6.934402
+val_15:  6.88088   val_16:  6.929801
+val_16:  6.929801   val_17:  6.94557
+val_17:  6.94557   val_18:  6.963584
+first choose 19->20     16->18
+cur_default 18: 6.993495
+val_17:  6.947336   val_18:  6.987987
+second choose 20     18->18
+code spand : 82.31 s
+保存的数据行： {'test_time': 82.30635023117065, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 19, 'default_ib': 16, 'it_first': 20, 'ib_first': 18, 'wf_dtmx_dac_vl_it_bit': 20, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 10.96271
+val_25:  10.5858   val_26:  10.97688
+cur_default 16: 10.95617
+val_15:  10.93537   val_16:  10.94215
+val_16:  10.94215   val_17:  10.98006
+first choose 26->26     16->17
+cur_default 17: 11.03409
+second choose 26     17->18
+code spand : 60.18 s
+保存的数据行： {'test_time': 60.18360781669617, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.02, 'default_it': 26, 'default_ib': 16, 'it_first': 26, 'ib_first': 17, 'wf_dtmx_dac_vl_it_bit': 26, 'wf_dtmx_dac_vl_ib_bit': 18}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 39: 15.12517
+val_39:  15.1323   val_40:  15.37497
+val_38:  14.90007   val_39:  15.1323
+cal done!!!
+choose 38  ： 14.90007
+cur_default 3: 14.90893
+val_start  8: 14.9767
+first choose 39->38     3->7
+cur_default 7: 14.99508
+second choose 38     7->6
+code spand : 64.10 s
+保存的数据行： {'test_time': 64.10034394264221, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.97, 'default_it': 39, 'default_ib': 3, 'it_first': 38, 'ib_first': 7, 'wf_dtmx_dac_vl_it_bit': 38, 'wf_dtmx_dac_vl_ib_bit': 6}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default 58: 20.84902
+val_57:  20.70854   val_58:  20.74802
+val_58:  20.74802   val_59:  20.81535
+val_59:  20.81535   val_60:  20.85671
+val_60:  20.85671   val_61:  20.91087
+val_61:  20.91087   val_62:  20.95968
+val_62:  20.95968   val_63:  20.99764
+cal done! Use maximum value
+cur_default 0: 20.99292
+cur_default 0: 20.92209
+val_start  27: 21.0516
+val_27:  21.04067   val_28:  21.05061
+val_26:  21.03541   val_27:  21.04067
+first choose 58->62     0->26
+cur_default 26: 21.31465
+val_start  1: 21.1913
+val_1:  21.20012   val_2:  21.20455
+val_0:  21.19143   val_1:  21.20012
+cal done! Use minimum value
+cur_default 0: 21.1328
+val_start  1: 21.12743
+val_1:  21.12339   val_2:  21.13384
+val_0:  21.12831   val_1:  21.12339
+cal done! Use minimum value
+cur_default 0: 21.06801
+val_start  1: 21.08488
+val_1:  21.10027   val_2:  21.10137
+val_0:  21.08819   val_1:  21.10027
+cal done! Use minimum value
+cur_default 0: 21.03393
+val_start  1: 21.03472
+second choose 59     0->2
+code spand : 210.10 s
+保存的数据行： {'test_time': 210.09843373298645, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.03, 'default_it': 58, 'default_ib': 0, 'it_first': 62, 'ib_first': 26, 'wf_dtmx_dac_vl_it_bit': 59, 'wf_dtmx_dac_vl_ib_bit': 2}
+setpwr 22
+setpwr 23
+cur_default 63: 21.90518
+val_start  62: 21.77089
+val_61:  21.73263   val_62:  21.75976
+val_62:  21.75976   val_63:  21.78076
+cal done! Use maximum value
+cur_default 31: 21.75531
+val_start  30: 21.75564
+val_29:  21.75256   val_30:  21.75348
+val_30:  21.75348   val_31:  21.73723
+cal done! Use maximum value
+cur_default 31: 21.7317
+val_start  30: 21.71766
+val_29:  21.72371   val_30:  21.71247
+val_30:  21.71247   val_31:  21.72504
+cal done! Use maximum value
+first choose 63->63     31->31
+cur_default 31: 22.0154
+val_start  30: 22.01926
+val_29:  22.00594   val_30:  22.02375
+val_30:  22.02375   val_31:  22.02717
+cal done! Use maximum value
+cur_default 31: 22.03187
+val_start  30: 22.0354
+val_29:  22.03767   val_30:  22.03399
+val_30:  22.03399   val_31:  22.04322
+cal done! Use maximum value
+second choose 63     31->31
+code spand : 165.03 s
+保存的数据行： {'test_time': 165.03412675857544, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.04, 'default_it': 63, 'default_ib': 31, 'it_first': 63, 'ib_first': 31, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 31}
+setpwr 1
+cur_default 12: -1.682363
+val_start  16: 1.20433
+val_16:  1.208079   val_17:  1.815945
+val_15:  0.5728951   val_16:  1.208079
+cal done!!!
+choose 16  ： 1.208079
+cur_default 16: 1.216722
+val_start  11: 0.9988406
+first choose 12->16     16->10
+cur_default 10: 1.039311
+val_10:  1.045433   val_11:  1.097314
+val_9:  1.005849   val_10:  1.045433
+second choose 16     10->9
+code spand : 78.73 s
+保存的数据行： {'test_time': 78.73479413986206, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 12, 'default_ib': 16, 'it_first': 16, 'ib_first': 10, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 9}
+setpwr 2
+setpwr 3
+cur_default 13: 1.26971
+val_12:  0.5088369   val_13:  1.268679
+val_13:  1.268679   val_14:  1.99737
+val_14:  1.99737   val_15:  2.662055
+val_15:  2.662055   val_16:  3.276795
+cal done!!!
+choose 16  ： 3.276795
+cur_default 26: 3.27825
+val_start  20: 3.019708
+val_20:  3.024447   val_21:  3.072496
+first choose 13->16     26->20
+cur_default 20: 3.134177
+val_20:  3.127556   val_21:  3.182375
+val_19:  3.093486   val_20:  3.127556
+val_18:  3.049598   val_19:  3.093486
+val_17:  3.003546   val_18:  3.049598
+second choose 16     20->17
+code spand : 97.41 s
+保存的数据行： {'test_time': 97.41462826728821, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 13, 'default_ib': 26, 'it_first': 16, 'ib_first': 20, 'wf_dtmx_dac_vl_it_bit': 16, 'wf_dtmx_dac_vl_ib_bit': 17}
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default 19: 6.88391
+val_18:  6.322693   val_19:  6.879359
+val_19:  6.879359   val_20:  7.425711
+cal done!!!
+choose 19  ： 6.879359
+cur_default 16: 6.879498
+val_15:  6.83502   val_16:  6.88141
+val_16:  6.88141   val_17:  6.924386
+val_17:  6.924386   val_18:  6.953952
+val_18:  6.953952   val_19:  6.996056
+first choose 19->19     16->19
+cur_default 19: 7.01172
+val_19:  7.001556   val_20:  7.045016
+second choose 19     19->19
+code spand : 83.38 s
+保存的数据行： {'test_time': 83.37643766403198, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.0, 'default_it': 19, 'default_ib': 16, 'it_first': 19, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 19, 'wf_dtmx_dac_vl_ib_bit': 19}
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default 26: 11.72113
+val_26:  11.69689   val_27:  12.06458
+val_25:  11.28556   val_26:  11.69689
+val_24:  10.88063   val_25:  11.28556
+cal done!!!
+choose 24  ： 10.88063
+cur_default 16: 10.88056
+val_15:  10.8529   val_16:  10.87864
+val_16:  10.87864   val_17:  10.90482
+val_17:  10.90482   val_18:  10.9418
+val_18:  10.9418   val_19:  10.97193
+first choose 26->24     16->19
+cur_default 19: 11.00155
+second choose 24     19->20
+code spand : 83.31 s
+保存的数据行： {'test_time': 83.31164145469666, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.04, 'default_it': 26, 'default_ib': 16, 'it_first': 24, 'ib_first': 19, 'wf_dtmx_dac_vl_it_bit': 24, 'wf_dtmx_dac_vl_ib_bit': 20}
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default 40: 16.85441
+val_start  33: 15.02819
+val_33:  15.02843   val_34:  15.32483
+cur_default 22: 15.02885
+val_22:  15.03161   val_23:  15.05439
+first choose 40->33     22->22
+cur_default 22: 15.03154
+val_22:  15.03191   val_23:  15.05225
+second choose 33     22->22
+code spand : 65.55 s
+保存的数据行： {'test_time': 65.54864549636841, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.03, 'default_it': 40, 'default_ib': 22, 'it_first': 33, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 33, 'wf_dtmx_dac_vl_ib_bit': 22}
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default 59: 20.67996
+val_start  45: 18.95808
+val_44:  18.80077   val_45:  18.96207
+cur_default 22: 18.95498
+val_21:  18.95154   val_22:  18.96244
+first choose 59->45     22->22
+cur_default 22: 18.95902
+val_21:  18.94156   val_22:  18.9413
+val_22:  18.9413   val_23:  18.95315
+val_23:  18.95315   val_24:  18.96897
+second choose 45     22->24
+code spand : 74.81 s
+保存的数据行： {'test_time': 74.81467008590698, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.97, 'default_it': 59, 'default_ib': 22, 'it_first': 45, 'ib_first': 22, 'wf_dtmx_dac_vl_it_bit': 45, 'wf_dtmx_dac_vl_ib_bit': 24}
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default 63: 23.07385
+cur_default 31: 23.02491
+val_start  26: 22.99798
+first choose 63->63     31->25
+cur_default 25: 22.98912
+second choose 63     25->24
+code spand : 51.65 s
+保存的数据行： {'test_time': 51.65062212944031, 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH155_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.97, 'default_it': 63, 'default_ib': 31, 'it_first': 63, 'ib_first': 25, 'wf_dtmx_dac_vl_it_bit': 63, 'wf_dtmx_dac_vl_ib_bit': 24}
+Com8 is closed
+
+Process finished with exit code 0

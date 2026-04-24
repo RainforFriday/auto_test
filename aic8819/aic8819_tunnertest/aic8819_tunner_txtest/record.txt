@@ -1,0 +1,19 @@
+0.2	-60
+
+
+reg_high_start = min(high_bit, 63) - 32
+        reg_high_end = max(low_bit, 32) - 32
+
+
+reg_low_start = min(high_bit, 31)
+        reg_low_end = low_bit
+
+
+
+
+REG_HIGH = "4034807c"  # bits[63:32]
+REG_LOW = "40348078"
+
+f"w {REG_LOW}\t{val_low:08x}"
+
+        writer.writerow([f'{formatted_string}'] + [value] + pwrs )

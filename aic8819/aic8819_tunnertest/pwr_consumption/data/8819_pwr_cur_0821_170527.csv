@@ -1,0 +1,3 @@
+test_time, BoardNo, am, phase, BinVersion,freq, Channel, SetPwrpwr, freq, Current
+0821_170541,8,0.1,-180,testmode_8819h_820_high_apc,2442,7,18,15.53,2446.06,385.26
+0821_170549,8,0.0,0,testmode_8819h_820_high_apc,2442,7,18,15.69,2446.06,386.12

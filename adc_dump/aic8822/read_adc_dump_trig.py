@@ -142,15 +142,15 @@ def dump_log_plot(log_file):
     
 
 if __name__ == "__main__":
-    # logFile1 = './data/loft_dump_20240911_1808_before.log'
-    # logFile2 = './data/loft_dump_20240911_1808_after.log'
-    # dump_log_plot(logFile1)
-    # dump_log_plot(logFile2)
+    logFile1 = './data/loft_dump_20240911_1808_before.log'
+    logFile2 = './data/loft_dump_20240911_1808_after.log'
+    dump_log_plot(logFile1)
+    dump_log_plot(logFile2)
 
-    log_file1 = "D:\\log\\aic8820_fem_loft_dbg_20240912_1957.log"
-    dump_log_plot(log_file1)
-
-    log_file2 = "D:\\log\\aic8820_fem_loft_dbg_20240912_1958.log"
-    dump_log_plot(log_file2)
+    # log_file1 = "D:\\log\\aic8820_fem_loft_dbg_20240912_1957.log"
+    # dump_log_plot(log_file1)
+    #
+    # log_file2 = "D:\\log\\aic8820_fem_loft_dbg_20240912_1958.log"
+    # dump_log_plot(log_file2)
 
     plt.show()

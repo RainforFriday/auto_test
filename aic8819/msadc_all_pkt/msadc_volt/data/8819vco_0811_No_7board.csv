@@ -1,0 +1,18 @@
+Info:,ch 100,testmode_8819h_0730.bin,8819,No.7 board
+
+
+cm_mdllband_high_bit,cm_mdll_freg_bit,name,ana_test_bit,voltage(mV),name,ana_test_bit,voltage(mV),name,ana_test_bit,voltage(mV),name,ana_test_bit,voltage(mV)
+2,1,md11_cp_out0,3,682.447,md11_cp_out1,2,683.343,avdd_logic,1,1159.63,avdd_sw_mdll,0,1194.577
+2,2,md11_cp_out0,3,636.343,md11_cp_out1,2,636.88,avdd_logic,1,1117.213,avdd_sw_mdll,0,1197.097
+2,3,md11_cp_out0,3,597.357,md11_cp_out1,2,598.737,avdd_logic,1,1077.173,avdd_sw_mdll,0,1199.24
+2,4,md11_cp_out0,3,557.243,md11_cp_out1,2,559.97,avdd_logic,1,1035.457,avdd_sw_mdll,0,1201.517
+2,5,md11_cp_out0,3,520.113,md11_cp_out1,2,523.377,avdd_logic,1,997.26,avdd_sw_mdll,0,1202.463
+2,6,md11_cp_out0,3,479.893,md11_cp_out1,2,483.027,avdd_logic,1,956.567,avdd_sw_mdll,0,1203.47
+2,7,md11_cp_out0,3,441.337,md11_cp_out1,2,443.647,avdd_logic,1,917.707,avdd_sw_mdll,0,1205.683
+3,1,md11_cp_out0,3,327.893,md11_cp_out1,2,326.777,avdd_logic,1,803.783,avdd_sw_mdll,0,1204.91
+3,2,md11_cp_out0,3,313.207,md11_cp_out1,2,311.583,avdd_logic,1,788.823,avdd_sw_mdll,0,1205.93
+3,3,md11_cp_out0,3,298.937,md11_cp_out1,2,296.867,avdd_logic,1,774.323,avdd_sw_mdll,0,1206.583
+3,4,md11_cp_out0,3,283.733,md11_cp_out1,2,281.163,avdd_logic,1,758.787,avdd_sw_mdll,0,1208.203
+3,5,md11_cp_out0,3,269.29,md11_cp_out1,2,266.36,avdd_logic,1,744.05,avdd_sw_mdll,0,1210.05
+3,6,md11_cp_out0,3,253.603,md11_cp_out1,2,250.22,avdd_logic,1,727.79,avdd_sw_mdll,0,1213.25
+3,7,md11_cp_out0,3,238.07,md11_cp_out1,2,234.43,avdd_logic,1,711.843,avdd_sw_mdll,0,1214.0

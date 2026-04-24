@@ -1,0 +1,8 @@
+Function,SUB-TOP,BLOCK,msadc_mux_regname,msadc_mux_regvalue,test_enable_regname,test_enable_regvalue,test_bits_regname,test_bits_regvalue,test_case
+,,,,,,,,,
+lna_5g_reg_out,WF,LNA_5G,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna_5g_preamp,1'b1,,,wf_test_bit,3'b001,RX_ON,WF_HB,WF_RX_ON
+lna_5g_vbn,WF,LNA_5G,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna_5g_preamp,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_HB,WF_RX_ON
+lna_5g_vbcg,WF,LNA_5G,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna_5g_preamp,1'b1,,,wf_test_bit,3'b011,RX_ON,WF_HB,WF_RX_ON
+lna_vbcgn,WF,LNA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b010,RX_ON,WF_HB,WF_RX_ON
+lna_reg_out,WF,LNA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b011,RX_ON,WF_HB,WF_RX_ON
+lna_vbcgp,WF,LNA,pmu_muxadc_bit_cpus<3:0>,4'b0000,wf_test_enable_lna,1'b1,,,wf_test_bit,3'b100,RX_ON,WF_HB,WF_RX_ON

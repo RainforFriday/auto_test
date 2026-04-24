@@ -1,0 +1,30 @@
+{
+        "cm_test_enable_xtal": {"addr": "40505004", "bit": 13},
+        "cm_test_enable_mdll": {"addr": "40505004", "bit": 12},
+
+        "cfg_ana_test_enable_usb": {"addr": "40502010", "bit": 4},
+
+        "wf_test_enable_rxflt": {"addr": "4034400c", "bit": 29},
+        "wf_test_enable_adc": {"addr": "4034400c", "bit": 28},
+
+        "wf_test_enable_lna5g_preamp": {"addr": "40344008", "bit": 10},
+        "wf_test_enable_lna24g": {"addr": "40344008", "bit": 9},
+        "wf_test_enable_rmx": {"addr": "40344008", "bit": 8},
+        "wf_test_enable_rmx_superhet": {"addr": "40344008", "bit": 7},
+        "wf_test_enable_tia": {"addr": "40344008", "bit": 6},
+        "wf_test_enable_pa": {"addr": "40344008", "bit": 5},
+        "wf_test_enable_dtmx": {"addr": "40344008", "bit": 4},
+        "wf_test_enable_iref": {"addr": "40344008", "bit": 3},
+        "wf_vco_test_buf_en": {"addr": "40344008", "bit": 2},
+        "wf_test_enable_rfpll": {"addr": "40344008", "bit": 1},
+        "wf_test_enable_vco": {"addr": "40344008", "bit": 0},
+
+        "bt_test_enable_lna": {"addr": "40622004", "bit": 12},
+        "bt_test_enable_vco": {"addr": "40622004", "bit": 5},
+        "bt_test_enable_rfpll": {"addr": "40622004", "bit": 6},
+        "bt_test_enable_tmx": {"addr": "40622004", "bit": 8},
+        "bt_test_enable_pa": {"addr": "40622004", "bit": 7},
+        "bt_test_enable_tia": {"addr": "40622004", "bit": 11},
+        "bt_test_enable_sdm_adc": {"addr": "40622004", "bit": 10}
+
+    }

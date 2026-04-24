@@ -1,0 +1,24 @@
+从dpd.log文本中找到“need cal 3 ana_pwr_index”，从中提取出数字3。要求找到所有的数字组成的列表index。这个数字是0到f的16进制数字。
+如：从  need cal d ana_pwr_index 中提取出d并追加到列表index中。
+
+
+从下面文本材料中提取出一位16进制数7出来
+ambegin的那一列数据做x轴数据，am_back那一列数据作为y轴数据，legend为am7；
+这样的数据会出现第二次，第二次的am_back那一列数据作为y轴数据，legend为am7_2;
+同理还能提取出数列am9，am9_2 ；amb，amb_2；amd，amd_2；
+
+文本材料：
+cal 7 index
+runPaResCore
+ est tx start =  682, est rx start =  715, dly = 33, total seg = 5, 
+am_begin      am_back        ph      *10000
+       629     546603          0
+       947     822810          0
+      1269    1129972          0
+      1611    1485651      11265
+      1811    1739516       5871
+      2041    2002832      15764
+      2299    2321098      13896
+      2441    2546192      12912
+      2592    2773632      19655
+

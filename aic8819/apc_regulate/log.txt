@@ -1,0 +1,3396 @@
+D:\Download\anaconda3\envs\Py38\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 61470 --file D:/Aic8800/Code/AIC_TEST/aic8819/apc_regulate/apc_regulate.py
+pydev debugger: process 34688 is connecting
+Connected to pydev debugger (build 201.7223.92)
+Com8 is open
+Hello, I am: 'Rohde&Schwarz,CMW,1201.0002k50/170904,4.0.250'
+setpwr 1
+cur_default: -0.1958802
+val_5:  -1.511416   val_6:  -0.1950313
+val_6:  -0.1950313   val_7:  0.8960259
+val_7:  0.8960259   val_8:  2.028816
+cal done!!!
+choose 7  ： 0.8960259
+cur_default: 0.9056464
+val_20:  0.8281183   val_21:  0.8888954
+val_21:  0.8888954   val_22:  0.9379383
+val_22:  0.9379383   val_23:  1.013597
+cal done!!!
+choose 23  ： 1.013597
+first choose 6->7     21->23
+cur_default: 1.108752
+val_23:  1.098747   val_24:  1.165617
+val_22:  1.04087   val_23:  1.098747
+val_21:  0.9817584   val_22:  1.04087
+cal done!!!
+choose 21  ： 0.9817584
+second choose 7     23->21
+保存的数据行： {'test_time': '0910_121744', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '3', 'setpwr': 1, 'pwrRes': 0.98, 'default_it': 6, 'default_ib': 21, 'it_first': 7, 'ib_first': 23, 'it_bit': 7, 'ib_bit': 21}
+code spand : 86.39 s
+setpwr 2
+setpwr 3
+setpwr 4
+setpwr 5
+setpwr 6
+cur_default: 4.936563
+val_6:  3.872834   val_7:  4.936259
+val_7:  4.936259   val_8:  6.023678
+cal done!!!
+choose 8  ： 6.023678
+cur_default: 6.022309
+val_28:  6.001751   val_29:  6.077216
+val_27:  5.955875   val_28:  6.001751
+cal done!!!
+choose 28  ： 6.001751
+first choose 7->8     28->28
+cur_default: 6.114198
+val_28:  6.109238   val_29:  6.152431
+val_27:  6.040888   val_28:  6.109238
+val_26:  5.971323   val_27:  6.040888
+cal done!!!
+choose 26  ： 5.971323
+second choose 8     28->26
+保存的数据行： {'test_time': '0910_121903', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '5', 'setpwr': 6, 'pwrRes': 5.97, 'default_it': 7, 'default_ib': 28, 'it_first': 8, 'ib_first': 28, 'it_bit': 8, 'ib_bit': 26}
+code spand : 76.52 s
+setpwr 7
+setpwr 8
+setpwr 9
+setpwr 10
+cur_default: 8.649615
+val_8:  7.769746   val_9:  8.63467
+val_9:  8.63467   val_10:  9.473079
+val_10:  9.473079   val_11:  10.22421
+cal done!!!
+choose 11  ： 10.22421
+cur_default: 10.21436
+val_24:  10.19989   val_25:  10.24741
+val_23:  10.16464   val_24:  10.19989
+val_22:  10.10344   val_23:  10.16464
+val_21:  10.05921   val_22:  10.10344
+val_20:  9.985968   val_21:  10.05921
+cal done!!!
+choose 20  ： 9.985968
+first choose 9->11     24->20
+cur_default: 10.15203
+val_20:  10.16281   val_21:  10.20996
+val_19:  10.10706   val_20:  10.16281
+val_18:  10.04392   val_19:  10.10706
+val_17:  9.999679   val_18:  10.04392
+cal done!!!
+choose 17  ： 9.999679
+second choose 11     20->17
+保存的数据行： {'test_time': '0910_122043', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '7', 'setpwr': 10, 'pwrRes': 10.0, 'default_it': 9, 'default_ib': 24, 'it_first': 11, 'ib_first': 20, 'it_bit': 11, 'ib_bit': 17}
+code spand : 99.23 s
+setpwr 11
+setpwr 12
+setpwr 13
+setpwr 14
+cur_default: 12.63359
+val_8:  11.81805   val_9:  12.62085
+val_9:  12.62085   val_10:  13.39306
+val_10:  13.39306   val_11:  14.08004
+cal done!!!
+choose 11  ： 14.08004
+cur_default: 14.06012
+val_23:  14.05848   val_24:  14.10059
+val_22:  14.01295   val_23:  14.05848
+val_21:  13.96957   val_22:  14.01295
+cal done!!!
+choose 22  ： 14.01295
+first choose 9->11     23->22
+cur_default: 14.19786
+val_22:  14.17377   val_23:  14.23954
+val_21:  14.13953   val_22:  14.17377
+val_20:  14.09963   val_21:  14.13953
+val_19:  14.0453   val_20:  14.09963
+val_18:  14.01608   val_19:  14.0453
+val_17:  13.98242   val_18:  14.01608
+cal done!!!
+choose 18  ： 14.01608
+second choose 11     22->18
+保存的数据行： {'test_time': '0910_122223', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': '9', 'setpwr': 14, 'pwrRes': 14.02, 'default_it': 9, 'default_ib': 23, 'it_first': 11, 'ib_first': 22, 'it_bit': 11, 'ib_bit': 18}
+code spand : 99.23 s
+setpwr 15
+setpwr 16
+setpwr 17
+setpwr 18
+cur_default: 16.49956
+val_16:  16.05528   val_17:  16.51697
+val_17:  16.51697   val_18:  16.94385
+val_18:  16.94385   val_19:  17.35569
+val_19:  17.35569   val_20:  17.76348
+val_20:  17.76348   val_21:  18.1087
+cal done!!!
+choose 21  ： 18.1087
+cur_default: 18.09236
+val_8:  18.10419   val_9:  18.12759
+val_7:  18.08849   val_8:  18.10419
+val_6:  18.04662   val_7:  18.08849
+val_5:  18.00815   val_6:  18.04662
+val_4:  17.99776   val_5:  18.00815
+cal done!!!
+choose 4  ： 17.99776
+first choose 17->21     8->4
+cur_default: 17.80723
+val_3:  17.78582   val_4:  17.79969
+val_4:  17.79969   val_5:  17.83754
+val_5:  17.83754   val_6:  17.86414
+val_6:  17.86414   val_7:  17.88565
+val_7:  17.88565   val_8:  17.89688
+val_8:  17.89688   val_9:  17.92528
+val_9:  17.92528   val_10:  17.94372
+val_10:  17.94372   val_11:  17.96686
+val_11:  17.96686   val_12:  18.01729
+cal done!!!
+choose 12  ： 18.01729
+second choose 21     4->12
+保存的数据行： {'test_time': '0910_122435', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': 'B', 'setpwr': 18, 'pwrRes': 18.02, 'default_it': 17, 'default_ib': 8, 'it_first': 21, 'ib_first': 4, 'it_bit': 21, 'ib_bit': 12}
+code spand : 131.11 s
+setpwr 19
+setpwr 20
+setpwr 21
+setpwr 22
+cur_default: 20.65558
+val_25:  20.44142   val_26:  20.63159
+val_26:  20.63159   val_27:  20.83364
+val_27:  20.83364   val_28:  21.01266
+val_28:  21.01266   val_29:  21.19111
+val_29:  21.19111   val_30:  21.33856
+val_30:  21.33856   val_31:  21.51292
+val_31:  21.51292   val_32:  21.58656
+val_32:  21.58656   val_33:  21.72077
+val_33:  21.72077   val_34:  21.85217
+val_34:  21.85217   val_35:  21.99064
+val_35:  21.99064   val_36:  22.11939
+cal done!!!
+choose 35  ： 21.99064
+cur_default: 21.99275
+val_13:  21.98133   val_14:  21.98405
+val_14:  21.98405   val_15:  21.99714
+val_15:  21.99714   val_16:  21.99166
+val_16:  21.99166   val_17:  22.02104
+cal done!!!
+choose 16  ： 21.99166
+first choose 26->35     14->16
+cur_default: 21.49644
+val_15:  21.46045   val_16:  21.47508
+val_16:  21.47508   val_17:  21.48735
+val_17:  21.48735   val_18:  21.4935
+val_18:  21.4935   val_19:  21.50994
+val_19:  21.50994   val_20:  21.53032
+val_20:  21.53032   val_21:  21.54222
+val_21:  21.54222   val_22:  21.53959
+val_22:  21.53959   val_23:  21.54511
+val_23:  21.54511   val_24:  21.56655
+val_24:  21.56655   val_25:  21.56135
+val_25:  21.56135   val_26:  21.5769
+val_26:  21.5769   val_27:  21.58969
+val_27:  21.58969   val_28:  21.60028
+val_28:  21.60028   val_29:  21.61537
+val_29:  21.61537   val_30:  21.63126
+val_30:  21.63126   val_31:  21.64999
+cal done! Use maximum value
+cur_default: 21.78056
+val_29:  21.7428   val_30:  21.76219
+val_30:  21.76219   val_31:  21.78512
+cal done! Use maximum value
+cur_default: 21.8737
+val_29:  21.85066   val_30:  21.8623
+val_30:  21.8623   val_31:  21.86444
+cal done! Use maximum value
+cur_default: 22.00443
+val_30:  21.98481   val_31:  21.99527
+val_29:  21.95984   val_30:  21.98481
+val_28:  21.951   val_29:  21.95984
+val_27:  21.95509   val_28:  21.951
+val_26:  21.93367   val_27:  21.95509
+val_25:  21.93671   val_26:  21.93367
+val_24:  21.91536   val_25:  21.93671
+val_23:  21.88603   val_24:  21.91536
+val_22:  21.88133   val_23:  21.88603
+val_21:  21.90019   val_22:  21.88133
+val_20:  21.88167   val_21:  21.90019
+val_19:  21.87782   val_20:  21.88167
+val_18:  21.86178   val_19:  21.87782
+val_17:  21.86691   val_18:  21.86178
+val_16:  21.84238   val_17:  21.86691
+val_15:  21.82594   val_16:  21.84238
+val_14:  21.82142   val_15:  21.82594
+val_13:  21.8194   val_14:  21.82142
+val_12:  21.81074   val_13:  21.8194
+val_11:  21.79217   val_12:  21.81074
+val_10:  21.7855   val_11:  21.79217
+val_9:  21.77805   val_10:  21.7855
+val_8:  21.77888   val_9:  21.77805
+val_7:  21.7676   val_8:  21.77888
+val_6:  21.74842   val_7:  21.7676
+val_5:  21.76233   val_6:  21.74842
+val_4:  21.74649   val_5:  21.76233
+val_3:  21.7331   val_4:  21.74649
+val_2:  21.73222   val_3:  21.7331
+val_1:  21.7111   val_2:  21.73222
+val_0:  21.69033   val_1:  21.7111
+cal done! Use minimum value
+cur_default: 21.59227
+val_0:  21.5757   val_1:  21.59059
+val_1:  21.59059   val_2:  21.60058
+val_2:  21.60058   val_3:  21.60888
+val_3:  21.60888   val_4:  21.6203
+val_4:  21.6203   val_5:  21.63243
+val_5:  21.63243   val_6:  21.62564
+val_6:  21.62564   val_7:  21.6494
+val_7:  21.6494   val_8:  21.65658
+val_8:  21.65658   val_9:  21.67308
+val_9:  21.67308   val_10:  21.67623
+val_10:  21.67623   val_11:  21.68017
+val_11:  21.68017   val_12:  21.68792
+val_12:  21.68792   val_13:  21.70664
+val_13:  21.70664   val_14:  21.72196
+val_14:  21.72196   val_15:  21.73341
+val_15:  21.73341   val_16:  21.73528
+val_16:  21.73528   val_17:  21.74969
+val_17:  21.74969   val_18:  21.7556
+val_18:  21.7556   val_19:  21.75577
+val_19:  21.75577   val_20:  21.76328
+val_20:  21.76328   val_21:  21.7812
+val_21:  21.7812   val_22:  21.79022
+val_22:  21.79022   val_23:  21.80364
+val_23:  21.80364   val_24:  21.80127
+val_24:  21.80127   val_25:  21.81594
+val_25:  21.81594   val_26:  21.83221
+val_26:  21.83221   val_27:  21.84903
+val_27:  21.84903   val_28:  21.85654
+val_28:  21.85654   val_29:  21.86224
+val_29:  21.86224   val_30:  21.87436
+val_30:  21.87436   val_31:  21.88181
+cal done! Use maximum value
+cur_default: 22.01053
+val_30:  21.99245   val_31:  21.99798
+val_29:  21.96425   val_30:  21.99245
+val_28:  21.95859   val_29:  21.96425
+val_27:  21.94929   val_28:  21.95859
+val_26:  21.9407   val_27:  21.94929
+val_25:  21.92286   val_26:  21.9407
+val_24:  21.91758   val_25:  21.92286
+val_23:  21.90495   val_24:  21.91758
+val_22:  21.90251   val_23:  21.90495
+val_21:  21.89031   val_22:  21.90251
+val_20:  21.87716   val_21:  21.89031
+val_19:  21.87029   val_20:  21.87716
+val_18:  21.87193   val_19:  21.87029
+val_17:  21.851   val_18:  21.87193
+val_16:  21.84425   val_17:  21.851
+val_15:  21.83319   val_16:  21.84425
+val_14:  21.82567   val_15:  21.83319
+val_13:  21.81392   val_14:  21.82567
+val_12:  21.80379   val_13:  21.81392
+val_11:  21.79527   val_12:  21.80379
+val_10:  21.79507   val_11:  21.79527
+val_9:  21.75857   val_10:  21.79507
+val_8:  21.77791   val_9:  21.75857
+val_7:  21.75893   val_8:  21.77791
+val_6:  21.74885   val_7:  21.75893
+val_5:  21.74038   val_6:  21.74885
+val_4:  21.73388   val_5:  21.74038
+val_3:  21.72073   val_4:  21.73388
+val_2:  21.70691   val_3:  21.72073
+val_1:  21.71226   val_2:  21.70691
+val_0:  21.6981   val_1:  21.71226
+cal done! Use minimum value
+cur_default: 21.5828
+val_0:  21.58081   val_1:  21.58174
+val_1:  21.58174   val_2:  21.58828
+val_2:  21.58828   val_3:  21.59836
+val_3:  21.59836   val_4:  21.60398
+val_4:  21.60398   val_5:  21.62108
+val_5:  21.62108   val_6:  21.61198
+val_6:  21.61198   val_7:  21.63935
+val_7:  21.63935   val_8:  21.65719
+val_8:  21.65719   val_9:  21.65662
+val_9:  21.65662   val_10:  21.66616
+val_10:  21.66616   val_11:  21.6717
+val_11:  21.6717   val_12:  21.67237
+val_12:  21.67237   val_13:  21.68575
+val_13:  21.68575   val_14:  21.69187
+val_14:  21.69187   val_15:  21.71002
+val_15:  21.71002   val_16:  21.7135
+val_16:  21.7135   val_17:  21.72415
+val_17:  21.72415   val_18:  21.72533
+val_18:  21.72533   val_19:  21.73926
+val_19:  21.73926   val_20:  21.73977
+val_20:  21.73977   val_21:  21.75553
+val_21:  21.75553   val_22:  21.77152
+val_22:  21.77152   val_23:  21.78027
+val_23:  21.78027   val_24:  21.80726
+val_24:  21.80726   val_25:  21.80169
+val_25:  21.80169   val_26:  21.80675
+val_26:  21.80675   val_27:  21.82433
+val_27:  21.82433   val_28:  21.84333
+val_28:  21.84333   val_29:  21.8412
+val_29:  21.8412   val_30:  21.86076
+val_30:  21.86076   val_31:  21.85627
+cal done! Use maximum value
+cur_default: 21.97435
+val_29:  21.95736   val_30:  21.97347
+val_30:  21.97347   val_31:  22.00339
+cal done!!!
+choose 31  ： 22.00339
+cur_default: 22.09398
+val_30:  22.07767   val_31:  22.0818
+val_29:  22.05872   val_30:  22.07767
+val_28:  22.05835   val_29:  22.05872
+val_27:  22.04136   val_28:  22.05835
+val_26:  22.03924   val_27:  22.04136
+val_25:  22.02026   val_26:  22.03924
+val_24:  22.00943   val_25:  22.02026
+val_23:  22.00627   val_24:  22.00943
+val_22:  22.00758   val_23:  22.00627
+val_21:  21.99547   val_22:  22.00758
+cal done!!!
+choose 21  ： 21.99547
+second choose 39     30->21
+保存的数据行： {'test_time': '0910_124018', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_HR', 'analog_gear': 'D', 'setpwr': 22, 'pwrRes': 22.0, 'default_it': 26, 'default_ib': 14, 'it_first': 35, 'ib_first': 16, 'it_bit': 39, 'ib_bit': 21}
+code spand : 941.97 s
+setpwr 23
+setpwr 24
+setpwr 1
+cur_default: 0.6057469
+val_17:  0.1148885   val_18:  0.6639643
+val_18:  0.6639643   val_19:  1.16348
+cal done!!!
+choose 19  ： 1.16348
+cur_default: 1.164051
+val_15:  1.172232   val_16:  1.200174
+val_14:  1.135045   val_15:  1.172232
+val_13:  1.111802   val_14:  1.135045
+val_12:  1.076614   val_13:  1.111802
+val_11:  1.04116   val_12:  1.076614
+val_10:  1.023763   val_11:  1.04116
+val_9:  0.9898165   val_10:  1.023763
+cal done!!!
+choose 9  ： 0.9898165
+first choose 18->19     15->9
+cur_default: 1.027644
+val_9:  1.032027   val_10:  1.058537
+val_8:  0.9975998   val_9:  1.032027
+cal done!!!
+choose 8  ： 0.9975998
+second choose 19     9->8
+保存的数据行： {'test_time': '0910_124159', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '3', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 18, 'default_ib': 15, 'it_first': 19, 'ib_first': 9, 'it_bit': 19, 'ib_bit': 8}
+code spand : 95.91 s
+setpwr 2
+setpwr 3
+setpwr 4
+setpwr 5
+setpwr 6
+cur_default: 5.694859
+val_15:  5.068729   val_16:  5.688591
+val_16:  5.688591   val_17:  6.284334
+cal done!!!
+choose 17  ： 6.284334
+cur_default: 6.27851
+val_1:  6.276943   val_2:  6.317378
+val_0:  6.236796   val_1:  6.276943
+cal done! Use minimum value
+cur_default: 5.653556
+val_0:  5.660299   val_1:  5.697664
+val_1:  5.697664   val_2:  5.739907
+val_2:  5.739907   val_3:  5.778546
+val_3:  5.778546   val_4:  5.822351
+val_4:  5.822351   val_5:  5.853647
+val_5:  5.853647   val_6:  5.895594
+val_6:  5.895594   val_7:  5.932492
+val_7:  5.932492   val_8:  5.980422
+val_8:  5.980422   val_9:  6.017842
+cal done!!!
+choose 9  ： 6.017842
+first choose 16->16     1->9
+cur_default: 6.056935
+val_9:  6.06449   val_10:  6.097072
+val_8:  6.014878   val_9:  6.06449
+val_7:  5.977349   val_8:  6.014878
+cal done!!!
+choose 8  ： 6.014878
+second choose 16     9->8
+保存的数据行： {'test_time': '0910_124414', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '5', 'setpwr': 6, 'pwrRes': 6.01, 'default_it': 16, 'default_ib': 1, 'it_first': 16, 'ib_first': 9, 'it_bit': 16, 'ib_bit': 8}
+code spand : 133.82 s
+setpwr 7
+setpwr 8
+setpwr 9
+setpwr 10
+cur_default: 9.86213
+val_15:  9.305082   val_16:  9.859728
+val_16:  9.859728   val_17:  10.38768
+cal done!!!
+choose 16  ： 9.859728
+cur_default: 9.857189
+val_19:  9.822358   val_20:  9.857236
+val_20:  9.857236   val_21:  9.901714
+val_21:  9.901714   val_22:  9.934865
+val_22:  9.934865   val_23:  9.951973
+val_23:  9.951973   val_24:  9.992891
+val_24:  9.992891   val_25:  10.03107
+cal done!!!
+choose 24  ： 9.992891
+first choose 16->16     20->24
+cur_default: 10.01422
+val_24:  10.02846   val_25:  10.06106
+val_23:  9.992918   val_24:  10.02846
+cal done!!!
+choose 23  ： 9.992918
+second choose 16     24->23
+保存的数据行： {'test_time': '0910_124547', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '7', 'setpwr': 10, 'pwrRes': 9.99, 'default_it': 16, 'default_ib': 20, 'it_first': 16, 'ib_first': 24, 'it_bit': 16, 'ib_bit': 23}
+code spand : 91.33 s
+setpwr 11
+setpwr 12
+setpwr 13
+setpwr 14
+cur_default: 13.73812
+val_17:  13.24465   val_18:  13.73227
+val_18:  13.73227   val_19:  14.16289
+cal done!!!
+choose 19  ： 14.16289
+cur_default: 14.1561
+val_23:  14.15542   val_24:  14.19165
+val_22:  14.12906   val_23:  14.15542
+val_21:  14.09225   val_22:  14.12906
+val_20:  14.05822   val_21:  14.09225
+val_19:  14.0294   val_20:  14.05822
+val_18:  13.9987   val_19:  14.0294
+cal done!!!
+choose 18  ： 13.9987
+first choose 18->19     23->18
+cur_default: 14.00208
+val_18:  14.00489   val_19:  14.0286
+val_17:  13.97279   val_18:  14.00489
+cal done!!!
+choose 18  ： 14.00489
+second choose 19     18->18
+保存的数据行： {'test_time': '0910_124719', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': '9', 'setpwr': 14, 'pwrRes': 14.0, 'default_it': 18, 'default_ib': 23, 'it_first': 19, 'ib_first': 18, 'it_bit': 19, 'ib_bit': 18}
+code spand : 91.27 s
+setpwr 15
+setpwr 16
+setpwr 17
+setpwr 18
+cur_default: 17.28844
+val_19:  16.85643   val_20:  17.25692
+val_20:  17.25692   val_21:  17.62805
+val_21:  17.62805   val_22:  17.98729
+val_22:  17.98729   val_23:  18.30573
+cal done!!!
+choose 22  ： 17.98729
+cur_default: 17.97893
+val_6:  17.9537   val_7:  17.96923
+val_7:  17.96923   val_8:  17.99247
+val_8:  17.99247   val_9:  18.00462
+cal done!!!
+choose 9  ： 18.00462
+first choose 20->22     7->9
+cur_default: 17.98513
+val_8:  17.94214   val_9:  17.96942
+val_9:  17.96942   val_10:  17.99243
+val_10:  17.99243   val_11:  18.01269
+cal done!!!
+choose 10  ： 17.99243
+second choose 22     9->10
+保存的数据行： {'test_time': '0910_124851', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': 'B', 'setpwr': 18, 'pwrRes': 17.99, 'default_it': 20, 'default_ib': 7, 'it_first': 22, 'ib_first': 9, 'it_bit': 22, 'ib_bit': 10}
+code spand : 91.29 s
+setpwr 19
+setpwr 20
+setpwr 21
+setpwr 22
+cur_default: 20.32221
+val_25:  20.07413   val_26:  20.33865
+val_26:  20.33865   val_27:  20.56215
+val_27:  20.56215   val_28:  20.77632
+val_28:  20.77632   val_29:  20.9729
+val_29:  20.9729   val_30:  21.17764
+val_30:  21.17764   val_31:  21.34968
+val_31:  21.34968   val_32:  21.4395
+val_32:  21.4395   val_33:  21.59917
+val_33:  21.59917   val_34:  21.77082
+val_34:  21.77082   val_35:  21.91202
+val_35:  21.91202   val_36:  22.06411
+cal done!!!
+choose 36  ： 22.06411
+cur_default: 22.0491
+val_23:  22.04217   val_24:  22.05383
+val_22:  22.03007   val_23:  22.04217
+val_21:  22.02502   val_22:  22.03007
+val_20:  22.00496   val_21:  22.02502
+val_19:  21.99634   val_20:  22.00496
+cal done!!!
+choose 19  ： 21.99634
+first choose 26->36     23->19
+cur_default: 21.0372
+val_18:  21.02132   val_19:  21.03241
+val_19:  21.03241   val_20:  21.04598
+val_20:  21.04598   val_21:  21.05522
+val_21:  21.05522   val_22:  21.0703
+val_22:  21.0703   val_23:  21.07744
+val_23:  21.07744   val_24:  21.09272
+val_24:  21.09272   val_25:  21.09919
+val_25:  21.09919   val_26:  21.11171
+val_26:  21.11171   val_27:  21.12791
+val_27:  21.12791   val_28:  21.13056
+val_28:  21.13056   val_29:  21.14707
+val_29:  21.14707   val_30:  21.16056
+val_30:  21.16056   val_31:  21.17993
+cal done! Use maximum value
+cur_default: 21.32803
+val_29:  21.2665   val_30:  21.28086
+val_30:  21.28086   val_31:  21.30298
+cal done! Use maximum value
+cur_default: 21.4344
+val_29:  21.40733   val_30:  21.41884
+val_30:  21.41884   val_31:  21.436
+cal done! Use maximum value
+cur_default: 21.56398
+val_29:  21.53313   val_30:  21.54113
+val_30:  21.54113   val_31:  21.55408
+cal done! Use maximum value
+cur_default: 21.69232
+val_29:  21.67209   val_30:  21.67784
+val_30:  21.67784   val_31:  21.69059
+cal done! Use maximum value
+cur_default: 21.83734
+val_29:  21.80029   val_30:  21.81788
+val_30:  21.81788   val_31:  21.82434
+cal done! Use maximum value
+cur_default: 21.94493
+val_29:  21.91036   val_30:  21.93058
+val_30:  21.93058   val_31:  21.93265
+cal done! Use maximum value
+cur_default: 22.04558
+val_30:  22.02648   val_31:  22.03938
+val_29:  22.01537   val_30:  22.02648
+val_28:  22.00259   val_29:  22.01537
+val_27:  21.99482   val_28:  22.00259
+cal done!!!
+choose 28  ： 22.00259
+second choose 43     30->28
+保存的数据行： {'test_time': '0910_125449', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH7_LR', 'analog_gear': 'D', 'setpwr': 22, 'pwrRes': 22.0, 'default_it': 26, 'default_ib': 23, 'it_first': 36, 'ib_first': 19, 'it_bit': 43, 'ib_bit': 28}
+code spand : 357.03 s
+setpwr 23
+setpwr 24
+setpwr 1
+cur_default: 1.129555
+val_20:  1.115334   val_21:  1.604895
+val_19:  0.5781671   val_20:  1.115334
+cal done!!!
+choose 20  ： 1.115334
+cur_default: 1.119818
+val_8:  1.105281   val_9:  1.150766
+val_7:  1.070399   val_8:  1.105281
+val_6:  1.050821   val_7:  1.070399
+val_5:  1.021006   val_6:  1.050821
+val_4:  0.9861394   val_5:  1.021006
+cal done!!!
+choose 4  ： 0.9861394
+first choose 20->20     8->4
+cur_default: 1.005798
+val_4:  1.011031   val_5:  1.052835
+val_3:  0.9789245   val_4:  1.011031
+cal done!!!
+choose 4  ： 1.011031
+second choose 20     4->4
+保存的数据行： {'test_time': '0910_125620', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 20, 'default_ib': 8, 'it_first': 20, 'ib_first': 4, 'it_bit': 20, 'ib_bit': 4}
+code spand : 85.72 s
+setpwr 2
+setpwr 3
+cur_default: 1.831576
+val_13:  1.130369   val_14:  1.859462
+val_14:  1.859462   val_15:  2.494969
+val_15:  2.494969   val_16:  3.086717
+cal done!!!
+choose 16  ： 3.086717
+cur_default: 3.086172
+val_20:  3.078637   val_21:  3.109618
+val_19:  3.017982   val_20:  3.078637
+val_18:  2.970078   val_19:  3.017982
+cal done!!!
+choose 19  ： 3.017982
+first choose 14->16     20->19
+cur_default: 3.096968
+val_19:  3.095071   val_20:  3.156358
+val_18:  3.048032   val_19:  3.095071
+val_17:  3.031768   val_18:  3.048032
+val_16:  2.985947   val_17:  3.031768
+cal done!!!
+choose 16  ： 2.985947
+second choose 16     19->16
+保存的数据行： {'test_time': '0910_125751', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 14, 'default_ib': 20, 'it_first': 16, 'ib_first': 19, 'it_bit': 16, 'ib_bit': 16}
+code spand : 90.41 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 6.828048
+val_15:  6.211754   val_16:  6.814769
+val_16:  6.814769   val_17:  7.406774
+cal done!!!
+choose 16  ： 6.814769
+cur_default: 6.812023
+val_21:  6.781488   val_22:  6.79226
+val_22:  6.79226   val_23:  6.869976
+val_23:  6.869976   val_24:  6.903303
+val_24:  6.903303   val_25:  6.952015
+val_25:  6.952015   val_26:  6.996124
+val_26:  6.996124   val_27:  7.050264
+cal done!!!
+choose 26  ： 6.996124
+first choose 16->16     22->26
+cur_default: 6.992781
+val_25:  6.971001   val_26:  6.993642
+val_26:  6.993642   val_27:  7.051984
+cal done!!!
+choose 26  ： 6.993642
+second choose 16     26->26
+保存的数据行： {'test_time': '0910_125922', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 16, 'default_ib': 22, 'it_first': 16, 'ib_first': 26, 'it_bit': 16, 'ib_bit': 26}
+code spand : 90.38 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 11.89082
+val_21:  11.87556   val_22:  12.32992
+val_20:  11.40758   val_21:  11.87556
+val_19:  10.9238   val_20:  11.40758
+cal done!!!
+choose 19  ： 10.9238
+cur_default: 10.93776
+val_27:  10.88676   val_28:  10.94119
+val_28:  10.94119   val_29:  10.99909
+val_29:  10.99909   val_30:  11.01912
+cal done!!!
+choose 29  ： 10.99909
+first choose 21->19     28->29
+cur_default: 10.9938
+val_28:  10.95509   val_29:  11.00103
+cal done!!!
+choose 29  ： 11.00103
+second choose 19     29->29
+保存的数据行： {'test_time': '0910_130040', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 21, 'default_ib': 28, 'it_first': 19, 'ib_first': 29, 'it_bit': 19, 'ib_bit': 29}
+code spand : 76.55 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.16179
+val_26:  16.15083   val_27:  16.48396
+val_25:  15.77257   val_26:  16.15083
+val_24:  15.39805   val_25:  15.77257
+val_23:  14.97416   val_24:  15.39805
+cal done!!!
+choose 23  ： 14.97416
+cur_default: 14.97568
+val_19:  14.95285   val_20:  14.96859
+val_20:  14.96859   val_21:  15.00544
+cal done!!!
+choose 21  ： 15.00544
+first choose 26->23     20->21
+cur_default: 15.15825
+val_21:  15.15487   val_22:  15.19678
+val_20:  15.13097   val_21:  15.15487
+val_19:  15.07828   val_20:  15.13097
+val_18:  15.0748   val_19:  15.07828
+val_17:  15.06099   val_18:  15.0748
+val_16:  15.01539   val_17:  15.06099
+val_15:  14.98153   val_16:  15.01539
+cal done!!!
+choose 16  ： 15.01539
+second choose 23     21->16
+保存的数据行： {'test_time': '0910_130225', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.02, 'default_it': 26, 'default_ib': 20, 'it_first': 23, 'ib_first': 21, 'it_bit': 23, 'ib_bit': 16}
+code spand : 104.11 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.12494
+val_36:  20.08928   val_37:  20.30634
+val_35:  19.88165   val_36:  20.08928
+val_34:  19.65203   val_35:  19.88165
+val_33:  19.41301   val_34:  19.65203
+val_32:  19.18307   val_33:  19.41301
+val_31:  19.07119   val_32:  19.18307
+val_30:  18.81803   val_31:  19.07119
+cal done!!!
+choose 31  ： 19.07119
+cur_default: 19.06144
+val_20:  19.06546   val_21:  19.06957
+val_19:  19.05046   val_20:  19.06546
+val_18:  19.02396   val_19:  19.05046
+val_17:  19.00914   val_18:  19.02396
+val_16:  18.99601   val_17:  19.00914
+cal done!!!
+choose 16  ： 18.99601
+first choose 36->31     20->16
+cur_default: 19.32726
+val_16:  19.34048   val_17:  19.34953
+val_15:  19.31139   val_16:  19.34048
+val_14:  19.27821   val_15:  19.31139
+val_13:  19.26845   val_14:  19.27821
+val_12:  19.26456   val_13:  19.26845
+val_11:  19.24511   val_12:  19.26456
+val_10:  19.22199   val_11:  19.24511
+val_9:  19.18189   val_10:  19.22199
+val_8:  19.16481   val_9:  19.18189
+val_7:  19.15552   val_8:  19.16481
+val_6:  19.13595   val_7:  19.15552
+val_5:  19.12018   val_6:  19.13595
+val_4:  19.07801   val_5:  19.12018
+val_3:  19.08105   val_4:  19.07801
+val_2:  19.06496   val_3:  19.08105
+val_1:  19.04855   val_2:  19.06496
+val_0:  19.01744   val_1:  19.04855
+cal done! Use minimum value
+cur_default: 18.74815
+val_0:  18.74444   val_1:  18.76096
+val_1:  18.76096   val_2:  18.79305
+val_2:  18.79305   val_3:  18.80258
+val_3:  18.80258   val_4:  18.8257
+val_4:  18.8257   val_5:  18.86627
+val_5:  18.86627   val_6:  18.86403
+val_6:  18.86403   val_7:  18.86622
+val_7:  18.86622   val_8:  18.90589
+val_8:  18.90589   val_9:  18.93489
+val_9:  18.93489   val_10:  18.9506
+val_10:  18.9506   val_11:  18.97421
+val_11:  18.97421   val_12:  18.99275
+val_12:  18.99275   val_13:  19.00095
+cal done!!!
+choose 13  ： 19.00095
+second choose 30     1->13
+保存的数据行： {'test_time': '0910_130637', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.0, 'default_it': 36, 'default_ib': 20, 'it_first': 31, 'ib_first': 16, 'it_bit': 30, 'ib_bit': 13}
+code spand : 251.08 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.37995
+val_62:  24.31553   val_63:  24.35534
+val_61:  24.27448   val_62:  24.31553
+val_60:  24.24443   val_61:  24.27448
+val_59:  24.19558   val_60:  24.24443
+val_58:  24.13932   val_59:  24.19558
+val_57:  24.10181   val_58:  24.13932
+val_56:  24.0524   val_57:  24.10181
+val_55:  24.00189   val_56:  24.0524
+val_54:  23.94692   val_55:  24.00189
+val_53:  23.89913   val_54:  23.94692
+val_52:  23.84196   val_53:  23.89913
+val_51:  23.77215   val_52:  23.84196
+val_50:  23.71169   val_51:  23.77215
+val_49:  23.64496   val_50:  23.71169
+val_48:  23.57431   val_49:  23.64496
+val_47:  23.51981   val_48:  23.57431
+val_46:  23.45788   val_47:  23.51981
+val_45:  23.37562   val_46:  23.45788
+val_44:  23.29825   val_45:  23.37562
+val_43:  23.2045   val_44:  23.29825
+val_42:  23.11864   val_43:  23.2045
+val_41:  23.02368   val_42:  23.11864
+val_40:  22.93284   val_41:  23.02368
+cal done!!!
+choose 41  ： 23.02368
+cur_default: 23.03865
+val_30:  23.02041   val_31:  23.0275
+val_29:  23.01064   val_30:  23.02041
+val_28:  22.99436   val_29:  23.01064
+cal done!!!
+choose 28  ： 22.99436
+first choose 62->41     30->28
+cur_default: 23.0008
+val_28:  22.9943   val_29:  23.00842
+cal done!!!
+choose 28  ： 22.9943
+second choose 41     28->28
+保存的数据行： {'test_time': '0910_130926', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.99, 'default_it': 62, 'default_ib': 30, 'it_first': 41, 'ib_first': 28, 'it_bit': 41, 'ib_bit': 28}
+code spand : 167.72 s
+setpwr 1
+cur_default: -0.9916424
+val_11:  -1.764142   val_12:  -0.9876107
+val_12:  -0.9876107   val_13:  -0.3205012
+val_13:  -0.3205012   val_14:  0.3291031
+val_14:  0.3291031   val_15:  0.9418899
+val_15:  0.9418899   val_16:  1.465315
+cal done!!!
+choose 15  ： 0.9418899
+cur_default: 0.9481167
+val_15:  0.9131515   val_16:  0.9333997
+val_16:  0.9333997   val_17:  0.9651744
+val_17:  0.9651744   val_18:  1.010593
+cal done!!!
+choose 18  ： 1.010593
+first choose 12->15     16->18
+cur_default: 1.194994
+val_18:  1.188287   val_19:  1.235134
+val_17:  1.141596   val_18:  1.188287
+val_16:  1.098645   val_17:  1.141596
+val_15:  1.045735   val_16:  1.098645
+val_14:  1.018135   val_15:  1.045735
+val_13:  0.9931904   val_14:  1.018135
+cal done!!!
+choose 13  ： 0.9931904
+second choose 15     18->13
+保存的数据行： {'test_time': '0910_131119', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 12, 'default_ib': 16, 'it_first': 15, 'ib_first': 18, 'it_bit': 15, 'ib_bit': 13}
+code spand : 108.43 s
+setpwr 2
+setpwr 3
+cur_default: 1.846803
+val_12:  1.211825   val_13:  1.829148
+val_13:  1.829148   val_14:  2.465487
+val_14:  2.465487   val_15:  3.030662
+cal done!!!
+choose 15  ： 3.030662
+cur_default: 3.01298
+val_26:  3.022668   val_27:  3.054838
+val_25:  2.980791   val_26:  3.022668
+cal done!!!
+choose 25  ： 2.980791
+first choose 13->15     26->25
+cur_default: 3.112832
+val_25:  3.111579   val_26:  3.161825
+val_24:  3.073734   val_25:  3.111579
+val_23:  3.021257   val_24:  3.073734
+val_22:  3.003902   val_23:  3.021257
+val_21:  2.961831   val_22:  3.003902
+cal done!!!
+choose 22  ： 3.003902
+second choose 15     25->22
+保存的数据行： {'test_time': '0910_131249', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 13, 'default_ib': 26, 'it_first': 15, 'ib_first': 25, 'it_bit': 15, 'ib_bit': 22}
+code spand : 90.20 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.261943
+val_19:  7.277751   val_20:  7.733779
+val_18:  6.781819   val_19:  7.277751
+cal done!!!
+choose 18  ： 6.781819
+cur_default: 6.790319
+val_15:  6.752218   val_16:  6.796467
+val_16:  6.796467   val_17:  6.826678
+val_17:  6.826678   val_18:  6.853058
+val_18:  6.853058   val_19:  6.875144
+val_19:  6.875144   val_20:  6.919761
+val_20:  6.919761   val_21:  6.958877
+val_21:  6.958877   val_22:  6.992028
+val_22:  6.992028   val_23:  7.044495
+cal done!!!
+choose 22  ： 6.992028
+first choose 19->18     16->22
+cur_default: 6.999025
+val_21:  6.94647   val_22:  6.975811
+val_22:  6.975811   val_23:  7.007248
+cal done!!!
+choose 23  ： 7.007248
+second choose 18     22->23
+保存的数据行： {'test_time': '0910_131430', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.01, 'default_it': 19, 'default_ib': 16, 'it_first': 18, 'ib_first': 22, 'it_bit': 18, 'ib_bit': 23}
+code spand : 99.45 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 11.84313
+val_26:  11.82883   val_27:  12.16699
+val_25:  11.49485   val_26:  11.82883
+val_24:  11.12117   val_25:  11.49485
+val_23:  10.71927   val_24:  11.12117
+cal done!!!
+choose 24  ： 11.12117
+cur_default: 11.12794
+val_16:  11.12614   val_17:  11.15326
+val_15:  11.09271   val_16:  11.12614
+val_14:  11.06935   val_15:  11.09271
+val_13:  11.05942   val_14:  11.06935
+val_12:  11.02769   val_13:  11.05942
+val_11:  11.00005   val_12:  11.02769
+val_10:  10.98182   val_11:  11.00005
+cal done!!!
+choose 11  ： 11.00005
+first choose 26->24     16->11
+cur_default: 10.94672
+val_10:  10.933   val_11:  10.95421
+val_11:  10.95421   val_12:  10.93529
+val_12:  10.93529   val_13:  10.9981
+val_13:  10.9981   val_14:  11.01447
+cal done!!!
+choose 13  ： 10.9981
+second choose 24     11->13
+保存的数据行： {'test_time': '0910_131624', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 26, 'default_ib': 16, 'it_first': 24, 'ib_first': 11, 'it_bit': 24, 'ib_bit': 13}
+code spand : 113.12 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.49691
+val_40:  16.4748   val_41:  16.68982
+val_39:  16.24492   val_40:  16.4748
+val_38:  16.03441   val_39:  16.24492
+val_37:  15.83587   val_38:  16.03441
+val_36:  15.57902   val_37:  15.83587
+val_35:  15.34432   val_36:  15.57902
+val_34:  15.10628   val_35:  15.34432
+val_33:  14.83625   val_34:  15.10628
+cal done!!!
+choose 34  ： 15.10628
+cur_default: 15.10897
+val_22:  15.10252   val_23:  15.11433
+val_21:  15.07326   val_22:  15.10252
+val_20:  15.07327   val_21:  15.07326
+val_19:  15.03937   val_20:  15.07327
+val_18:  15.00921   val_19:  15.03937
+val_17:  15.01765   val_18:  15.00921
+val_16:  14.98104   val_17:  15.01765
+cal done!!!
+choose 17  ： 15.01765
+first choose 40->34     22->17
+cur_default: 15.2173
+val_17:  15.20003   val_18:  15.22815
+val_16:  15.19236   val_17:  15.20003
+val_15:  15.16829   val_16:  15.19236
+val_14:  15.15416   val_15:  15.16829
+val_13:  15.12223   val_14:  15.15416
+val_12:  15.11989   val_13:  15.12223
+val_11:  15.11484   val_12:  15.11989
+val_10:  15.08049   val_11:  15.11484
+val_9:  15.07912   val_10:  15.08049
+val_8:  15.04735   val_9:  15.07912
+val_7:  15.04211   val_8:  15.04735
+val_6:  14.99259   val_7:  15.04211
+cal done!!!
+choose 6  ： 14.99259
+second choose 34     17->6
+保存的数据行： {'test_time': '0910_131913', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.99, 'default_it': 40, 'default_ib': 22, 'it_first': 34, 'ib_first': 17, 'it_bit': 34, 'ib_bit': 6}
+code spand : 167.89 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default: 22.04541
+val_62:  21.9197   val_63:  21.99782
+val_61:  21.85139   val_62:  21.9197
+val_60:  21.79617   val_61:  21.85139
+val_59:  21.73298   val_60:  21.79617
+val_58:  21.66273   val_59:  21.73298
+val_57:  21.56964   val_58:  21.66273
+val_56:  21.50374   val_57:  21.56964
+val_55:  21.42361   val_56:  21.50374
+val_54:  21.32479   val_55:  21.42361
+val_53:  21.25492   val_54:  21.32479
+val_52:  21.14738   val_53:  21.25492
+val_51:  21.05726   val_52:  21.14738
+val_50:  20.95127   val_51:  21.05726
+cal done!!!
+choose 50  ： 20.95127
+cur_default: 20.95854
+val_29:  20.93734   val_30:  20.95659
+val_30:  20.95659   val_31:  20.95107
+cal done! Use maximum value
+cur_default: 21.06232
+val_30:  21.03509   val_31:  21.03826
+val_29:  21.01724   val_30:  21.03509
+val_28:  21.00943   val_29:  21.01724
+val_27:  20.99962   val_28:  21.00943
+cal done!!!
+choose 27  ： 20.99962
+first choose 62->51     30->27
+cur_default: 21.19355
+val_27:  21.22052   val_28:  21.20616
+val_26:  21.23038   val_27:  21.22052
+val_25:  21.20724   val_26:  21.23038
+val_24:  21.2176   val_25:  21.20724
+val_23:  21.19687   val_24:  21.2176
+val_22:  21.18826   val_23:  21.19687
+val_21:  21.18322   val_22:  21.18826
+val_20:  21.16015   val_21:  21.18322
+val_19:  21.14901   val_20:  21.16015
+val_18:  21.15772   val_19:  21.14901
+val_17:  21.14021   val_18:  21.15772
+val_16:  21.15127   val_17:  21.14021
+val_15:  21.12703   val_16:  21.15127
+val_14:  21.12002   val_15:  21.12703
+val_13:  21.08541   val_14:  21.12002
+val_12:  21.10004   val_13:  21.08541
+val_11:  21.08163   val_12:  21.10004
+val_10:  21.088   val_11:  21.08163
+val_9:  21.0713   val_10:  21.088
+val_8:  21.0656   val_9:  21.0713
+val_7:  21.06687   val_8:  21.0656
+val_6:  21.06306   val_7:  21.06687
+val_5:  21.05121   val_6:  21.06306
+val_4:  21.0454   val_5:  21.05121
+val_3:  21.02877   val_4:  21.0454
+val_2:  21.02554   val_3:  21.02877
+val_1:  21.00989   val_2:  21.02554
+val_0:  21.00574   val_1:  21.00989
+cal done! Use minimum value
+cur_default: 20.91314
+val_0:  20.89831   val_1:  20.90368
+val_1:  20.90368   val_2:  20.91602
+val_2:  20.91602   val_3:  20.9278
+val_3:  20.9278   val_4:  20.94863
+val_4:  20.94863   val_5:  20.94057
+val_5:  20.94057   val_6:  20.97555
+val_6:  20.97555   val_7:  20.97824
+val_7:  20.97824   val_8:  20.9796
+val_8:  20.9796   val_9:  20.98921
+val_9:  20.98921   val_10:  20.99275
+val_10:  20.99275   val_11:  21.01671
+cal done!!!
+choose 10  ： 20.99275
+second choose 50     1->10
+保存的数据行： {'test_time': '0910_132453', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 20.99, 'default_it': 62, 'default_ib': 30, 'it_first': 51, 'ib_first': 27, 'it_bit': 50, 'ib_bit': 10}
+code spand : 338.87 s
+setpwr 22
+setpwr 23
+cur_default: 23.76832
+val_62:  23.66308   val_63:  23.71863
+val_61:  23.62202   val_62:  23.66308
+val_60:  23.57583   val_61:  23.62202
+val_59:  23.53073   val_60:  23.57583
+val_58:  23.48956   val_59:  23.53073
+val_57:  23.44671   val_58:  23.48956
+val_56:  23.39912   val_57:  23.44671
+val_55:  23.34364   val_56:  23.39912
+val_54:  23.28877   val_55:  23.34364
+val_53:  23.23704   val_54:  23.28877
+val_52:  23.17532   val_53:  23.23704
+val_51:  23.11904   val_52:  23.17532
+val_50:  23.05093   val_51:  23.11904
+val_49:  22.98689   val_50:  23.05093
+cal done!!!
+choose 49  ： 22.98689
+cur_default: 22.98988
+val_29:  22.97641   val_30:  22.98977
+val_30:  22.98977   val_31:  22.98821
+cal done! Use maximum value
+cur_default: 23.05911
+val_30:  23.04412   val_31:  23.05533
+val_29:  23.03003   val_30:  23.04412
+val_28:  23.02638   val_29:  23.03003
+val_27:  23.02535   val_28:  23.02638
+val_26:  23.0165   val_27:  23.02535
+val_25:  23.01244   val_26:  23.0165
+val_24:  23.00649   val_25:  23.01244
+val_23:  22.99142   val_24:  23.00649
+cal done!!!
+choose 24  ： 23.00649
+first choose 62->50     30->24
+cur_default: 23.20035
+val_24:  23.21857   val_25:  23.21669
+val_23:  23.21444   val_24:  23.21857
+val_22:  23.21801   val_23:  23.21444
+val_21:  23.21424   val_22:  23.21801
+val_20:  23.20549   val_21:  23.21424
+val_19:  23.20631   val_20:  23.20549
+val_18:  23.18582   val_19:  23.20631
+val_17:  23.17909   val_18:  23.18582
+val_16:  23.16089   val_17:  23.17909
+val_15:  23.16525   val_16:  23.16089
+val_14:  23.16355   val_15:  23.16525
+val_13:  23.15988   val_14:  23.16355
+val_12:  23.1612   val_13:  23.15988
+val_11:  23.15661   val_12:  23.1612
+val_10:  23.14091   val_11:  23.15661
+val_9:  23.13507   val_10:  23.14091
+val_8:  23.13564   val_9:  23.13507
+val_7:  23.12202   val_8:  23.13564
+val_6:  23.12303   val_7:  23.12202
+val_5:  23.12613   val_6:  23.12303
+val_4:  23.11414   val_5:  23.12613
+val_3:  23.11003   val_4:  23.11414
+val_2:  23.10822   val_3:  23.11003
+val_1:  23.09651   val_2:  23.10822
+val_0:  23.0962   val_1:  23.09651
+cal done! Use minimum value
+cur_default: 23.02114
+val_1:  23.01666   val_2:  23.02995
+val_0:  23.00705   val_1:  23.01666
+cal done! Use minimum value
+cur_default: 22.9453
+val_0:  22.95081   val_1:  22.94427
+val_1:  22.94427   val_2:  22.95222
+val_2:  22.95222   val_3:  22.96183
+val_3:  22.96183   val_4:  22.97683
+val_4:  22.97683   val_5:  22.9742
+val_5:  22.9742   val_6:  22.99047
+val_6:  22.99047   val_7:  22.99827
+val_7:  22.99827   val_8:  22.99941
+val_8:  22.99941   val_9:  22.99983
+val_9:  22.99983   val_10:  23.01444
+cal done!!!
+choose 9  ： 22.99983
+second choose 48     1->9
+保存的数据行： {'test_time': '0910_133101', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 50, 'ib_first': 24, 'it_bit': 48, 'ib_bit': 9}
+code spand : 366.85 s
+setpwr 1
+cur_default: 1.155199
+val_20:  1.168032   val_21:  1.672708
+val_19:  0.6121808   val_20:  1.168032
+cal done!!!
+choose 20  ： 1.168032
+cur_default: 1.179007
+val_8:  1.184924   val_9:  1.214677
+val_7:  1.146246   val_8:  1.184924
+val_6:  1.118618   val_7:  1.146246
+val_5:  1.083085   val_6:  1.118618
+val_4:  1.044386   val_5:  1.083085
+val_3:  1.011268   val_4:  1.044386
+val_2:  0.9872519   val_3:  1.011268
+cal done!!!
+choose 3  ： 1.011268
+first choose 20->20     8->3
+cur_default: 1.076687
+val_3:  1.078986   val_4:  1.117449
+val_2:  1.041276   val_3:  1.078986
+val_1:  1.004749   val_2:  1.041276
+val_0:  0.9697918   val_1:  1.004749
+cal done!!!
+choose 1  ： 1.004749
+second choose 20     3->1
+保存的数据行： {'test_time': '0910_133250', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 20, 'default_ib': 8, 'it_first': 20, 'ib_first': 3, 'it_bit': 20, 'ib_bit': 1}
+code spand : 105.28 s
+setpwr 2
+setpwr 3
+cur_default: 1.820588
+val_13:  1.059245   val_14:  1.813986
+val_14:  1.813986   val_15:  2.503526
+val_15:  2.503526   val_16:  3.133445
+cal done!!!
+choose 16  ： 3.133445
+cur_default: 3.150191
+val_20:  3.119489   val_21:  3.177092
+val_19:  3.07689   val_20:  3.119489
+val_18:  3.031449   val_19:  3.07689
+val_17:  3.010265   val_18:  3.031449
+val_16:  2.94978   val_17:  3.010265
+cal done!!!
+choose 17  ： 3.010265
+first choose 14->16     20->17
+cur_default: 3.035288
+val_17:  3.042415   val_18:  3.077557
+val_16:  2.991432   val_17:  3.042415
+cal done!!!
+choose 16  ： 2.991432
+second choose 16     17->16
+保存的数据行： {'test_time': '0910_133422', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 14, 'default_ib': 20, 'it_first': 16, 'ib_first': 17, 'it_bit': 16, 'ib_bit': 16}
+code spand : 91.50 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 6.859341
+val_15:  6.244257   val_16:  6.872536
+val_16:  6.872536   val_17:  7.464796
+cal done!!!
+choose 16  ： 6.872536
+cur_default: 6.866052
+val_21:  6.824881   val_22:  6.867538
+val_22:  6.867538   val_23:  6.91158
+val_23:  6.91158   val_24:  6.947888
+val_24:  6.947888   val_25:  6.998751
+val_25:  6.998751   val_26:  7.047205
+cal done!!!
+choose 25  ： 6.998751
+first choose 16->16     22->25
+cur_default: 6.980476
+val_24:  6.927711   val_25:  6.976285
+val_25:  6.976285   val_26:  7.017282
+cal done!!!
+choose 26  ： 7.017282
+second choose 16     25->26
+保存的数据行： {'test_time': '0910_133550', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 16, 'default_ib': 22, 'it_first': 16, 'ib_first': 25, 'it_bit': 16, 'ib_bit': 26}
+code spand : 86.69 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.01724
+val_21:  12.01354   val_22:  12.49211
+val_20:  11.53022   val_21:  12.01354
+val_19:  11.01119   val_20:  11.53022
+val_18:  10.47698   val_19:  11.01119
+cal done!!!
+choose 19  ： 11.01119
+cur_default: 11.01451
+val_28:  11.01498   val_29:  11.05259
+val_27:  10.97358   val_28:  11.01498
+cal done!!!
+choose 28  ： 11.01498
+first choose 21->19     28->28
+cur_default: 11.021
+val_28:  11.00442   val_29:  11.05608
+val_27:  10.96669   val_28:  11.00442
+cal done!!!
+choose 28  ： 11.00442
+second choose 19     28->28
+保存的数据行： {'test_time': '0910_133713', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 21, 'default_ib': 28, 'it_first': 19, 'ib_first': 28, 'it_bit': 19, 'ib_bit': 28}
+code spand : 82.11 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.5168
+val_26:  16.49489   val_27:  16.84632
+val_25:  16.11182   val_26:  16.49489
+val_24:  15.72604   val_25:  16.11182
+val_23:  15.26077   val_24:  15.72604
+val_22:  14.84346   val_23:  15.26077
+cal done!!!
+choose 22  ： 14.84346
+cur_default: 14.8254
+val_19:  14.79759   val_20:  14.83629
+val_20:  14.83629   val_21:  14.86912
+val_21:  14.86912   val_22:  14.90865
+val_22:  14.90865   val_23:  14.93547
+val_23:  14.93547   val_24:  14.95191
+val_24:  14.95191   val_25:  14.98876
+val_25:  14.98876   val_26:  15.02229
+cal done!!!
+choose 25  ： 14.98876
+first choose 26->22     20->25
+cur_default: 14.9815
+val_24:  14.94063   val_25:  14.97713
+val_25:  14.97713   val_26:  15.00065
+cal done!!!
+choose 26  ： 15.00065
+second choose 22     25->26
+保存的数据行： {'test_time': '0910_133904', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.0, 'default_it': 26, 'default_ib': 20, 'it_first': 22, 'ib_first': 25, 'it_bit': 22, 'ib_bit': 26}
+code spand : 109.67 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.69022
+val_36:  20.6518   val_37:  20.85653
+val_35:  20.42245   val_36:  20.6518
+val_34:  20.19956   val_35:  20.42245
+val_33:  19.95926   val_34:  20.19956
+val_32:  19.71433   val_33:  19.95926
+val_31:  19.59821   val_32:  19.71433
+val_30:  19.33909   val_31:  19.59821
+val_29:  19.03916   val_30:  19.33909
+val_28:  18.74598   val_29:  19.03916
+cal done!!!
+choose 29  ： 19.03916
+cur_default: 19.03395
+val_20:  19.03609   val_21:  19.05977
+val_19:  19.01322   val_20:  19.03609
+val_18:  18.991   val_19:  19.01322
+cal done!!!
+choose 18  ： 18.991
+first choose 36->29     20->18
+cur_default: 19.0469
+val_18:  19.04527   val_19:  19.0737
+val_17:  19.0303   val_18:  19.04527
+val_16:  19.01159   val_17:  19.0303
+val_15:  18.98701   val_16:  19.01159
+cal done!!!
+choose 16  ： 19.01159
+second choose 29     18->16
+保存的数据行： {'test_time': '0910_134104', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.01, 'default_it': 36, 'default_ib': 20, 'it_first': 29, 'ib_first': 18, 'it_bit': 29, 'ib_bit': 16}
+code spand : 119.09 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.55901
+val_62:  24.49265   val_63:  24.53611
+val_61:  24.44931   val_62:  24.49265
+val_60:  24.40138   val_61:  24.44931
+val_59:  24.35644   val_60:  24.40138
+val_58:  24.3082   val_59:  24.35644
+val_57:  24.26723   val_58:  24.3082
+val_56:  24.21536   val_57:  24.26723
+val_55:  24.16261   val_56:  24.21536
+val_54:  24.11314   val_55:  24.16261
+val_53:  24.04978   val_54:  24.11314
+val_52:  23.99495   val_53:  24.04978
+val_51:  23.93311   val_52:  23.99495
+val_50:  23.8681   val_51:  23.93311
+val_49:  23.7976   val_50:  23.8681
+val_48:  23.73048   val_49:  23.7976
+val_47:  23.68361   val_48:  23.73048
+val_46:  23.60947   val_47:  23.68361
+val_45:  23.52456   val_46:  23.60947
+val_44:  23.45002   val_45:  23.52456
+val_43:  23.35625   val_44:  23.45002
+val_42:  23.26703   val_43:  23.35625
+val_41:  23.16967   val_42:  23.26703
+val_40:  23.06687   val_41:  23.16967
+val_39:  22.94879   val_40:  23.06687
+cal done!!!
+choose 39  ： 22.94879
+cur_default: 22.9439
+val_29:  22.92409   val_30:  22.93745
+val_30:  22.93745   val_31:  22.94813
+cal done! Use maximum value
+cur_default: 23.06742
+val_30:  23.06258   val_31:  23.07114
+val_29:  23.05021   val_30:  23.06258
+val_28:  23.04409   val_29:  23.05021
+val_27:  23.03199   val_28:  23.04409
+val_26:  23.02023   val_27:  23.03199
+val_25:  23.01207   val_26:  23.02023
+val_24:  23.0041   val_25:  23.01207
+val_23:  22.99365   val_24:  23.0041
+cal done!!!
+choose 24  ： 23.0041
+first choose 62->40     30->24
+cur_default: 23.00622
+val_24:  23.00587   val_25:  23.01556
+val_23:  22.99485   val_24:  23.00587
+cal done!!!
+choose 23  ： 22.99485
+second choose 40     24->23
+保存的数据行： {'test_time': '0910_134451', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH42_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.99, 'default_it': 62, 'default_ib': 30, 'it_first': 40, 'ib_first': 24, 'it_bit': 40, 'ib_bit': 23}
+code spand : 226.36 s
+setpwr 1
+cur_default: 1.305692
+val_20:  1.325174   val_21:  1.815998
+val_19:  0.7884107   val_20:  1.325174
+cal done!!!
+choose 19  ： 0.7884107
+cur_default: 0.8043866
+val_7:  0.7663483   val_8:  0.7911365
+val_8:  0.7911365   val_9:  0.8649218
+val_9:  0.8649218   val_10:  0.8836451
+val_10:  0.8836451   val_11:  0.9115603
+val_11:  0.9115603   val_12:  0.9524336
+val_12:  0.9524336   val_13:  0.9826503
+val_13:  0.9826503   val_14:  1.04512
+cal done!!!
+choose 13  ： 0.9826503
+first choose 20->19     8->13
+cur_default: 1.018492
+val_13:  1.028181   val_14:  1.064731
+val_12:  0.987595   val_13:  1.028181
+cal done!!!
+choose 12  ： 0.987595
+second choose 19     13->12
+保存的数据行： {'test_time': '0910_134631', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 20, 'default_ib': 8, 'it_first': 19, 'ib_first': 13, 'it_bit': 19, 'ib_bit': 12}
+code spand : 94.88 s
+setpwr 2
+setpwr 3
+cur_default: 2.066577
+val_13:  1.346734   val_14:  2.061718
+val_14:  2.061718   val_15:  2.702007
+val_15:  2.702007   val_16:  3.309674
+cal done!!!
+choose 15  ： 2.702007
+cur_default: 2.701793
+val_19:  2.66625   val_20:  2.702777
+val_20:  2.702777   val_21:  2.75366
+val_21:  2.75366   val_22:  2.789366
+val_22:  2.789366   val_23:  2.83822
+val_23:  2.83822   val_24:  2.877784
+val_24:  2.877784   val_25:  2.930678
+val_25:  2.930678   val_26:  2.983367
+val_26:  2.983367   val_27:  3.013716
+cal done!!!
+choose 27  ： 3.013716
+first choose 14->15     20->27
+cur_default: 3.118896
+val_27:  3.115899   val_28:  3.14874
+val_26:  3.042446   val_27:  3.115899
+val_25:  3.022485   val_26:  3.042446
+val_24:  2.965998   val_25:  3.022485
+cal done!!!
+choose 25  ： 3.022485
+second choose 15     27->25
+保存的数据行： {'test_time': '0910_134824', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.02, 'default_it': 14, 'default_ib': 20, 'it_first': 15, 'ib_first': 27, 'it_bit': 15, 'ib_bit': 25}
+code spand : 113.16 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.084711
+val_16:  7.068765   val_17:  7.662356
+val_15:  6.482866   val_16:  7.068765
+cal done!!!
+choose 16  ： 7.068765
+cur_default: 7.091474
+val_22:  7.078673   val_23:  7.104546
+val_21:  7.034754   val_22:  7.078673
+val_20:  6.998254   val_21:  7.034754
+cal done!!!
+choose 20  ： 6.998254
+first choose 16->16     22->20
+cur_default: 7.008791
+val_20:  6.985513   val_21:  7.037073
+cal done!!!
+choose 20  ： 6.985513
+second choose 16     20->20
+保存的数据行： {'test_time': '0910_134937', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 16, 'default_ib': 22, 'it_first': 16, 'ib_first': 20, 'it_bit': 16, 'ib_bit': 20}
+code spand : 72.12 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.08625
+val_21:  12.06565   val_22:  12.51654
+val_20:  11.62397   val_21:  12.06565
+val_19:  11.12943   val_20:  11.62397
+val_18:  10.62142   val_19:  11.12943
+cal done!!!
+choose 19  ： 11.12943
+cur_default: 11.09737
+val_28:  11.12018   val_29:  11.17725
+val_27:  11.0885   val_28:  11.12018
+val_26:  11.05266   val_27:  11.0885
+val_25:  11.01343   val_26:  11.05266
+val_24:  10.95572   val_25:  11.01343
+cal done!!!
+choose 25  ： 11.01343
+first choose 21->19     28->25
+cur_default: 11.03583
+val_25:  11.02875   val_26:  11.08688
+val_24:  11.00082   val_25:  11.02875
+val_23:  10.98451   val_24:  11.00082
+cal done!!!
+choose 24  ： 11.00082
+second choose 19     25->24
+保存的数据行： {'test_time': '0910_135118', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 21, 'default_ib': 28, 'it_first': 19, 'ib_first': 25, 'it_bit': 19, 'ib_bit': 24}
+code spand : 99.56 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.34657
+val_26:  16.33763   val_27:  16.68783
+val_25:  15.97952   val_26:  16.33763
+val_24:  15.60831   val_25:  15.97952
+val_23:  15.15377   val_24:  15.60831
+val_22:  14.73796   val_23:  15.15377
+cal done!!!
+choose 23  ： 15.15377
+cur_default: 15.14439
+val_20:  15.1523   val_21:  15.17236
+val_19:  15.11804   val_20:  15.1523
+val_18:  15.08454   val_19:  15.11804
+val_17:  15.07504   val_18:  15.08454
+val_16:  15.03027   val_17:  15.07504
+val_15:  15.01008   val_16:  15.03027
+val_14:  14.96412   val_15:  15.01008
+cal done!!!
+choose 15  ： 15.01008
+first choose 26->23     20->15
+cur_default: 15.19184
+val_15:  15.19484   val_16:  15.22586
+val_14:  15.16102   val_15:  15.19484
+val_13:  15.13401   val_14:  15.16102
+val_12:  15.1116   val_13:  15.13401
+val_11:  15.07362   val_12:  15.1116
+val_10:  15.05533   val_11:  15.07362
+val_9:  15.00635   val_10:  15.05533
+val_8:  14.98558   val_9:  15.00635
+cal done!!!
+choose 9  ： 15.00635
+second choose 23     15->9
+保存的数据行： {'test_time': '0910_135335', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.01, 'default_it': 26, 'default_ib': 20, 'it_first': 23, 'ib_first': 15, 'it_bit': 23, 'ib_bit': 9}
+code spand : 136.07 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.3285
+val_36:  20.29912   val_37:  20.50674
+val_35:  20.08241   val_36:  20.29912
+val_34:  19.88262   val_35:  20.08241
+val_33:  19.66798   val_34:  19.88262
+val_32:  19.4148   val_33:  19.66798
+val_31:  19.29782   val_32:  19.4148
+val_30:  19.04169   val_31:  19.29782
+val_29:  18.75251   val_30:  19.04169
+cal done!!!
+choose 30  ： 19.04169
+cur_default: 19.0243
+val_20:  19.02227   val_21:  19.07213
+val_19:  18.99908   val_20:  19.02227
+cal done!!!
+choose 19  ： 18.99908
+first choose 36->30     20->19
+cur_default: 19.3602
+val_19:  19.34784   val_20:  19.36789
+val_18:  19.34098   val_19:  19.34784
+val_17:  19.32005   val_18:  19.34098
+val_16:  19.30061   val_17:  19.32005
+val_15:  19.28731   val_16:  19.30061
+val_14:  19.25818   val_15:  19.28731
+val_13:  19.24284   val_14:  19.25818
+val_12:  19.22304   val_13:  19.24284
+val_11:  19.19667   val_12:  19.22304
+val_10:  19.18435   val_11:  19.19667
+val_9:  19.15436   val_10:  19.18435
+val_8:  19.15752   val_9:  19.15436
+val_7:  19.12536   val_8:  19.15752
+val_6:  19.10984   val_7:  19.12536
+val_5:  19.07523   val_6:  19.10984
+val_4:  19.06679   val_5:  19.07523
+val_3:  19.03626   val_4:  19.06679
+val_2:  19.02914   val_3:  19.03626
+val_1:  18.98753   val_2:  19.02914
+cal done!!!
+choose 1  ： 18.98753
+second choose 30     19->1
+保存的数据行： {'test_time': '0910_135633', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.99, 'default_it': 36, 'default_ib': 20, 'it_first': 30, 'ib_first': 19, 'it_bit': 30, 'ib_bit': 1}
+code spand : 177.12 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.25642
+val_62:  24.14654   val_63:  24.19944
+val_61:  24.09839   val_62:  24.14654
+val_60:  24.04877   val_61:  24.09839
+val_59:  23.99672   val_60:  24.04877
+val_58:  23.95293   val_59:  23.99672
+val_57:  23.88599   val_58:  23.95293
+val_56:  23.8272   val_57:  23.88599
+val_55:  23.7615   val_56:  23.8272
+val_54:  23.70478   val_55:  23.7615
+val_53:  23.64574   val_54:  23.70478
+val_52:  23.59156   val_53:  23.64574
+val_51:  23.51411   val_52:  23.59156
+val_50:  23.47287   val_51:  23.51411
+val_49:  23.39656   val_50:  23.47287
+val_48:  23.32738   val_49:  23.39656
+val_47:  23.28364   val_48:  23.32738
+val_46:  23.21336   val_47:  23.28364
+val_45:  23.12086   val_46:  23.21336
+val_44:  23.04779   val_45:  23.12086
+val_43:  22.95483   val_44:  23.04779
+cal done!!!
+choose 43  ： 22.95483
+cur_default: 22.95024
+val_29:  22.93781   val_30:  22.9381
+val_30:  22.9381   val_31:  22.94952
+cal done! Use maximum value
+cur_default: 23.03294
+val_30:  23.02067   val_31:  23.02691
+val_29:  23.01521   val_30:  23.02067
+val_28:  22.99883   val_29:  23.01521
+cal done!!!
+choose 28  ： 22.99883
+first choose 62->44     30->28
+cur_default: 23.19577
+val_28:  23.20266   val_29:  23.20502
+val_27:  23.19308   val_28:  23.20266
+val_26:  23.18888   val_27:  23.19308
+val_25:  23.18581   val_26:  23.18888
+val_24:  23.17662   val_25:  23.18581
+val_23:  23.17511   val_24:  23.17662
+val_22:  23.16315   val_23:  23.17511
+val_21:  23.16095   val_22:  23.16315
+val_20:  23.15982   val_21:  23.16095
+val_19:  23.15471   val_20:  23.15982
+val_18:  23.14228   val_19:  23.15471
+val_17:  23.14237   val_18:  23.14228
+val_16:  23.12679   val_17:  23.14237
+val_15:  23.12427   val_16:  23.12679
+val_14:  23.12519   val_15:  23.12427
+val_13:  23.11957   val_14:  23.12519
+val_12:  23.10365   val_13:  23.11957
+val_11:  23.10274   val_12:  23.10365
+val_10:  23.08855   val_11:  23.10274
+val_9:  23.08815   val_10:  23.08855
+val_8:  23.07554   val_9:  23.08815
+val_7:  23.06536   val_8:  23.07554
+val_6:  23.06233   val_7:  23.06536
+val_5:  23.05355   val_6:  23.06233
+val_4:  23.04886   val_5:  23.05355
+val_3:  23.0447   val_4:  23.04886
+val_2:  23.03178   val_3:  23.0447
+val_1:  23.03403   val_2:  23.03178
+val_0:  23.02902   val_1:  23.03403
+cal done! Use minimum value
+cur_default: 22.93414
+val_0:  22.9266   val_1:  22.93987
+val_1:  22.93987   val_2:  22.94247
+val_2:  22.94247   val_3:  22.95327
+val_3:  22.95327   val_4:  22.95085
+val_4:  22.95085   val_5:  22.95897
+val_5:  22.95897   val_6:  22.97177
+val_6:  22.97177   val_7:  22.98677
+val_7:  22.98677   val_8:  22.98864
+val_8:  22.98864   val_9:  22.99303
+val_9:  22.99303   val_10:  23.00026
+cal done!!!
+choose 10  ： 23.00026
+second choose 43     1->10
+保存的数据行： {'test_time': '0910_140240', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 44, 'ib_first': 28, 'it_bit': 43, 'ib_bit': 10}
+code spand : 366.14 s
+setpwr 1
+cur_default: -0.5382595
+val_11:  -1.309464   val_12:  -0.5361591
+val_12:  -0.5361591   val_13:  0.1391915
+val_13:  0.1391915   val_14:  0.8156253
+val_14:  0.8156253   val_15:  1.425543
+cal done!!!
+choose 14  ： 0.8156253
+cur_default: 0.8134627
+val_15:  0.7767273   val_16:  0.8149061
+val_16:  0.8149061   val_17:  0.8470922
+val_17:  0.8470922   val_18:  0.8950153
+val_18:  0.8950153   val_19:  0.9380434
+val_19:  0.9380434   val_20:  1.006764
+cal done!!!
+choose 20  ： 1.006764
+first choose 12->14     16->20
+cur_default: 1.230218
+val_20:  1.231414   val_21:  1.252779
+val_19:  1.160276   val_20:  1.231414
+val_18:  1.115673   val_19:  1.160276
+val_17:  1.101711   val_18:  1.115673
+val_16:  1.043774   val_17:  1.101711
+val_15:  0.996711   val_16:  1.043774
+cal done!!!
+choose 15  ： 0.996711
+second choose 14     20->15
+保存的数据行： {'test_time': '0910_140438', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 20, 'it_bit': 14, 'ib_bit': 15}
+code spand : 113.12 s
+setpwr 2
+setpwr 3
+cur_default: 2.351985
+val_12:  1.705775   val_13:  2.336032
+val_13:  2.336032   val_14:  2.969434
+val_14:  2.969434   val_15:  3.546325
+cal done!!!
+choose 14  ： 2.969434
+cur_default: 2.979677
+val_25:  2.948245   val_26:  2.978345
+val_26:  2.978345   val_27:  3.001385
+cal done!!!
+choose 27  ： 3.001385
+first choose 13->14     26->27
+cur_default: 3.098127
+val_27:  3.095687   val_28:  3.137617
+val_26:  3.056571   val_27:  3.095687
+val_25:  3.02253   val_26:  3.056571
+val_24:  2.962407   val_25:  3.02253
+cal done!!!
+choose 25  ： 3.02253
+second choose 14     27->25
+保存的数据行： {'test_time': '0910_140604', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.02, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 27, 'it_bit': 14, 'ib_bit': 25}
+code spand : 85.69 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.762137
+val_19:  7.748782   val_20:  8.221487
+val_18:  7.291317   val_19:  7.748782
+val_17:  6.762231   val_18:  7.291317
+cal done!!!
+choose 17  ： 6.762231
+cur_default: 6.775378
+val_15:  6.720008   val_16:  6.759903
+val_16:  6.759903   val_17:  6.802648
+val_17:  6.802648   val_18:  6.826901
+val_18:  6.826901   val_19:  6.87028
+val_19:  6.87028   val_20:  6.899773
+val_20:  6.899773   val_21:  6.938375
+val_21:  6.938375   val_22:  6.966124
+val_22:  6.966124   val_23:  7.000793
+cal done!!!
+choose 23  ： 7.000793
+first choose 19->17     16->23
+cur_default: 6.928268
+val_22:  6.913562   val_23:  6.922631
+val_23:  6.922631   val_24:  6.978278
+val_24:  6.978278   val_25:  7.016396
+cal done!!!
+choose 25  ： 7.016396
+second choose 17     23->25
+保存的数据行： {'test_time': '0910_140754', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.02, 'default_it': 19, 'default_ib': 16, 'it_first': 17, 'ib_first': 23, 'it_bit': 17, 'ib_bit': 25}
+code spand : 108.73 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.31186
+val_26:  12.30416   val_27:  12.63361
+val_25:  11.9396   val_26:  12.30416
+val_24:  11.60546   val_25:  11.9396
+val_23:  11.16188   val_24:  11.60546
+val_22:  10.78729   val_23:  11.16188
+cal done!!!
+choose 23  ： 11.16188
+cur_default: 11.17934
+val_16:  11.17556   val_17:  11.19348
+val_15:  11.13424   val_16:  11.17556
+val_14:  11.109   val_15:  11.13424
+val_13:  11.10326   val_14:  11.109
+val_12:  11.0742   val_13:  11.10326
+val_11:  11.03347   val_12:  11.0742
+val_10:  11.00459   val_11:  11.03347
+val_9:  10.98905   val_10:  11.00459
+cal done!!!
+choose 10  ： 11.00459
+first choose 26->23     16->10
+cur_default: 11.00225
+val_10:  10.99888   val_11:  11.02308
+cal done!!!
+choose 10  ： 10.99888
+second choose 23     10->10
+保存的数据行： {'test_time': '0910_140943', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 26, 'default_ib': 16, 'it_first': 23, 'ib_first': 10, 'it_bit': 23, 'ib_bit': 10}
+code spand : 108.55 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.88861
+val_40:  16.8609   val_41:  17.06277
+val_39:  16.62288   val_40:  16.8609
+val_38:  16.42561   val_39:  16.62288
+val_37:  16.1986   val_38:  16.42561
+val_36:  15.97888   val_37:  16.1986
+val_35:  15.70755   val_36:  15.97888
+val_34:  15.47917   val_35:  15.70755
+val_33:  15.21418   val_34:  15.47917
+val_32:  14.97531   val_33:  15.21418
+cal done!!!
+choose 32  ： 14.97531
+cur_default: 14.96073
+val_21:  14.96086   val_22:  14.96432
+val_22:  14.96432   val_23:  14.97891
+val_23:  14.97891   val_24:  15.01344
+cal done!!!
+choose 24  ： 15.01344
+first choose 40->32     22->24
+cur_default: 15.33497
+val_24:  15.34049   val_25:  15.35688
+val_23:  15.31131   val_24:  15.34049
+val_22:  15.30383   val_23:  15.31131
+val_21:  15.27168   val_22:  15.30383
+val_20:  15.2462   val_21:  15.27168
+val_19:  15.23019   val_20:  15.2462
+val_18:  15.20063   val_19:  15.23019
+val_17:  15.2036   val_18:  15.20063
+val_16:  15.15733   val_17:  15.2036
+val_15:  15.14104   val_16:  15.15733
+val_14:  15.12325   val_15:  15.14104
+val_13:  15.08899   val_14:  15.12325
+val_12:  15.06968   val_13:  15.08899
+val_11:  15.07642   val_12:  15.06968
+val_10:  15.04203   val_11:  15.07642
+val_9:  15.02216   val_10:  15.04203
+val_8:  15.00995   val_9:  15.02216
+val_7:  14.98618   val_8:  15.00995
+cal done!!!
+choose 8  ： 15.00995
+second choose 32     24->8
+保存的数据行： {'test_time': '0910_141246', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.01, 'default_it': 40, 'default_ib': 22, 'it_first': 32, 'ib_first': 24, 'it_bit': 32, 'ib_bit': 8}
+code spand : 181.49 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default: 22.27425
+val_62:  22.16366   val_63:  22.22122
+val_61:  22.08891   val_62:  22.16366
+val_60:  22.00945   val_61:  22.08891
+val_59:  21.95748   val_60:  22.00945
+val_58:  21.89165   val_59:  21.95748
+val_57:  21.81479   val_58:  21.89165
+val_56:  21.75039   val_57:  21.81479
+val_55:  21.65287   val_56:  21.75039
+val_54:  21.5796   val_55:  21.65287
+val_53:  21.47385   val_54:  21.5796
+val_52:  21.38378   val_53:  21.47385
+val_51:  21.30056   val_52:  21.38378
+val_50:  21.20402   val_51:  21.30056
+val_49:  21.09502   val_50:  21.20402
+val_48:  20.97684   val_49:  21.09502
+cal done!!!
+choose 48  ： 20.97684
+cur_default: 20.99922
+val_29:  20.96503   val_30:  20.97723
+val_30:  20.97723   val_31:  20.98142
+cal done! Use maximum value
+cur_default: 21.08987
+val_30:  21.08253   val_31:  21.07582
+val_29:  21.0653   val_30:  21.08253
+val_28:  21.05035   val_29:  21.0653
+val_27:  21.02571   val_28:  21.05035
+val_26:  21.02977   val_27:  21.02571
+val_25:  21.03079   val_26:  21.02977
+val_24:  21.00753   val_25:  21.03079
+val_23:  21.00788   val_24:  21.00753
+val_22:  20.98912   val_23:  21.00788
+cal done!!!
+choose 23  ： 21.00788
+first choose 62->49     30->23
+cur_default: 21.18782
+val_23:  21.19904   val_24:  21.19658
+val_22:  21.18397   val_23:  21.19904
+val_21:  21.18585   val_22:  21.18397
+val_20:  21.16676   val_21:  21.18585
+val_19:  21.17303   val_20:  21.16676
+val_18:  21.16814   val_19:  21.17303
+val_17:  21.15599   val_18:  21.16814
+val_16:  21.14959   val_17:  21.15599
+val_15:  21.13618   val_16:  21.14959
+val_14:  21.13165   val_15:  21.13618
+val_13:  21.11957   val_14:  21.13165
+val_12:  21.11817   val_13:  21.11957
+val_11:  21.09634   val_12:  21.11817
+val_10:  21.09481   val_11:  21.09634
+val_9:  21.08598   val_10:  21.09481
+val_8:  21.07374   val_9:  21.08598
+val_7:  21.06244   val_8:  21.07374
+val_6:  21.06365   val_7:  21.06244
+val_5:  21.05383   val_6:  21.06365
+val_4:  21.03354   val_5:  21.05383
+val_3:  21.03347   val_4:  21.03354
+val_2:  21.02535   val_3:  21.03347
+val_1:  21.01372   val_2:  21.02535
+val_0:  21.00627   val_1:  21.01372
+cal done! Use minimum value
+cur_default: 20.87679
+val_0:  20.88316   val_1:  20.90365
+val_1:  20.90365   val_2:  20.90516
+val_2:  20.90516   val_3:  20.93069
+val_3:  20.93069   val_4:  20.93267
+val_4:  20.93267   val_5:  20.9473
+val_5:  20.9473   val_6:  20.94999
+val_6:  20.94999   val_7:  20.98734
+val_7:  20.98734   val_8:  20.96854
+val_8:  20.96854   val_9:  21.00369
+cal done!!!
+choose 9  ： 21.00369
+second choose 48     1->9
+保存的数据行： {'test_time': '0910_141830', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.0, 'default_it': 62, 'default_ib': 30, 'it_first': 49, 'ib_first': 23, 'it_bit': 48, 'ib_bit': 9}
+code spand : 343.04 s
+setpwr 22
+setpwr 23
+cur_default: 23.74104
+val_62:  23.63708   val_63:  23.67777
+val_61:  23.58838   val_62:  23.63708
+val_60:  23.54572   val_61:  23.58838
+val_59:  23.49113   val_60:  23.54572
+val_58:  23.44678   val_59:  23.49113
+val_57:  23.39788   val_58:  23.44678
+val_56:  23.35966   val_57:  23.39788
+val_55:  23.28933   val_56:  23.35966
+val_54:  23.24266   val_55:  23.28933
+val_53:  23.18752   val_54:  23.24266
+val_52:  23.13534   val_53:  23.18752
+val_51:  23.05897   val_52:  23.13534
+val_50:  23.00368   val_51:  23.05897
+val_49:  22.93663   val_50:  23.00368
+cal done!!!
+choose 50  ： 23.00368
+cur_default: 22.9906
+val_29:  22.97819   val_30:  22.97926
+val_30:  22.97926   val_31:  22.99413
+cal done! Use maximum value
+cur_default: 23.04716
+val_30:  23.04676   val_31:  23.05019
+val_29:  23.03228   val_30:  23.04676
+val_28:  23.0243   val_29:  23.03228
+val_27:  23.01661   val_28:  23.0243
+val_26:  23.01697   val_27:  23.01661
+val_25:  23.005   val_26:  23.01697
+val_24:  23.00059   val_25:  23.005
+val_23:  22.9963   val_24:  23.00059
+cal done!!!
+choose 24  ： 23.00059
+first choose 62->51     30->24
+cur_default: 23.20934
+val_24:  23.22264   val_25:  23.2182
+val_23:  23.21517   val_24:  23.22264
+val_22:  23.2049   val_23:  23.21517
+val_21:  23.20783   val_22:  23.2049
+val_20:  23.20547   val_21:  23.20783
+val_19:  23.19383   val_20:  23.20547
+val_18:  23.20368   val_19:  23.19383
+val_17:  23.1942   val_18:  23.20368
+val_16:  23.1869   val_17:  23.1942
+val_15:  23.18541   val_16:  23.1869
+val_14:  23.18649   val_15:  23.18541
+val_13:  23.1719   val_14:  23.18649
+val_12:  23.1645   val_13:  23.1719
+val_11:  23.1494   val_12:  23.1645
+val_10:  23.15478   val_11:  23.1494
+val_9:  23.13826   val_10:  23.15478
+val_8:  23.13957   val_9:  23.13826
+val_7:  23.13499   val_8:  23.13957
+val_6:  23.12239   val_7:  23.13499
+val_5:  23.12995   val_6:  23.12239
+val_4:  23.13459   val_5:  23.12995
+val_3:  23.11987   val_4:  23.13459
+val_2:  23.11139   val_3:  23.11987
+val_1:  23.10921   val_2:  23.11139
+val_0:  23.1042   val_1:  23.10921
+cal done! Use minimum value
+cur_default: 23.03709
+val_1:  23.03663   val_2:  23.04709
+val_0:  23.02443   val_1:  23.03663
+cal done! Use minimum value
+cur_default: 22.95969
+val_0:  22.95719   val_1:  22.97034
+val_1:  22.97034   val_2:  22.9705
+val_2:  22.9705   val_3:  22.97821
+val_3:  22.97821   val_4:  22.98062
+val_4:  22.98062   val_5:  22.98863
+val_5:  22.98863   val_6:  22.98968
+val_6:  22.98968   val_7:  23.00634
+cal done!!!
+choose 7  ： 23.00634
+second choose 49     1->7
+保存的数据行： {'test_time': '0910_142424', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.01, 'default_it': 62, 'default_ib': 30, 'it_first': 51, 'ib_first': 24, 'it_bit': 49, 'ib_bit': 7}
+code spand : 353.24 s
+setpwr 1
+cur_default: 1.42603
+val_20:  1.438308   val_21:  1.94418
+val_19:  0.8791738   val_20:  1.438308
+cal done!!!
+choose 19  ： 0.8791738
+cur_default: 0.8781132
+val_7:  0.8446348   val_8:  0.8886393
+val_8:  0.8886393   val_9:  0.9288402
+val_9:  0.9288402   val_10:  0.9589721
+val_10:  0.9589721   val_11:  1.005997
+cal done!!!
+choose 11  ： 1.005997
+first choose 20->19     8->11
+cur_default: 1.056316
+val_11:  1.056808   val_12:  1.090478
+val_10:  1.025289   val_11:  1.056808
+val_9:  0.987574   val_10:  1.025289
+cal done!!!
+choose 9  ： 0.987574
+second choose 19     11->9
+保存的数据行： {'test_time': '0910_142555', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 20, 'default_ib': 8, 'it_first': 19, 'ib_first': 11, 'it_bit': 19, 'ib_bit': 9}
+code spand : 86.82 s
+setpwr 2
+setpwr 3
+cur_default: 2.052041
+val_13:  1.288209   val_14:  2.05188
+val_14:  2.05188   val_15:  2.744552
+val_15:  2.744552   val_16:  3.35997
+cal done!!!
+choose 15  ： 2.744552
+cur_default: 2.737078
+val_19:  2.68625   val_20:  2.722494
+val_20:  2.722494   val_21:  2.774802
+val_21:  2.774802   val_22:  2.813302
+val_22:  2.813302   val_23:  2.858303
+val_23:  2.858303   val_24:  2.906308
+val_24:  2.906308   val_25:  2.959023
+val_25:  2.959023   val_26:  3.000879
+cal done!!!
+choose 26  ： 3.000879
+first choose 14->15     20->26
+cur_default: 3.043053
+val_26:  3.048163   val_27:  3.089584
+val_25:  2.999108   val_26:  3.048163
+cal done!!!
+choose 25  ： 2.999108
+second choose 15     26->25
+保存的数据行： {'test_time': '0910_142736', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 14, 'default_ib': 20, 'it_first': 15, 'ib_first': 26, 'it_bit': 15, 'ib_bit': 25}
+code spand : 100.54 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.053648
+val_16:  7.072708   val_17:  7.677609
+val_15:  6.438502   val_16:  7.072708
+cal done!!!
+choose 16  ： 7.072708
+cur_default: 7.064559
+val_22:  7.061312   val_23:  7.110377
+val_21:  7.022058   val_22:  7.061312
+val_20:  6.985874   val_21:  7.022058
+cal done!!!
+choose 20  ： 6.985874
+first choose 16->16     22->20
+cur_default: 6.997571
+val_19:  6.952473   val_20:  6.992888
+val_20:  6.992888   val_21:  7.045495
+cal done!!!
+choose 20  ： 6.992888
+second choose 16     20->20
+保存的数据行： {'test_time': '0910_142855', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 16, 'default_ib': 22, 'it_first': 16, 'ib_first': 20, 'it_bit': 16, 'ib_bit': 20}
+code spand : 77.61 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.25482
+val_21:  12.24776   val_22:  12.72447
+val_20:  11.77433   val_21:  12.24776
+val_19:  11.24702   val_20:  11.77433
+val_18:  10.72243   val_19:  11.24702
+cal done!!!
+choose 19  ： 11.24702
+cur_default: 11.24966
+val_28:  11.24349   val_29:  11.28686
+val_27:  11.20661   val_28:  11.24349
+val_26:  11.16246   val_27:  11.20661
+val_25:  11.13051   val_26:  11.16246
+val_24:  11.09729   val_25:  11.13051
+val_23:  11.04633   val_24:  11.09729
+val_22:  11.02988   val_23:  11.04633
+val_21:  10.99258   val_22:  11.02988
+cal done!!!
+choose 21  ： 10.99258
+first choose 21->19     28->21
+cur_default: 10.95948
+val_20:  10.90334   val_21:  10.94902
+val_21:  10.94902   val_22:  10.98722
+val_22:  10.98722   val_23:  11.00544
+cal done!!!
+choose 23  ： 11.00544
+second choose 19     21->23
+保存的数据行： {'test_time': '0910_143050', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.01, 'default_it': 21, 'default_ib': 28, 'it_first': 19, 'ib_first': 21, 'it_bit': 19, 'ib_bit': 23}
+code spand : 114.49 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.74501
+val_26:  16.73468   val_27:  17.0827
+val_25:  16.33239   val_26:  16.73468
+val_24:  15.95744   val_25:  16.33239
+val_23:  15.4762   val_24:  15.95744
+val_22:  15.04613   val_23:  15.4762
+val_21:  14.57923   val_22:  15.04613
+cal done!!!
+choose 22  ： 15.04613
+cur_default: 15.04725
+val_20:  15.05053   val_21:  15.08281
+val_19:  15.02562   val_20:  15.05053
+val_18:  14.99153   val_19:  15.02562
+cal done!!!
+choose 18  ： 14.99153
+first choose 26->22     20->18
+cur_default: 15.00624
+val_18:  15.00303   val_19:  15.03988
+val_17:  14.97864   val_18:  15.00303
+cal done!!!
+choose 18  ： 15.00303
+second choose 22     18->18
+保存的数据行： {'test_time': '0910_143227', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.0, 'default_it': 26, 'default_ib': 20, 'it_first': 22, 'ib_first': 18, 'it_bit': 22, 'ib_bit': 18}
+code spand : 95.83 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.96768
+val_36:  20.94796   val_37:  21.15401
+val_35:  20.72218   val_36:  20.94796
+val_34:  20.49701   val_35:  20.72218
+val_33:  20.25187   val_34:  20.49701
+val_32:  20.00389   val_33:  20.25187
+val_31:  19.87658   val_32:  20.00389
+val_30:  19.61298   val_31:  19.87658
+val_29:  19.31723   val_30:  19.61298
+val_28:  19.00788   val_29:  19.31723
+val_27:  18.68431   val_28:  19.00788
+cal done!!!
+choose 28  ： 19.00788
+cur_default: 19.01615
+val_20:  19.00515   val_21:  19.03655
+val_19:  18.98579   val_20:  19.00515
+cal done!!!
+choose 20  ： 19.00515
+first choose 36->28     20->20
+cur_default: 19.02648
+val_20:  19.02046   val_21:  19.04745
+val_19:  18.99334   val_20:  19.02046
+cal done!!!
+choose 19  ： 18.99334
+second choose 28     20->19
+保存的数据行： {'test_time': '0910_143418', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 18.99, 'default_it': 36, 'default_ib': 20, 'it_first': 28, 'ib_first': 20, 'it_bit': 28, 'ib_bit': 19}
+code spand : 109.93 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.56983
+val_62:  24.49899   val_63:  24.54879
+val_61:  24.45349   val_62:  24.49899
+val_60:  24.40522   val_61:  24.45349
+val_59:  24.36267   val_60:  24.40522
+val_58:  24.32312   val_59:  24.36267
+val_57:  24.26742   val_58:  24.32312
+val_56:  24.21394   val_57:  24.26742
+val_55:  24.1542   val_56:  24.21394
+val_54:  24.09524   val_55:  24.1542
+val_53:  24.03345   val_54:  24.09524
+val_52:  23.96943   val_53:  24.03345
+val_51:  23.90872   val_52:  23.96943
+val_50:  23.83905   val_51:  23.90872
+val_49:  23.7723   val_50:  23.83905
+val_48:  23.69611   val_49:  23.7723
+val_47:  23.64757   val_48:  23.69611
+val_46:  23.57265   val_47:  23.64757
+val_45:  23.48864   val_46:  23.57265
+val_44:  23.40137   val_45:  23.48864
+val_43:  23.30483   val_44:  23.40137
+val_42:  23.21361   val_43:  23.30483
+val_41:  23.10558   val_42:  23.21361
+val_40:  23.00463   val_41:  23.10558
+val_39:  22.87818   val_40:  23.00463
+cal done!!!
+choose 40  ： 23.00463
+cur_default: 23.00827
+val_30:  22.99621   val_31:  23.01263
+cal done!!!
+choose 30  ： 22.99621
+first choose 62->40     30->30
+cur_default: 23.00329
+val_30:  22.99957   val_31:  23.01732
+cal done!!!
+choose 30  ： 22.99957
+second choose 40     30->30
+保存的数据行： {'test_time': '0910_143704', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH58_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 40, 'ib_first': 30, 'it_bit': 40, 'ib_bit': 30}
+code spand : 165.51 s
+setpwr 1
+cur_default: -0.1490548
+val_11:  -0.96254   val_12:  -0.1314676
+val_12:  -0.1314676   val_13:  0.6042444
+val_13:  0.6042444   val_14:  1.345644
+cal done!!!
+choose 14  ： 1.345644
+cur_default: 1.327322
+val_16:  1.339849   val_17:  1.389093
+val_15:  1.28383   val_16:  1.339849
+val_14:  1.243989   val_15:  1.28383
+val_13:  1.215628   val_14:  1.243989
+val_12:  1.158392   val_13:  1.215628
+val_11:  1.139575   val_12:  1.158392
+val_10:  1.060368   val_11:  1.139575
+val_9:  1.02485   val_10:  1.060368
+val_8:  0.9771703   val_9:  1.02485
+cal done!!!
+choose 8  ： 0.9771703
+first choose 12->14     16->8
+cur_default: 1.097869
+val_8:  1.08995   val_9:  1.131143
+val_7:  1.028299   val_8:  1.08995
+val_6:  1.004288   val_7:  1.028299
+val_5:  0.9456555   val_6:  1.004288
+cal done!!!
+choose 6  ： 1.004288
+second choose 14     8->6
+保存的数据行： {'test_time': '0910_143907', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 8, 'it_bit': 14, 'ib_bit': 6}
+code spand : 117.91 s
+setpwr 2
+setpwr 3
+cur_default: 2.716434
+val_12:  2.031158   val_13:  2.76285
+val_13:  2.76285   val_14:  3.405721
+cal done!!!
+choose 13  ： 2.76285
+cur_default: 2.731241
+val_25:  2.672585   val_26:  2.725976
+val_26:  2.725976   val_27:  2.784012
+val_27:  2.784012   val_28:  2.815009
+val_28:  2.815009   val_29:  2.872193
+val_29:  2.872193   val_30:  2.925924
+val_30:  2.925924   val_31:  2.996535
+cal done! Use maximum value
+cur_default: 3.651939
+val_30:  3.616933   val_31:  3.646794
+val_29:  3.559353   val_30:  3.616933
+val_28:  3.537429   val_29:  3.559353
+val_27:  3.466489   val_28:  3.537429
+val_26:  3.420673   val_27:  3.466489
+val_25:  3.382497   val_26:  3.420673
+val_24:  3.329235   val_25:  3.382497
+val_23:  3.295721   val_24:  3.329235
+val_22:  3.245907   val_23:  3.295721
+val_21:  3.204086   val_22:  3.245907
+val_20:  3.172446   val_21:  3.204086
+val_19:  3.1142   val_20:  3.172446
+val_18:  3.072648   val_19:  3.1142
+val_17:  3.030042   val_18:  3.072648
+val_16:  2.98811   val_17:  3.030042
+cal done!!!
+choose 16  ： 2.98811
+first choose 13->14     30->16
+cur_default: 3.042277
+val_16:  3.034976   val_17:  3.080517
+val_15:  2.985734   val_16:  3.034976
+cal done!!!
+choose 15  ： 2.985734
+second choose 14     16->15
+保存的数据行： {'test_time': '0910_144201', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 16, 'it_bit': 14, 'ib_bit': 15}
+code spand : 173.76 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 8.311834
+val_19:  8.313106   val_20:  8.821056
+val_18:  7.796728   val_19:  8.313106
+val_17:  7.21652   val_18:  7.796728
+val_16:  6.643772   val_17:  7.21652
+cal done!!!
+choose 17  ： 7.21652
+cur_default: 7.204171
+val_16:  7.22862   val_17:  7.260282
+val_15:  7.17991   val_16:  7.22862
+val_14:  7.155235   val_15:  7.17991
+val_13:  7.110872   val_14:  7.155235
+val_12:  7.071498   val_13:  7.110872
+val_11:  7.037967   val_12:  7.071498
+val_10:  6.979799   val_11:  7.037967
+cal done!!!
+choose 10  ： 6.979799
+first choose 19->17     16->10
+cur_default: 6.949366
+val_9:  6.915291   val_10:  6.949108
+val_10:  6.949108   val_11:  6.98288
+val_11:  6.98288   val_12:  7.026479
+cal done!!!
+choose 11  ： 6.98288
+second choose 17     10->11
+保存的数据行： {'test_time': '0910_144351', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.98, 'default_it': 19, 'default_ib': 16, 'it_first': 17, 'ib_first': 10, 'it_bit': 17, 'ib_bit': 11}
+code spand : 108.67 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.93141
+val_26:  12.92389   val_27:  13.25596
+val_25:  12.52255   val_26:  12.92389
+val_24:  12.1623   val_25:  12.52255
+val_23:  11.68356   val_24:  12.1623
+val_22:  11.25892   val_23:  11.68356
+val_21:  10.80569   val_22:  11.25892
+cal done!!!
+choose 21  ： 10.80569
+cur_default: 10.82089
+val_15:  10.77872   val_16:  10.80921
+val_16:  10.80921   val_17:  10.83845
+val_17:  10.83845   val_18:  10.86883
+val_18:  10.86883   val_19:  10.89334
+val_19:  10.89334   val_20:  10.95066
+val_20:  10.95066   val_21:  10.96798
+val_21:  10.96798   val_22:  11.01335
+cal done!!!
+choose 22  ： 11.01335
+first choose 26->21     16->22
+cur_default: 11.02219
+val_22:  11.0324   val_23:  11.07273
+val_21:  11.00332   val_22:  11.0324
+val_20:  10.97119   val_21:  11.00332
+cal done!!!
+choose 21  ： 11.00332
+second choose 21     22->21
+保存的数据行： {'test_time': '0910_144550', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 26, 'default_ib': 16, 'it_first': 21, 'ib_first': 22, 'it_bit': 21, 'ib_bit': 21}
+code spand : 117.90 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 17.2582
+val_40:  17.22652   val_41:  17.42593
+val_39:  16.98328   val_40:  17.22652
+val_38:  16.76243   val_39:  16.98328
+val_37:  16.54393   val_38:  16.76243
+val_36:  16.30795   val_37:  16.54393
+val_35:  16.03727   val_36:  16.30795
+val_34:  15.80453   val_35:  16.03727
+val_33:  15.5146   val_34:  15.80453
+val_32:  15.2617   val_33:  15.5146
+val_31:  15.1094   val_32:  15.2617
+val_30:  14.83764   val_31:  15.1094
+cal done!!!
+choose 31  ： 15.1094
+cur_default: 15.11577
+val_22:  15.12922   val_23:  15.14501
+val_21:  15.09957   val_22:  15.12922
+val_20:  15.07513   val_21:  15.09957
+val_19:  15.04954   val_20:  15.07513
+val_18:  15.02311   val_19:  15.04954
+val_17:  14.9941   val_18:  15.02311
+cal done!!!
+choose 17  ： 14.9941
+first choose 40->31     22->17
+cur_default: 15.62858
+val_17:  15.60905   val_18:  15.63295
+val_16:  15.57076   val_17:  15.60905
+val_15:  15.5589   val_16:  15.57076
+val_14:  15.54093   val_15:  15.5589
+val_13:  15.51068   val_14:  15.54093
+val_12:  15.50228   val_13:  15.51068
+val_11:  15.47467   val_12:  15.50228
+val_10:  15.46208   val_11:  15.47467
+val_9:  15.45517   val_10:  15.46208
+val_8:  15.41975   val_9:  15.45517
+val_7:  15.40496   val_8:  15.41975
+val_6:  15.37065   val_7:  15.40496
+val_5:  15.36488   val_6:  15.37065
+val_4:  15.34013   val_5:  15.36488
+val_3:  15.30989   val_4:  15.34013
+val_2:  15.28135   val_3:  15.30989
+val_1:  15.27602   val_2:  15.28135
+val_0:  15.24971   val_1:  15.27602
+cal done! Use minimum value
+cur_default: 14.94324
+val_0:  14.93589   val_1:  14.97884
+val_1:  14.97884   val_2:  14.99111
+val_2:  14.99111   val_3:  15.02632
+cal done!!!
+choose 2  ： 14.99111
+second choose 30     1->2
+保存的数据行： {'test_time': '0910_144943', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.99, 'default_it': 40, 'default_ib': 22, 'it_first': 31, 'ib_first': 17, 'it_bit': 30, 'ib_bit': 2}
+code spand : 232.85 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.69842
+val_59:  20.63364   val_60:  20.75689
+val_58:  20.55009   val_59:  20.63364
+val_57:  20.44792   val_58:  20.55009
+val_56:  20.35005   val_57:  20.44792
+val_55:  20.23969   val_56:  20.35005
+val_54:  20.12057   val_55:  20.23969
+val_53:  20.00463   val_54:  20.12057
+val_52:  19.90997   val_53:  20.00463
+val_51:  19.78623   val_52:  19.90997
+val_50:  19.68078   val_51:  19.78623
+val_49:  19.55825   val_50:  19.68078
+val_48:  19.42309   val_49:  19.55825
+val_47:  19.35398   val_48:  19.42309
+val_46:  19.19969   val_47:  19.35398
+val_45:  19.05971   val_46:  19.19969
+val_44:  18.93454   val_45:  19.05971
+cal done!!!
+choose 45  ： 19.05971
+cur_default: 19.0667
+val_22:  19.05392   val_23:  19.08005
+val_21:  19.05309   val_22:  19.05392
+val_20:  19.04397   val_21:  19.05309
+val_19:  19.03267   val_20:  19.04397
+val_18:  19.01789   val_19:  19.03267
+val_17:  19.01352   val_18:  19.01789
+val_16:  18.99745   val_17:  19.01352
+cal done!!!
+choose 16  ： 18.99745
+first choose 59->45     22->16
+cur_default: 19.77217
+val_16:  19.77777   val_17:  19.79963
+val_15:  19.77573   val_16:  19.77777
+val_14:  19.75295   val_15:  19.77573
+val_13:  19.75574   val_14:  19.75295
+val_12:  19.73086   val_13:  19.75574
+val_11:  19.7169   val_12:  19.73086
+val_10:  19.72062   val_11:  19.7169
+val_9:  19.70471   val_10:  19.72062
+val_8:  19.69084   val_9:  19.70471
+val_7:  19.68416   val_8:  19.69084
+val_6:  19.67092   val_7:  19.68416
+val_5:  19.64922   val_6:  19.67092
+val_4:  19.64119   val_5:  19.64922
+val_3:  19.62218   val_4:  19.64119
+val_2:  19.61535   val_3:  19.62218
+val_1:  19.61859   val_2:  19.61535
+val_0:  19.59191   val_1:  19.61859
+cal done! Use minimum value
+cur_default: 19.4342
+val_1:  19.44744   val_2:  19.453
+val_0:  19.42284   val_1:  19.44744
+cal done! Use minimum value
+cur_default: 19.26633
+val_1:  19.27499   val_2:  19.28749
+val_0:  19.25564   val_1:  19.27499
+cal done! Use minimum value
+cur_default: 19.1187
+val_1:  19.12812   val_2:  19.11905
+val_0:  19.10537   val_1:  19.12812
+cal done! Use minimum value
+cur_default: 18.89998
+val_0:  18.91637   val_1:  18.92279
+val_1:  18.92279   val_2:  18.93878
+val_2:  18.93878   val_3:  18.94668
+val_3:  18.94668   val_4:  18.96741
+val_4:  18.96741   val_5:  18.98249
+val_5:  18.98249   val_6:  19.01328
+cal done!!!
+choose 6  ： 19.01328
+second choose 41     1->6
+保存的数据行： {'test_time': '0910_145526', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.01, 'default_it': 59, 'default_ib': 22, 'it_first': 45, 'ib_first': 16, 'it_bit': 41, 'ib_bit': 6}
+code spand : 341.32 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.04601
+val_62:  23.93209   val_63:  23.99039
+val_61:  23.88339   val_62:  23.93209
+val_60:  23.83435   val_61:  23.88339
+val_59:  23.77733   val_60:  23.83435
+val_58:  23.73097   val_59:  23.77733
+val_57:  23.69452   val_58:  23.73097
+val_56:  23.63525   val_57:  23.69452
+val_55:  23.57817   val_56:  23.63525
+val_54:  23.51532   val_55:  23.57817
+val_53:  23.45525   val_54:  23.51532
+val_52:  23.39515   val_53:  23.45525
+val_51:  23.33802   val_52:  23.39515
+val_50:  23.26547   val_51:  23.33802
+val_49:  23.18698   val_50:  23.26547
+val_48:  23.11741   val_49:  23.18698
+val_47:  23.06454   val_48:  23.11741
+val_46:  23.00106   val_47:  23.06454
+val_45:  22.92452   val_46:  23.00106
+cal done!!!
+choose 46  ： 23.00106
+cur_default: 22.99485
+val_29:  22.98095   val_30:  22.98685
+val_30:  22.98685   val_31:  23.00318
+cal done!!!
+choose 31  ： 23.00318
+cur_default: 23.06767
+val_30:  23.06409   val_31:  23.07807
+val_29:  23.05728   val_30:  23.06409
+val_28:  23.04853   val_29:  23.05728
+val_27:  23.03395   val_28:  23.04853
+val_26:  23.03526   val_27:  23.03395
+val_25:  23.02077   val_26:  23.03526
+val_24:  23.01563   val_25:  23.02077
+val_23:  23.00931   val_24:  23.01563
+val_22:  23.0114   val_23:  23.00931
+val_21:  23.00511   val_22:  23.0114
+val_20:  22.98893   val_21:  23.00511
+cal done!!!
+choose 21  ： 23.00511
+first choose 62->47     30->21
+cur_default: 23.18486
+val_21:  23.19421   val_22:  23.20206
+val_20:  23.20445   val_21:  23.19421
+val_19:  23.18759   val_20:  23.20445
+val_18:  23.19086   val_19:  23.18759
+val_17:  23.17731   val_18:  23.19086
+val_16:  23.16959   val_17:  23.17731
+val_15:  23.17658   val_16:  23.16959
+val_14:  23.16259   val_15:  23.17658
+val_13:  23.15324   val_14:  23.16259
+val_12:  23.15835   val_13:  23.15324
+val_11:  23.1451   val_12:  23.15835
+val_10:  23.14379   val_11:  23.1451
+val_9:  23.14441   val_10:  23.14379
+val_8:  23.13224   val_9:  23.14441
+val_7:  23.12094   val_8:  23.13224
+val_6:  23.11552   val_7:  23.12094
+val_5:  23.11188   val_6:  23.11552
+val_4:  23.10525   val_5:  23.11188
+val_3:  23.09453   val_4:  23.10525
+val_2:  23.0898   val_3:  23.09453
+val_1:  23.09846   val_2:  23.0898
+val_0:  23.07576   val_1:  23.09846
+cal done! Use minimum value
+cur_default: 23.00582
+val_1:  23.00843   val_2:  23.01608
+val_0:  23.01484   val_1:  23.00843
+cal done! Use minimum value
+cur_default: 22.91653
+val_0:  22.91465   val_1:  22.91719
+val_1:  22.91719   val_2:  22.92896
+val_2:  22.92896   val_3:  22.93355
+val_3:  22.93355   val_4:  22.95674
+val_4:  22.95674   val_5:  22.96791
+val_5:  22.96791   val_6:  22.96818
+val_6:  22.96818   val_7:  22.97524
+val_7:  22.97524   val_8:  22.97927
+val_8:  22.97927   val_9:  22.99915
+val_9:  22.99915   val_10:  23.00205
+cal done!!!
+choose 9  ： 22.99915
+second choose 45     1->9
+保存的数据行： {'test_time': '0910_150152', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 47, 'ib_first': 21, 'it_bit': 45, 'ib_bit': 9}
+code spand : 385.57 s
+setpwr 1
+cur_default: -0.3328436
+val_11:  -1.100417   val_12:  -0.3176432
+val_12:  -0.3176432   val_13:  0.3706614
+val_13:  0.3706614   val_14:  1.057301
+cal done!!!
+choose 14  ： 1.057301
+cur_default: 1.050955
+val_16:  1.058364   val_17:  1.095772
+val_15:  1.014493   val_16:  1.058364
+val_14:  0.9702559   val_15:  1.014493
+cal done!!!
+choose 15  ： 1.014493
+first choose 12->14     16->15
+cur_default: 1.212571
+val_15:  1.205352   val_16:  1.251233
+val_14:  1.170764   val_15:  1.205352
+val_13:  1.113083   val_14:  1.170764
+val_12:  1.083722   val_13:  1.113083
+val_11:  1.048688   val_12:  1.083722
+val_10:  0.986641   val_11:  1.048688
+cal done!!!
+choose 10  ： 0.986641
+second choose 14     15->10
+保存的数据行： {'test_time': '0910_150336', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 15, 'it_bit': 14, 'ib_bit': 10}
+code spand : 99.60 s
+setpwr 2
+setpwr 3
+cur_default: 2.521966
+val_12:  1.903638   val_13:  2.529315
+val_13:  2.529315   val_14:  3.192736
+cal done!!!
+choose 14  ： 3.192736
+cur_default: 3.18432
+val_26:  3.188237   val_27:  3.215816
+val_25:  3.159576   val_26:  3.188237
+val_24:  3.117652   val_25:  3.159576
+val_23:  3.04954   val_24:  3.117652
+val_22:  3.018724   val_23:  3.04954
+val_21:  2.979068   val_22:  3.018724
+cal done!!!
+choose 22  ： 3.018724
+first choose 13->14     26->22
+cur_default: 3.074299
+val_22:  3.075568   val_23:  3.132156
+val_21:  3.030464   val_22:  3.075568
+val_20:  2.995641   val_21:  3.030464
+cal done!!!
+choose 20  ： 2.995641
+second choose 14     22->20
+保存的数据行： {'test_time': '0910_150512', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.0, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 22, 'it_bit': 14, 'ib_bit': 20}
+code spand : 95.16 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.937224
+val_19:  7.92223   val_20:  8.405764
+val_18:  7.446391   val_19:  7.92223
+val_17:  6.922637   val_18:  7.446391
+cal done!!!
+choose 17  ： 6.922637
+cur_default: 6.926361
+val_15:  6.881742   val_16:  6.906691
+val_16:  6.906691   val_17:  6.977521
+val_17:  6.977521   val_18:  6.985864
+val_18:  6.985864   val_19:  7.021838
+cal done!!!
+choose 18  ： 6.985864
+first choose 19->17     16->18
+cur_default: 6.874107
+val_17:  6.832542   val_18:  6.875724
+val_18:  6.875724   val_19:  6.914062
+val_19:  6.914062   val_20:  6.963044
+val_20:  6.963044   val_21:  6.986952
+val_21:  6.986952   val_22:  7.022297
+cal done!!!
+choose 21  ： 6.986952
+second choose 17     18->21
+保存的数据行： {'test_time': '0910_150653', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 19, 'default_ib': 16, 'it_first': 17, 'ib_first': 18, 'it_bit': 17, 'ib_bit': 21}
+code spand : 99.61 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.40259
+val_26:  12.38656   val_27:  12.73861
+val_25:  12.03969   val_26:  12.38656
+val_24:  11.68174   val_25:  12.03969
+val_23:  11.23228   val_24:  11.68174
+val_22:  10.85728   val_23:  11.23228
+cal done!!!
+choose 22  ： 10.85728
+cur_default: 10.86334
+val_15:  10.80834   val_16:  10.84959
+val_16:  10.84959   val_17:  10.88064
+val_17:  10.88064   val_18:  10.90116
+val_18:  10.90116   val_19:  10.93545
+val_19:  10.93545   val_20:  10.9717
+val_20:  10.9717   val_21:  11.00255
+cal done!!!
+choose 21  ： 11.00255
+first choose 26->22     16->21
+cur_default: 11.02549
+val_21:  11.02742   val_22:  11.0641
+val_20:  10.98332   val_21:  11.02742
+cal done!!!
+choose 20  ： 10.98332
+second choose 22     21->20
+保存的数据行： {'test_time': '0910_150838', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 10.98, 'default_it': 26, 'default_ib': 16, 'it_first': 22, 'ib_first': 21, 'it_bit': 22, 'ib_bit': 20}
+code spand : 104.22 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.7324
+val_40:  16.68812   val_41:  16.88271
+val_39:  16.46733   val_40:  16.68812
+val_38:  16.23117   val_39:  16.46733
+val_37:  16.03254   val_38:  16.23117
+val_36:  15.80392   val_37:  16.03254
+val_35:  15.56759   val_36:  15.80392
+val_34:  15.33599   val_35:  15.56759
+val_33:  15.07627   val_34:  15.33599
+val_32:  14.83266   val_33:  15.07627
+cal done!!!
+choose 33  ： 15.07627
+cur_default: 15.07942
+val_22:  15.06447   val_23:  15.09902
+val_21:  15.05502   val_22:  15.06447
+val_20:  15.04367   val_21:  15.05502
+val_19:  15.0257   val_20:  15.04367
+val_18:  15.00378   val_19:  15.0257
+val_17:  14.97091   val_18:  15.00378
+cal done!!!
+choose 18  ： 15.00378
+first choose 40->33     22->18
+cur_default: 15.44613
+val_18:  15.44672   val_19:  15.45103
+val_17:  15.42135   val_18:  15.44672
+val_16:  15.41963   val_17:  15.42135
+val_15:  15.37305   val_16:  15.41963
+val_14:  15.37372   val_15:  15.37305
+val_13:  15.35019   val_14:  15.37372
+val_12:  15.32776   val_13:  15.35019
+val_11:  15.32485   val_12:  15.32776
+val_10:  15.28382   val_11:  15.32485
+val_9:  15.27181   val_10:  15.28382
+val_8:  15.26381   val_9:  15.27181
+val_7:  15.24043   val_8:  15.26381
+val_6:  15.23433   val_7:  15.24043
+val_5:  15.19496   val_6:  15.23433
+val_4:  15.18056   val_5:  15.19496
+val_3:  15.17378   val_4:  15.18056
+val_2:  15.14061   val_3:  15.17378
+val_1:  15.11784   val_2:  15.14061
+val_0:  15.0981   val_1:  15.11784
+cal done! Use minimum value
+cur_default: 14.84453
+val_0:  14.83866   val_1:  14.8642
+val_1:  14.8642   val_2:  14.88791
+val_2:  14.88791   val_3:  14.90413
+val_3:  14.90413   val_4:  14.9099
+val_4:  14.9099   val_5:  14.93986
+val_5:  14.93986   val_6:  14.95922
+val_6:  14.95922   val_7:  14.97696
+val_7:  14.97696   val_8:  14.99155
+val_8:  14.99155   val_9:  15.00885
+cal done!!!
+choose 8  ： 14.99155
+second choose 32     1->8
+保存的数据行： {'test_time': '0910_151254', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.99, 'default_it': 40, 'default_ib': 22, 'it_first': 33, 'ib_first': 18, 'it_bit': 32, 'ib_bit': 8}
+code spand : 255.66 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+setpwr 21
+cur_default: 22.19504
+val_62:  22.10534   val_63:  22.18565
+val_61:  22.0528   val_62:  22.10534
+val_60:  21.96845   val_61:  22.0528
+val_59:  21.90308   val_60:  21.96845
+val_58:  21.83579   val_59:  21.90308
+val_57:  21.7545   val_58:  21.83579
+val_56:  21.66848   val_57:  21.7545
+val_55:  21.58513   val_56:  21.66848
+val_54:  21.50031   val_55:  21.58513
+val_53:  21.39623   val_54:  21.50031
+val_52:  21.31   val_53:  21.39623
+val_51:  21.17926   val_52:  21.31
+val_50:  21.10218   val_51:  21.17926
+val_49:  20.99181   val_50:  21.10218
+cal done!!!
+choose 49  ： 20.99181
+cur_default: 20.98361
+val_29:  20.94823   val_30:  20.97555
+val_30:  20.97555   val_31:  20.99421
+cal done! Use maximum value
+cur_default: 21.07849
+val_30:  21.08462   val_31:  21.11228
+val_29:  21.06899   val_30:  21.08462
+val_28:  21.0761   val_29:  21.06899
+val_27:  21.07233   val_28:  21.0761
+val_26:  21.03145   val_27:  21.07233
+val_25:  21.05678   val_26:  21.03145
+val_24:  21.0344   val_25:  21.05678
+val_23:  20.99885   val_24:  21.0344
+cal done!!!
+choose 23  ： 20.99885
+first choose 62->50     30->23
+cur_default: 21.01822
+val_23:  21.00446   val_24:  21.02639
+val_22:  20.99928   val_23:  21.00446
+cal done!!!
+choose 22  ： 20.99928
+second choose 50     23->22
+保存的数据行： {'test_time': '0910_151554', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'E', 'setpwr': 21, 'pwrRes': 21.0, 'default_it': 62, 'default_ib': 30, 'it_first': 50, 'ib_first': 23, 'it_bit': 50, 'ib_bit': 22}
+code spand : 178.07 s
+setpwr 22
+setpwr 23
+cur_default: 23.68389
+val_62:  23.63208   val_63:  23.66835
+val_61:  23.58769   val_62:  23.63208
+val_60:  23.54481   val_61:  23.58769
+val_59:  23.52432   val_60:  23.54481
+val_58:  23.47397   val_59:  23.52432
+val_57:  23.44039   val_58:  23.47397
+val_56:  23.38842   val_57:  23.44039
+val_55:  23.33724   val_56:  23.38842
+val_54:  23.27313   val_55:  23.33724
+val_53:  23.22933   val_54:  23.27313
+val_52:  23.17281   val_53:  23.22933
+val_51:  23.11306   val_52:  23.17281
+val_50:  23.04877   val_51:  23.11306
+val_49:  22.97431   val_50:  23.04877
+cal done!!!
+choose 49  ： 22.97431
+cur_default: 22.98573
+val_29:  22.96199   val_30:  22.96935
+val_30:  22.96935   val_31:  22.98063
+cal done! Use maximum value
+cur_default: 23.04399
+val_30:  23.03185   val_31:  23.05591
+val_29:  23.02747   val_30:  23.03185
+val_28:  23.02077   val_29:  23.02747
+val_27:  23.02033   val_28:  23.02077
+val_26:  23.01665   val_27:  23.02033
+val_25:  23.00025   val_26:  23.01665
+val_24:  22.99154   val_25:  23.00025
+cal done!!!
+choose 25  ： 23.00025
+first choose 62->50     30->25
+cur_default: 23.00455
+val_25:  23.00628   val_26:  23.01763
+val_24:  22.99914   val_25:  23.00628
+cal done!!!
+choose 24  ： 22.99914
+second choose 50     25->24
+保存的数据行： {'test_time': '0910_151848', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_HR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 50, 'ib_first': 25, 'it_bit': 50, 'ib_bit': 24}
+code spand : 173.30 s
+setpwr 1
+cur_default: -0.2301309
+val_11:  -1.107065   val_12:  -0.2355202
+val_12:  -0.2355202   val_13:  0.5472104
+val_13:  0.5472104   val_14:  1.326686
+cal done!!!
+choose 14  ： 1.326686
+cur_default: 1.314322
+val_16:  1.331581   val_17:  1.374492
+val_15:  1.265268   val_16:  1.331581
+val_14:  1.227298   val_15:  1.265268
+val_13:  1.171928   val_14:  1.227298
+val_12:  1.129718   val_13:  1.171928
+val_11:  1.079898   val_12:  1.129718
+val_10:  1.037403   val_11:  1.079898
+val_9:  0.9818987   val_10:  1.037403
+cal done!!!
+choose 9  ： 0.9818987
+first choose 12->14     16->9
+cur_default: 1.056705
+val_9:  1.060469   val_10:  1.110146
+val_8:  1.005815   val_9:  1.060469
+val_7:  0.9650099   val_8:  1.005815
+cal done!!!
+choose 8  ： 1.005815
+second choose 14     9->8
+保存的数据行： {'test_time': '0910_152042', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 9, 'it_bit': 14, 'ib_bit': 8}
+code spand : 109.97 s
+setpwr 2
+setpwr 3
+cur_default: 2.61831
+val_12:  1.883095   val_13:  2.609684
+val_13:  2.609684   val_14:  3.342436
+cal done!!!
+choose 14  ： 3.342436
+cur_default: 3.343294
+val_26:  3.330697   val_27:  3.390158
+val_25:  3.293391   val_26:  3.330697
+val_24:  3.254926   val_25:  3.293391
+val_23:  3.207321   val_24:  3.254926
+val_22:  3.15715   val_23:  3.207321
+val_21:  3.10902   val_22:  3.15715
+val_20:  3.060718   val_21:  3.10902
+val_19:  3.020524   val_20:  3.060718
+val_18:  2.96633   val_19:  3.020524
+cal done!!!
+choose 19  ： 3.020524
+first choose 13->14     26->19
+cur_default: 3.054012
+val_19:  3.054545   val_20:  3.100131
+val_18:  3.022086   val_19:  3.054545
+val_17:  2.956425   val_18:  3.022086
+cal done!!!
+choose 18  ： 3.022086
+second choose 14     19->18
+保存的数据行： {'test_time': '0910_152233', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.02, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 19, 'it_bit': 14, 'ib_bit': 18}
+code spand : 109.98 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 8.291299
+val_19:  8.291326   val_20:  8.838049
+val_18:  7.748394   val_19:  8.291326
+val_17:  7.153797   val_18:  7.748394
+val_16:  6.544462   val_17:  7.153797
+cal done!!!
+choose 17  ： 7.153797
+cur_default: 7.149088
+val_16:  7.144533   val_17:  7.186947
+val_15:  7.093374   val_16:  7.144533
+val_14:  7.065493   val_15:  7.093374
+val_13:  7.025439   val_14:  7.065493
+val_12:  6.971323   val_13:  7.025439
+cal done!!!
+choose 13  ： 7.025439
+first choose 19->17     16->13
+cur_default: 6.99469
+val_12:  6.963089   val_13:  7.000082
+cal done!!!
+choose 13  ： 7.000082
+second choose 17     13->13
+保存的数据行： {'test_time': '0910_152405', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 7.0, 'default_it': 19, 'default_ib': 16, 'it_first': 17, 'ib_first': 13, 'it_bit': 17, 'ib_bit': 13}
+code spand : 91.54 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 13.2702
+val_26:  13.25588   val_27:  13.63644
+val_25:  12.85531   val_26:  13.25588
+val_24:  12.45105   val_25:  12.85531
+val_23:  11.96711   val_24:  12.45105
+val_22:  11.51837   val_23:  11.96711
+val_21:  11.03839   val_22:  11.51837
+val_20:  10.5408   val_21:  11.03839
+cal done!!!
+choose 21  ： 11.03839
+cur_default: 11.03645
+val_16:  11.04034   val_17:  11.07005
+val_15:  10.99976   val_16:  11.04034
+cal done!!!
+choose 15  ： 10.99976
+first choose 26->21     16->15
+cur_default: 10.93684
+val_14:  10.91173   val_15:  10.93749
+val_15:  10.93749   val_16:  10.97808
+val_16:  10.97808   val_17:  11.00889
+cal done!!!
+choose 17  ： 11.00889
+second choose 21     15->17
+保存的数据行： {'test_time': '0910_152547', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.01, 'default_it': 26, 'default_ib': 16, 'it_first': 21, 'ib_first': 15, 'it_bit': 21, 'ib_bit': 17}
+code spand : 100.73 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 18.25369
+val_40:  18.20886   val_41:  18.42086
+val_39:  17.95365   val_40:  18.20886
+val_38:  17.73725   val_39:  17.95365
+val_37:  17.48221   val_38:  17.73725
+val_36:  17.24246   val_37:  17.48221
+val_35:  16.99447   val_36:  17.24246
+val_34:  16.73612   val_35:  16.99447
+val_33:  16.43767   val_34:  16.73612
+val_32:  16.16762   val_33:  16.43767
+val_31:  16.02127   val_32:  16.16762
+val_30:  15.71782   val_31:  16.02127
+val_29:  15.38636   val_30:  15.71782
+val_28:  15.05766   val_29:  15.38636
+val_27:  14.70492   val_28:  15.05766
+cal done!!!
+choose 28  ： 15.05766
+cur_default: 15.05873
+val_22:  15.07007   val_23:  15.08224
+val_21:  15.03498   val_22:  15.07007
+val_20:  15.01057   val_21:  15.03498
+val_19:  14.98225   val_20:  15.01057
+cal done!!!
+choose 20  ： 15.01057
+first choose 40->28     22->20
+cur_default: 15.06992
+val_20:  15.0914   val_21:  15.11386
+val_19:  15.06335   val_20:  15.0914
+val_18:  15.04483   val_19:  15.06335
+val_17:  15.01767   val_18:  15.04483
+val_16:  14.98285   val_17:  15.01767
+cal done!!!
+choose 16  ： 14.98285
+second choose 28     20->16
+保存的数据行： {'test_time': '0910_152820', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 14.98, 'default_it': 40, 'default_ib': 22, 'it_first': 28, 'ib_first': 20, 'it_bit': 28, 'ib_bit': 16}
+code spand : 151.71 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 21.94773
+val_59:  21.88961   val_60:  21.98586
+val_58:  21.79298   val_59:  21.88961
+val_57:  21.68824   val_58:  21.79298
+val_56:  21.59032   val_57:  21.68824
+val_55:  21.48324   val_56:  21.59032
+val_54:  21.37587   val_55:  21.48324
+val_53:  21.26385   val_54:  21.37587
+val_52:  21.14422   val_53:  21.26385
+val_51:  21.02411   val_52:  21.14422
+val_50:  20.9084   val_51:  21.02411
+val_49:  20.77099   val_50:  20.9084
+val_48:  20.6403   val_49:  20.77099
+val_47:  20.56204   val_48:  20.6403
+val_46:  20.41918   val_47:  20.56204
+val_45:  20.26907   val_46:  20.41918
+val_44:  20.12175   val_45:  20.26907
+val_43:  19.95113   val_44:  20.12175
+val_42:  19.78723   val_43:  19.95113
+val_41:  19.60571   val_42:  19.78723
+val_40:  19.43025   val_41:  19.60571
+val_39:  19.21928   val_40:  19.43025
+val_38:  19.01853   val_39:  19.21928
+val_37:  18.80475   val_38:  19.01853
+cal done!!!
+choose 38  ： 19.01853
+cur_default: 19.02588
+val_22:  19.01739   val_23:  19.03981
+val_21:  19.00302   val_22:  19.01739
+val_20:  18.99132   val_21:  19.00302
+cal done!!!
+choose 21  ： 19.00302
+first choose 59->38     22->21
+cur_default: 19.10364
+val_21:  19.10193   val_22:  19.12393
+val_20:  19.09481   val_21:  19.10193
+val_19:  19.07454   val_20:  19.09481
+val_18:  19.06068   val_19:  19.07454
+val_17:  19.0413   val_18:  19.06068
+val_16:  19.02824   val_17:  19.0413
+val_15:  19.01162   val_16:  19.02824
+val_14:  19.00193   val_15:  19.01162
+val_13:  18.98002   val_14:  19.00193
+cal done!!!
+choose 14  ： 19.00193
+second choose 38     21->14
+保存的数据行： {'test_time': '0910_153148', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.0, 'default_it': 59, 'default_ib': 22, 'it_first': 38, 'ib_first': 21, 'it_bit': 38, 'ib_bit': 14}
+code spand : 207.81 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 24.34667
+val_62:  24.27937   val_63:  24.32064
+val_61:  24.22761   val_62:  24.27937
+val_60:  24.1841   val_61:  24.22761
+val_59:  24.13649   val_60:  24.1841
+val_58:  24.08894   val_59:  24.13649
+val_57:  24.03793   val_58:  24.08894
+val_56:  23.99041   val_57:  24.03793
+val_55:  23.92819   val_56:  23.99041
+val_54:  23.87471   val_55:  23.92819
+val_53:  23.80869   val_54:  23.87471
+val_52:  23.74933   val_53:  23.80869
+val_51:  23.69113   val_52:  23.74933
+val_50:  23.62034   val_51:  23.69113
+val_49:  23.55082   val_50:  23.62034
+val_48:  23.4828   val_49:  23.55082
+val_47:  23.436   val_48:  23.4828
+val_46:  23.3601   val_47:  23.436
+val_45:  23.26712   val_46:  23.3601
+val_44:  23.19246   val_45:  23.26712
+val_43:  23.09229   val_44:  23.19246
+val_42:  23.00488   val_43:  23.09229
+val_41:  22.90283   val_42:  23.00488
+cal done!!!
+choose 42  ： 23.00488
+cur_default: 23.00387
+val_30:  22.99175   val_31:  23.00352
+cal done!!!
+choose 31  ： 23.00352
+cur_default: 23.09427
+val_30:  23.08694   val_31:  23.09429
+val_29:  23.07693   val_30:  23.08694
+val_28:  23.07839   val_29:  23.07693
+val_27:  23.06956   val_28:  23.07839
+val_26:  23.05651   val_27:  23.06956
+val_25:  23.05207   val_26:  23.05651
+val_24:  23.04036   val_25:  23.05207
+val_23:  23.03137   val_24:  23.04036
+val_22:  23.02297   val_23:  23.03137
+val_21:  23.01814   val_22:  23.02297
+val_20:  23.00735   val_21:  23.01814
+val_19:  23.00115   val_20:  23.00735
+val_18:  22.99302   val_19:  23.00115
+cal done!!!
+choose 19  ： 23.00115
+first choose 62->43     30->19
+cur_default: 23.00911
+val_19:  23.00821   val_20:  23.01423
+val_18:  22.99279   val_19:  23.00821
+cal done!!!
+choose 18  ： 22.99279
+second choose 43     19->18
+保存的数据行： {'test_time': '0910_153546', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH106_LR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 22.99, 'default_it': 62, 'default_ib': 30, 'it_first': 43, 'ib_first': 19, 'it_bit': 43, 'ib_bit': 18}
+code spand : 236.32 s
+setpwr 1
+cur_default: -0.579022
+val_11:  -1.395337   val_12:  -0.5650147
+val_12:  -0.5650147   val_13:  0.1922243
+val_13:  0.1922243   val_14:  0.9091635
+val_14:  0.9091635   val_15:  1.578352
+cal done!!!
+choose 14  ： 0.9091635
+cur_default: 0.9223977
+val_15:  0.8530751   val_16:  0.9085672
+val_16:  0.9085672   val_17:  0.9667321
+val_17:  0.9667321   val_18:  1.016167
+cal done!!!
+choose 18  ： 1.016167
+first choose 12->14     16->18
+cur_default: 1.223334
+val_18:  1.207891   val_19:  1.272061
+val_17:  1.18073   val_18:  1.207891
+val_16:  1.144742   val_17:  1.18073
+val_15:  1.08395   val_16:  1.144742
+val_14:  1.050344   val_15:  1.08395
+val_13:  0.9932674   val_14:  1.050344
+cal done!!!
+choose 13  ： 0.9932674
+second choose 14     18->13
+保存的数据行： {'test_time': '0910_153734', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 18, 'it_bit': 14, 'ib_bit': 13}
+code spand : 104.07 s
+setpwr 2
+setpwr 3
+cur_default: 2.398115
+val_12:  1.7153   val_13:  2.40016
+val_13:  2.40016   val_14:  3.085948
+cal done!!!
+choose 14  ： 3.085948
+cur_default: 3.094215
+val_26:  3.085013   val_27:  3.130894
+val_25:  3.0505   val_26:  3.085013
+val_24:  2.988025   val_25:  3.0505
+cal done!!!
+choose 24  ： 2.988025
+first choose 13->14     26->24
+cur_default: 3.007024
+val_24:  3.026553   val_25:  3.068333
+val_23:  2.967655   val_24:  3.026553
+cal done!!!
+choose 24  ： 3.026553
+second choose 14     24->24
+保存的数据行： {'test_time': '0910_153851', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 3.03, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 24, 'it_bit': 14, 'ib_bit': 24}
+code spand : 76.72 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.987543
+val_19:  7.979148   val_20:  8.504672
+val_18:  7.462968   val_19:  7.979148
+val_17:  6.897003   val_18:  7.462968
+cal done!!!
+choose 17  ： 6.897003
+cur_default: 6.899529
+val_15:  6.850883   val_16:  6.893599
+val_16:  6.893599   val_17:  6.936354
+val_17:  6.936354   val_18:  6.986897
+val_18:  6.986897   val_19:  7.023462
+cal done!!!
+choose 18  ： 6.986897
+first choose 19->17     16->18
+cur_default: 6.910849
+val_17:  6.871337   val_18:  6.916725
+val_18:  6.916725   val_19:  6.961556
+val_19:  6.961556   val_20:  6.993162
+val_20:  6.993162   val_21:  7.025702
+cal done!!!
+choose 20  ： 6.993162
+second choose 17     18->20
+保存的数据行： {'test_time': '0910_154027', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': '8', 'setpwr': 7, 'pwrRes': 6.99, 'default_it': 19, 'default_ib': 16, 'it_first': 17, 'ib_first': 18, 'it_bit': 17, 'ib_bit': 20}
+code spand : 95.07 s
+setpwr 8
+setpwr 9
+setpwr 10
+setpwr 11
+cur_default: 12.59474
+val_26:  12.56051   val_27:  12.91377
+val_25:  12.18476   val_26:  12.56051
+val_24:  11.81261   val_25:  12.18476
+val_23:  11.34094   val_24:  11.81261
+val_22:  10.91561   val_23:  11.34094
+cal done!!!
+choose 22  ： 10.91561
+cur_default: 10.9291
+val_15:  10.87883   val_16:  10.89281
+val_16:  10.89281   val_17:  10.93664
+val_17:  10.93664   val_18:  10.97251
+val_18:  10.97251   val_19:  11.00274
+cal done!!!
+choose 19  ： 11.00274
+first choose 26->22     16->19
+cur_default: 11.08577
+val_19:  11.0698   val_20:  11.1072
+val_18:  11.04264   val_19:  11.0698
+val_17:  11.0148   val_18:  11.04264
+val_16:  11.00378   val_17:  11.0148
+val_15:  10.98938   val_16:  11.00378
+cal done!!!
+choose 16  ： 11.00378
+second choose 22     19->16
+保存的数据行： {'test_time': '0910_154217', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'A', 'setpwr': 11, 'pwrRes': 11.0, 'default_it': 26, 'default_ib': 16, 'it_first': 22, 'ib_first': 19, 'it_bit': 22, 'ib_bit': 16}
+code spand : 108.70 s
+setpwr 12
+setpwr 13
+setpwr 14
+setpwr 15
+cur_default: 16.9943
+val_40:  16.96292   val_41:  17.17748
+val_39:  16.71191   val_40:  16.96292
+val_38:  16.50256   val_39:  16.71191
+val_37:  16.26728   val_38:  16.50256
+val_36:  16.03948   val_37:  16.26728
+val_35:  15.77912   val_36:  16.03948
+val_34:  15.51399   val_35:  15.77912
+val_33:  15.24037   val_34:  15.51399
+val_32:  14.98003   val_33:  15.24037
+cal done!!!
+choose 32  ： 14.98003
+cur_default: 14.9733
+val_21:  14.96905   val_22:  14.97163
+val_22:  14.97163   val_23:  14.99741
+val_23:  14.99741   val_24:  15.03117
+cal done!!!
+choose 23  ： 14.99741
+first choose 40->32     22->23
+cur_default: 15.52882
+val_23:  15.53644   val_24:  15.56501
+val_22:  15.52112   val_23:  15.53644
+val_21:  15.51367   val_22:  15.52112
+val_20:  15.48509   val_21:  15.51367
+val_19:  15.45381   val_20:  15.48509
+val_18:  15.43359   val_19:  15.45381
+val_17:  15.42928   val_18:  15.43359
+val_16:  15.40015   val_17:  15.42928
+val_15:  15.36466   val_16:  15.40015
+val_14:  15.36214   val_15:  15.36466
+val_13:  15.31825   val_14:  15.36214
+val_12:  15.31983   val_13:  15.31825
+val_11:  15.30077   val_12:  15.31983
+val_10:  15.27884   val_11:  15.30077
+val_9:  15.25778   val_10:  15.27884
+val_8:  15.22251   val_9:  15.25778
+val_7:  15.20756   val_8:  15.22251
+val_6:  15.17979   val_7:  15.20756
+val_5:  15.15404   val_6:  15.17979
+val_4:  15.12684   val_5:  15.15404
+val_3:  15.11592   val_4:  15.12684
+val_2:  15.11134   val_3:  15.11592
+val_1:  15.08465   val_2:  15.11134
+val_0:  15.06471   val_1:  15.08465
+cal done! Use minimum value
+cur_default: 14.91339
+val_0:  14.91858   val_1:  14.92968
+val_1:  14.92968   val_2:  14.96409
+val_2:  14.96409   val_3:  14.96558
+val_3:  14.96558   val_4:  15.00499
+cal done!!!
+choose 4  ： 15.00499
+second choose 31     1->4
+保存的数据行： {'test_time': '0910_154621', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'C', 'setpwr': 15, 'pwrRes': 15.0, 'default_it': 40, 'default_ib': 22, 'it_first': 32, 'ib_first': 23, 'it_bit': 31, 'ib_bit': 4}
+code spand : 242.88 s
+setpwr 16
+setpwr 17
+setpwr 18
+setpwr 19
+cur_default: 20.49263
+val_59:  20.45681   val_60:  20.56422
+val_58:  20.34543   val_59:  20.45681
+val_57:  20.24412   val_58:  20.34543
+val_56:  20.14315   val_57:  20.24412
+val_55:  20.01943   val_56:  20.14315
+val_54:  19.9259   val_55:  20.01943
+val_53:  19.81989   val_54:  19.9259
+val_52:  19.69632   val_53:  19.81989
+val_51:  19.58567   val_52:  19.69632
+val_50:  19.46907   val_51:  19.58567
+val_49:  19.32635   val_50:  19.46907
+val_48:  19.20354   val_49:  19.32635
+val_47:  19.11884   val_48:  19.20354
+val_46:  18.98567   val_47:  19.11884
+cal done!!!
+choose 46  ： 18.98567
+cur_default: 18.9873
+val_21:  18.97926   val_22:  18.98419
+val_22:  18.98419   val_23:  18.99769
+val_23:  18.99769   val_24:  19.00832
+cal done!!!
+choose 23  ： 18.99769
+first choose 59->46     22->23
+cur_default: 19.68442
+val_23:  19.69372   val_24:  19.70169
+val_22:  19.66801   val_23:  19.69372
+val_21:  19.66002   val_22:  19.66801
+val_20:  19.66607   val_21:  19.66002
+val_19:  19.64172   val_20:  19.66607
+val_18:  19.63211   val_19:  19.64172
+val_17:  19.61467   val_18:  19.63211
+val_16:  19.60409   val_17:  19.61467
+val_15:  19.58595   val_16:  19.60409
+val_14:  19.56909   val_15:  19.58595
+val_13:  19.56656   val_14:  19.56909
+val_12:  19.5515   val_13:  19.56656
+val_11:  19.54187   val_12:  19.5515
+val_10:  19.53448   val_11:  19.54187
+val_9:  19.52298   val_10:  19.53448
+val_8:  19.51596   val_9:  19.52298
+val_7:  19.48998   val_8:  19.51596
+val_6:  19.477   val_7:  19.48998
+val_5:  19.46714   val_6:  19.477
+val_4:  19.4614   val_5:  19.46714
+val_3:  19.45361   val_4:  19.4614
+val_2:  19.44117   val_3:  19.45361
+val_1:  19.41726   val_2:  19.44117
+val_0:  19.40737   val_1:  19.41726
+cal done! Use minimum value
+cur_default: 19.24858
+val_1:  19.25947   val_2:  19.27975
+val_0:  19.24446   val_1:  19.25947
+cal done! Use minimum value
+cur_default: 19.09483
+val_1:  19.10291   val_2:  19.11841
+val_0:  19.08863   val_1:  19.10291
+cal done! Use minimum value
+cur_default: 18.89871
+val_0:  18.92309   val_1:  18.92633
+val_1:  18.92633   val_2:  18.94726
+val_2:  18.94726   val_3:  18.96429
+val_3:  18.96429   val_4:  18.97491
+val_4:  18.97491   val_5:  18.97313
+val_5:  18.97313   val_6:  18.98352
+val_6:  18.98352   val_7:  19.01038
+cal done!!!
+choose 7  ： 19.01038
+second choose 43     1->7
+保存的数据行： {'test_time': '0910_155148', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'D', 'setpwr': 19, 'pwrRes': 19.01, 'default_it': 59, 'default_ib': 22, 'it_first': 46, 'ib_first': 23, 'it_bit': 43, 'ib_bit': 7}
+code spand : 326.42 s
+setpwr 20
+setpwr 21
+setpwr 22
+setpwr 23
+cur_default: 23.84865
+val_62:  23.7822   val_63:  23.82747
+val_61:  23.73989   val_62:  23.7822
+val_60:  23.69074   val_61:  23.73989
+val_59:  23.66274   val_60:  23.69074
+val_58:  23.61436   val_59:  23.66274
+val_57:  23.57434   val_58:  23.61436
+val_56:  23.5135   val_57:  23.57434
+val_55:  23.47331   val_56:  23.5135
+val_54:  23.41332   val_55:  23.47331
+val_53:  23.35225   val_54:  23.41332
+val_52:  23.28952   val_53:  23.35225
+val_51:  23.22696   val_52:  23.28952
+val_50:  23.16845   val_51:  23.22696
+val_49:  23.09197   val_50:  23.16845
+val_48:  23.02132   val_49:  23.09197
+val_47:  22.98252   val_48:  23.02132
+cal done!!!
+choose 47  ： 22.98252
+cur_default: 22.97774
+val_29:  22.96927   val_30:  22.97326
+val_30:  22.97326   val_31:  22.9724
+cal done! Use maximum value
+cur_default: 23.02235
+val_30:  23.02013   val_31:  23.02472
+val_29:  23.00778   val_30:  23.02013
+val_28:  23.00044   val_29:  23.00778
+val_27:  22.99755   val_28:  23.00044
+cal done!!!
+choose 28  ： 23.00044
+first choose 62->48     30->28
+cur_default: 23.01038
+val_28:  23.00059   val_29:  23.01424
+val_27:  23.00037   val_28:  23.00059
+val_26:  22.99201   val_27:  23.00037
+cal done!!!
+choose 27  ： 23.00037
+second choose 48     28->27
+保存的数据行： {'test_time': '0910_155443', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_MR', 'analog_gear': 'F', 'setpwr': 23, 'pwrRes': 23.0, 'default_it': 62, 'default_ib': 30, 'it_first': 48, 'ib_first': 28, 'it_bit': 48, 'ib_bit': 27}
+code spand : 173.38 s
+setpwr 1
+cur_default: -0.6564698
+val_11:  -1.443908   val_12:  -0.6624348
+val_12:  -0.6624348   val_13:  0.03836647
+val_13:  0.03836647   val_14:  0.723923
+val_14:  0.723923   val_15:  1.337171
+cal done!!!
+choose 14  ： 0.723923
+cur_default: 0.7445893
+val_15:  0.6844613   val_16:  0.7382671
+val_16:  0.7382671   val_17:  0.7701092
+val_17:  0.7701092   val_18:  0.8189245
+val_18:  0.8189245   val_19:  0.8756509
+val_19:  0.8756509   val_20:  0.908962
+val_20:  0.908962   val_21:  0.9391116
+val_21:  0.9391116   val_22:  0.9950315
+val_22:  0.9950315   val_23:  1.034586
+cal done!!!
+choose 22  ： 0.9950315
+first choose 12->14     16->22
+cur_default: 1.205375
+val_22:  1.235176   val_23:  1.259479
+val_21:  1.158488   val_22:  1.235176
+val_20:  1.116931   val_21:  1.158488
+val_19:  1.094973   val_20:  1.116931
+val_18:  1.061797   val_19:  1.094973
+val_17:  1.002854   val_18:  1.061797
+val_16:  0.9774444   val_17:  1.002854
+cal done!!!
+choose 17  ： 1.002854
+second choose 14     22->17
+保存的数据行： {'test_time': '0910_155659', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': '4', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 12, 'default_ib': 16, 'it_first': 14, 'ib_first': 22, 'it_bit': 14, 'ib_bit': 17}
+code spand : 131.24 s
+setpwr 2
+setpwr 3
+cur_default: 2.202583
+val_12:  1.539853   val_13:  2.209275
+val_13:  2.209275   val_14:  2.850785
+val_14:  2.850785   val_15:  3.420516
+cal done!!!
+choose 14  ： 2.850785
+cur_default: 2.854603
+val_25:  2.804159   val_26:  2.840345
+val_26:  2.840345   val_27:  2.896827
+val_27:  2.896827   val_28:  2.906985
+val_28:  2.906985   val_29:  2.957165
+val_29:  2.957165   val_30:  3.015427
+cal done!!!
+choose 30  ： 3.015427
+first choose 13->14     26->30
+cur_default: 3.078385
+val_30:  3.095748   val_31:  3.140733
+val_29:  3.032394   val_30:  3.095748
+val_28:  2.989861   val_29:  3.032394
+cal done!!!
+choose 28  ： 2.989861
+second choose 14     30->28
+保存的数据行： {'test_time': '0910_155834', 'boardno': 8, 'bin_version': 'testmode19_2025_0818_1550', 'test_case': 'CH122_HR', 'analog_gear': '6', 'setpwr': 3, 'pwrRes': 2.99, 'default_it': 13, 'default_ib': 26, 'it_first': 14, 'ib_first': 30, 'it_bit': 14, 'ib_bit': 28}
+code spand : 94.79 s
+setpwr 4
+setpwr 5
+setpwr 6
+setpwr 7
+cur_default: 7.540119
+val_19:  7.548557   val_20:  8.013258
+val_18:  7.046109   val_19:  7.548557
+val_17:  6.52153   val_18:  7.046109
+cal done!!!
+choose 18  ： 7.046109

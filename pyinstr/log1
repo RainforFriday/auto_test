@@ -1,0 +1,60 @@
+Write:    "INST:SEL SAN"
+Bytes:    12
+
+Write:    "FREQ:MODE?"
+Bytes:    10
+
+Read:     "SWE"
+Bytes:    4
+
+Write:    "FREQ:CENT 2412MHZ"
+Bytes:    17
+
+Write:    "FREQ:CENT?"
+Bytes:    10
+
+Read:     "2412000000"
+Bytes:    11
+
+Write:    "FREQ:SPAN 20MHz"
+Bytes:    15
+
+Write:    "FREQ:SPAN?"
+Bytes:    10
+
+Read:     "20000000"
+Bytes:    9
+
+Write:    "DISP:WIND:TRAC:Y:RLEV 10dBm"
+Bytes:    27
+
+Write:    "WIND:TRAC:Y:RLEV?"
+Bytes:    17
+
+Write:    "BAND 0.05MHz"
+Bytes:    12
+
+Write:    "BAND?"
+Bytes:    5
+
+Read:     "50000"
+Bytes:    6
+
+Write:    "CALC:MARK:MAX"
+Bytes:    13
+
+Write:    "INIT;*WAI"
+Bytes:    9
+
+Write:    "CALC:MARK:X?"
+Bytes:    12
+
+Read:     "2417000000"
+Bytes:    11
+
+Write:    "CALC:MARK:Y?"
+Bytes:    12
+
+Read:     "-2.69503045082092"
+Bytes:    18
+

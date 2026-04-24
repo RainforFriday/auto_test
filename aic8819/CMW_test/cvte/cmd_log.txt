@@ -1,0 +1,141 @@
+C:\Users\AIC_PC\AppData\Local\Programs\Python\Python38\python.exe "D:/Program Files/JetBrains/PyCharm 2022.3.3/plugins/python/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --client 127.0.0.1 --port 64601 --file D:\PyProject\AIC_TEST\aic8819\CMW_test\aic8820D40LC_test.py 
+Connected to pydev debugger (build 223.8836.43)
+Com3 is open
+Rohde&Schwarz,CMW,1201.0002k50/170904,4.0.250
+
+COM CMD: pwrlvl 1 0 0 15
+COM CMD: pwrlvl 1 0 4 16
+COM CMD: pwrlvl 1 0 11 16
+COM CMD: pwrlvl 2 0 4 15
+COM CMD: pwrlvl 2 0 11 15
+COM CMD: pwrlvl 2 1 8 15
+COM CMD: pwrofst 1 0 0 0
+COM CMD: pwrofst 1 0 1 0
+COM CMD: pwrofst 1 0 2 0
+COM CMD: pwrofst 1 1 0 0
+COM CMD: pwrofst 1 1 1 0
+COM CMD: pwrofst 1 1 2 0
+COM CMD: pwrofst 1 2 0 0
+COM CMD: pwrofst 1 2 1 0
+COM CMD: pwrofst 1 2 2 0
+COM CMD: pwrofst 2 0 0 0
+COM CMD: pwrofst 2 0 1 0
+COM CMD: pwrofst 2 0 2 0
+COM CMD: pwrofst 2 0 3 0
+COM CMD: pwrofst 2 0 4 0
+COM CMD: pwrofst 2 0 5 0
+COM CMD: pwrofst 2 1 0 0
+COM CMD: pwrofst 2 1 1 0
+COM CMD: pwrofst 2 1 2 0
+COM CMD: pwrofst 2 1 3 0
+COM CMD: pwrofst 2 1 4 0
+COM CMD: pwrofst 2 1 5 0
+COM CMD: pwrofst 2 2 0 0
+COM CMD: pwrofst 2 2 1 0
+COM CMD: pwrofst 2 2 2 0
+COM CMD: pwrofst 2 2 3 0
+COM CMD: pwrofst 2 2 4 0
+COM CMD: pwrofst 2 2 5 0
+COM CMD: settx 0
+COM CMD: setbw 0 0
+COM CMD: setrate 0 0
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 1
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 7
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 13
+COM CMD: settx 1
+COM CMD: setrate 0 4
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 1
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 7
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 13
+COM CMD: settx 1
+COM CMD: setrate 0 11
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 1
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 7
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 13
+COM CMD: settx 1
+COM CMD: setrate 0 4
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 36
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 64
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 100
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 120
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 136
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 165
+COM CMD: settx 1
+COM CMD: setrate 0 11
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 36
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 64
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 100
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 120
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 136
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 165
+COM CMD: settx 1
+COM CMD: setrate 4 8
+COM CMD: setlen 1500
+COM CMD: setintv 1000
+COM CMD: settx 0
+COM CMD: setch 36
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 64
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 100
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 120
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 136
+COM CMD: settx 1
+COM CMD: settx 0
+COM CMD: setch 165
+COM CMD: settx 1
+Com3 is closed
+

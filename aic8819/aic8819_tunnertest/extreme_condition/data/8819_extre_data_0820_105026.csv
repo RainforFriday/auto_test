@@ -1,0 +1,2 @@
+test_time, BoardNo, ANT, Temp, am, phase, BinVersion,freq, Channel, Rate, BandWidth, SetPwr, CMD, MsPwrAvg, MsEvmAvg, Band1, (0.03 to fch-40), Band2, (fch-40 to fch+40), Band3, (fch+40 to 2fch-80), Band4, (2fch-80 to 2fch+80),Band5, (2fch+80 to 3fch-120), Band6, (3fch-120 to 3fch+120),Band, 7(3fch+120 to 26)
+0820_105304,#OK1,ANT,40,0.0,0,testmode_8819h_0805.bin,2442,7,0 3,0 0,28,r 403422c8  [0x403422C8] = 0x00FFD179    ,19.01,7.39,-28.02,2402.0,17.48,2443.36,-30.04,2500.58,-39.62,4883.52,-37.9,6011.01,-38.5,7385.04,-25.64,25814.46

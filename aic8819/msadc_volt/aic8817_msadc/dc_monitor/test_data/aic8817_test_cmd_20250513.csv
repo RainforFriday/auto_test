@@ -1,0 +1,2 @@
+MSADC_BASICONFIG, MSADC_ADCONFIG, MSADC_INPUT_SEL_TESTPORT
+setch 7, setrate 2 7,pwrmm 1, setpwr 14, settx 1, settx 0

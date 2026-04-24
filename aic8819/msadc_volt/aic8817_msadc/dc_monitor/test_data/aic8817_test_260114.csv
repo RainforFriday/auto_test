@@ -1,0 +1,16 @@
+aic8817_wf_trx_pa_vlp2testmux,pa,299.2929231517509
+aic8817_wf_trx_pa_vlp2testmux,pa,298.4810311284047
+aic8817_wf_trx_pa_vsw,pa,1170.3423516536964
+aic8817_wf_trx_pa_avss_pabias,pa,-2.878526264591497
+aic8817_wf_trx_pa_avss_pabias,pa,-2.767813715953264
+aic8817_wf_trx_pa_vh_div3_sense,pa,873.7065296692607
+aic8817_wf_trx_pa_vm_div3_sense,pa,1164.1424489299611
+aic8817_wf_trx_pa_isense_outp,pa,115.21485894941627
+aic8817_wf_trx_pa_vln2testmux,pa,-304.6809338521401
+aic8817_wf_trx_pa_vln2testmux,pa,-304.4964129377432
+aic8817_wf_trx_pa_bg_v1v,pa,-987.5928380350194
+aic8817_wf_trx_pa_vreg13_sense,pa,-727.4552529182879
+aic8817_wf_trx_pa_tsout<2>,pa,-252.90436527237347
+aic8817_wf_trx_pa_tsout<1>,pa,-310.40108219844353
+aic8817_wf_trx_pa_tsout<0>,pa,-19.928258754863876
+aic8817_wf_trx_pa_isense_outn,pa,-141.67515807392996

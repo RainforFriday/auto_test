@@ -1,0 +1,2492 @@
+D:\Download\anaconda3\envs\Py38\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 64675 --file D:/Aic8800/Code/AIC_TEST/aic8819/apc_regulate/apc_regulate_6e.py
+pydev debugger: process 60272 is connecting
+
+Connected to pydev debugger (build 201.7223.92)
+Com18 is open
+successful : Rohde&Schwarz,CMP,1201.0002k18/101743,5.0.40.42
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 0.58
+val_20:  0.23   val_21:  0.6
+val_21:  0.6   val_22:  0.93
+val_22:  0.93   val_23:  1.24
+cal done!!!
+It choose 22  ： 0.93
+cur_default 28: 0.92
+val_27:  0.83   val_28:  0.91
+val_28:  0.91   val_29:  1.0
+cal done!!!
+Ib choose 29  ： 1.0
+first choose 21->22     28->29
+cur_default 29: 1.48
+val_29:  1.45   val_30:  1.52
+val_28:  1.41   val_29:  1.45
+val_27:  1.32   val_28:  1.41
+val_26:  1.27   val_27:  1.32
+val_25:  1.19   val_26:  1.27
+val_24:  1.14   val_25:  1.19
+val_23:  1.06   val_24:  1.14
+val_22:  0.97   val_23:  1.06
+cal done!!!
+Ib choose 22  ： 0.97
+second choose 22     29->22
+code spand : 124.41 s
+保存的数据行： {'test_time': 124.40575098991394, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 0.97, 'default_it': 21, 'default_ib': 28, 'it_first': 22, 'ib_first': 29, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 22}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 3.99
+val_28:  3.76   val_29:  4.01
+cal done!!!
+It choose 29  ： 4.01
+cur_default 24: 4.02
+val_24:  4.0   val_25:  4.05
+cal done!!!
+Ib choose 24  ： 4.0
+first choose 29->29     24->24
+cur_default 24: 4.01
+val_24:  4.02   val_25:  4.07
+second choose 29     24->24
+code spand : 65.43 s
+保存的数据行： {'test_time': 65.42644023895264, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.02, 'default_it': 29, 'default_ib': 24, 'it_first': 29, 'ib_first': 24, 'wf_dac0_vl_it_bit': 29, 'wf_dac0_vl_ib_bit': 24}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.1
+val_16:  8.1   val_17:  8.49
+val_15:  7.77   val_16:  8.1
+cal done!!!
+It choose 16  ： 8.1
+cur_default 31: 8.09
+val_30:  8.01   val_31:  8.09
+first choose 16->16     31->30
+cur_default 30: 7.98
+val_29:  7.89   val_30:  7.98
+second choose 16     30->30
+code spand : 84.75 s
+保存的数据行： {'test_time': 84.74585843086243, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 7.98, 'default_it': 16, 'default_ib': 31, 'it_first': 16, 'ib_first': 30, 'wf_dac0_vl_it_bit': 16, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.31
+val_19:  12.3   val_20:  12.66
+val_18:  11.94   val_19:  12.3
+cal done!!!
+It choose 18  ： 11.94
+cur_default 28: 11.92
+val_27:  11.85   val_28:  11.94
+val_28:  11.94   val_29:  12.01
+cal done!!!
+Ib choose 29  ： 12.01
+first choose 19->18     28->29
+cur_default 29: 12.17
+val_29:  12.15   val_30:  12.24
+val_28:  12.07   val_29:  12.15
+val_27:  11.98   val_28:  12.07
+cal done!!!
+Ib choose 27  ： 11.98
+second choose 18     29->27
+code spand : 108.30 s
+保存的数据行： {'test_time': 108.29556632041931, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.98, 'default_it': 19, 'default_ib': 28, 'it_first': 18, 'ib_first': 29, 'wf_dac0_vl_it_bit': 18, 'wf_dac0_vl_ib_bit': 27}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 30: 17.98
+val_start  24: 16.44
+val_24:  16.42   val_25:  16.69
+val_23:  16.12   val_24:  16.42
+val_22:  15.79   val_23:  16.12
+cal done!!!
+It choose 23  ： 16.12
+cur_default 28: 16.12
+val_28:  16.12   val_29:  16.18
+val_27:  16.04   val_28:  16.12
+first choose 30->23     28->27
+cur_default 27: 15.91
+val_26:  15.84   val_27:  15.9
+val_27:  15.9   val_28:  15.97
+second choose 23     27->28
+code spand : 105.56 s
+保存的数据行： {'test_time': 105.56411528587341, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 15.97, 'default_it': 30, 'default_ib': 28, 'it_first': 23, 'ib_first': 27, 'wf_dac0_vl_it_bit': 23, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 19.45
+val_29:  19.03   val_30:  19.23
+val_30:  19.23   val_31:  19.44
+cal done! It Use maximum value
+cur_default 31: 19.43
+val_start  30: 19.39
+val_29:  19.34   val_30:  19.38
+val_30:  19.38   val_31:  19.42
+cal done! Ib Use maximum value
+cur_default 31: 19.42
+val_start  30: 19.37
+val_29:  19.34   val_30:  19.38
+val_30:  19.38   val_31:  19.42
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.78
+val_start  30: 18.74
+val_29:  18.69   val_30:  18.74
+val_30:  18.74   val_31:  18.78
+cal done! Ib Use maximum value
+cur_default 31: 18.79
+val_start  30: 18.74
+val_29:  18.69   val_30:  18.74
+val_30:  18.74   val_31:  18.78
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 189.43 s
+保存的数据行： {'test_time': 189.4288444519043, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 23, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.78, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.1
+val_21:  1.12   val_22:  1.42
+val_20:  0.78   val_21:  1.12
+cal done!!!
+It choose 21  ： 1.12
+cur_default 28: 1.14
+val_28:  1.16   val_29:  1.22
+val_27:  1.07   val_28:  1.16
+val_26:  1.01   val_27:  1.07
+first choose 21->21     28->26
+cur_default 26: 1.45
+val_26:  1.44   val_27:  1.53
+val_25:  1.38   val_26:  1.44
+val_24:  1.31   val_25:  1.38
+val_23:  1.23   val_24:  1.31
+val_22:  1.16   val_23:  1.23
+val_21:  1.09   val_22:  1.16
+val_20:  1.01   val_21:  1.09
+second choose 21     26->20
+code spand : 111.49 s
+保存的数据行： {'test_time': 111.49228143692017, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 21, 'default_ib': 28, 'it_first': 21, 'ib_first': 26, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 20}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.56
+val_29:  4.59   val_30:  4.83
+val_28:  4.31   val_29:  4.59
+val_27:  4.06   val_28:  4.31
+val_26:  3.77   val_27:  4.06
+cal done!!!
+It choose 27  ： 4.06
+cur_default 24: 4.09
+val_24:  4.06   val_25:  4.12
+val_23:  4.01   val_24:  4.06
+first choose 29->27     24->23
+cur_default 23: 4.02
+val_23:  4.0   val_24:  4.06
+cal done!!!
+Ib choose 23  ： 4.0
+second choose 27     23->23
+code spand : 88.09 s
+保存的数据行： {'test_time': 88.09277272224426, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.0, 'default_it': 29, 'default_ib': 24, 'it_first': 27, 'ib_first': 23, 'wf_dac0_vl_it_bit': 27, 'wf_dac0_vl_ib_bit': 23}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.53
+val_16:  8.54   val_17:  8.92
+val_15:  8.21   val_16:  8.54
+val_14:  7.8   val_15:  8.21
+cal done!!!
+It choose 14  ： 7.8
+cur_default 31: 7.78
+val_29:  7.61   val_30:  7.69
+val_30:  7.69   val_31:  7.79
+cal done! Ib Use maximum value
+cur_default 31: 8.21
+val_30:  8.14   val_31:  8.21
+val_29:  8.04   val_30:  8.14
+first choose 16->15     31->29
+cur_default 29: 7.94
+val_28:  7.86   val_29:  7.93
+val_29:  7.93   val_30:  8.02
+cal done!!!
+Ib choose 30  ： 8.02
+second choose 15     29->30
+code spand : 137.50 s
+保存的数据行： {'test_time': 137.49602818489075, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.02, 'default_it': 16, 'default_ib': 31, 'it_first': 15, 'ib_first': 29, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.61
+val_19:  12.57   val_20:  12.95
+val_18:  12.21   val_19:  12.57
+val_17:  11.83   val_18:  12.21
+cal done!!!
+It choose 17  ： 11.83
+cur_default 28: 11.86
+val_27:  11.74   val_28:  11.82
+val_28:  11.82   val_29:  11.93
+val_29:  11.93   val_30:  11.98
+first choose 19->17     28->30
+cur_default 30: 12.17
+val_30:  12.14   val_31:  12.21
+val_29:  12.09   val_30:  12.14
+val_28:  11.98   val_29:  12.09
+cal done!!!
+Ib choose 28  ： 11.98
+second choose 17     30->28
+code spand : 116.13 s
+保存的数据行： {'test_time': 116.12985730171204, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.98, 'default_it': 19, 'default_ib': 28, 'it_first': 17, 'ib_first': 30, 'wf_dac0_vl_it_bit': 17, 'wf_dac0_vl_ib_bit': 28}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 30: 18.19
+val_start  23: 16.3
+val_23:  16.31   val_24:  16.6
+val_22:  15.98   val_23:  16.31
+cal done!!!
+It choose 22  ： 15.98
+cur_default 28: 15.99
+val_27:  15.9   val_28:  15.99
+first choose 30->22     28->28
+cur_default 28: 15.84
+val_27:  15.77   val_28:  15.84
+val_28:  15.84   val_29:  15.9
+val_29:  15.9   val_30:  15.96
+second choose 22     28->30
+code spand : 100.09 s
+保存的数据行： {'test_time': 100.08630800247192, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 15.96, 'default_it': 30, 'default_ib': 28, 'it_first': 22, 'ib_first': 28, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 30}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 19.63
+val_29:  19.22   val_30:  19.42
+val_30:  19.42   val_31:  19.61
+cal done! It Use maximum value
+cur_default 31: 19.6
+val_start  30: 19.56
+val_29:  19.52   val_30:  19.56
+val_30:  19.56   val_31:  19.6
+cal done! Ib Use maximum value
+cur_default 31: 19.61
+val_start  30: 19.56
+val_29:  19.51   val_30:  19.56
+val_30:  19.56   val_31:  19.6
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.86
+val_start  30: 18.82
+val_29:  18.78   val_30:  18.81
+val_30:  18.81   val_31:  18.85
+cal done! Ib Use maximum value
+cur_default 31: 18.86
+val_start  30: 18.81
+val_29:  18.78   val_30:  18.81
+val_30:  18.81   val_31:  18.85
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 189.63 s
+保存的数据行： {'test_time': 189.63065671920776, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 39, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.85, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.25
+val_21:  1.27   val_22:  1.6
+val_20:  0.95   val_21:  1.27
+cal done!!!
+It choose 20  ： 0.95
+cur_default 28: 0.99
+val_27:  0.87   val_28:  0.96
+val_28:  0.96   val_29:  1.04
+cal done!!!
+Ib choose 29  ： 1.04
+first choose 21->20     28->29
+cur_default 29: 1.42
+val_29:  1.37   val_30:  1.5
+val_28:  1.3   val_29:  1.37
+val_27:  1.22   val_28:  1.3
+val_26:  1.16   val_27:  1.22
+val_25:  1.07   val_26:  1.16
+val_24:  1.0   val_25:  1.07
+cal done!!!
+Ib choose 24  ： 1.0
+second choose 20     29->24
+code spand : 107.62 s
+保存的数据行： {'test_time': 107.62432551383972, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 21, 'default_ib': 28, 'it_first': 20, 'ib_first': 29, 'wf_dac0_vl_it_bit': 20, 'wf_dac0_vl_ib_bit': 24}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.63
+val_29:  4.63   val_30:  4.87
+val_28:  4.37   val_29:  4.63
+val_27:  4.13   val_28:  4.37
+val_26:  3.84   val_27:  4.13
+cal done!!!
+It choose 27  ： 4.13
+cur_default 24: 4.13
+val_24:  4.12   val_25:  4.19
+val_23:  4.06   val_24:  4.12
+val_22:  4.01   val_23:  4.06
+first choose 29->27     24->22
+cur_default 22: 4.02
+val_22:  4.03   val_23:  4.07
+second choose 27     22->22
+code spand : 90.48 s
+保存的数据行： {'test_time': 90.48224115371704, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.03, 'default_it': 29, 'default_ib': 24, 'it_first': 27, 'ib_first': 22, 'wf_dac0_vl_it_bit': 27, 'wf_dac0_vl_ib_bit': 22}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.66
+val_16:  8.65   val_17:  9.03
+val_15:  8.31   val_16:  8.65
+val_14:  7.9   val_15:  8.31
+cal done!!!
+It choose 14  ： 7.9
+cur_default 31: 7.89
+val_29:  7.73   val_30:  7.82
+val_30:  7.82   val_31:  7.91
+cal done! Ib Use maximum value
+cur_default 31: 8.33
+val_start  28: 8.06
+val_28:  8.06   val_29:  8.15
+val_27:  7.97   val_28:  8.06
+cal done!!!
+Ib choose 27  ： 7.97
+first choose 16->15     31->27
+cur_default 27: 8.01
+val_27:  7.99   val_28:  8.09
+cal done!!!
+Ib choose 27  ： 7.99
+second choose 15     27->27
+code spand : 141.77 s
+保存的数据行： {'test_time': 141.76876020431519, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 7.99, 'default_it': 16, 'default_ib': 31, 'it_first': 15, 'ib_first': 27, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 27}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.91
+val_19:  12.91   val_20:  13.23
+val_18:  12.51   val_19:  12.91
+val_17:  12.15   val_18:  12.51
+val_16:  11.75   val_17:  12.15
+cal done!!!
+It choose 17  ： 12.15
+cur_default 28: 12.15
+val_28:  12.15   val_29:  12.23
+val_27:  12.06   val_28:  12.15
+val_26:  11.99   val_27:  12.06
+cal done!!!
+Ib choose 26  ： 11.99
+first choose 19->17     28->26
+cur_default 26: 12.0
+val_25:  11.93   val_26:  12.01
+cal done!!!
+Ib choose 26  ： 12.01
+second choose 17     26->26
+code spand : 114.39 s
+保存的数据行： {'test_time': 114.39341402053833, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.01, 'default_it': 19, 'default_ib': 28, 'it_first': 17, 'ib_first': 26, 'wf_dac0_vl_it_bit': 17, 'wf_dac0_vl_ib_bit': 26}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 30: 18.33
+val_start  23: 16.52
+val_23:  16.51   val_24:  16.83
+val_22:  16.19   val_23:  16.51
+val_21:  15.88   val_22:  16.19
+cal done!!!
+It choose 21  ： 15.88
+cur_default 28: 15.88
+val_27:  15.8   val_28:  15.88
+val_28:  15.88   val_29:  15.95
+val_29:  15.95   val_30:  16.02
+cal done!!!
+Ib choose 30  ： 16.02
+first choose 30->21     28->30
+cur_default 30: 15.84
+val_29:  15.79   val_30:  15.84
+val_30:  15.84   val_31:  15.91
+cal done! Ib Use maximum value
+cur_default 31: 16.21
+val_start  28: 16.02
+val_28:  16.03   val_29:  16.09
+second choose 22     31->28
+code spand : 148.37 s
+保存的数据行： {'test_time': 148.37287259101868, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.03, 'default_it': 30, 'default_ib': 28, 'it_first': 21, 'ib_first': 30, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 19.64
+val_29:  19.24   val_30:  19.43
+val_30:  19.43   val_31:  19.63
+cal done! It Use maximum value
+cur_default 31: 19.61
+val_start  30: 19.57
+val_29:  19.54   val_30:  19.58
+val_30:  19.58   val_31:  19.63
+cal done! Ib Use maximum value
+cur_default 31: 19.62
+val_start  30: 19.58
+val_29:  19.54   val_30:  19.58
+val_30:  19.58   val_31:  19.63
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.93
+val_start  30: 18.89
+val_29:  18.85   val_30:  18.89
+val_30:  18.89   val_31:  18.93
+cal done! Ib Use maximum value
+cur_default 31: 18.93
+val_start  30: 18.89
+val_29:  18.85   val_30:  18.89
+val_30:  18.89   val_31:  18.93
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 189.65 s
+保存的数据行： {'test_time': 189.65082120895386, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 55, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.93, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.2
+val_21:  1.22   val_22:  1.54
+val_20:  0.92   val_21:  1.22
+cal done!!!
+It choose 20  ： 0.92
+cur_default 28: 0.92
+val_27:  0.83   val_28:  0.93
+val_28:  0.93   val_29:  0.99
+first choose 21->20     28->29
+cur_default 29: 1.66
+val_29:  1.67   val_30:  1.73
+val_28:  1.63   val_29:  1.67
+val_27:  1.53   val_28:  1.63
+val_26:  1.45   val_27:  1.53
+val_25:  1.38   val_26:  1.45
+val_24:  1.31   val_25:  1.38
+val_23:  1.23   val_24:  1.31
+val_22:  1.16   val_23:  1.23
+val_21:  1.08   val_22:  1.16
+val_20:  1.02   val_21:  1.08
+second choose 20     29->20
+code spand : 122.37 s
+保存的数据行： {'test_time': 122.37275838851929, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.02, 'default_it': 21, 'default_ib': 28, 'it_first': 20, 'ib_first': 29, 'wf_dac0_vl_it_bit': 20, 'wf_dac0_vl_ib_bit': 20}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.84
+val_29:  4.84   val_30:  5.08
+val_28:  4.59   val_29:  4.84
+val_27:  4.33   val_28:  4.59
+val_26:  4.04   val_27:  4.33
+val_25:  3.77   val_26:  4.04
+cal done!!!
+It choose 26  ： 4.04
+cur_default 24: 4.03
+val_24:  4.05   val_25:  4.11
+val_23:  3.99   val_24:  4.05
+cal done!!!
+Ib choose 23  ： 3.99
+first choose 29->26     24->23
+cur_default 23: 4.09
+val_23:  4.07   val_24:  4.15
+val_22:  4.02   val_23:  4.07
+second choose 26     23->22
+code spand : 98.62 s
+保存的数据行： {'test_time': 98.62087798118591, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.02, 'default_it': 29, 'default_ib': 24, 'it_first': 26, 'ib_first': 23, 'wf_dac0_vl_it_bit': 26, 'wf_dac0_vl_ib_bit': 22}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.84
+val_16:  8.84   val_17:  9.22
+val_15:  8.51   val_16:  8.84
+val_14:  8.11   val_15:  8.51
+val_13:  7.66   val_14:  8.11
+cal done!!!
+It choose 14  ： 8.11
+cur_default 31: 8.09
+val_30:  8.0   val_31:  8.08
+cal done!!!
+Ib choose 30  ： 8.0
+first choose 16->14     31->30
+cur_default 30: 7.96
+val_29:  7.87   val_30:  7.95
+val_30:  7.95   val_31:  8.04
+cal done!!!
+Ib choose 31  ： 8.04
+cur_default 31: 8.46
+val_start  26: 8.02
+val_26:  8.03   val_27:  8.12
+second choose 15     31->26
+code spand : 137.73 s
+保存的数据行： {'test_time': 137.7290279865265, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.03, 'default_it': 16, 'default_ib': 31, 'it_first': 14, 'ib_first': 30, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 26}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.84
+val_19:  12.83   val_20:  13.19
+val_18:  12.45   val_19:  12.83
+val_17:  12.09   val_18:  12.45
+val_16:  11.69   val_17:  12.09
+cal done!!!
+It choose 17  ： 12.09
+cur_default 28: 12.09
+val_28:  12.09   val_29:  12.17
+val_27:  12.0   val_28:  12.09
+cal done!!!
+Ib choose 27  ： 12.0
+first choose 19->17     28->27
+cur_default 27: 12.12
+val_27:  12.13   val_28:  12.21
+val_26:  12.04   val_27:  12.13
+second choose 17     27->26
+code spand : 110.59 s
+保存的数据行： {'test_time': 110.59186220169067, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.04, 'default_it': 19, 'default_ib': 28, 'it_first': 17, 'ib_first': 27, 'wf_dac0_vl_it_bit': 17, 'wf_dac0_vl_ib_bit': 26}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 30: 18.25
+val_start  23: 16.39
+val_23:  16.39   val_24:  16.7
+val_22:  16.08   val_23:  16.39
+val_21:  15.78   val_22:  16.08
+cal done!!!
+It choose 22  ： 16.08
+cur_default 28: 16.08
+val_28:  16.08   val_29:  16.19
+val_27:  16.01   val_28:  16.08
+first choose 30->22     28->27
+cur_default 27: 15.84
+val_26:  15.76   val_27:  15.83
+val_27:  15.83   val_28:  15.9
+val_28:  15.9   val_29:  15.96
+second choose 22     27->29
+code spand : 110.92 s
+保存的数据行： {'test_time': 110.9168312549591, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 15.96, 'default_it': 30, 'default_ib': 28, 'it_first': 22, 'ib_first': 27, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 29}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 20.42
+val_30:  20.22   val_31:  20.39
+val_29:  20.02   val_30:  20.22
+cur_default 31: 20.01
+cur_default 31: 20.21
+val_start  26: 20.0
+first choose 31->30     31->25
+cur_default 25: 18.85
+val_start  30: 19.06
+val_29:  19.01   val_30:  19.04
+val_30:  19.04   val_31:  19.08
+cal done! Ib Use maximum value
+cur_default 31: 19.27
+val_start  30: 19.24
+val_29:  19.2   val_30:  19.23
+val_30:  19.23   val_31:  19.27
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 150.74 s
+保存的数据行： {'test_time': 150.74107813835144, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 71, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 19.27, 'default_it': 31, 'default_ib': 31, 'it_first': 30, 'ib_first': 25, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.15
+val_21:  1.19   val_22:  1.5
+val_20:  0.87   val_21:  1.19
+cal done!!!
+It choose 20  ： 0.87
+cur_default 28: 0.85
+val_27:  0.79   val_28:  0.88
+val_28:  0.88   val_29:  0.94
+val_29:  0.94   val_30:  1.01
+cal done!!!
+Ib choose 30  ： 1.01
+first choose 21->20     28->30
+cur_default 30: 1.73
+val_30:  1.74   val_31:  1.83
+val_29:  1.67   val_30:  1.74
+val_28:  1.61   val_29:  1.67
+val_27:  1.54   val_28:  1.61
+val_26:  1.45   val_27:  1.54
+val_25:  1.38   val_26:  1.45
+val_24:  1.33   val_25:  1.38
+val_23:  1.22   val_24:  1.33
+val_22:  1.16   val_23:  1.22
+val_21:  1.08   val_22:  1.16
+val_20:  1.03   val_21:  1.08
+second choose 20     30->20
+code spand : 137.89 s
+保存的数据行： {'test_time': 137.89046263694763, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.03, 'default_it': 21, 'default_ib': 28, 'it_first': 20, 'ib_first': 30, 'wf_dac0_vl_it_bit': 20, 'wf_dac0_vl_ib_bit': 20}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.92
+val_29:  4.91   val_30:  5.16
+val_28:  4.64   val_29:  4.91
+val_27:  4.4   val_28:  4.64
+val_26:  4.14   val_27:  4.4
+val_25:  3.84   val_26:  4.14
+cal done!!!
+It choose 26  ： 4.14
+cur_default 24: 4.12
+val_24:  4.13   val_25:  4.19
+val_23:  4.06   val_24:  4.13
+val_22:  4.0   val_23:  4.06
+cal done!!!
+Ib choose 22  ： 4.0
+first choose 29->26     24->22
+cur_default 22: 4.02
+val_22:  4.03   val_23:  4.09
+second choose 26     22->22
+code spand : 98.82 s
+保存的数据行： {'test_time': 98.81774282455444, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.03, 'default_it': 29, 'default_ib': 24, 'it_first': 26, 'ib_first': 22, 'wf_dac0_vl_it_bit': 26, 'wf_dac0_vl_ib_bit': 22}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.88
+val_16:  8.87   val_17:  9.27
+val_15:  8.54   val_16:  8.87
+val_14:  8.12   val_15:  8.54
+val_13:  7.68   val_14:  8.12
+cal done!!!
+It choose 14  ： 8.12
+cur_default 31: 8.14
+val_30:  8.03   val_31:  8.12
+first choose 16->14     31->30
+cur_default 30: 8.0
+val_29:  7.88   val_30:  7.97
+second choose 14     30->30
+code spand : 95.81 s
+保存的数据行： {'test_time': 95.80856728553772, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 7.97, 'default_it': 16, 'default_ib': 31, 'it_first': 14, 'ib_first': 30, 'wf_dac0_vl_it_bit': 14, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.92
+val_19:  12.97   val_20:  13.26
+val_18:  12.56   val_19:  12.97
+val_17:  12.18   val_18:  12.56
+val_16:  11.77   val_17:  12.18
+cal done!!!
+It choose 17  ： 12.18
+cur_default 28: 12.16
+val_28:  12.17   val_29:  12.24
+val_27:  12.07   val_28:  12.17
+val_26:  12.0   val_27:  12.07
+cal done!!!
+Ib choose 26  ： 12.0
+first choose 19->17     28->26
+cur_default 26: 12.13
+val_26:  12.13   val_27:  12.21
+val_25:  12.05   val_26:  12.13
+val_24:  11.96   val_25:  12.05
+cal done!!!
+Ib choose 24  ： 11.96
+second choose 17     26->24
+code spand : 125.18 s
+保存的数据行： {'test_time': 125.1783139705658, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.96, 'default_it': 19, 'default_ib': 28, 'it_first': 17, 'ib_first': 26, 'wf_dac0_vl_it_bit': 17, 'wf_dac0_vl_ib_bit': 24}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 18.63
+val_start  22: 16.25
+val_22:  16.25   val_23:  16.55
+val_21:  15.92   val_22:  16.25
+cal done!!!
+It choose 21  ： 15.92
+cur_default 28: 15.93
+val_27:  15.82   val_28:  15.89
+val_28:  15.89   val_29:  15.99
+first choose 31->21     28->29
+cur_default 29: 15.55
+val_start  30: 15.62
+val_29:  15.55   val_30:  15.62
+val_30:  15.62   val_31:  15.68
+cal done! Ib Use maximum value
+cur_default 31: 15.96
+val_29:  15.84   val_30:  15.91
+val_30:  15.91   val_31:  15.97
+cal done! Ib Use maximum value
+cur_default 31: 16.3
+val_start  27: 16.05
+val_27:  16.04   val_28:  16.11
+second choose 23     31->27
+code spand : 171.79 s
+保存的数据行： {'test_time': 171.79454135894775, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.04, 'default_it': 31, 'default_ib': 28, 'it_first': 21, 'ib_first': 29, 'wf_dac0_vl_it_bit': 23, 'wf_dac0_vl_ib_bit': 27}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 20.3
+val_30:  20.09   val_31:  20.29
+val_29:  19.92   val_30:  20.09
+cal done!!!
+It choose 29  ： 19.92
+cur_default 31: 19.91
+val_29:  19.84   val_30:  19.87
+val_30:  19.87   val_31:  19.91
+cal done! Ib Use maximum value
+cur_default 31: 20.09
+val_30:  20.05   val_31:  20.09
+val_29:  19.99   val_30:  20.05
+cal done!!!
+Ib choose 29  ： 19.99
+first choose 31->30     31->29
+cur_default 29: 18.99
+val_start  30: 19.02
+val_29:  18.98   val_30:  19.01
+val_30:  19.01   val_31:  19.04
+cal done! Ib Use maximum value
+cur_default 31: 19.23
+val_start  30: 19.18
+val_29:  19.15   val_30:  19.18
+val_30:  19.18   val_31:  19.23
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 178.63 s
+保存的数据行： {'test_time': 178.6270477771759, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 87, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 19.23, 'default_it': 31, 'default_ib': 31, 'it_first': 30, 'ib_first': 29, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.05
+val_21:  1.07   val_22:  1.37
+val_20:  0.71   val_21:  1.07
+cal done!!!
+It choose 21  ： 1.07
+cur_default 28: 1.07
+val_28:  1.07   val_29:  1.14
+val_27:  1.01   val_28:  1.07
+first choose 21->21     28->27
+cur_default 27: 1.78
+val_27:  1.8   val_28:  1.86
+val_26:  1.72   val_27:  1.8
+val_25:  1.66   val_26:  1.72
+val_24:  1.59   val_25:  1.66
+val_23:  1.52   val_24:  1.59
+val_22:  1.45   val_23:  1.52
+val_21:  1.43   val_22:  1.45
+val_20:  1.34   val_21:  1.43
+val_19:  1.24   val_20:  1.34
+val_18:  1.13   val_19:  1.24
+val_17:  1.13   val_18:  1.13
+val_16:  0.99   val_17:  1.13
+cal done!!!
+Ib choose 16  ： 0.99
+second choose 21     27->16
+code spand : 138.24 s
+保存的数据行： {'test_time': 138.23889303207397, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 0.99, 'default_it': 21, 'default_ib': 28, 'it_first': 21, 'ib_first': 27, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 16}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.81
+val_29:  4.82   val_30:  5.08
+val_28:  4.57   val_29:  4.82
+val_27:  4.34   val_28:  4.57
+val_26:  4.07   val_27:  4.34
+val_25:  3.77   val_26:  4.07
+cal done!!!
+It choose 26  ： 4.07
+cur_default 24: 4.05
+val_24:  4.09   val_25:  4.08
+val_23:  4.02   val_24:  4.09
+first choose 29->26     24->23
+cur_default 23: 3.97
+val_22:  3.93   val_23:  3.98
+second choose 26     23->23
+code spand : 89.53 s
+保存的数据行： {'test_time': 89.52771329879761, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 3.98, 'default_it': 29, 'default_ib': 24, 'it_first': 26, 'ib_first': 23, 'wf_dac0_vl_it_bit': 26, 'wf_dac0_vl_ib_bit': 23}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.8
+val_16:  8.8   val_17:  9.19
+val_15:  8.45   val_16:  8.8
+val_14:  8.03   val_15:  8.45
+cur_default 31: 8.03
+cur_default 31: 8.48
+val_start  26: 8.03
+val_26:  8.04   val_27:  8.09
+first choose 16->15     31->26
+cur_default 26: 8.03
+val_26:  8.01   val_27:  8.11
+second choose 15     26->26
+code spand : 110.45 s
+保存的数据行： {'test_time': 110.45072197914124, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.01, 'default_it': 16, 'default_ib': 31, 'it_first': 15, 'ib_first': 26, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 26}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.96
+val_19:  12.96   val_20:  13.29
+val_18:  12.59   val_19:  12.96
+val_17:  12.21   val_18:  12.59
+val_16:  11.79   val_17:  12.21
+cal done!!!
+It choose 17  ： 12.21
+cur_default 28: 12.21
+val_28:  12.21   val_29:  12.29
+val_27:  12.12   val_28:  12.21
+val_26:  12.05   val_27:  12.12
+val_25:  11.96   val_26:  12.05
+cal done!!!
+Ib choose 25  ： 11.96
+first choose 19->17     28->25
+cur_default 25: 12.08
+val_25:  12.06   val_26:  12.16
+val_24:  11.98   val_25:  12.06
+cal done!!!
+Ib choose 24  ： 11.98
+second choose 17     25->24
+code spand : 124.70 s
+保存的数据行： {'test_time': 124.7016236782074, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.98, 'default_it': 19, 'default_ib': 28, 'it_first': 17, 'ib_first': 25, 'wf_dac0_vl_it_bit': 17, 'wf_dac0_vl_ib_bit': 24}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 18.57
+val_start  22: 16.21
+val_22:  16.32   val_23:  16.54
+val_21:  15.9   val_22:  16.32
+cal done!!!
+It choose 21  ： 15.9
+cur_default 28: 15.91
+val_27:  15.82   val_28:  15.89
+val_28:  15.89   val_29:  15.97
+first choose 31->21     28->29
+cur_default 29: 15.46
+val_start  30: 15.53
+val_29:  15.45   val_30:  15.53
+val_30:  15.53   val_31:  15.6
+cal done! Ib Use maximum value
+cur_default 31: 15.89
+val_29:  15.77   val_30:  15.83
+val_30:  15.83   val_31:  15.89
+cal done! Ib Use maximum value
+cur_default 31: 16.18
+val_30:  16.13   val_31:  16.19
+val_29:  16.07   val_30:  16.13
+val_28:  16.02   val_29:  16.07
+second choose 23     31->28
+code spand : 177.00 s
+保存的数据行： {'test_time': 177.00478744506836, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.02, 'default_it': 31, 'default_ib': 28, 'it_first': 21, 'ib_first': 29, 'wf_dac0_vl_it_bit': 23, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 20.15
+val_30:  19.94   val_31:  20.13
+cal done!!!
+It choose 30  ： 19.94
+cur_default 31: 19.94
+val_29:  19.87   val_30:  19.9
+val_30:  19.9   val_31:  19.95
+cal done! Ib Use maximum value
+cur_default 31: 20.11
+val_30:  20.07   val_31:  20.11
+val_29:  20.03   val_30:  20.07
+first choose 31->31     31->29
+cur_default 29: 19.05
+val_start  30: 19.07
+val_29:  19.04   val_30:  19.08
+val_30:  19.08   val_31:  19.11
+cal done! Ib Use maximum value
+cur_default 31: 19.11
+val_start  30: 19.07
+val_29:  19.03   val_30:  19.06
+val_30:  19.06   val_31:  19.09
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 169.27 s
+保存的数据行： {'test_time': 169.2657413482666, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 103, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 19.09, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 29, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 1.0
+val_20:  0.66   val_21:  1.0
+cal done!!!
+It choose 21  ： 1.0
+cur_default 28: 1.03
+val_28:  1.03   val_29:  1.1
+first choose 21->21     28->28
+cur_default 28: 1.84
+val_28:  1.87   val_29:  1.93
+val_27:  1.78   val_28:  1.87
+val_26:  1.73   val_27:  1.78
+val_25:  1.64   val_26:  1.73
+val_24:  1.58   val_25:  1.64
+val_23:  1.5   val_24:  1.58
+val_22:  1.43   val_23:  1.5
+val_21:  1.36   val_22:  1.43
+val_20:  1.29   val_21:  1.36
+val_19:  1.21   val_20:  1.29
+val_18:  1.15   val_19:  1.21
+val_17:  1.08   val_18:  1.15
+val_16:  1.0   val_17:  1.08
+cal done!!!
+Ib choose 16  ： 1.0
+second choose 21     28->16
+code spand : 132.00 s
+保存的数据行： {'test_time': 132.000070810318, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 21, 'default_ib': 28, 'it_first': 21, 'ib_first': 28, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 16}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.8
+val_29:  4.83   val_30:  5.05
+val_28:  4.57   val_29:  4.83
+val_27:  4.3   val_28:  4.57
+val_26:  4.04   val_27:  4.3
+val_25:  3.76   val_26:  4.04
+cal done!!!
+It choose 26  ： 4.04
+cur_default 24: 4.04
+val_24:  4.05   val_25:  4.1
+val_23:  3.98   val_24:  4.05
+cal done!!!
+Ib choose 23  ： 3.98
+first choose 29->26     24->23
+cur_default 23: 4.03
+val_23:  4.03   val_24:  4.09
+second choose 26     23->23
+code spand : 93.26 s
+保存的数据行： {'test_time': 93.26087236404419, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.03, 'default_it': 29, 'default_ib': 24, 'it_first': 26, 'ib_first': 23, 'wf_dac0_vl_it_bit': 26, 'wf_dac0_vl_ib_bit': 23}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.94
+val_16:  8.92   val_17:  9.31
+val_15:  8.6   val_16:  8.92
+val_14:  8.17   val_15:  8.6
+val_13:  7.74   val_14:  8.17
+cal done!!!
+It choose 14  ： 8.17
+cur_default 31: 8.19
+val_30:  8.08   val_31:  8.16
+val_29:  7.99   val_30:  8.08
+cal done!!!
+Ib choose 29  ： 7.99
+first choose 16->14     31->29
+cur_default 29: 7.92
+val_28:  7.83   val_29:  7.91
+val_29:  7.91   val_30:  8.0
+cal done!!!
+Ib choose 30  ： 8.0
+second choose 14     29->30
+code spand : 114.03 s
+保存的数据行： {'test_time': 114.02605032920837, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.0, 'default_it': 16, 'default_ib': 31, 'it_first': 14, 'ib_first': 29, 'wf_dac0_vl_it_bit': 14, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 13.15
+val_19:  13.15   val_20:  13.5
+val_18:  12.74   val_19:  13.15
+val_17:  12.39   val_18:  12.74
+val_16:  11.98   val_17:  12.39
+cal done!!!
+It choose 16  ： 11.98
+cur_default 28: 11.97
+val_27:  11.9   val_28:  11.98
+first choose 19->16     28->28
+cur_default 28: 12.06
+val_28:  12.09   val_29:  12.16
+val_27:  11.99   val_28:  12.09
+cal done!!!
+Ib choose 27  ： 11.99
+second choose 16     28->27
+code spand : 104.53 s
+保存的数据行： {'test_time': 104.53115272521973, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.99, 'default_it': 19, 'default_ib': 28, 'it_first': 16, 'ib_first': 28, 'wf_dac0_vl_it_bit': 16, 'wf_dac0_vl_ib_bit': 27}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 18.81
+val_start  21: 16.22
+val_21:  16.22   val_22:  16.53
+val_20:  15.89   val_21:  16.22
+cal done!!!
+It choose 20  ： 15.89
+cur_default 28: 15.89
+val_27:  15.81   val_28:  15.89
+val_28:  15.89   val_29:  15.95
+val_29:  15.95   val_30:  16.04
+cal done!!!
+Ib choose 30  ： 16.04
+first choose 31->20     28->30
+cur_default 30: 15.27
+val_start  30: 15.28
+val_29:  15.22   val_30:  15.28
+val_30:  15.28   val_31:  15.34
+cal done! Ib Use maximum value
+cur_default 31: 15.67
+val_start  30: 15.61
+val_29:  15.54   val_30:  15.59
+val_30:  15.59   val_31:  15.66
+cal done! Ib Use maximum value
+cur_default 31: 15.98
+val_29:  15.83   val_30:  15.91
+val_30:  15.91   val_31:  15.98
+cal done! Ib Use maximum value
+cur_default 31: 16.28
+val_start  27: 16.02
+val_27:  16.02   val_28:  16.08
+second choose 23     31->27
+code spand : 219.04 s
+保存的数据行： {'test_time': 219.0425148010254, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.02, 'default_it': 31, 'default_ib': 28, 'it_first': 20, 'ib_first': 30, 'wf_dac0_vl_it_bit': 23, 'wf_dac0_vl_ib_bit': 27}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 20.22
+val_30:  20.02   val_31:  20.2
+cur_default 31: 20.03
+cur_default 31: 20.21
+val_start  26: 19.99
+val_25:  19.95   val_26:  19.99
+first choose 31->31     31->26
+cur_default 26: 19.02
+val_start  30: 19.18
+val_29:  19.14   val_30:  19.17
+val_30:  19.17   val_31:  19.21
+cal done! Ib Use maximum value
+cur_default 31: 19.22
+val_start  30: 19.18
+val_29:  19.14   val_30:  19.18
+val_30:  19.18   val_31:  19.22
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 150.90 s
+保存的数据行： {'test_time': 150.89546966552734, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 119, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 19.22, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 26, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 21: 0.75
+val_20:  0.43   val_21:  0.79
+val_21:  0.79   val_22:  1.11
+cal done!!!
+It choose 22  ： 1.11
+cur_default 28: 1.12
+val_28:  1.12   val_29:  1.18
+val_27:  1.07   val_28:  1.12
+val_26:  0.97   val_27:  1.07
+cal done!!!
+Ib choose 26  ： 0.97
+first choose 21->22     28->26
+cur_default 26: 1.85
+val_26:  1.86   val_27:  1.92
+val_25:  1.79   val_26:  1.86
+val_24:  1.73   val_25:  1.79
+val_23:  1.67   val_24:  1.73
+val_22:  1.59   val_23:  1.67
+val_21:  1.52   val_22:  1.59
+val_20:  1.46   val_21:  1.52
+val_19:  1.39   val_20:  1.46
+val_18:  1.34   val_19:  1.39
+val_17:  1.26   val_18:  1.34
+val_16:  1.19   val_17:  1.26
+val_15:  1.14   val_16:  1.19
+val_14:  1.07   val_15:  1.14
+val_13:  1.01   val_14:  1.07
+second choose 22     26->13
+code spand : 153.67 s
+保存的数据行： {'test_time': 153.66977286338806, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 21, 'default_ib': 28, 'it_first': 22, 'ib_first': 26, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 13}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 29: 4.57
+val_29:  4.57   val_30:  4.81
+val_28:  4.32   val_29:  4.57
+val_27:  4.06   val_28:  4.32
+val_26:  3.79   val_27:  4.06
+cal done!!!
+It choose 27  ： 4.06
+cur_default 24: 4.06
+val_24:  4.08   val_25:  4.12
+val_23:  4.0   val_24:  4.08
+cal done!!!
+Ib choose 23  ： 4.0
+first choose 29->27     24->23
+cur_default 23: 4.09
+val_23:  4.1   val_24:  4.15
+val_22:  4.04   val_23:  4.1
+val_21:  4.0   val_22:  4.04
+cal done!!!
+Ib choose 21  ： 4.0
+second choose 27     23->21
+code spand : 102.67 s
+保存的数据行： {'test_time': 102.67416858673096, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.0, 'default_it': 29, 'default_ib': 24, 'it_first': 27, 'ib_first': 23, 'wf_dac0_vl_it_bit': 27, 'wf_dac0_vl_ib_bit': 21}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 16: 8.5
+val_16:  8.48   val_17:  8.9
+val_15:  8.18   val_16:  8.48
+val_14:  7.77   val_15:  8.18
+cal done!!!
+It choose 15  ： 8.18
+cur_default 31: 8.18
+val_30:  8.08   val_31:  8.18
+val_29:  8.0   val_30:  8.08
+cal done!!!
+Ib choose 29  ： 8.0
+first choose 16->15     31->29
+cur_default 29: 7.9
+val_28:  7.81   val_29:  7.9
+val_29:  7.9   val_30:  7.97
+second choose 15     29->30
+code spand : 104.28 s
+保存的数据行： {'test_time': 104.28325963020325, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 7.97, 'default_it': 16, 'default_ib': 31, 'it_first': 15, 'ib_first': 29, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 19: 12.5
+val_19:  12.5   val_20:  12.84
+val_18:  12.13   val_19:  12.5
+val_17:  11.77   val_18:  12.13
+cal done!!!
+It choose 18  ： 12.13
+cur_default 28: 12.14
+val_28:  12.12   val_29:  12.21
+val_27:  12.03   val_28:  12.12
+first choose 19->18     28->27
+cur_default 27: 12.16
+val_27:  12.16   val_28:  12.24
+val_26:  12.07   val_27:  12.16
+val_25:  11.99   val_26:  12.07
+cal done!!!
+Ib choose 25  ： 11.99
+second choose 18     27->25
+code spand : 110.01 s
+保存的数据行： {'test_time': 110.00893330574036, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 11.99, 'default_it': 19, 'default_ib': 28, 'it_first': 18, 'ib_first': 27, 'wf_dac0_vl_it_bit': 18, 'wf_dac0_vl_ib_bit': 25}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 18.27
+val_start  23: 16.29
+val_23:  16.28   val_24:  16.58
+val_22:  15.99   val_23:  16.28
+cal done!!!
+It choose 22  ： 15.99
+cur_default 31: 16.0
+val_29:  15.85   val_30:  15.93
+val_30:  15.93   val_31:  15.99
+cal done! Ib Use maximum value
+cur_default 31: 16.28
+val_start  27: 16.04
+val_27:  16.03   val_28:  16.09
+first choose 31->23     31->27
+cur_default 27: 15.56
+val_start  30: 15.76
+val_29:  15.69   val_30:  15.76
+val_30:  15.76   val_31:  15.82
+cal done! Ib Use maximum value
+cur_default 31: 16.11
+val_30:  16.07   val_31:  16.12
+val_29:  16.01   val_30:  16.07
+second choose 24     31->29
+code spand : 171.41 s
+保存的数据行： {'test_time': 171.40789151191711, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.01, 'default_it': 31, 'default_ib': 31, 'it_first': 23, 'ib_first': 27, 'wf_dac0_vl_it_bit': 24, 'wf_dac0_vl_ib_bit': 29}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 20.49
+val_30:  20.3   val_31:  20.48
+val_29:  20.12   val_30:  20.3
+val_28:  19.92   val_29:  20.12
+cal done!!!
+It choose 28  ： 19.92
+cur_default 31: 19.92
+val_29:  19.85   val_30:  19.88
+val_30:  19.88   val_31:  19.93
+cal done! Ib Use maximum value
+cur_default 31: 20.11
+val_30:  20.06   val_31:  20.1
+val_29:  20.02   val_30:  20.06
+first choose 31->29     31->29
+cur_default 29: 18.84
+val_start  30: 18.86
+val_29:  18.82   val_30:  18.86
+val_30:  18.86   val_31:  18.9
+cal done! Ib Use maximum value
+cur_default 31: 19.08
+val_start  30: 19.04
+val_29:  19.01   val_30:  19.05
+val_30:  19.05   val_31:  19.09
+cal done! Ib Use maximum value
+cur_default 31: 19.25
+val_start  30: 19.21
+val_29:  19.18   val_30:  19.22
+val_30:  19.22   val_31:  19.25
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 218.80 s
+保存的数据行： {'test_time': 218.79881811141968, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 135, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 19.25, 'default_it': 31, 'default_ib': 31, 'it_first': 29, 'ib_first': 29, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 30: -0.56
+val_29:  -0.75   val_30:  -0.54
+val_30:  -0.54   val_31:  -0.29
+cal done! It Use maximum value
+cur_default 30: -0.29
+val_29:  -0.33   val_30:  -0.27
+val_30:  -0.27   val_31:  -0.22
+cal done! Ib Use maximum value
+cur_default 31: -0.24
+val_29:  -0.31   val_30:  -0.26
+val_30:  -0.26   val_31:  -0.22
+cal done! Ib Use maximum value
+first choose 30->31     31->31
+cur_default 31: 0.47
+val_29:  0.39   val_30:  0.43
+val_30:  0.43   val_31:  0.49
+cal done! Ib Use maximum value
+cur_default 31: 0.47
+val_29:  0.38   val_30:  0.43
+val_30:  0.43   val_31:  0.49
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 140.71 s
+保存的数据行： {'test_time': 140.71224856376648, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 0.49, 'default_it': 30, 'default_ib': 30, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 13: 3.7
+val_12:  3.2   val_13:  3.69
+val_13:  3.69   val_14:  4.14
+cal done!!!
+It choose 14  ： 4.14
+cur_default 28: 4.14
+val_28:  4.13   val_29:  4.22
+val_27:  4.04   val_28:  4.13
+val_26:  3.94   val_27:  4.04
+cal done!!!
+Ib choose 27  ： 4.04
+first choose 13->14     28->27
+cur_default 27: 3.85
+val_26:  3.75   val_27:  3.84
+val_27:  3.84   val_28:  3.95
+val_28:  3.95   val_29:  4.04
+cal done!!!
+Ib choose 29  ： 4.04
+second choose 14     27->29
+code spand : 96.92 s
+保存的数据行： {'test_time': 96.92479085922241, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.04, 'default_it': 13, 'default_ib': 28, 'it_first': 14, 'ib_first': 27, 'wf_dac0_vl_it_bit': 14, 'wf_dac0_vl_ib_bit': 29}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 20: 7.79
+val_19:  7.44   val_20:  7.77
+val_20:  7.77   val_21:  8.11
+cal done!!!
+It choose 21  ： 8.11
+cur_default 30: 8.12
+val_30:  8.09   val_31:  8.17
+val_29:  8.05   val_30:  8.09
+val_28:  7.98   val_29:  8.05
+cal done!!!
+Ib choose 28  ： 7.98
+first choose 20->21     30->28
+cur_default 28: 8.01
+val_28:  8.01   val_29:  8.09
+second choose 21     28->28
+code spand : 98.77 s
+保存的数据行： {'test_time': 98.76723122596741, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.01, 'default_it': 20, 'default_ib': 30, 'it_first': 21, 'ib_first': 28, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 28}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 20: 12.95
+val_20:  12.94   val_21:  13.21
+val_19:  12.6   val_20:  12.94
+val_18:  12.25   val_19:  12.6
+val_17:  11.89   val_18:  12.25
+cal done!!!
+It choose 17  ： 11.89
+cur_default 31: 11.89
+val_29:  11.74   val_30:  11.81
+val_30:  11.81   val_31:  11.89
+cal done! Ib Use maximum value
+cur_default 31: 12.25
+val_start  28: 12.01
+val_28:  12.02   val_29:  12.1
+first choose 20->18     31->28
+cur_default 28: 12.24
+val_28:  12.24   val_29:  12.31
+val_27:  12.11   val_28:  12.24
+val_26:  12.09   val_27:  12.11
+val_25:  12.0   val_26:  12.09
+cal done!!!
+Ib choose 25  ： 12.0
+second choose 18     28->25
+code spand : 154.57 s
+保存的数据行： {'test_time': 154.56506085395813, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.0, 'default_it': 20, 'default_ib': 31, 'it_first': 18, 'ib_first': 28, 'wf_dac0_vl_it_bit': 18, 'wf_dac0_vl_ib_bit': 25}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 19.23
+val_start  18: 16.11
+val_18:  16.1   val_19:  16.42
+val_17:  15.79   val_18:  16.1
+cal done!!!
+It choose 18  ： 16.1
+cur_default 31: 16.1
+val_30:  16.02   val_31:  16.1
+first choose 31->18     31->30
+cur_default 30: 15.01
+val_start  30: 15.02
+val_29:  14.95   val_30:  15.03
+val_30:  15.03   val_31:  15.08
+cal done! Ib Use maximum value
+cur_default 31: 15.38
+val_start  30: 15.33
+val_29:  15.27   val_30:  15.33
+val_30:  15.33   val_31:  15.38
+cal done! Ib Use maximum value
+cur_default 31: 15.67
+val_start  30: 15.6
+val_29:  15.55   val_30:  15.6
+val_30:  15.6   val_31:  15.66
+cal done! Ib Use maximum value
+cur_default 31: 15.95
+val_29:  15.83   val_30:  15.9
+val_30:  15.9   val_31:  15.94
+cal done! Ib Use maximum value
+cur_default 31: 16.22
+val_start  28: 16.04
+val_28:  16.04   val_29:  16.1
+second choose 22     31->28
+code spand : 242.67 s
+保存的数据行： {'test_time': 242.6689054965973, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.04, 'default_it': 31, 'default_ib': 31, 'it_first': 18, 'ib_first': 30, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 18.22
+val_start  30: 18.03
+val_29:  17.84   val_30:  18.04
+val_30:  18.04   val_31:  18.21
+cal done! It Use maximum value
+cur_default 31: 18.22
+val_start  30: 18.18
+val_29:  18.15   val_30:  18.19
+val_30:  18.19   val_31:  18.22
+cal done! Ib Use maximum value
+cur_default 31: 18.21
+val_start  30: 18.17
+val_29:  18.15   val_30:  18.19
+val_30:  18.19   val_31:  18.22
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.23
+val_start  30: 18.18
+val_29:  18.13   val_30:  18.18
+val_30:  18.18   val_31:  18.22
+cal done! Ib Use maximum value
+cur_default 31: 18.22
+val_start  30: 18.16
+val_29:  18.14   val_30:  18.18
+val_30:  18.18   val_31:  18.22
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 195.23 s
+保存的数据行： {'test_time': 195.23020553588867, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 151, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.22, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 30: -0.62
+val_29:  -0.84   val_30:  -0.59
+val_30:  -0.59   val_31:  -0.35
+cal done! It Use maximum value
+cur_default 30: -0.36
+val_29:  -0.4   val_30:  -0.33
+val_30:  -0.33   val_31:  -0.31
+cal done! Ib Use maximum value
+cur_default 31: -0.27
+val_29:  -0.37   val_30:  -0.34
+val_30:  -0.34   val_31:  -0.28
+cal done! Ib Use maximum value
+first choose 30->31     31->31
+cur_default 31: 0.37
+val_29:  0.28   val_30:  0.33
+val_30:  0.33   val_31:  0.37
+cal done! Ib Use maximum value
+cur_default 31: 0.39
+val_29:  0.28   val_30:  0.33
+val_30:  0.33   val_31:  0.39
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 140.45 s
+保存的数据行： {'test_time': 140.45129871368408, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 0.39, 'default_it': 30, 'default_ib': 30, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 13: 3.57
+val_12:  3.08   val_13:  3.57
+val_13:  3.57   val_14:  4.0
+cal done!!!
+It choose 14  ： 4.0
+cur_default 28: 4.0
+val_27:  3.9   val_28:  4.01
+cal done!!!
+Ib choose 28  ： 4.01
+first choose 13->14     28->28
+cur_default 28: 3.77
+val_27:  3.68   val_28:  3.77
+val_28:  3.77   val_29:  3.87
+val_29:  3.87   val_30:  3.95
+val_30:  3.95   val_31:  4.05
+cal done!!!
+Ib choose 31  ： 4.05
+cur_default 31: 4.48
+val_30:  4.39   val_31:  4.47
+val_29:  4.3   val_30:  4.39
+val_28:  4.22   val_29:  4.3
+val_27:  4.11   val_28:  4.22
+val_26:  4.03   val_27:  4.11
+second choose 15     31->26
+code spand : 132.35 s
+保存的数据行： {'test_time': 132.34977769851685, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.03, 'default_it': 13, 'default_ib': 28, 'it_first': 14, 'ib_first': 28, 'wf_dac0_vl_it_bit': 15, 'wf_dac0_vl_ib_bit': 26}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 20: 7.67
+val_19:  7.36   val_20:  7.66
+val_20:  7.66   val_21:  7.99
+cur_default 30: 7.98
+val_29:  7.93   val_30:  7.99
+first choose 20->21     30->30
+cur_default 30: 8.02
+val_30:  8.03   val_31:  8.08
+second choose 21     30->30
+code spand : 80.06 s
+保存的数据行： {'test_time': 80.05899834632874, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.03, 'default_it': 20, 'default_ib': 30, 'it_first': 21, 'ib_first': 30, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 20: 12.74
+val_20:  12.74   val_21:  13.07
+val_19:  12.42   val_20:  12.74
+val_18:  12.03   val_19:  12.42
+cur_default 31: 12.06
+val_30:  11.97   val_31:  12.05
+cal done!!!
+Ib choose 30  ： 11.97
+first choose 20->18     31->30
+cur_default 30: 12.19
+val_30:  12.17   val_31:  12.26
+val_29:  12.11   val_30:  12.17
+val_28:  12.03   val_29:  12.11
+second choose 18     30->28
+code spand : 100.41 s
+保存的数据行： {'test_time': 100.4138777256012, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.03, 'default_it': 20, 'default_ib': 31, 'it_first': 18, 'ib_first': 30, 'wf_dac0_vl_it_bit': 18, 'wf_dac0_vl_ib_bit': 28}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 19.12
+val_start  18: 15.97
+val_17:  15.7   val_18:  16.0
+cal done!!!
+It choose 18  ： 16.0
+cur_default 31: 16.0
+val_29:  15.87   val_30:  15.93
+val_30:  15.93   val_31:  16.0
+cal done!!!
+Ib choose 31  ： 16.0
+cur_default 31: 16.3
+val_start  27: 16.05
+val_27:  16.05   val_28:  16.11
+val_26:  15.99   val_27:  16.05
+cal done!!!
+Ib choose 26  ： 15.99
+first choose 31->19     31->26
+cur_default 26: 15.03
+val_start  30: 15.3
+val_29:  15.23   val_30:  15.3
+val_30:  15.3   val_31:  15.34
+cal done! Ib Use maximum value
+cur_default 31: 15.64
+val_start  30: 15.58
+val_29:  15.53   val_30:  15.58
+val_30:  15.58   val_31:  15.63
+cal done! Ib Use maximum value
+cur_default 31: 15.91
+val_29:  15.79   val_30:  15.85
+val_30:  15.85   val_31:  15.91
+cal done! Ib Use maximum value
+cur_default 31: 16.17
+val_30:  16.12   val_31:  16.18
+val_29:  16.05   val_30:  16.12
+val_28:  16.01   val_29:  16.05
+second choose 22     31->28
+code spand : 252.01 s
+保存的数据行： {'test_time': 252.00730848312378, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.01, 'default_it': 31, 'default_ib': 31, 'it_first': 19, 'ib_first': 26, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 18.1
+val_start  30: 17.93
+val_29:  17.74   val_30:  17.92
+val_30:  17.92   val_31:  18.11
+cal done! It Use maximum value
+cur_default 31: 18.11
+val_start  30: 18.07
+val_29:  18.03   val_30:  18.07
+val_30:  18.07   val_31:  18.1
+cal done! Ib Use maximum value
+cur_default 31: 18.11
+val_start  30: 18.06
+val_29:  18.02   val_30:  18.07
+val_30:  18.07   val_31:  18.1
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.13
+val_start  30: 18.07
+val_29:  18.04   val_30:  18.08
+val_30:  18.08   val_31:  18.11
+cal done! Ib Use maximum value
+cur_default 31: 18.11
+val_start  30: 18.08
+val_29:  18.03   val_30:  18.08
+val_30:  18.08   val_31:  18.12
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 195.14 s
+保存的数据行： {'test_time': 195.13807439804077, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 167, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.12, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 30: -0.72
+val_29:  -0.91   val_30:  -0.67
+val_30:  -0.67   val_31:  -0.44
+cal done! It Use maximum value
+cur_default 30: -0.43
+val_29:  -0.48   val_30:  -0.44
+val_30:  -0.44   val_31:  -0.37
+cal done! Ib Use maximum value
+cur_default 31: -0.38
+val_29:  -0.48   val_30:  -0.42
+val_30:  -0.42   val_31:  -0.39
+cal done! Ib Use maximum value
+first choose 30->31     31->31
+cur_default 31: 0.3
+val_29:  0.23   val_30:  0.27
+val_30:  0.27   val_31:  0.33
+cal done! Ib Use maximum value
+cur_default 31: 0.33
+val_29:  0.19   val_30:  0.29
+val_30:  0.29   val_31:  0.28
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 140.23 s
+保存的数据行： {'test_time': 140.2316815853119, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 0.28, 'default_it': 30, 'default_ib': 30, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 13: 3.54
+val_12:  3.05   val_13:  3.53
+val_13:  3.53   val_14:  3.98
+cur_default 28: 3.96
+val_27:  3.88   val_28:  3.97
+first choose 13->14     28->28
+cur_default 28: 3.84
+val_27:  3.74   val_28:  3.84
+val_28:  3.84   val_29:  3.92
+val_29:  3.92   val_30:  4.01
+cal done!!!
+Ib choose 30  ： 4.01
+second choose 14     28->30
+code spand : 78.27 s
+保存的数据行： {'test_time': 78.26522159576416, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.01, 'default_it': 13, 'default_ib': 28, 'it_first': 14, 'ib_first': 28, 'wf_dac0_vl_it_bit': 14, 'wf_dac0_vl_ib_bit': 30}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 20: 7.61
+val_19:  7.29   val_20:  7.61
+val_20:  7.61   val_21:  7.97
+cur_default 30: 7.96
+val_29:  7.87   val_30:  7.92
+val_30:  7.92   val_31:  8.01
+cal done!!!
+Ib choose 31  ： 8.01
+cur_default 31: 8.32
+val_start  27: 8.07
+val_27:  8.07   val_28:  8.14
+val_26:  7.98   val_27:  8.07
+cal done!!!
+Ib choose 26  ： 7.98
+first choose 20->22     31->26
+cur_default 26: 8.04
+val_26:  8.07   val_27:  8.1
+val_25:  8.01   val_26:  8.07
+second choose 22     26->25
+code spand : 133.63 s
+保存的数据行： {'test_time': 133.63177466392517, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.01, 'default_it': 20, 'default_ib': 30, 'it_first': 22, 'ib_first': 26, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 25}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 20: 12.74
+val_20:  12.73   val_21:  13.05
+val_19:  12.4   val_20:  12.73
+val_18:  12.06   val_19:  12.4
+val_17:  11.69   val_18:  12.06
+cal done!!!
+It choose 18  ： 12.06
+cur_default 31: 12.03
+val_30:  11.98   val_31:  12.05
+cal done!!!
+Ib choose 30  ： 11.98
+first choose 20->18     31->30
+cur_default 30: 12.18
+val_30:  12.19   val_31:  12.26
+val_29:  12.11   val_30:  12.19
+val_28:  12.02   val_29:  12.11
+second choose 18     30->28
+code spand : 109.99 s
+保存的数据行： {'test_time': 109.99037861824036, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.02, 'default_it': 20, 'default_ib': 31, 'it_first': 18, 'ib_first': 30, 'wf_dac0_vl_it_bit': 18, 'wf_dac0_vl_ib_bit': 28}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 19.1
+val_start  18: 15.95
+val_17:  15.63   val_18:  15.94
+val_18:  15.94   val_19:  16.26
+cal done!!!
+It choose 18  ： 15.94
+cur_default 31: 15.95
+val_29:  15.81   val_30:  15.88
+val_30:  15.88   val_31:  15.94
+cal done! Ib Use maximum value
+cur_default 31: 16.24
+val_start  27: 16.07
+val_27:  15.99   val_28:  16.07
+cal done!!!
+Ib choose 27  ： 15.99
+first choose 31->19     31->27
+cur_default 27: 15.1
+val_start  30: 15.3
+val_29:  15.24   val_30:  15.29
+val_30:  15.29   val_31:  15.36
+cal done! Ib Use maximum value
+cur_default 31: 15.64
+val_start  30: 15.6
+val_29:  15.52   val_30:  15.58
+val_30:  15.58   val_31:  15.64
+cal done! Ib Use maximum value
+cur_default 31: 15.93
+val_29:  15.81   val_30:  15.86
+val_30:  15.86   val_31:  15.92
+cal done! Ib Use maximum value
+cur_default 31: 16.19
+val_start  28: 16.02
+val_28:  16.02   val_29:  16.07
+second choose 22     31->28
+code spand : 246.92 s
+保存的数据行： {'test_time': 246.92445421218872, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.02, 'default_it': 31, 'default_ib': 31, 'it_first': 19, 'ib_first': 27, 'wf_dac0_vl_it_bit': 22, 'wf_dac0_vl_ib_bit': 28}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 18.11
+val_start  30: 17.93
+val_29:  17.74   val_30:  17.92
+val_30:  17.92   val_31:  18.11
+cal done! It Use maximum value
+cur_default 31: 18.11
+val_start  30: 18.06
+val_29:  18.03   val_30:  18.06
+val_30:  18.06   val_31:  18.11
+cal done! Ib Use maximum value
+cur_default 31: 18.11
+val_start  30: 18.07
+val_29:  18.03   val_30:  18.07
+val_30:  18.07   val_31:  18.1
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 18.09
+val_start  30: 18.06
+val_29:  18.02   val_30:  18.05
+val_30:  18.05   val_31:  18.1
+cal done! Ib Use maximum value
+cur_default 31: 18.08
+val_start  30: 18.05
+val_29:  18.01   val_30:  18.06
+val_30:  18.06   val_31:  18.09
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 195.22 s
+保存的数据行： {'test_time': 195.2231161594391, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 183, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 18.09, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 22: -0.71
+val_21:  -0.93   val_22:  -0.72
+val_22:  -0.72   val_23:  -0.36
+val_23:  -0.36   val_24:  -0.12
+val_24:  -0.12   val_25:  0.18
+val_25:  0.18   val_26:  0.46
+val_26:  0.46   val_27:  0.7
+val_27:  0.7   val_28:  0.94
+val_28:  0.94   val_29:  1.24
+cal done!!!
+It choose 28  ： 0.94
+cur_default 28: 0.98
+val_27:  0.89   val_28:  1.0
+cal done!!!
+Ib choose 28  ： 1.0
+first choose 22->28     28->28
+cur_default 28: 1.34
+val_28:  1.37   val_29:  1.41
+val_27:  1.31   val_28:  1.37
+val_26:  1.23   val_27:  1.31
+val_25:  1.27   val_26:  1.23
+val_24:  1.14   val_25:  1.27
+val_23:  1.16   val_24:  1.14
+val_22:  1.02   val_23:  1.16
+second choose 28     28->22
+code spand : 139.99 s
+保存的数据行： {'test_time': 139.98656129837036, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.02, 'default_it': 22, 'default_ib': 28, 'it_first': 28, 'ib_first': 28, 'wf_dac0_vl_it_bit': 28, 'wf_dac0_vl_ib_bit': 22}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 18: 3.27
+val_17:  2.9   val_18:  3.3
+val_18:  3.3   val_19:  3.64
+val_19:  3.64   val_20:  3.95
+val_20:  3.95   val_21:  4.3
+cal done!!!
+It choose 20  ： 3.95
+cur_default 30: 3.95
+val_29:  3.89   val_30:  3.95
+val_30:  3.95   val_31:  4.03
+cal done!!!
+Ib choose 31  ： 4.03
+cur_default 31: 4.34
+val_30:  4.27   val_31:  4.35
+val_29:  4.25   val_30:  4.27
+val_28:  4.15   val_29:  4.25
+val_27:  4.11   val_28:  4.15
+val_26:  4.05   val_27:  4.11
+val_25:  3.95   val_26:  4.05
+cal done!!!
+Ib choose 26  ： 4.05
+first choose 18->21     31->26
+cur_default 26: 3.91
+val_25:  3.82   val_26:  3.9
+val_26:  3.9   val_27:  3.96
+val_27:  3.96   val_28:  4.05
+cal done!!!
+Ib choose 27  ： 3.96
+second choose 21     26->27
+code spand : 152.49 s
+保存的数据行： {'test_time': 152.4880816936493, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 3.96, 'default_it': 18, 'default_ib': 30, 'it_first': 21, 'ib_first': 26, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 27}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 18: 7.8
+val_17:  7.43   val_18:  7.77
+val_18:  7.77   val_19:  8.13
+cal done!!!
+It choose 19  ： 8.13
+cur_default 31: 8.13
+val_30:  8.05   val_31:  8.13
+val_29:  7.99   val_30:  8.05
+cal done!!!
+Ib choose 29  ： 7.99
+first choose 18->19     31->29
+cur_default 29: 7.92
+val_28:  7.84   val_29:  7.93
+val_29:  7.93   val_30:  7.99
+second choose 19     29->30
+code spand : 98.46 s
+保存的数据行： {'test_time': 98.46370053291321, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 7.99, 'default_it': 18, 'default_ib': 31, 'it_first': 19, 'ib_first': 29, 'wf_dac0_vl_it_bit': 19, 'wf_dac0_vl_ib_bit': 30}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 28: 11.68
+val_27:  11.45   val_28:  11.68
+val_28:  11.68   val_29:  11.92
+val_29:  11.92   val_30:  12.19
+cal done!!!
+It choose 29  ： 11.92
+cur_default 31: 11.96
+val_29:  11.82   val_30:  11.86
+val_30:  11.86   val_31:  11.91
+cal done! Ib Use maximum value
+cur_default 31: 12.15
+val_start  28: 12.01
+val_28:  12.0   val_29:  12.06
+cal done!!!
+Ib choose 28  ： 12.0
+first choose 28->30     31->28
+cur_default 28: 12.2
+val_start  25: 12.04
+val_25:  12.03   val_26:  12.13
+second choose 30     28->25
+code spand : 138.70 s
+保存的数据行： {'test_time': 138.70366668701172, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.03, 'default_it': 28, 'default_ib': 31, 'it_first': 30, 'ib_first': 28, 'wf_dac0_vl_it_bit': 30, 'wf_dac0_vl_ib_bit': 25}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 16.13
+val_30:  15.94   val_31:  16.1
+cal done!!!
+It choose 30  ： 15.94
+cur_default 31: 15.94
+val_29:  15.85   val_30:  15.89
+val_30:  15.89   val_31:  15.91
+cal done! Ib Use maximum value
+cur_default 31: 16.14
+val_start  28: 16.01
+first choose 31->31     31->29
+cur_default 29: 15.5
+val_start  30: 15.52
+val_29:  15.47   val_30:  15.54
+val_30:  15.54   val_31:  15.54
+cal done! Ib Use maximum value
+cur_default 31: 15.54
+val_start  30: 15.52
+val_29:  15.47   val_30:  15.52
+val_30:  15.52   val_31:  15.54
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 164.53 s
+保存的数据行： {'test_time': 164.5337314605713, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 15.54, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 29, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 15.55
+val_start  30: 15.33
+val_29:  15.14   val_30:  15.33
+val_30:  15.33   val_31:  15.54
+cal done! It Use maximum value
+cur_default 31: 15.56
+val_start  30: 15.51
+val_29:  15.45   val_30:  15.5
+val_30:  15.5   val_31:  15.56
+cal done! Ib Use maximum value
+cur_default 31: 15.57
+val_start  30: 15.53
+val_29:  15.46   val_30:  15.49
+val_30:  15.49   val_31:  15.53
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 15.49
+val_start  30: 15.44
+val_29:  15.4   val_30:  15.44
+val_30:  15.44   val_31:  15.48
+cal done! Ib Use maximum value
+cur_default 31: 15.52
+val_start  30: 15.44
+val_29:  15.4   val_30:  15.44
+val_30:  15.44   val_31:  15.48
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 196.55 s
+保存的数据行： {'test_time': 196.55238819122314, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 199, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 15.48, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 22: -0.8
+val_21:  -1.12   val_22:  -0.8
+val_22:  -0.8   val_23:  -0.5
+val_23:  -0.5   val_24:  -0.18
+val_24:  -0.18   val_25:  0.1
+val_25:  0.1   val_26:  0.37
+val_26:  0.37   val_27:  0.62
+val_27:  0.62   val_28:  0.87
+val_28:  0.87   val_29:  1.11
+cal done!!!
+It choose 29  ： 1.11
+cur_default 28: 1.1
+val_28:  1.12   val_29:  1.18
+val_27:  1.06   val_28:  1.12
+val_26:  1.02   val_27:  1.06
+first choose 22->29     28->26
+cur_default 26: 1.4
+val_26:  1.41   val_27:  1.47
+val_25:  1.35   val_26:  1.41
+val_24:  1.32   val_25:  1.35
+val_23:  1.25   val_24:  1.32
+val_22:  1.21   val_23:  1.25
+val_21:  1.15   val_22:  1.21
+val_20:  1.1   val_21:  1.15
+val_19:  1.05   val_20:  1.1
+val_18:  1.0   val_19:  1.05
+cal done!!!
+Ib choose 18  ： 1.0
+second choose 29     26->18
+code spand : 159.59 s
+保存的数据行： {'test_time': 159.59164905548096, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.0, 'default_it': 22, 'default_ib': 28, 'it_first': 29, 'ib_first': 26, 'wf_dac0_vl_it_bit': 29, 'wf_dac0_vl_ib_bit': 18}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 18: 3.17
+val_17:  2.81   val_18:  3.18
+val_18:  3.18   val_19:  3.52
+val_19:  3.52   val_20:  3.86
+val_20:  3.86   val_21:  4.17
+cal done!!!
+It choose 20  ： 3.86
+cur_default 30: 3.85
+val_29:  3.79   val_30:  3.86
+val_30:  3.86   val_31:  3.9
+cal done! Ib Use maximum value
+cur_default 31: 4.23
+val_30:  4.15   val_31:  4.23
+val_29:  4.11   val_30:  4.15
+val_28:  4.03   val_29:  4.11
+first choose 18->21     31->28
+cur_default 28: 3.99
+val_27:  3.92   val_28:  4.0
+cal done!!!
+Ib choose 28  ： 4.0
+second choose 21     28->28
+code spand : 121.04 s
+保存的数据行： {'test_time': 121.03654050827026, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 4.0, 'default_it': 18, 'default_ib': 30, 'it_first': 21, 'ib_first': 28, 'wf_dac0_vl_it_bit': 21, 'wf_dac0_vl_ib_bit': 28}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 18: 7.69
+val_17:  7.34   val_18:  7.7
+val_18:  7.7   val_19:  8.04
+cal done!!!
+It choose 19  ： 8.04
+cur_default 31: 8.03
+cur_default 31: 8.34
+val_start  27: 8.06
+val_27:  8.07   val_28:  8.15
+val_26:  8.0   val_27:  8.07
+cal done!!!
+Ib choose 26  ： 8.0
+first choose 18->20     31->26
+cur_default 26: 8.09
+val_26:  8.08   val_27:  8.15
+val_25:  8.01   val_26:  8.08
+second choose 20     26->25
+code spand : 123.60 s
+保存的数据行： {'test_time': 123.60320830345154, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.01, 'default_it': 18, 'default_ib': 31, 'it_first': 20, 'ib_first': 26, 'wf_dac0_vl_it_bit': 20, 'wf_dac0_vl_ib_bit': 25}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 28: 12.67
+val_28:  12.67   val_29:  12.91
+val_27:  12.43   val_28:  12.67
+val_26:  12.15   val_27:  12.43
+val_25:  11.92   val_26:  12.15
+cal done!!!
+It choose 25  ： 11.92
+cur_default 31: 11.9
+val_29:  11.81   val_30:  11.85
+val_30:  11.85   val_31:  11.91
+cal done! Ib Use maximum value
+cur_default 31: 12.17
+val_30:  12.11   val_31:  12.17
+val_29:  12.08   val_30:  12.11
+val_28:  12.02   val_29:  12.08
+first choose 28->26     31->28
+cur_default 28: 12.2
+val_start  25: 12.04
+val_25:  12.03   val_26:  12.08
+second choose 26     28->25
+code spand : 145.64 s
+保存的数据行： {'test_time': 145.63835763931274, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.03, 'default_it': 28, 'default_ib': 31, 'it_first': 26, 'ib_first': 28, 'wf_dac0_vl_it_bit': 26, 'wf_dac0_vl_ib_bit': 25}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 17.03
+val_start  27: 16.18
+val_27:  16.17   val_28:  16.37
+val_26:  15.95   val_27:  16.17
+cal done!!!
+It choose 26  ： 15.95
+cur_default 31: 15.94
+val_29:  15.84   val_30:  15.89
+val_30:  15.89   val_31:  15.94
+cal done! Ib Use maximum value
+cur_default 31: 16.15
+val_start  28: 16.03
+val_28:  16.02   val_29:  16.07
+first choose 31->27     31->28
+cur_default 28: 15.44
+val_start  30: 15.52
+val_29:  15.49   val_30:  15.54
+val_30:  15.54   val_31:  15.58
+cal done! Ib Use maximum value
+cur_default 31: 15.79
+val_start  30: 15.74
+val_29:  15.71   val_30:  15.75
+val_30:  15.75   val_31:  15.79
+cal done! Ib Use maximum value
+cur_default 31: 16.01
+cur_default 31: 16.19
+val_start  27: 16.02
+val_27:  16.03   val_28:  16.07
+second choose 30     31->27
+code spand : 228.27 s
+保存的数据行： {'test_time': 228.26835918426514, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.03, 'default_it': 31, 'default_ib': 31, 'it_first': 27, 'ib_first': 28, 'wf_dac0_vl_it_bit': 30, 'wf_dac0_vl_ib_bit': 27}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 16.33
+val_start  30: 16.14
+val_29:  15.92   val_30:  16.13
+val_30:  16.13   val_31:  16.34
+cal done! It Use maximum value
+cur_default 31: 16.35
+val_start  30: 16.29
+val_29:  16.26   val_30:  16.29
+val_30:  16.29   val_31:  16.34
+cal done! Ib Use maximum value
+cur_default 31: 16.32
+val_start  30: 16.29
+val_29:  16.26   val_30:  16.29
+val_30:  16.29   val_31:  16.33
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 16.4
+val_start  30: 16.35
+val_29:  16.3   val_30:  16.34
+val_30:  16.34   val_31:  16.38
+cal done! Ib Use maximum value
+cur_default 31: 16.37
+val_start  30: 16.33
+val_29:  16.3   val_30:  16.33
+val_30:  16.33   val_31:  16.38
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 197.26 s
+保存的数据行： {'test_time': 197.25769472122192, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 215, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 16.38, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+setpwr 1
+to be written: 0x200005f
+to be written: 0x2000055
+to be written: 0x20000d5
+cur_default 22: -0.54
+val_21:  -0.81   val_22:  -0.52
+val_22:  -0.52   val_23:  -0.23
+val_23:  -0.23   val_24:  0.09
+val_24:  0.09   val_25:  0.37
+val_25:  0.37   val_26:  0.64
+val_26:  0.64   val_27:  0.92
+val_27:  0.92   val_28:  1.12
+cal done!!!
+It choose 27  ： 0.92
+cur_default 28: 0.92
+val_27:  0.85   val_28:  0.91
+val_28:  0.91   val_29:  0.96
+val_29:  0.96   val_30:  1.01
+cal done!!!
+Ib choose 30  ： 1.01
+first choose 22->27     28->30
+cur_default 30: 1.44
+val_30:  1.46   val_31:  1.5
+val_29:  1.39   val_30:  1.46
+val_28:  1.34   val_29:  1.39
+val_27:  1.28   val_28:  1.34
+val_26:  1.23   val_27:  1.28
+val_25:  1.18   val_26:  1.23
+val_24:  1.13   val_25:  1.18
+val_23:  1.06   val_24:  1.13
+val_22:  1.01   val_23:  1.06
+second choose 27     30->22
+code spand : 154.22 s
+保存的数据行： {'test_time': 154.2218792438507, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': '5', 'setpwr': 1, 'pwrRes': 1.01, 'default_it': 22, 'default_ib': 28, 'it_first': 27, 'ib_first': 30, 'wf_dac0_vl_it_bit': 27, 'wf_dac0_vl_ib_bit': 22}
+setpwr 2
+setpwr 3
+setpwr 4
+to be written: 0x2000055
+to be written: 0x2000057
+to be written: 0x20000d7
+cur_default 18: 3.51
+val_17:  3.14   val_18:  3.49
+val_18:  3.49   val_19:  3.85
+val_19:  3.85   val_20:  4.14
+cal done!!!
+It choose 20  ： 4.14
+cur_default 30: 4.17
+val_30:  4.16   val_31:  4.21
+val_29:  4.1   val_30:  4.16
+val_28:  4.02   val_29:  4.1
+first choose 18->20     30->28
+cur_default 28: 3.91
+val_27:  3.86   val_28:  3.94
+val_28:  3.94   val_29:  3.98
+second choose 20     28->29
+code spand : 89.63 s
+保存的数据行： {'test_time': 89.62990665435791, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': '7', 'setpwr': 4, 'pwrRes': 3.98, 'default_it': 18, 'default_ib': 30, 'it_first': 20, 'ib_first': 28, 'wf_dac0_vl_it_bit': 20, 'wf_dac0_vl_ib_bit': 29}
+setpwr 5
+setpwr 6
+setpwr 7
+setpwr 8
+to be written: 0x2000057
+to be written: 0x2000059
+to be written: 0x20000d9
+cur_default 18: 7.99
+val_17:  7.63   val_18:  7.99
+cur_default 31: 8.0
+val_29:  7.83   val_30:  7.91
+val_30:  7.91   val_31:  8.0
+cal done!!!
+Ib choose 31  ： 8.0
+cur_default 31: 8.34
+val_start  27: 8.06
+val_27:  8.04   val_28:  8.12
+first choose 18->19     31->27
+cur_default 27: 8.03
+val_27:  8.03   val_28:  8.12
+second choose 19     27->27
+code spand : 113.80 s
+保存的数据行： {'test_time': 113.80117559432983, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': '9', 'setpwr': 8, 'pwrRes': 8.03, 'default_it': 18, 'default_ib': 31, 'it_first': 19, 'ib_first': 27, 'wf_dac0_vl_it_bit': 19, 'wf_dac0_vl_ib_bit': 27}
+setpwr 9
+setpwr 10
+setpwr 11
+setpwr 12
+to be written: 0x2000059
+to be written: 0x200005b
+to be written: 0x20000db
+cur_default 28: 12.97
+val_start  25: 12.23
+val_25:  12.22   val_26:  12.49
+val_24:  11.94   val_25:  12.22
+cal done!!!
+It choose 24  ： 11.94
+cur_default 31: 11.95
+val_29:  11.82   val_30:  11.87
+val_30:  11.87   val_31:  11.94
+cal done! Ib Use maximum value
+cur_default 31: 12.21
+val_start  28: 12.04
+val_28:  12.04   val_29:  12.09
+first choose 28->25     31->28
+cur_default 28: 12.19
+val_start  25: 12.02
+val_25:  12.03   val_26:  12.09
+second choose 25     28->25
+code spand : 133.76 s
+保存的数据行： {'test_time': 133.757141828537, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': 'B', 'setpwr': 12, 'pwrRes': 12.03, 'default_it': 28, 'default_ib': 31, 'it_first': 25, 'ib_first': 28, 'wf_dac0_vl_it_bit': 25, 'wf_dac0_vl_ib_bit': 25}
+setpwr 13
+setpwr 14
+setpwr 15
+setpwr 16
+to be written: 0x200005b
+to be written: 0x200005d
+to be written: 0x20000dd
+cur_default 31: 17.2
+val_start  27: 16.38
+val_27:  16.37   val_28:  16.6
+val_26:  16.15   val_27:  16.37
+val_25:  15.92   val_26:  16.15
+cal done!!!
+It choose 25  ： 15.92
+cur_default 31: 15.91
+val_29:  15.82   val_30:  15.86
+val_30:  15.86   val_31:  15.91
+cal done! Ib Use maximum value
+cur_default 31: 16.14
+val_30:  16.09   val_31:  16.15
+val_29:  16.05   val_30:  16.09
+val_28:  16.0   val_29:  16.05
+cal done!!!
+Ib choose 28  ： 16.0
+first choose 31->26     31->28
+cur_default 28: 15.32
+val_start  30: 15.43
+val_29:  15.37   val_30:  15.41
+val_30:  15.41   val_31:  15.47
+cal done! Ib Use maximum value
+cur_default 31: 15.69
+val_start  30: 15.64
+val_29:  15.6   val_30:  15.65
+val_30:  15.65   val_31:  15.69
+cal done! Ib Use maximum value
+cur_default 31: 15.89
+val_29:  15.8   val_30:  15.85
+val_30:  15.85   val_31:  15.9
+cal done! Ib Use maximum value
+cur_default 31: 16.11
+val_30:  16.06   val_31:  16.1
+val_29:  16.02   val_30:  16.06
+second choose 29     31->29
+code spand : 257.98 s
+保存的数据行： {'test_time': 257.9757640361786, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': 'D', 'setpwr': 16, 'pwrRes': 16.02, 'default_it': 31, 'default_ib': 31, 'it_first': 26, 'ib_first': 28, 'wf_dac0_vl_it_bit': 29, 'wf_dac0_vl_ib_bit': 29}
+setpwr 17
+setpwr 18
+setpwr 19
+setpwr 20
+to be written: 0x200005d
+to be written: 0x200005f
+to be written: 0x20000df
+cur_default 31: 16.56
+val_start  30: 16.36
+val_29:  16.18   val_30:  16.37
+val_30:  16.37   val_31:  16.57
+cal done! It Use maximum value
+cur_default 31: 16.56
+val_start  30: 16.52
+val_29:  16.48   val_30:  16.51
+val_30:  16.51   val_31:  16.56
+cal done! Ib Use maximum value
+cur_default 31: 16.55
+val_start  30: 16.52
+val_29:  16.48   val_30:  16.51
+val_30:  16.51   val_31:  16.55
+cal done! Ib Use maximum value
+first choose 31->31     31->31
+cur_default 31: 16.55
+val_start  30: 16.51
+val_29:  16.47   val_30:  16.5
+val_30:  16.5   val_31:  16.55
+cal done! Ib Use maximum value
+cur_default 31: 16.55
+val_start  30: 16.5
+val_29:  16.47   val_30:  16.5
+val_30:  16.5   val_31:  16.55
+cal done! Ib Use maximum value
+second choose 31     31->31
+code spand : 196.42 s
+保存的数据行： {'test_time': 196.4184501171112, 'boardno': '6e', 'bin_version': 'testmode_8822_924_6e_add_calf.bin', 'ch_case': 229, 'analog_gear': 'F', 'setpwr': 20, 'pwrRes': 16.55, 'default_it': 31, 'default_ib': 31, 'it_first': 31, 'ib_first': 31, 'wf_dac0_vl_it_bit': 31, 'wf_dac0_vl_ib_bit': 31}
+to be written: 0x200005f
+to be written: 0x200001f
+Com18 is closed
+
+Process finished with exit code 0

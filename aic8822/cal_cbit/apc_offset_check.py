@@ -9,6 +9,7 @@ from aic8822.csv import *
 from icbasic.aicinstr.rs.cmp180 import *
 global UARTc
 
+
 def uart_open(comport):
     global UARTc
     UARTc = Uart(comport)
@@ -25,7 +26,7 @@ def apc_cbit_offset_check():
 
     CHIP_NO = "A4"
 
-    csv_path = "../AIC8822_WF_CBIT_CHECK_20241206_cal.csv"
+    csv_path = "../AIC8822_WF_CBIT_CHECK_20250207_wiccal.csv"
     csvx = CSV(csv_path)
 
     csvx.write_append_line("CH, Rate, R403422c8, lb0_tmx_cbit, lb0_padrv_cbit, lb1_tmx_cbit, lb1_padrv_cbit, hb0_tmx_cbit, hb0_padrv_cbit, hb1_tmx_cbit, hb1_padrc_cbit")
@@ -47,6 +48,7 @@ def apc_cbit_offset_check():
 
     setrate = "5 11"
 
+    '''
     for ch in ["7"]:
         UARTc.sendcmd("setch "+ch)
         time.sleep(2)
@@ -62,6 +64,7 @@ def apc_cbit_offset_check():
                 resx = "{},{},{},{}".format(ch, rate, regvalue, ",".join(value))
                 print(resx)
                 csvx.write_append_line(resx)
+    '''
 
     for ch in ["42", "58", "106", "122", "138", "155"]:
         UARTc.sendcmd("setch "+ch)

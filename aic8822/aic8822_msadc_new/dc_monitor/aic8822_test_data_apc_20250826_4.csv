@@ -1,0 +1,9 @@
+WF_bbpll_dac_dvdd,1078.192607003891
+WF_bbpll_dac_avdd_vco,905.9976896887159
+WF_vco_lb_avdd13_sw,1214.0
+WF_vco_lb_reg_vco,1110.5944795719845
+WF_vco_lb_reg_buf,1028.5564810311284
+WF_rfpll_lb_dvdd,1089.2269576848248
+WF_rfpll_lb_avdd_pdt,1160.8948808365758
+WF_rfpll_lb_cp_outn,707.6377067120621
+WF_rfpll_lb_cp_outp,684.6094965953307

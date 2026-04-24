@@ -1,0 +1,6 @@
+buf_1,WF_VCO_vco_reg_buf,838.5368433852141,WF_PLL_ON
+buf_1,WF_VCO_vco_reg_core,1062.7297543774318,WF_PLL_ON
+buf_1,WF_VCO_vco_avdd13_sw,1214.0,WF_PLL_ON
+buf_8,WF_VCO_vco_reg_buf,933.7496352140079,WF_PLL_ON
+buf_8,WF_VCO_vco_reg_core,1062.25,WF_PLL_ON
+buf_8,WF_VCO_vco_avdd13_sw,1214.0,WF_PLL_ON

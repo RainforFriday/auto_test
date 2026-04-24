@@ -1,0 +1,27 @@
+CM_mdll_avdd_logic,1148.4212670233462
+CM_mdll_avdd_logic_dig,1163.9210238326848
+CM_mdll_cp_out0,668.7406979571986
+CM_mdll_cp_out1,-670.8073321984436
+IO_bbpll_multi1p5_avdd_sw,ERROR: reg name not found
+IO_bbpll_multi1p5_dvdd_sw,ERROR: reg name not found
+IO_bbpll_multi1p5_vbp_mont,ERROR: reg name not found
+IO_bbpll_multi1p5_vbn_mont,ERROR: reg name not found
+WF_bbpll_dac_dvdd,1074.280763618677
+WF_bbpll_dac_avdd_vco,905.3703185797665
+WF_vco_lb_avdd13_sw,1214.0
+WF_vco_lb_reg_vco,1109.7825875486383
+WF_vco_lb_reg_buf,1026.6374635214008
+WF_vco_bus_avdd_sw,0.2952334630350184
+WF_vco_bus_dvdd_sw,0.3321376459144294
+WF_vco_bus_vbp_mont,0.4059460116732514
+WF_vco_bus_vbn_mont,0.2583292801556074
+WF_vco_bus_vbn_mont,0.4797543774318038
+WF_vco_bus_vbp_mont,0.4428501945526624
+WF_rfpll_hb_dvdd,0.4428501945526624
+WF_rfpll_hb_avdd_pdt,0.2583292801556074
+WF_rfpll_hb_cp_outn,0.3321376459144294
+WF_rfpll_hb_cp_outp,0.3690418287938404
+WF_rfpll_lb_dvdd,1083.6544260700389
+WF_rfpll_lb_avdd_pdt,1157.315175097276
+WF_rfpll_lb_cp_outn,680.0702821011672
+WF_rfpll_lb_cp_outp,698.227140077821
